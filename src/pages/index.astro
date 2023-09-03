@@ -1,61 +1,10 @@
 ---
-import { ArticleCard } from '@frontends/article-card'
-import { Embeds } from '@frontends/embeds';
-import { stringify } from 'postcss';
+import ArticleCard from '../components/ArticleCard.astro'
+import Embeds from '../components/Embeds.astro';
 import Layout from '../components/Layout.astro'
 import prettyNumber from '../components/prettyNumber';
 import Rabbits from '../components/Rabbits.astro'
 
-const getter = async (entryId) => {
-  const response = await fetch(
-    process.env.WEBINY_READ_URL,
-  {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${process.env.WEBINY_ACCESS_TOKEN}`,
-      'Content-Type' : 'application/json'
-    },
-    body: JSON.stringify({
-      query: `
-        query myQuery($PostsListWhereInput: PostsListWhereInput) {
-          listPosts(limit: 2, sort: publishDate_DESC, where: $PostsListWhereInput) {
-            meta {
-              totalCount
-            }
-            data {
-              id
-              title
-              slug
-              description
-              publishDate
-              shareCard
-              embed {
-                link
-                type
-              }
-            }
-            error {
-              message
-            }
-          }
-        }
-      `,
-        variables: {
-          PostsListWhereInput: {
-            tags: {
-              entryId: entryId
-            }
-          }
-        }
-    }),
-  }
-);
-  return await response.json();
-}
-
-const res = await Promise.all([
-  getter('637b96962d51b300089a2441'),  // engineering
-])
 
 const getLatestYoutubeVideo = async (channelId) => {
   const response = await fetch(

@@ -1,40 +1,6 @@
 ---
 import Layout from '../../components/Layout.astro'
-import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
-import postsQuery from '../../components/postsQuery'
 import Otters from '../../components/Otters.astro'
-interface Props {
-    listPosts: {
-      data: Array<{
-        id: string
-        title: string
-        slug: string
-        description: string
-        tags: Array<{
-          title: string
-          slug: string
-        }>
-      }>
-    }
-  }
-
-const response = await fetch(
-    process.env.WEBINY_READ_URL,
-  {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${process.env.WEBINY_ACCESS_TOKEN}`,
-      'Content-Type' : 'application/json'
-    },
-    body: JSON.stringify({
-      query: postsQuery
-    }),
-  }
-);
-const { data } = await response.json()
-
-const content = getTagsArrayFromPostList(data)
-
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
     <div class="my-5">

@@ -1,0 +1,22 @@
+---
+import { Code } from 'astro/components';
+
+const { poetry } = Astro.props;
+---
+
+<div class="poetry">
+  <Code code={poetry} lang="html" theme="min-light" />
+</div>
+
+<style is:global>
+  .poetry pre {
+    overflow-y: auto;
+    background-color: transparent !important;
+  }
+  .poetry pre > code {
+    font-family: sans-serif;
+  }
+  .poetry pre > code > * > * {
+    color: black !important;
+  }
+</style>
