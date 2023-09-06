@@ -6,7 +6,7 @@ const { code, lang = 'js', theme = 'monokai' } = Astro.props;
 
 <Code code={code} lang={lang} theme={theme} />
 
-<style is:global>
+<style lang="scss" is:global>
   pre {
     overflow-y: auto;
     padding: 1.2rem;
