@@ -1,0 +1,27 @@
+title: About
+description: "About this website"
+---
+
+Delicious Reverie is the personal blog of Benjamin Read, a web developer from just outside London, UK.
+
+## The Design
+
+The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed. I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams and the painting "Chill October" by John Everett Millais.
+
+![Cold autum lake with trees swaying in the wind](../images/chill-october-millais.jpg)
+
+Text and background colours have been selected that hopefully improve readability for those with cognitive and visual impairments.
+
+The original font on this site was Skybird. As soon as I saw the "Skybird" typeface I fell in love with it. It perfectly reflects my interest in a personal, home-grown, labour-of-love approach to crafted work instead of what can end up looking mass-produced, impersonal and somewhat homogenous.
+
+However, I've recently moved to "Lovechild" to reflect my growing interest in the folk & roots movement of the 70s, which eschewed conformity in favour of a similar homegrown, personal feel towards things. Also, I recieved a few comments that the font "Skybird" was difficult to read for people with dyslexia, and I don't want to limit access to my content for them.
+
+## The Name
+
+I called this site "Delicious Reverie" after an expression which occurs in Norman Denny's English translation of Victor Hugo's epic masterpiece Les Miserables.
+
+After being reminded of one of his favourite books, a minor charachter, Monsieur Mabeuf, is said to slip "into a delicious reverie", which means that he becomes absorbed in his thoughts and memories in a delightful state of meditation.
+
+Deliciousreverie.co.uk is where I share my delicious reveries—Pieces of code, ideas and processes that I gather on my career, as well as some personal anecdotes and my love of classical, French, Russian, Chinese and English literature.
+
+I hope you find something that inspires you.
