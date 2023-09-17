@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Lowest tech first - Delicious Reverie"
 description: "Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task.
 "

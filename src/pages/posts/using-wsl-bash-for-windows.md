@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Using WSL (BASH for Windows) - Delicious Reverie"
 description: "At a new job I've been tasked with moving to Windows as my main production environment. At first approaching this idea with some trepidation, I have since discovered and been able to install the new Windows Subsystem for Linux on my PC, and it's proven to be a really useful tool.
 "

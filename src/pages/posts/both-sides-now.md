@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Both Sides, Now - Delicious Reverie"
 description: "Many people I respect and admire have voiced conflicting opinions on their blogs and Twitter recently. I wanted to reply in general with reference to a song that pops into my head every time I hear those conflicting opinions being discussed.
 "

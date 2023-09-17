@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "2021 Review / 2022 Aims - Delicious Reverie"
 description: "2021 continued the trend of being more challenging than any period before it, in terms of maintaining some sort of normality to our lives. However there have been some really good things too. Here's a review of what I set out to achieve and what I want to achieve this year
 "

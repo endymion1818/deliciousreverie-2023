@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Content-Author friendly APIs with Strapi - Delicious Reverie"
 description: "I've worked in a few different capacities around the web, and can see the value of interfaces that those writing content for the web feel comfortable using. I'm also becoming more comfortable with JavaScript, and want to find alternatives to the PHP tools I've been using. On that journey, I discovered Strapi.
 "

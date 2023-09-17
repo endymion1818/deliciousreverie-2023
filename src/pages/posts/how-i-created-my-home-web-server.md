@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "How I Created My Home Web Server - Delicious Reverie"
 description: "I decided to try to build my own web server using my home router, an old PC, and a Linux operating system."
 categories:

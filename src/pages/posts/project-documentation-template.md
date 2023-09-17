@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Project Documentation Templates - Delicious Reverie"
 description: "Writing documentation for new team members - or just to provide a referenceable standard - is hard. I've provided these documents with the aim of helping this process.
 "

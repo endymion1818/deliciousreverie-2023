@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "I launched a YouTube channel - Delicious Reverie"
 description: "I opened a YouTube channel! It was originally made to teach some kids coding schools, but I think it might prove to be a useful resource I'll be using more often.
 "

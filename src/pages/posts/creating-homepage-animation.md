@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Creating my homepage animation - Delicious Reverie"
 description: "I made the original animation for this site when I was using Hugo, but it's taken some time to refactor to React. Here's the story of how I achieved that.
 "

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "First steps with Sveltekit - Delicious Reverie"
 description: "SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about."
 categories:

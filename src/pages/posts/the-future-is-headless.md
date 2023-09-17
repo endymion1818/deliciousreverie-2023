@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "The Future is Headless - Delicious Reverie"
 description: "If you've been in the industry for any length of time, the chances are that you've been in one of those discussions about CMSes that are never resolved. That is about to change forever ...
 "

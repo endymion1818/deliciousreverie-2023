@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Doughnut chart SVG Animation - Delicious Reverie"
 description: "For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area.
 "

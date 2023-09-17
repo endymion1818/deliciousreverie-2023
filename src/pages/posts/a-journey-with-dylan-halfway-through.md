@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "A Journey With Dylan: Halfway Through - Delicious Reverie"
 description: "A Few weeks ago, I wrote a post about how I was taking a journey through the studio albums of Bob Dylan, starting with his first eponymous album, and discovering new albums and tracks along the way which resonated with me. I'm now about half way through the catalogue, and have encountered a few surprises.
 "

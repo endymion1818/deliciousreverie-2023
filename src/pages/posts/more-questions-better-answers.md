@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "More Questions, Better Answers - Delicious Reverie"
 description: "Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to."
 categories:

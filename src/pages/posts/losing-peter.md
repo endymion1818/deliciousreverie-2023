@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Losing Peter - Delicious Reverie"
 description: "I found out one of my closest school friends committed suicide recently."
 categories:

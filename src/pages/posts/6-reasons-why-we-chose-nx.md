@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "6 reasons why we chose Nx as our monorepo management tool - Delicious Reverie"
 description: "Nx is a modular build framework for architecting and maintaining code projects. Using it means you configure once, then just focus on build your tools and apps. Nx can effectively manage the configuration around APIs, micro frontends and libraries of tools, so you don’t have to consciously think of this step each time it comes to building a new project. This is an article I wrote for the Purple Bricks tech blog on the subject.
 "

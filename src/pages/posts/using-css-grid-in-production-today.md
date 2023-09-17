@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Using CSS Grid In Production Today - Delicious Reverie"
 description: "For me, as well as a lot of others, CSS Grid is the most exciting thing to happen since CSS3 ... possibly even CSS2. But many fear using it in production. This post tackles one common use case where a Flexbox fallback provides support for Internet Explorer and Edge.
 "

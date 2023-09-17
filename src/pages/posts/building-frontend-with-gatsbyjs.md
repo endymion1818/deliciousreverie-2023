@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Building a Frontend With GatsbyJS - Delicious Reverie"
 description: "This article was originally published for Webiny's technical documentation portal and takes readers through how to build a frontend for Webiny Headless CMS with Gatsby.
 "

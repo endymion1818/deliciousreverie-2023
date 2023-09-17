@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Words Fail Me. - Delicious Reverie"
 description: "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here.
 "

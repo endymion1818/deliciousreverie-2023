@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Learning serverless with Webiny - Delicious Reverie"
 description: "Webiny is a new CMS in the market, one that seeks to compete with other well-established headless CMS platforms and existing apps. But I've also come to enjoy using it for another reason...
 "

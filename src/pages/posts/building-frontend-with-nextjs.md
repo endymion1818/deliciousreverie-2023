@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Building a Frontend With NextJS - Delicious Reverie"
 description: "This was originally published for Webiny's documentation portal and teaches readers how build a frontend for Webiny Headless CMS with NextJS."
 categories:

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Working with styled components: multiple nested properties - Delicious Reverie"
 description: "Destructuring is a common pattern when it comes to using styled components in complex situations. But it can be hazardous to clearly identify nesting. Here are a few suggestions.
 "

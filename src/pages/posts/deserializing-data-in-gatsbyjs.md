@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Deserializing Data in GatsbyJS - Delicious Reverie"
 description: "One of the great strengths in static site generator Gatsbyjs is the node API but it can present a few issues in certain circumstances when content is stored as escaped HTML, such as in WordPress posts and pages. Here's how we recently dealt with this issue when using react-helmet."
 categories:

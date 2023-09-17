@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Normal People Don't Understand Sidebars - Delicious Reverie"
 description: "We've reached a point that, like the image carousel, sidebars have become overused and for a lot of projects superfluous. And, as I've discovered, people don't always understand the concept or how they work.
 "

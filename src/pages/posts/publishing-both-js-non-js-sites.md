@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Publishing both JS and non-JS sites - Delicious Reverie"
 description: "It's always bothered me that the majority of internet users spend a lot of money downloading and running JavaScript, yet I enjoy building things with JavaScript, and want to provide an enhanced experience using JS ... without sacrificing their needs to do so. Now, there's an easier way to do both.
 "

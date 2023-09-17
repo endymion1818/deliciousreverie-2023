@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Getting Started with TypeScript - Delicious Reverie"
 description: "TypeScript. You either love it, or hate it ... or are terrified of it. But it could be a valuable tool that benefits your workflow. This article, originally published in Net magazine, shows you how to get started with TypeScript
 "

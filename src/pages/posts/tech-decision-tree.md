@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "What should I use to build my new project? - Delicious Reverie"
 description: "There are so many choices when it comes to frameworks, and that's teriffic! But it could be bad news for people who struggle to make decisions. They might feel paralyzed just by the amount of choice that's on offer. So I made this with the aim of helping."
 categories:

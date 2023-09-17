@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "A Developer's Guide to Professional Development - Delicious Reverie"
 description: "How do we not get overloaded with what's going on in web development, but not left behind either? Should we try to keep up with latest trends that might fade away into nothing? Here's my take on how (and why) I continue to learn about web development.
 "

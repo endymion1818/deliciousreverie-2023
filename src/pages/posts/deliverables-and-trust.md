@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Deliverables and Trust - Delicious Reverie"
 description: "It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to "wow" clients into signoff? Here's why that is a bad idea.
 "

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "How to test JavaScript API Calls - Delicious Reverie"
 description: "In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API.
 "
@@ -80,7 +82,11 @@ By using Jest's SpyOn function, we can examine when that function was called, 
 Finally, because we're not contacting the api, we need to provide mocked data to test against as if though it did:
 
 ```
-const mockedDataOne = {  id: 1234,  title: "Super Blog Post",  categories: ["1"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};const mockedDataTwo = {  id: 165,  title: "Super Post Two",  categories: ["2"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};
+const mockedDataOne = {  id: 1234,  ---
+layout: ../../layouts/BlogLayout.astro
+title: "Super Blog Post",  categories: ["1"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};const mockedDataTwo = {  id: 165,  ---
+layout: ../../layouts/BlogLayout.astro
+title: "Super Post Two",  categories: ["2"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};
 ```
 
 Right! Let's begin our tests with a wrapping description:

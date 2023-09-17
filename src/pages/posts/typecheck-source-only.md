@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "How to scope Typecheck to your project folder - Delicious Reverie"
 description: "Typecheck should only run against the code you write for your project, but I found it's not that obvious to configure that...
 "

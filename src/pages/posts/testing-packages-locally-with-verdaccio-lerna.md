@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Testing Packages Locally Using Lerna & Verdaccio - Delicious Reverie"
 description: "Originally published on the Webiny blog. We want to provide the easiest way for developers to get started when building a new Webiny project. So we have a create-webiny-project command line interface (CLI) that creates a new user project with their chosen AWS region and some other preferences they need."
 categories:

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Atomic Development - Delicious Reverie"
 description: "Structuring components in a reusable, discoverable way has been a challenge for some recent projects I've worked on. I've seen different approaches used, but now I think I've found a method that's basically intuitive, avoids duplication of effort and facilitates easy discovery of components."
 categories:
@@ -190,7 +192,9 @@ import * as atom from '../components/Atoms'
 import Masthead from '../components/Organisms/Masthead'
 
 export const frontmatter = {
-  title: "NOT FOUND",
+  ---
+layout: ../../layouts/BlogLayout.astro
+title: "NOT FOUND",
   path: "404",
   description: "Page not found",
   inMainNav: false

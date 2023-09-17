@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Fun with Callbacks - Delicious Reverie"
 description: "I had the opportunity to integrate a callback function with a module I was building recently. But what is a callback? How do you use them? Let's take a closer look."
 categories:

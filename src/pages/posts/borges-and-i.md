@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Borges and I - Delicious Reverie"
 description: "As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, and really enjoyed reading the works of Kafka, Alain Robbe-Gruillet, Satre, Camus, Samuel Beckett and others. Though these writings aren't what you might call "easy reading", they appealed to this somewhat narcissistic, isolated youth who already felt as if he didn't really belong anywhere.
 "

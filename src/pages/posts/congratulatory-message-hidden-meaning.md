@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "A congratulatory message with hidden meaning - Delicious Reverie"
 description: "I'm particularly proud of this piece of artwork and messaging I came up with for the Webiny community, not only because of the message it conveys to our community, but also because it also has a hidden message."
 categories:

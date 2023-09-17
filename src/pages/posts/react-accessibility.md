@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "React Accessibility - Delicious Reverie"
 description: "In the recent past, I've heard React being criticised for not being accessible, or for allowing practices that don't help developers think about accessibility. This is an article I wrote for the print magazine Net.
 "

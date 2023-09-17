@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "2022 Website Rebuild - Delicious Reverie"
 description: "I've just relaunched my website with an entirely new stack, here's what it consists of and why I've made these technical decisions."
 categories:

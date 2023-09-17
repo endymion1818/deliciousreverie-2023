@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "I'm Not Proud - Delicious Reverie"
 description: "I'm not proud of the code I wrote today. In fact, I hated it. But that's okay, it did what it needed to. And I'm going to redo it tomorrow.
 "

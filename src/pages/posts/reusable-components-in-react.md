@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Reusable Components with Atomic Design - Delicious Reverie"
 description: "Structuring components in a reusable, discoverable way is a challenge across teams with diverse requirements. It can be difficult for developers unfamiliar with your library. Id like to introduce the idea of Atomic Development using React and styled-components.
 "

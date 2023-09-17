@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Osip Mandelshtam / Philip Nikolayev - Delicious Reverie"
 description: "Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries."
 categories:

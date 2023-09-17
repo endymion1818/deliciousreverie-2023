@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "A recipe for quick and dirty ramen - Delicious Reverie"
 description: "I've been slowly perfecting a recipe for ramen that I can quickly make at home for a quick meal. If you too like that sort of thing ... here's my hopefully simple recipe!
 "

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Introducing Webiny Enterprise CMS+ - Delicious Reverie"
 description: "Originally published for the Webiny community and Product Hunt launch. It introduces a new marketing term that was conjured up to provoke discussions about what value Webiny brings to organizations apart from the CMS aspect, and because of it's serverless nature."
 categories:

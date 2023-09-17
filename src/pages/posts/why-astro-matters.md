@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Why Astro matters - Delicious Reverie"
 description: "Next, Nuxt, Gatsby, SvelteKit ... there's been an explosion of frontend application frameworks lately. It's never been a more delightful experience to spin up a new project. What's the point of difference with this one? Why does it 'matter' so much?
 "

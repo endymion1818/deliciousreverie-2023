@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "On digital estates - Delicious Reverie"
 description: "I recently heard the term 'Digital estate' to mean the technical property of an organisation. This, and the associations the term provides, have got me thinking about how we contribute to the success of organisations over time...
 "

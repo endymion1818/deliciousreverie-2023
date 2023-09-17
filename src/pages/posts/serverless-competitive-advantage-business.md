@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Serverless as a Competitive Advantage for your Business - Delicious Reverie"
 description: "I gave a talk at Moar Serverless Conf 2022. If you’re still wondering what Serverless is, or if you’ve got friends and colleagues who are asking you, this talk will highlight some of the benefits."
 categories:

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Three UI Component Conundrums - Delicious Reverie"
 description: "I really like using React with Styled Components for building effective user interfaces. However I have recently come across three conundrums to solve.
 "

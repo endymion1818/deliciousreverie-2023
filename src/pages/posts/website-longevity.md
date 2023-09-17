@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "On website longevity - Delicious Reverie"
 description: "When you build something, how long do you expect it to last? Whilst it might be easy to think about the things we create as our legacy to the world, that might not be the case when it comes to our online creations ...
 "

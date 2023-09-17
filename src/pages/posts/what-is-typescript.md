@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "What is Typescript? - Delicious Reverie"
 description: "What is TypeScript? How can it be useful to a person learning web development? I was asked this question on a Slack dicussion recently, and came up with the following example which seemed to be enough for my friends to grasp it.
 "

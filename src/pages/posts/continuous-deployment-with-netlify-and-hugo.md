@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Continuous Deployment with Netlify and Hugo - Delicious Reverie"
 description: "Over the past few days, I've moved tech stack entirely for deliciousreverie.co.uk, from reseller hosting using PHP to cloud hosting on AWS by Netlify, and using continuous deployment. This post details some of the hazards and benefits I encountered.
 "

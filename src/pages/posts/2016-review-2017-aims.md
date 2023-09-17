@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "2016 Review / 2017 Aims - Delicious Reverie"
 description: "2016 as a year was as unconventional as they come. Globally there have been some massive shifts politically, socially and in other ways. My life too has taken some pretty interesting turns. I'm following suit here by posting a quick review of my year and what I hope I can achieve in 2017 from a professional perspective."
 categories:

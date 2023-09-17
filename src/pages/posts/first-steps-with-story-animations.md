@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "First Steps with Story Animations - Delicious Reverie"
 description: "For a while now I've really enjoyed tinkering with animations as a way to bring a lot more quality to my projects. But as well as providing interactivity, I was curious to explore another way animations can be used in a project: to tell a story.
 "

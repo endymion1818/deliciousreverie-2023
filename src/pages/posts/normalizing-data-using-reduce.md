@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Normalizing data using array.prototype.reduce - Delicious Reverie"
 description: "Normalizing data using array.prototype.reduce"
 categories:
@@ -20,7 +22,9 @@ Here's an example of the object once I'd parsed the JSON:
 
 ```
 {
-    title: "some title",
+    ---
+layout: ../../layouts/BlogLayout.astro
+title: "some title",
     categories: {
         team: "teamone"
     }
@@ -33,7 +37,9 @@ What I needed for it to be displayed was this:
 {
     teamone: {
         [{
-            title: "some title",
+            ---
+layout: ../../layouts/BlogLayout.astro
+title: "some title",
             categories: {
                 team: "teamone"
             }

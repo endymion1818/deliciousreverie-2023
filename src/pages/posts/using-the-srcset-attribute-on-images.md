@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Using the Srcset attribute on images - Delicious Reverie"
 description: "So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here.
 "

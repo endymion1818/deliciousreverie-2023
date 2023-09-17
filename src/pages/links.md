@@ -1,6 +1,7 @@
-
+---
 title: Links
 description: "A links page?! This is a bit old school, isn't it?!"
+layout: ../layouts/PageLayout.astro
 ---
 
 A links page?! This is a bit old school, isn't it? #

@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Is Gatsby in decline? - Delicious Reverie"
 description: "I'm sure I was one of the earliest users of Gatsby. But is it in decline? The title is a bit click-baity because I don't really feel that it is. Rather, I think it's well on it's way to finding it's niche."
 categories:

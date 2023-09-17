@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Should I Use Gatsby or Next.js For My Next Project? - Delicious Reverie"
 description: "Originally written for the Webiny blog and was written at a time when Gatsby was experiencing a bit of a resurgence. By writing it, I was hoping to tap into this renewed interest and provide value by highlighting the differences and advantages to each tool."
 categories:

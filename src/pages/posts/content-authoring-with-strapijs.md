@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Content Authoring with StrapiJs - Delicious Reverie"
 description: "In order for people outside of the development team or community to use your software, care must be given to allow them to write and publish content with the least amount of friction or obstruction as possible. A well crafted interface that allows people to do this isn't easy. I have started to use Strapi as a serverless backend API interface recently and believe it's going to be a very useful solution for a lot of projects.
 "

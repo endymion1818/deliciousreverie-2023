@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Better Performance with the React Context API - Delicious Reverie"
 description: "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine.
 "

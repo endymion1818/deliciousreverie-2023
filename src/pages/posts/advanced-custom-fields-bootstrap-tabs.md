@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Advanced Custom Fields and Bootstrap Tabs - Delicious Reverie"
 description: "I'm not a huge fan of Advanced Custom Fields, but there was a requirement to use it in a recent project that had Bootstrap as a basis for the UI. The challenge for me was to get Bootstrap nav-tabs to play nice with an ACF repeater field.
 "

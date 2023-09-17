@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "2019 Review / 2020 Aims - Delicious Reverie"
 description: "This year has solidified my JavaScript knowledge, and I think I have also developed more of the holistic skills around the framework of tools and teams that surround me. But there's still a lot more I need to work on...
 "

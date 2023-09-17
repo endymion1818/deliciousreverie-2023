@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Some of my favourite books - Delicious Reverie"
 description: "I was asked to list some of my favourite books recently, so I compiled the following list, which is very loose and still might be missing some of my favourites!
 "

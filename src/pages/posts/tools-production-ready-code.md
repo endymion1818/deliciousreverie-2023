@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Tools for Production Ready Code - Delicious Reverie"
 description: "Originally produced for Net print Magazine. Websites are great tools for communication, but it's remarkably easy to take them offline. For those organisations in which there's a huge financial investment and thousands — perhaps millions - of customers, reliability is a huge concern. The strategies and tools we are looking at here cover both prevention and resolution of problems that could occur to any website.
 "

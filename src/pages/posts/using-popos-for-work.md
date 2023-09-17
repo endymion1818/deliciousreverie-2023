@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Using Pop!_OS for Work - Delicious Reverie"
 description: "In November last year I switched from using Windows at my place of work to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers and scientists. What motivated me to make the switch? What benefits, and disadvantages, has it brought me?
 "

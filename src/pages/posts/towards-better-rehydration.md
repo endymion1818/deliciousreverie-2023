@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Towards better hydration - Delicious Reverie"
 description: "I came across a tool recently that I'm really excited about ... it's something that I think can solve one of the most pressing concerns in JavaScript development: rehydration.
 "

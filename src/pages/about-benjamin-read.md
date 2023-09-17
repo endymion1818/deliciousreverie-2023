@@ -1,5 +1,7 @@
+---
 title: "About Benjamin Read"
 Description: "Hi, I'm Ben, an experienced Senior Software Engineer and DevRel. Here's a little more about me."
+layout: ../layouts/PageLayout.astro
 ---
 Hi, I'm Ben, an experienced Senior Software Engineer, who has spent most of my career focused on frontend technologies like React, Svelte and Vue, and writing isomorphic JavaScript code for both GraphQL and REST APIs. I have also enjoyed success as a hands-on DevRel, which saw an increase of 140% month-on-month of website sessions, and a 24% growth in organic traffic. More details below.
 

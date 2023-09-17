@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Using WordPress as a Headless CMS - Delicious Reverie"
 description: "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
 categories:

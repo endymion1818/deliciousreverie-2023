@@ -1,3 +1,5 @@
+---
+layout: ../../layouts/BlogLayout.astro
 title: "Accessibility and you - Delicious Reverie"
 description: "I was invited to give a talk at London dev meetup JS Roundabout on the subject of accessibility. I recently discovered the talk has been put online ...
 "
