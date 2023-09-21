@@ -1,4 +1,6 @@
+---
 title: Contact
+layout: ../layouts/PageLayout.astro
 ---
 I'd like to hear from you!
 

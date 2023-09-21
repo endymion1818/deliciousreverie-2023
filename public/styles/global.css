@@ -29,6 +29,17 @@ h5,
 h6 {
   font-family: 'Lovechild';
 }
+h1,
+h2,
+h3 {
+  @apply mb-6;
+}
+h4,
+h5,
+h6 {
+  @apply mb-4;
+}
+
 .max-w-contain {
   max-width: 30em;
 }

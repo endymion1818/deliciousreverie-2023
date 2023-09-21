@@ -27,8 +27,8 @@ const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 <Layout pageTitle="home" slug="index">
       <p class="mb-2 text-lg">Delicious Reverie is the personal home of <a class="underline" href="/about-benjamin-read">Benjamin Read</a> on the web.</p>
       <p class="mb-4 text-lg">I'm an experienced <strong>Developer Relations</strong> product evangelist and community builder, a Senior <strong>JavaScript Software Engineer</strong> with experience of FinTech and PropTech, and a literature buff.</p>
-      <a class="btn btn-primary normal-case mb-6" href="/about-benjamin-read">More about me</a>
-      <h2 class="text-3xl mt-8 tracking-wide">⚙ Recent posts about engineering:</h2>
+      <a class="mb-6 normal-case btn btn-primary" href="/about-benjamin-read">More about me</a>
+      <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts about engineering:</h2>
       <!-- {res[0].data?.listPosts?.data.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
             {res[0].data?.listPosts?.data.map(post => (
@@ -36,18 +36,18 @@ const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
             ))}
           </div>
       )}
-      <a class="btn btn-primary mb-6 normal-case" href="/tags/engineering">&rarr; See all {res[0].data?.listPosts?.meta.totalCount} posts about engineering</a> -->
+      <a class="mb-6 normal-case btn btn-primary" href="/tags/engineering">&rarr; See all {res[0].data?.listPosts?.meta.totalCount} posts about engineering</a> -->
       <hr/>
-      <h2 class="text-3xl mt-8 pb-4 tracking-wide">📼 YouTube Channel</h2>
-      <p class="text-inherit text-lg mb-2">I also run a YouTube channel called "The Coding Cocoon" where I teach young adults how to code and design.</p>
-      {!stats.error && (<p class="text-inherit text-lg">The channel currently has {stats.items[0].statistics.subscriberCount.toLocaleString('en-GB')} subscribers and {prettyNumber(stats.items[0].statistics.viewCount)} views.</p>)}
-      {!videos.error && (<h3 class="text-2xl mt-8 mb-2 tracking-wide">Latest video:</h3>
+      <h2 class="pb-4 mt-8 text-3xl tracking-wide">📼 YouTube Channel</h2>
+      <p class="mb-2 text-lg text-inherit">I also run a YouTube channel called "The Coding Cocoon" where I teach young adults how to code and design.</p>
+      {!stats.error && (<p class="text-lg text-inherit">The channel currently has {stats.items[0].statistics.subscriberCount.toLocaleString('en-GB')} subscribers and {prettyNumber(stats.items[0].statistics.viewCount)} views.</p>)}
+      {!videos.error && (<h3 class="mt-8 mb-2 text-2xl tracking-wide">Latest video:</h3>
       <Embeds embed={{type: "youtube", link: `https://www.youtube.com/embed/${videos.items[0].id.videoId}` }} />
-      <h4 class="text-xl mt-8 tracking-wide">{videos.items[0].snippet.title}</h4>
-      <p class="text-inherit text-md mb-4">{videos.items[0].snippet.description}</p>)}
-      <a class="btn btn-primary normal-case" href="https://www.youtube.com/channel/UCzbL3ZYvJWzJbrbHCgZLDJQ">See all videos</a>
+      <h4 class="mt-8 text-xl tracking-wide">{videos.items[0].snippet.title}</h4>
+      <p class="mb-4 text-inherit text-md">{videos.items[0].snippet.description}</p>)}
+      <a class="normal-case btn btn-primary" href="https://www.youtube.com/channel/UCzbL3ZYvJWzJbrbHCgZLDJQ">See all videos</a>
       <Rabbits />
       <hr class="my-8 border-1 border-slate-600"/>
-      <h2 class="text-2xl mb-4">Webrings</h2>
+      <h2 class="mb-4 text-2xl">Webrings</h2>
       <the-claw-webring-widget />
 </Layout>
