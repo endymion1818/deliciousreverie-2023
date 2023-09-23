@@ -1,4 +1,5 @@
 ---
+import { siteUrl } from '../../sitedata';
 interface Props {
   footerMenuItems: Array<{
     title: string,
@@ -9,7 +10,6 @@ interface Props {
   }>;
   logo?: string;
   title: string;
-  url: string,
   acknowledgementText: string;
   socialLinks: {
     [key: string]: {
@@ -19,14 +19,14 @@ interface Props {
   }
 }
 
-const { footerMenuItems, logo, title, acknowledgementText, socialLinks, url } = Astro.props;
+const { footerMenuItems, logo, title, acknowledgementText, socialLinks } = Astro.props;
 ---
 <footer class="bg-accent text-base-content">
-  <div class="py-10 max-w-contain mx-auto">
-    <div class="footer gap-x-16 my-10">
+  <div class="py-10 mx-auto max-w-contain">
+    <div class="my-10 footer gap-x-16">
       <div>
-        <a class="items-center grid-flow-col" href={url}>
-          {logo ? <img class="max-w-xs" src={logo}> : <span class="font-display text-secondary text-3xl tracking-wide">{title}</span>}
+        <a class="items-center grid-flow-col" href={siteUrl}>
+          {logo ? <img class="max-w-xs" src={logo}> : <span class="text-3xl tracking-wide font-display text-secondary">{title}</span>}
         </a>
         {acknowledgementText}
       </div>
@@ -41,7 +41,7 @@ const { footerMenuItems, logo, title, acknowledgementText, socialLinks, url } = 
           </div>
       ))}
     </div>
-    <div class="footer items-center bg-grey-900 text-neutral-content">
+    <div class="items-center footer bg-grey-900 text-neutral-content">
       <h3 class="text-xl">Where you can find me:</h3>
       {socialLinks ? (
         <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

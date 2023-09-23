@@ -7,15 +7,25 @@ import { siteUrl } from '../../../sitedata';
 const allPosts = await Astro.glob('../posts/*.md');
 
 const tags = getTagsArrayFromPostList(allPosts)
+
+const alphabeticalTags = tags.sort((a, b) => {
+  if (a.title < b.title) {
+    return -1
+  }
+  if (a.title > b.title) {
+    return 1
+  }
+  return 0
+})
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
     <div class="my-5">
       <h1 class="mb-2 text-4xl">All Topics:</h1>
-      {tags.map(tag => (
+      {alphabeticalTags.map(tag => (
         <a href={`#${tag.title}`} class="m-2 badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
       ))}
       <h2 class="mt-6 text-4xl">All articles:</h2>
-      {tags.map((tag) => (
+      {alphabeticalTags.map((tag) => (
           <article class="card bg-secondary">
             <div class="card-body">
               <h2 id={tag.title} class="card-title text-inherit">
