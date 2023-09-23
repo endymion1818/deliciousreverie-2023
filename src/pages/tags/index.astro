@@ -2,36 +2,39 @@
 import Layout from '../../components/Layout.astro'
 import Otters from '../../components/Otters.astro'
 import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
+import { siteUrl } from '../../../sitedata';
 
 const allPosts = await Astro.glob('../posts/*.md');
 
-const content = getTagsArrayFromPostList(allPosts)
-
+const tags = getTagsArrayFromPostList(allPosts)
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
     <div class="my-5">
       <h1 class="mb-2 text-4xl">All Topics:</h1>
-      <!-- {content.map(tag => (
-        <a href={`#${tag.slug}`} class="m-2 badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
-      ))} -->
+      {tags.map(tag => (
+        <a href={`#${tag.title}`} class="m-2 badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
+      ))}
       <h2 class="mt-6 text-4xl">All articles:</h2>
-      <!-- {content.map((tag) => (
+      {tags.map((tag) => (
           <article class="card bg-secondary">
             <div class="card-body">
-              <h2 id={tag.slug} class="card-title text-inherit">
-                <a href={`/tags/${tag.slug}/`}>All {tag.title} articles</a>
+              <h2 id={tag.title} class="card-title text-inherit">
+                <a href={`/tags/${tag.title}/`}>All {tag.title} articles</a>
               </h2>
-              {tag.description && <p class="text-inherit">{tag.description}</p>}
-              {tag.posts.length ? (
+              {tag.posts.length > 0 && (
                 <ul class="list-disc">
                   {tag.posts.map(post => (
-                    <li class="ml-4"><a class="inline-block px-1 hover:underline" href={`/posts/${post.slug}/`}>{post.title}</a></li>
+                    <li class="ml-4">
+                      <a class="inline-block px-1 hover:underline" href={`${siteUrl}${post.url}/`}>
+                        {post.frontmatter.title}
+                      </a>
+                    </li>
                   ))}
                 </ul>
-              ) : null}
+              )}
             </div>
           </article>
-      ))} -->
+      ))}
     </div>
     <Otters />
 </Layout>
