@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How Website Forms Work - Delicious Reverie"
+title: "How Website Forms Work"
 description: "HTML Forms are one of the most fundamental elements in the web builder's toolbox. It would be a rare website that doesn't use this element to complete any of the most basic tasks someone might want to achieve. But there's a lot that goes on behind the scenes. Here's a bit more of an in-depth look at what happens when you click 'Send' on a form, and why you need some server-side code (somewhere) to handle that process.
 "
-categories:
+tags: engineering
 datePublished: 2018-07-06
 ---
 HTML Forms are one of the most fundamental elements in the web builder's toolbox. It would be a rare website that doesn't use this element to complete any of the most basic tasks someone might want to achieve. But there's a lot that goes on behind the scenes. Here's a bit more of an in-depth look at what happens when you click 'Send' on a form, and why you need some server-side code (somewhere) to handle that process.

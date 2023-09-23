@@ -1,15 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "2015 Year in review - Delicious Reverie"
+title: "2015 Year in review"
 description: "For the past year and a bit, I've worked at Blaze Communication, a marketing agency in Enfield. I've learned so many new things at this company. My knowledge and understanding is far, far different than it was a year ago. Here are some of my observations."
-categories:
+tags: personal
 datePublished: 2015-09-10
-canonicalLink: "https://deliciousreverie.co.uk/posts/year-in-review-2015/
 ---
-# 2015 Year in review
-
-Published on Thursday, 10 September 2015
-
 For the past year and a bit, I've worked at Blaze Communication, a marketing agency in Enfield. I've learned so many new things at this company. My knowledge and understanding is far, far different than it was a year ago. Here are some of my observations.
 
 All of these things could be blog posts in their own right; but I'm a fan of brevity.

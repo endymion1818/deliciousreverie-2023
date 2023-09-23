@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Publishing both JS and non-JS sites - Delicious Reverie"
+title: "Publishing both JS and non-JS sites"
 description: "It's always bothered me that the majority of internet users spend a lot of money downloading and running JavaScript, yet I enjoy building things with JavaScript, and want to provide an enhanced experience using JS ... without sacrificing their needs to do so. Now, there's an easier way to do both.
 "
-categories:
+tags: javascript, gatsby
 datePublished: 2020-09-18
 ---
 It's always bothered me that the majority of internet users spend a lot of money downloading and running JavaScript, yet I enjoy building things with JavaScript, and want to provide an enhanced experience using JS without sacrificing their needs to do so. Here's one way we can have the best of both worlds.

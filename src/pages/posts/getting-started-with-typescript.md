@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Getting Started with TypeScript - Delicious Reverie"
+title: "Getting Started with TypeScript"
 description: "TypeScript. You either love it, or hate it ... or are terrified of it. But it could be a valuable tool that benefits your workflow. This article, originally published in Net magazine, shows you how to get started with TypeScript
 "
-categories:
+tags: javascript, typescript
 datePublished: 2019-08-22
 ---
 Mention TypeScript to a developer who works with JavaScript and you'll probably get one of two responses: they will either struggle to understand why someone would NOT want to use TypeScript, or they will struggle to see why someone WOULD use it.

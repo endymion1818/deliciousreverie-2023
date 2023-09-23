@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Delaying click event in vanilla JavaScript - Delicious Reverie"
+title: "Delaying click event in vanilla JavaScript"
 description: "I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it.
 "
-categories:
+tags: javascript
 datePublished: 2016-03-22
 ---
 I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it.

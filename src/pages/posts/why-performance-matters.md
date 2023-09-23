@@ -1,15 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Why Performance Matters - Delicious Reverie"
+title: "Why Performance Matters"
 description: "Performance seems to be increasingly becoming a battleground for those of us who create websites. How has this situation arisen? How do we cope with these new requirements? How do we ensure our sites and web apps (sorry, Jeremy) don't suffer because of changing landscapes of user — and search engine — requirements.
 "
-categories:
+tags: engineering
 datePublished: 2015-10-06
 ---
-# Why Performance Matters
-
-Published on Tuesday, 6 October 2015
-
 Performance seems to be increasingly becoming a battleground for those of us who create websites. How has this situation arisen? How do we cope with these new requirements? How do we ensure our sites and web apps (sorry, Jeremy) don't suffer because of changing landscapes of user — and search engine — requirements.
 
 "Everyone has broadband now. Therefore, we no longer need to be concerned about site load times" said nobody, ever. But we may have assumed that the advent of much beeefier data plans would mean that load times could become a lower priority.

@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "On Having Delusions of Grandeur - Delicious Reverie"
+title: "On Having Delusions of Grandeur"
 description: "I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.
 "
-categories:
+tags: engineering, personal
 datePublished: 2015-06-02
 ---
 I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.

@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Wordpress theming with Backbone.js - Delicious Reverie"
+title: "Wordpress theming with Backbone.js"
 description: "You'll notice that there's not a huge amount of posts about JavaScript on my site. That's not an accident, I'm really only beginning to gain my feet with the language. Despite this I took the plunge and decided to build a Wordpress theme that uses Backbone.js to render the posts in a list. Here's a bit about the project."
-categories:
+tags: wordpress, javascript
 datePublished: 2016-01-06
 ---
 
@@ -10,7 +10,7 @@ You'll notice that there's not a huge amount of posts about JavaScript on my sit
 
 Backbone.js is one of the most stable of the Javascript frameworks, which is one of the reasons I chose to focus on it. I wanted to start with a stable framework that would allow me to get to grips with it properly, and that I didn't have to worry about a huge amount of refactoring when the next version came out. But it's also one of the smallest frameworks. Even with recommended dependencies jQuery and Underscore it's still faster than some of the larger frameworks out there. This appeals to my sense of what users are most in need of from us as developers.
 
-###Where I succeeded
+### Where I succeeded
 
 I'm going to talk as little as I can about the tools here. I'm exhausted at having to learn someone else's toolset to enable me to accomplish my work. I'm just going to say that it's good practice to break down your files into small blocks of code, this will really help you when it comes to debugging and maintenance of your code later on. So here's my JavaScript project folder setup:
 
@@ -19,12 +19,12 @@ I'm going to talk as little as I can about the tools here. I'm exhausted at havi
 |
 --js
 |
----1underscore.js
----2backbone.js
----3models.js
----4views.js
----5collection.js
----6router.js
+---1 underscore.js
+---2 backbone.js
+---3 models.js
+---4 views.js
+---5 collection.js
+---6 router.js
 ```
 
 note: I'm loading jQuery in separately from a CDN.

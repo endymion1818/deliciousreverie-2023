@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Code really is Poetry - Delicious Reverie"
+title: "Code really is Poetry"
 description: "I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about Babylon 5 (yes, really) and yet not wanting to part company again."
-categories:
+tags: personal
 datePublished: 2015-06-02
 ---
 I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about Babylon 5 (yes, really) and yet not wanting to part company again.

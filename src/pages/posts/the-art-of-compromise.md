@@ -1,14 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "The Art of Compromise - Delicious Reverie"
+title: "The Art of Compromise"
 description: "Working as part of a larger team often involves skills that aren't readily taught as part of a person's development career. But they are essential if you're going to be developing software as part of a team.
 "
-categories:
+tags: personal, engineering
 datePublished: 2019-08-08
 ---
-
-Published on Thursday, 8 August 2019
-
 We developers are inherently precious about things. Our tools. Our technologies. But we can't afford to be precious about those things too much. In fact, working in cross-functional teams and with other teams means that we sometimes need to compromise.
 
 I was seething.

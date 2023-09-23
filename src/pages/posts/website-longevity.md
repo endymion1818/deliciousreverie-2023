@@ -1,15 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "On website longevity - Delicious Reverie"
+title: "On website longevity"
 description: "When you build something, how long do you expect it to last? Whilst it might be easy to think about the things we create as our legacy to the world, that might not be the case when it comes to our online creations ...
 "
-categories:
+tags: engineering
 datePublished: 2020-03-31
 ---
-# On website longevity
-
-Published on Tuesday, 31 March 2020
-
 When you build something, how long do you expect it to last? Whilst it might be easy to think about the things we create as our legacy to the world, that might not be the case when it comes to our online creations ...
 
 When I was first experimenting with Gatsby, I built a site that I was really proud of. It was my first JAMStack project, and allowed me to publish content for a cause I wanted to support. However, only a few years later I found I could not continue to use it.

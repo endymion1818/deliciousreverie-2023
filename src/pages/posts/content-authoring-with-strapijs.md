@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Content Authoring with StrapiJs - Delicious Reverie"
+title: "Content Authoring with StrapiJs"
 description: "In order for people outside of the development team or community to use your software, care must be given to allow them to write and publish content with the least amount of friction or obstruction as possible. A well crafted interface that allows people to do this isn't easy. I have started to use Strapi as a serverless backend API interface recently and believe it's going to be a very useful solution for a lot of projects.
 "
-categories:
+tags: cms, wordpress, strapi
 datePublished: 2018-08-18
 ---
 For years, WordPress has been the de facto standard for content authoring on the web. The reasons for this are many, but principal among them is it's clean, easy-to-use interface that gives content authors control over nearly every aspect of their content. WordPress isn't going away, but hosting and maintaining it safely can be a challenge.

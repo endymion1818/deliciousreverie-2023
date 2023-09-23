@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Don't fear the JAMStack - Delicious Reverie"
+title: "Don't fear the JAMStack"
 description: "WordPress has long been the de facto publishing platform for the web. But many developers are hearing more about the JAMStack. Here's why I switched, and my take on where I think things are going to go from here.
 "
-categories:
+tags: hosting
 datePublished: 2020-09-03
 ---
 WordPress has long been the de facto publishing platform for the web. But many developers are hearing more about the JAMStack. Here's why I switched, and my take on where I think things are going to go from here.

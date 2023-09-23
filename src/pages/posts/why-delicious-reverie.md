@@ -1,14 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Why 'Delicious Reverie'? - Delicious Reverie"
+title: "Why 'Delicious Reverie'?"
 description: "I may have confused some of you with titling my personal site "Delicious Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English..."
-categories:
+tags: personal
 datePublished: 2015-02-11
 ---
-# Why 'Delicious Reverie'?
-
-Published on Wednesday, 11 February 2015
-
 I may have confused some of you with titling my personal site "Delicious Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English...
 
 ### Why not [benread.com](http://benread.com/)? [#](https://deliciousreverie.co.uk/posts/why-delicious-reverie/#why-not-benread.com)

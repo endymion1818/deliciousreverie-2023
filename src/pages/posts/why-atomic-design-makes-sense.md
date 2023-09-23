@@ -1,21 +1,17 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Why Atomic Design Makes Sense - Delicious Reverie"
+title: "Why Atomic Design Makes Sense"
 description: "Although I've really gotten into the SASS revolution, I haven't yet adopted a method for structuring elements of CSS. I guess it's because none of them strike me as particularly visual, and being a former print designer, I tend to think in those terms. But something about Brad Frost's Atomic Design principles makes sense to me. Here's why."
-categories:
+tags: css
 datePublished: 2015-11-23
 ---
-# Why Atomic Design Makes Sense
-
-Published on Monday, 23 November 2015
-
 Although I've really gotten into the SASS revolution, I haven't yet adopted a method for structuring elements of CSS. I guess it's because none of them strike me as particularly visual, and being a former print designer, I tend to think in those terms. But something about Brad Frost's Atomic Design principles makes sense to me. Here's why.
 
 When we're designing, we tend to think more about design principles instead of build principles. What I mean is that we think about rhythm, white space, alignment and these types of things. These are very necessary components of great web design as they are of design in other mediums.
 
 But the web is still a unique animal. If we're truly going to design for the web, we need to think about the medium itself, much as a printer considers the stock, the inks, and the situation artwork is going to be displayed in.
 
-#### [https://atomicdesign.bradfrost.com](https://atomicdesign.bradfrost.com/) [#](https://deliciousreverie.co.uk/posts/why-atomic-design-makes-sense/#https:atomicdesign.bradfrost.com)
+### [https://atomicdesign.bradfrost.com](https://atomicdesign.bradfrost.com/) [#](https://deliciousreverie.co.uk/posts/why-atomic-design-makes-sense/#https:atomicdesign.bradfrost.com)
 
 Atomic design really helps at this level: it helps us design repeatable elements that can be coded and re-used on different parts of our site. I don't intend to re-hash Atomic principles here, but take a look around, [perhaps at this post](https://blog.invisionapp.com/atomic-design-principles/), or [read a pertinent excerpt from the book](https://atomicdesign.bradfrost.com/chapter-2/#atomic-design-is-for-user-interfaces), to see what I mean.
 

@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How I Created My Home Web Server - Delicious Reverie"
+title: "How I Created My Home Web Server"
 description: "I decided to try to build my own web server using my home router, an old PC, and a Linux operating system."
-categories:
+tags: personal, linux
 datePublished: 2017-02-18
 ---
 Is it just me or does Apple's iCloud seem like a very simple solution to a problem all of us in a connected world face? That of storing, managing and sharing photos of our loved ones, holidays and interests with others?

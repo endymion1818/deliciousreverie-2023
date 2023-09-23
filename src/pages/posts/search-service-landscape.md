@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "The search service landscape - Delicious Reverie"
+title: "The search service landscape"
 description: "Search is a massive growth market but there is only one market leader and many inadequate contenders. Here's why I think we should be building more search providers to expand the market.
 "
-categories:
+tags: engineering
 datePublished: 2020-08-28
 ---
 Search is a massive growth market but there is only one market leader and many inadequate contenders. Here's why I think we should be building more search providers to expand the market.

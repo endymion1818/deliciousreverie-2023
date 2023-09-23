@@ -1,15 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "What is Typescript? - Delicious Reverie"
+title: "What is Typescript?"
 description: "What is TypeScript? How can it be useful to a person learning web development? I was asked this question on a Slack dicussion recently, and came up with the following example which seemed to be enough for my friends to grasp it.
 "
-categories:
+tags: javascript, typescript, engineering
 datePublished: 2020-05-14
 ---
-# What is Typescript?
-
-Published on Thursday, 14 May 2020
-
 What is TypeScript? How can it be useful to a person learning web development? I was asked this question on a Slack dicussion recently, and came up with the following example which seemed to be enough for my friends to grasp it.
 
 JavaScript is a dynamic language.Here’s an example using the browser’s console:

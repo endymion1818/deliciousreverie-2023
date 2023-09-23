@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "A congratulatory message with hidden meaning - Delicious Reverie"
+title: "A congratulatory message with hidden meaning"
 description: "I'm particularly proud of this piece of artwork and messaging I came up with for the Webiny community, not only because of the message it conveys to our community, but also because it also has a hidden message."
-categories:
+tags: devrel, design
 datePublished: 2022-11-30
 ---
 One of the objectives I set out to achieve at Webiny was to increase the positivity among members of our audience in the hopes that they would become more vocal participants of the community and join in a bit more with our discussions.

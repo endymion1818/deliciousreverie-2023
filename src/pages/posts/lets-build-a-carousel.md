@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Let's build a carousel! - Delicious Reverie"
+title: "Let's build a carousel!"
 description: "Carousels are a staple of web development life. And thankfully, there are a lot of good off-the-shelf ones ready to build into your project. But it's a good challenge to see if you can build one yourself."
-categories:
+tags: javascript
 datePublished: 2023-05-13
 ---
 **Carousels are a staple of web development life. And thankfully, there are a lot of good off-the-shelf ones ready to build into your project. But it's a good challenge to see if you can build one yourself.**

@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Atomic Development - Delicious Reverie"
+title: "Atomic Development"
 description: "Structuring components in a reusable, discoverable way has been a challenge for some recent projects I've worked on. I've seen different approaches used, but now I think I've found a method that's basically intuitive, avoids duplication of effort and facilitates easy discovery of components."
-categories:
+tags: css, javascript
 datePublished: 2018-10-04
 canonicalLink: "https://www.creativebloq.com"
 ---

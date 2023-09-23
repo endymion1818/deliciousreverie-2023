@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "monorepos. - Delicious Reverie"
+title: "monorepos."
 description: "I've recently been introduced to the use of monorepos to manage projects and have a few thoughts on the idea.
 "
-categories:
+tags: engineering, javascript
 datePublished: 2021-07-04
 ---
 I've recently been introduced to the use of monorepos to manage projects, and have a few thoughts on the idea.

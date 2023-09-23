@@ -22,6 +22,11 @@ const getYouTubeStatistics = async (channelId) => {
 
 const stats = await getYouTubeStatistics('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
+
+const latestPosts = allPosts?.sort((a, b) => {
+        // Sort newest posts first
+        return new Date(b.frontmatter.datePublished).getTime() - new Date(a.frontmatter.datePublished).getTime();
+      }).slice(0, 3)
 ---
 <script src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module"></script>
 
@@ -30,14 +35,11 @@ const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
       <p class="mb-4 text-lg">I'm an experienced <strong>Developer Relations</strong> product evangelist and community builder, a Senior <strong>JavaScript Software Engineer</strong> with experience of FinTech and PropTech, and a literature buff.</p>
       <a class="mb-6 normal-case btn btn-primary" href="/about-benjamin-read">More about me</a>
       <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts about engineering:</h2>
-      {allPosts?.length > 0 && (
+      {latestPosts?.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
-            {allPosts?.slice(0, 3).map(post => (
-              <div>
-                {JSON.stringify(post)}
-              </div>
+            {latestPosts.map(post => (
+              <ArticleCard post={post} />
             ))}
-
           </div>
       )}
       <a class="mb-6 normal-case btn btn-primary" href="/tags/engineering">&rarr; See all {allPosts.length + 1} posts about engineering</a>

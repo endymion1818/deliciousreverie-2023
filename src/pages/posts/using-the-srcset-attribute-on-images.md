@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Using the Srcset attribute on images - Delicious Reverie"
+title: "Using the Srcset attribute on images"
 description: "So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here.
 "
-categories:
+tags: accessibility
 datePublished: 2016-01-15
 ---
 # Using the Srcset attribute on images
@@ -12,7 +12,7 @@ Published on Friday, 15 January 2016
 
 So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here.
 
-### Situation 1: You want to use SVGs, but need to support browsers that don't [#](https://deliciousreverie.co.uk/posts/using-the-srcset-attribute-on-images/#situation-1:-you-want-to-use-svgs-but-need-to-support-browsers-that-don't)
+## Situation 1: You want to use SVGs, but need to support browsers that don't [#](https://deliciousreverie.co.uk/posts/using-the-srcset-attribute-on-images/#situation-1:-you-want-to-use-svgs-but-need-to-support-browsers-that-don't)
 
 SVG support is fairly advanced across the browser spectrum (above), but srcset is supported less, especially by legacy IE browsers (below). This allows us to use the srcset attribute to specify an SVG image (or WebP for that matter), allowing newer browsers to download the Srcset image in preference, and older browsers to use the fallback .png file (or whatever else).
 

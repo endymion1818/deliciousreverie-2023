@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Dynamic client side routes in GatsbyJS - Delicious Reverie"
+title: "Dynamic client side routes in GatsbyJS"
 description: "Would you use GatsbyJS for a dynamic app? Yes I would. The reason is that I can make good use of Gatsby's great developer experience, as well as do everything I would normally do in a React application. Here's how I recently implemented dynamic routing.
 "
-categories:
+tags: javascript, gatsby
 datePublished: 2020-06-18
 ---
 Would you use GatsbyJS for a dynamic app? Yes I would. The reason is that I can make good use of Gatsby's great developer experience, as well as do everything I would normally do in a React application. Here's how I recently implemented dynamic routing.

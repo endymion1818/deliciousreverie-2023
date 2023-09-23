@@ -1,13 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Three Conversations to Serverless - Delicious Reverie"
+title: "Three Conversations to Serverless"
 description: "When Im explaining the idea of Serverless architecture it often takes three conversations before someone understands where I'm coming from, why we put up with the sometimes difficult to understand restrictions it puts on development, and ultimately why it can be extremely useful. In this post, I'm going to document these three conversations that Ive had with many people in the last few months.
 "
-categories:
+tags: serverless
 datePublished: 2018-11-09
 ---
-
-Published on Friday, 9 November 2018
 
 Serverless isn't such a new concept but it is still difficult to understand for many of us. I've been privileged to work with some great people over the past few months, and I've really been helped to understand serverless because of the questions they've raised, many of which I couldn't answer straight away. Often their questions have got me thinking about different ways to explain serverless.
 

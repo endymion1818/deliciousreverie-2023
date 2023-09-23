@@ -1,15 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Using Pop!_OS for Work - Delicious Reverie"
+title: "Using Pop!_OS for Work
 description: "In November last year I switched from using Windows at my place of work to using Pop!_OS by System76, an Ubuntu derivative designed for developers, researchers and scientists. What motivated me to make the switch? What benefits, and disadvantages, has it brought me?
 "
-categories:
+tags: linux
 datePublished: 2018-02-10
 ---
-# Using Pop!\_OS for Work
-
-Published on Saturday, 10 February 2018
-
 In November last year I switched from using Windows at my place of work to using Pop!\_OS by System76, an Ubuntu derivative designed for developers, researchers and scientists. What motivated me to make the switch? What benefits, and disadvantages, has it brought me?
 
 When I came to work at my current employer, I got given a PC to develop on. I was eager to fit in and please everyone, and accepted the situation with the single caveat that it had to run WSL (Windows Subsystem for Linux, commonly known as Linux on Windows).

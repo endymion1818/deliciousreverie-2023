@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "SVG Animation on Hover with GreenSock - Delicious Reverie"
+title: "SVG Animation on Hover with GreenSock"
 description: "One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers."
-categories:
+tags: javascript, animation
 datePublished: 2017-05-21
 ---
 

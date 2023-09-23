@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Freelancing: options and suggestions - Delicious Reverie"
+title: "Freelancing: options and suggestions"
 description: "Many of us dream someday of freelancing and living a ... less restrictive? ... lifestyle. But is it truly the best option? I freelanced for 7 years before the Credit Crunch killed my business. Looking back, here are a few of the questions I've been asked about freelancing.
 "
-categories:
+tags: personal
 datePublished: 2020-09-07
 ---
 Many of us dream someday of freelancing and living a ... less restrictive? ... lifestyle. But is it truly the best option? I freelanced for 7 years before the Credit Crunch killed my business. Looking back, here are a few of the questions I've been asked about freelancing.

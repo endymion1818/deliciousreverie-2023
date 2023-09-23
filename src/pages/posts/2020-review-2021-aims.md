@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "2020 Review / 2021 Aims - Delicious Reverie"
+title: "2020 Review / 2021 Aims"
 description: "2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years...
 "
-categories:
+tags: personal
 datePublished: 2020-12-04
 ---
 2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years...

@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "On Being An Advocate - Delicious Reverie"
+title: "On Being An Advocate"
 description: "I've always been interested in psychology but never went further than college with it. Recently a friend introduced me to the Meyers-Briggs Type Indicator Test. It illuminated some important traits of my personality and hilighted the motivation behind the goals I have. I thought I'd go over a few points that interested me here.
 "
-categories:
+tags: personal
 datePublished: 2016-01-23
 ---
 I've always been interested in psychology but never went further than college with it. Recently a friend introduced me to the Meyers-Briggs Type Indicator Test. It illuminated some important traits of my personality and hilighted the motivation behind the goals I have. I thought I'd go over a few points that interested me here.

@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Publishing Poetry with Webiny CMS and Astro - Delicious Reverie"
+title: "Publishing Poetry with Webiny CMS and Astro"
 description: "I've wanted to have the ability on my blog to render poetry in a way that was conducive to reading, and I think I've finally managed to achieve that with my current tech stack, and some repurposing of tools I already use."
-categories:
+tags: personal
 datePublished: 2023-03-10
 ---
 Publishing poetry on the web is ... tricky.

@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Testing with Apollo Client mock provider - Delicious Reverie"
+title: "Testing with Apollo Client mock provider"
 description: "Apollo's MockProvider is a great tool for testing mutations, however it's a little bit magical, making errors a little difficult to find. If your testing your error state, this might come in handy.
 "
-categories:
+tags: javascript, graphql
 datePublished: 2022-01-02
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: " From Wordpress to Developing in React — Starting to See It - Delicious Reverie"
+title: " From Wordpress to Developing in React — Starting to See It"
 description: "I recently decided to dive into learning React with a few courses and some experimentation. I had the aim of building a site in Gatsby.js as a test for building sites entirely in React. This is what I found out. This article was published on the gatsby.js blog.
 "
-categories:
+tags: wordpress, javascript, cms
 datePublished: 2017-10-12
 canonicalLink: "https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/"
 ---

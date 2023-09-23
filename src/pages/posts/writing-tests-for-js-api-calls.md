@@ -1,15 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How to test JavaScript API Calls - Delicious Reverie"
+title: "How to test JavaScript API Calls"
 description: "In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API."
-categories:
+tags: javascript, testing
 datePublished: 2020-04-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/writing-tests-for-js-api-calls/"
 ---
-# How to test JavaScript API Calls
-
-Published on Thursday, 9 April 2020
-
 In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API.
 
 This is an important distinction from what we covered previously because writing tests for UI components is very different from tests like this, and I hope that you'll learn some more things to help you ensure that all of your code is production ready, which will give you and your stakeholders more confidence when publishing new code.

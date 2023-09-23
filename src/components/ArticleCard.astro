@@ -1,31 +1,26 @@
 ---
-import Embeds from "./Embeds.astro"
 import FormatDate from "./FormatDate.astro"
 
 const { post } = Astro.props
 const { frontmatter, url } = post
 ---
 <a href={`/${url}/`} class="hover:tw-bg-zinc-400">
-  <!-- {post.shareCard && (
+  {post.shareCard && (
     <img src={post.shareCard} />
-  )} -->
-  {JSON.stringify(post)}
+  )}
   <div class="py-5">
     <h2 class="mb-2 text-2xl tracking-wide card-title text-inherit">
-      <a class="hover:underline" href={`/${post.slug}/`}>{frontmatter.title}</a>
+      <a class="hover:underline" href={`/${post.url}/`}>{frontmatter.title}</a>
     </h2>
     <p class="text-lg text-inherit">{post.description}</p>
-    <!-- {post.embed?.link && (
-      <Embeds embed={post.embed}/>
-    )} -->
-    {frontmatter.publishDate && <p class="my-2">Published on <FormatDate datetime={frontmatter.publishDate}/></p>}
-    <!-- {tags?.length ? (
+    {frontmatter.datePublished && <p class="my-2 ml-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
+    {frontmatter?.tags?.length ? (
       <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
-        {tags?.map(tag => (
+        {frontmatter.tags?.map(tag => (
           <a href={`/${tag.slug}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
         ))}
       </div>
-    ) : null} -->
+    ) : null}
   </div>
 </a>

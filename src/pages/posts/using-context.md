@@ -1,14 +1,12 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Better Performance with the React Context API - Delicious Reverie"
+title: "Better Performance with the React Context API"
 description: "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine.
 "
-categories:
+tags: javascript, react
 datePublished: 2019-04-08
 canonicalLink: "https://www.creativebloq.com"
 ---
-# Better Performance with the React Context API
-
 Published on Monday, 8 April 2019 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
 
 People are demanding more and more out of their online services, and businesses strive to excel these demands, leading to more and more complex sites ... and larger JavaScript bundles too!

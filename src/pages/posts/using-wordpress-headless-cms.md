@@ -1,13 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Using WordPress as a Headless CMS - Delicious Reverie"
+title: "Using WordPress as a Headless CMS"
 description: "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
-categories:
+tags: cms, wordpress
 datePublished: 2018-07-25
 canonicalLink: "https://www.creativebloq.com"
 ---
-
-Published on Wednesday, 25 July 2018 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
 
 In case you missed it, here's the article and links to the example code I wrote to help developers get started with Gatsbyjs.
 

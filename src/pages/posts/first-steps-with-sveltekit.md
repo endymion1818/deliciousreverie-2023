@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "First steps with Sveltekit - Delicious Reverie"
+title: "First steps with Sveltekit"
 description: "SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about."
-categories:
-datePublished: 2021-05-27#
+tags: javascript, svelte
+datePublished: 2021-05-27
 ---
 Svelte is a new framework for JavaScript ... hear me out! It does seem to some people that there's a new JavaScript framework out every day. And there are a lot of new ones at the minute. But SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about.
 

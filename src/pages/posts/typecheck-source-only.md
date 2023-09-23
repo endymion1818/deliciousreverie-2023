@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How to scope Typecheck to your project folder - Delicious Reverie"
+title: "How to scope Typecheck to your project folder"
 description: "Typecheck should only run against the code you write for your project, but I found it's not that obvious to configure that...
 "
-categories:
+tags: javascript, typescript
 datePublished: 2020-03-31
 ---
 Published on Tuesday, 31 March 2020

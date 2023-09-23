@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How to resolve Jest issues: tests passing, but code coverage fails! - Delicious Reverie"
+title: "How to resolve Jest issues: tests passing, but code coverage fails!"
 description: "Today I'm continuing with my trend of making silly mistakes so you don't have to. The subject today is asynchronous tests in Jest. I've spent too much time on this one, and I don't want you to have the same trouble!
 "
-categories:
+tags: javascript, testing
 datePublished: 2021-08-02
 ---
 Today I'm continuing with my trend of making silly mistakes so you don't have to.

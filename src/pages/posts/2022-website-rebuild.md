@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "2022 Website Rebuild - Delicious Reverie"
+title: "2022 Website Rebuild"
 description: "I've just relaunched my website with an entirely new stack, here's what it consists of and why I've made these technical decisions."
-categories:
+tags: personal
 datePublished: 2022-11-25
 ---
 Around a year ago I rebuilt this website using [Eleventy](https://www.11ty.dev), the static site generator. I did this because my existing site was using [Gatsby](https://www.gatsbyjs.com) but was [using a plugin which removed the JavaScript in a way that caused errors on the site](https://www.gatsbyjs.com/plugins/gatsby-plugin-no-javascript/\). I didn't want to put the JavaScript-heavy build back, but the broken links were causing errors in the console and I knew it  wasn't the best approach to a JavaScript-less Gatsby site, but at the time there was no alternative.
