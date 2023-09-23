@@ -1,15 +1,21 @@
 ---
 import Layout from '../../components/Layout.astro'
 import Otters from '../../components/Otters.astro'
+import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
+
+const allPosts = await Astro.glob('../posts/*.md');
+
+const content = getTagsArrayFromPostList(allPosts)
+
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
     <div class="my-5">
-      <h1 class="text-4xl mb-2">All Topics:</h1>
-      {content.map(tag => (
-        <a href={`#${tag.slug}`} class="badge badge-outline m-2 hover:badge-primary hover:text-white">{tag.title}</a>
-      ))}
-      <h2 class="text-4xl mt-6">All articles:</h2>
-      {content.map((tag) => (
+      <h1 class="mb-2 text-4xl">All Topics:</h1>
+      <!-- {content.map(tag => (
+        <a href={`#${tag.slug}`} class="m-2 badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
+      ))} -->
+      <h2 class="mt-6 text-4xl">All articles:</h2>
+      <!-- {content.map((tag) => (
           <article class="card bg-secondary">
             <div class="card-body">
               <h2 id={tag.slug} class="card-title text-inherit">
@@ -19,13 +25,13 @@ import Otters from '../../components/Otters.astro'
               {tag.posts.length ? (
                 <ul class="list-disc">
                   {tag.posts.map(post => (
-                    <li class="ml-4"><a class="hover:underline px-1 inline-block" href={`/posts/${post.slug}/`}>{post.title}</a></li>
+                    <li class="ml-4"><a class="inline-block px-1 hover:underline" href={`/posts/${post.slug}/`}>{post.title}</a></li>
                   ))}
                 </ul>
               ) : null}
             </div>
           </article>
-      ))}
+      ))} -->
     </div>
     <Otters />
 </Layout>

@@ -6,7 +6,8 @@ description: "I've been keenly interested in a specific subset of CMSes since ab
 tags: 
   - javascript
   - wordpress
-  - webiny,cms
+  - webiny
+  - cms
   - strapi
 datePublished: 2020-11-23
 ---
