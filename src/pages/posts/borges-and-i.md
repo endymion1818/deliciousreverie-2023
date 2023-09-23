@@ -1,16 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Borges and I - Delicious Reverie"
-description: "As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, and really enjoyed reading the works of Kafka, Alain Robbe-Gruillet, Satre, Camus, Samuel Beckett and others. Though these writings aren't what you might call "easy reading", they appealed to this somewhat narcissistic, isolated youth who already felt as if he didn't really belong anywhere.
-"
+description: "As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, and really enjoyed reading the works of Kafka, Alain Robbe-Gruillet, Satre, Camus, Samuel Beckett and others. Though these writings aren't what you might call "easy reading", they appealed to this somewhat narcissistic, isolated youth who already felt as if he didn't really belong anywhere."
 categories:
 datePublished: 2017-09-30
-canonicalLink: "https://deliciousreverie.co.uk/posts/borges-and-i/
 ---
-# Borges and I
-
-Published on Saturday, 30 September 2017
-
 As a teenager, and on into my twenties, I developed a real affinity for existential philosophy, and really enjoyed reading the works of Kafka, Alain Robbe-Gruillet, Satre, Camus, Samuel Beckett and others. Though these writings aren't what you might call "easy reading", they appealed to this somewhat narcissistic, isolated youth who already felt as if he didn't really belong anywhere.
 
 One author that I never encountered as part of that group was the Argentinian writer and translator Jorge Luis Borges, and it wasn't until I stumbled across a collection of his work that I even heard of him.

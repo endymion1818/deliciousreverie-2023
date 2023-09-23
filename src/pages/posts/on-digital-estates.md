@@ -5,12 +5,7 @@ description: "I recently heard the term 'Digital estate' to mean the technical p
 "
 categories:
 datePublished: 2021-11-29
-canonicalLink: "https://deliciousreverie.co.uk/posts/on-digital-estates/
 ---
-# On digital estates
-
-Published on Monday, 29 November 2021
-
 I recently heard the term 'Digital estate' to mean the technical property of an organisation. This, and the associations the term provides, have got me thinking about how we contribute to the success of organisations over time...
 
 Let's start with this question: what does the word "estate" conjure up in your mind? I think it might include a variety of things. A house? Probably? The physical things you own? Maybe.

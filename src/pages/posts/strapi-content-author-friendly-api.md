@@ -5,11 +5,7 @@ description: "I've worked in a few different capacities around the web, and can 
 "
 categories:
 datePublished: 2018-06-08
-canonicalLink: "https://deliciousreverie.co.uk/posts/strapi-content-author-friendly-api/
 ---
-# Content-Author friendly APIs with Strapi
-
-Published on Friday, 8 June 2018
 
 I've worked in a few different capacities around the web, and can see the value of interfaces that those writing content for the web feel comfortable using. I'm also becoming more comfortable with JavaScript, and want to find alternatives to the PHP tools I've been using. On that journey, I discovered Strapi.
 

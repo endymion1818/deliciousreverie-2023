@@ -5,7 +5,6 @@ description: "So, I've been using the relatively new (and somewhat confusing) sr
 "
 categories:
 datePublished: 2016-01-15
-canonicalLink: "https://deliciousreverie.co.uk/posts/using-the-srcset-attribute-on-images/
 ---
 # Using the Srcset attribute on images
 

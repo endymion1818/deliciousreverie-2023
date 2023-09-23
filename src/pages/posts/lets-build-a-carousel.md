@@ -4,12 +4,7 @@ title: "Let's build a carousel! - Delicious Reverie"
 description: "Carousels are a staple of web development life. And thankfully, there are a lot of good off-the-shelf ones ready to build into your project. But it's a good challenge to see if you can build one yourself."
 categories:
 datePublished: 2023-05-13
-canonicalLink: "https://deliciousreverie.co.uk/posts/lets-build-a-carousel/
 ---
-# Let's build a carousel!
-
-Published on Saturday, 13 May 2023
-
 **Carousels are a staple of web development life. And thankfully, there are a lot of good off-the-shelf ones ready to build into your project. But it's a good challenge to see if you can build one yourself.**
 
 This is somewhat of a personal milestone for me: I remember when I was a new software engineer tinkering with different solutions thinking that I probably would never be able to build one from scratch. But, here it is, I did it in a couple of days.

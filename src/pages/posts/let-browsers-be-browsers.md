@@ -5,12 +5,7 @@ description: "I've been hearing a lot of different, seemingly contradictory mess
 "
 categories:
 datePublished: 2015-11-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/let-browsers-be-browsers/
 ---
-# Let Browsers be Browsers
-
-Published on Monday, 23 November 2015
-
 I've been hearing a lot of different, seemingly contradictory messages from the industry in recent weeks regarding frontend frameworks and progressive enhancement. I got so frustrated that I started a discussion on Web Freelancers Hub about it. I felt the answers that came back were worth documenting.
 
 My original post to the group:

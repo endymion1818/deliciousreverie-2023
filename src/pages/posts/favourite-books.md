@@ -5,12 +5,7 @@ description: "I was asked to list some of my favourite books recently, so I comp
 "
 categories:
 datePublished: 2020-06-27
-canonicalLink: "https://deliciousreverie.co.uk/posts/favourite-books/
 ---
-# Some of my favourite books
-
-Published on Saturday, 27 June 2020
-
 I have found it very difficult to collect this list together, I go through phases with books and these might be considered my current favourites ... but here goes!
 
 In no strict order of preference:

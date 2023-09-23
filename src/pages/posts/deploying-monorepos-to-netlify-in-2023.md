@@ -4,12 +4,7 @@ title: "Deploying Nx monorepos to Netlify in 2023 - Delicious Reverie"
 description: "Monorepos with Nx on Netlify has been my stack of choice over the past few years. I really enjoy using both tools to publish an ever-growing series of websites for my hobbies. But there have been a few changes to both Nx and Netlify in that time. This article updates one on the Netlify blog that's a little out of date."
 categories:
 datePublished: 2023-05-31
-canonicalLink: "https://deliciousreverie.co.uk/posts/Deploying Nx monorepos to Netlify-in-2023/
 ---
-# Deploying Nx monorepos to Netlify in 2023
-
-Published on Wednesday, 31 May 2023
-
 **Monorepos with Nx on Netlify has been my stack of choice over the past few years. I really enjoy using both tools to publish an ever-growing series of websites for my hobbies. But there have been a few changes to both Nx and Netlify recently. This article updates one on the Netlify blog that's a little out of date.**
 
 [Here's the original article,](https://levelup-styleguide.netlify.app/blog/2020/04/21/deploying-nx-monorepos-to-netlify/) which is still really useful and goes into a lot of background as to why you might want to use a monorepo to build your frontends. It's a great article and I recommend you read the first half just to get some background. But later in the article the author for some reason digresses into setting up a CircleCI pipeline. Personally I don't find a lot of value in doing that for my frontends, and I think it distracts from the core subject a little.

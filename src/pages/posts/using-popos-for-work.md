@@ -5,7 +5,6 @@ description: "In November last year I switched from using Windows at my place of
 "
 categories:
 datePublished: 2018-02-10
-canonicalLink: "https://deliciousreverie.co.uk/posts/using-popos-for-work/
 ---
 # Using Pop!\_OS for Work
 

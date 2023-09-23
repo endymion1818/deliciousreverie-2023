@@ -4,12 +4,7 @@ title: "Is Gatsby in decline? - Delicious Reverie"
 description: "I'm sure I was one of the earliest users of Gatsby. But is it in decline? The title is a bit click-baity because I don't really feel that it is. Rather, I think it's well on it's way to finding it's niche."
 categories:
 datePublished: 2022-08-13
-canonicalLink: "https://deliciousreverie.co.uk/posts/is-gatsby-decline/
 ---
-# Is Gatsby in decline?
-
-Published on Saturday, 13 August 2022
-
 Recently I encountered a Reddit thread along the lines of "is Gatsby dead?", and even some colleagues I respect were agreeing that yes, Gatsby is in decline, suggesting there are better technologies out there.
 
 Whilst there are a good range of frameworks we can use these days, I don't necessarily agree that Gatsby is in decline and people should avoid using it.

@@ -5,12 +5,7 @@ description: "HTML Forms are one of the most fundamental elements in the web bui
 "
 categories:
 datePublished: 2018-07-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/how-website-forms-work/
 ---
-# How Website Forms Work
-
-Published on Friday, 6 July 2018
-
 HTML Forms are one of the most fundamental elements in the web builder's toolbox. It would be a rare website that doesn't use this element to complete any of the most basic tasks someone might want to achieve. But there's a lot that goes on behind the scenes. Here's a bit more of an in-depth look at what happens when you click 'Send' on a form, and why you need some server-side code (somewhere) to handle that process.
 
 First of all, we need a short history lesson about the form HTML element.

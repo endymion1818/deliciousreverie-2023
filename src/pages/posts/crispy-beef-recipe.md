@@ -5,12 +5,7 @@ description: "I've tried several recipes for crispy beef, and have finally gaine
 "
 categories:
 datePublished: 2022-07-28
-canonicalLink: "https://deliciousreverie.co.uk/posts/crispy-beef-recipe/
 ---
-# My Recipe for Crispy Beef
-
-Published on Thursday, 28 July 2022
-
 I've tried several recipes for crispy beef, and have finally gained confidence enough to make it on my own terms. Here's a simplified version that I now follow. It's quite rough, and it's meant to be adapted.
 
 The trick with crispy beef is to keep it dry enough so that it will firm up on cooking. This also depends on getting enough heat for it to caramelise.

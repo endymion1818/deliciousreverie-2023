@@ -1,16 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Advanced Custom Fields and Bootstrap Tabs - Delicious Reverie"
-description: "I'm not a huge fan of Advanced Custom Fields, but there was a requirement to use it in a recent project that had Bootstrap as a basis for the UI. The challenge for me was to get Bootstrap nav-tabs to play nice with an ACF repeater field.
-"
+description: "I'm not a huge fan of Advanced Custom Fields, but there was a requirement to use it in a recent project that had Bootstrap as a basis for the UI. The challenge for me was to get Bootstrap nav-tabs to play nice with an ACF repeater field."
 categories:
 datePublished: 2015-06-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/advanced-custom-fields-bootstrap-tabs/
 ---
-# Advanced Custom Fields and Bootstrap Tabs
-
-Published on Tuesday, 2 June 2015
-
 I'm not a huge fan of Advanced Custom Fields, but there was a requirement to use it in a recent project that had Bootstrap as a basis for the UI. The challenge for me was to get Bootstrap [nav-tabs](https://getbootstrap.com/components/#nav-tabs) to play nice with an [ACF repeater field](https://www.advancedcustomfields.com/img/querying-the-database-for-repeater-sub-field-values/).
 
 I started with the basic HTML markup for Bootstrap's Nav Tabs:

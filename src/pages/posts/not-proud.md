@@ -5,12 +5,7 @@ description: "I'm not proud of the code I wrote today. In fact, I hated it. But 
 "
 categories:
 datePublished: 2019-01-30
-canonicalLink: "https://deliciousreverie.co.uk/posts/not-proud/
 ---
-# I'm Not Proud
-
-Published on Wednesday, 30 January 2019
-
 Today was a stressful day. I was working to a set deadline on which a lot of other tasks depended. I felt that if I failed to achieve my work, there would be a cascade effect that could lead to delaying the release of a product I have been working on.
 
 I didn't want that to happen. But I'm not proud of what I did to avoid it.

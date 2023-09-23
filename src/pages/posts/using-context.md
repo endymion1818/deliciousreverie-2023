@@ -5,7 +5,7 @@ description: "Build for complexity and performance in this deep dive into React'
 "
 categories:
 datePublished: 2019-04-08
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
 # Better Performance with the React Context API
 

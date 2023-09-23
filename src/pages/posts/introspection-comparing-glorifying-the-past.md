@@ -5,12 +5,7 @@ description: "This post is a little bit of introspection for me. I've recently b
 "
 categories:
 datePublished: 2021-09-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/introspection-comparing-glorifying-the-past/
 ---
-# Introspection: comparing myself to others, glorifying the past
-
-Published on Saturday, 18 September 2021
-
 This post is a little bit of introspection for me. I've recently been given a bit of time to think about certain things, and I'd like a make a note of them for my own personal growth.
 
 If this isn't the kind of article you're looking for from me, feel free to skip this one.

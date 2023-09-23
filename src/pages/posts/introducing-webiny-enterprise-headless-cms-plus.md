@@ -4,12 +4,8 @@ title: "Introducing Webiny Enterprise CMS+ - Delicious Reverie"
 description: "Originally published for the Webiny community and Product Hunt launch. It introduces a new marketing term that was conjured up to provoke discussions about what value Webiny brings to organizations apart from the CMS aspect, and because of it's serverless nature."
 categories:
 datePublished: 2022-10-12
-canonicalLink: "https://www.webiny.com/blog/introducing-webiny-enterprise-headless-cms-plus/
+canonicalLink: "https://www.webiny.com/blog/introducing-webiny-enterprise-headless-cms-plus/"
 ---
-# Introducing Webiny Enterprise CMS+
-
-Published on Wednesday, 12 October 2022 , originally at [https://www.webiny.com/blog/introducing-webiny-enterprise-headless-cms-plus/](https://www.webiny.com/blog/introducing-webiny-enterprise-headless-cms-plus/)
-
 We have struggled for a long time on the question of how to position Webiny as a product. From the start, it was clear that we we were building was a feature-rich product that didn't quite sit firmly in the camp of "Headless CMS", yet that is what the majority of our users focused in on.
 
 As a result, we have doubled down on that particular marketing, building more features and explanation around the concept of Webiny as a Headless CMS. However, as I'm sure you realize, it's an extremely crowded space. And we still didn't quite fit in.

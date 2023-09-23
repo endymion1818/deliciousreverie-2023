@@ -5,9 +5,7 @@ description: "I was invited to give a talk at London dev meetup JS Roundabout on
 "
 categories:
 datePublished: 2021-01-26
-canonicalLink: "https://deliciousreverie.co.uk/posts/talk-accessibility-you/
 ---
-# Accessibility and you
 
 Published on Tuesday, 26 January 2021
 

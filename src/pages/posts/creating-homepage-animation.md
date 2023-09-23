@@ -5,12 +5,7 @@ description: "I made the original animation for this site when I was using Hugo,
 "
 categories:
 datePublished: 2020-11-21
-canonicalLink: "https://deliciousreverie.co.uk/posts/creating-homepage-animation/
 ---
-# Creating my homepage animation
-
-Published on Saturday, 21 November 2020
-
 I made the original animation for this site when I was using Hugo, but it's taken some time to refactor to React. Here's the story of how I achieved that.
 
 I wanted this site to be pretty minimal, but a few nice little touches can really make a website stand out. That's why I made the animation here on the homepage. You have to scroll up & down slowly to see it ...

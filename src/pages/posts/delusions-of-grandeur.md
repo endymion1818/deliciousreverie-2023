@@ -5,12 +5,7 @@ description: "I'm not as good at this as I thought I was. This much became appar
 "
 categories:
 datePublished: 2015-06-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/delusions-of-grandeur/
 ---
-# On Having Delusions of Grandeur
-
-Published on Tuesday, 2 June 2015
-
 I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.
 
 As developers, we find no comfort in the thought that we'll never know enough about the languages we use, the frameworks we work in, the libraries we utilise and the platforms that underpin our whole industry. It's impossible to absorb and retain all of this information.

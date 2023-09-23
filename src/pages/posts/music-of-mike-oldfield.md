@@ -5,12 +5,7 @@ description: "I've enjoyed the music of Mike Oldfield since I was about 15. Wow,
 "
 categories:
 datePublished: 2017-07-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/music-of-mike-oldfield/
 ---
-# The Music of Mike Oldfield
-
-Published on Sunday, 9 July 2017
-
 I've enjoyed the music of Mike Oldfield since I was about 15. Wow, I've just realised that's about 20 years. What makes me keep coming back to this artist? What tracks would I recommend if you wanted to get an overview of his work?
 
 I used to hang out with a group of kids who loved all kinds of music. I admit that I didn't have much of an idea myself, but took on board their recommendations, and quite early on one of them gave me a cassette tape of "Tubular Bells 2".

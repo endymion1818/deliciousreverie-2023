@@ -5,12 +5,7 @@ description: "I recently came across two different examples of setup that used R
 "
 categories:
 datePublished: 2020-08-03
-canonicalLink: "https://deliciousreverie.co.uk/posts/comparing-redux-setup/
 ---
-# Comparing two redux setups
-
-Published on Monday, 3 August 2020
-
 I recently came across two different examples of setup that used Redux to manage state in a sample app. They were so different that I thought it was worth delving a little deeper into why, and how we can write Redux code so it's a good fit for our needs.
 
 ## Minimum Viable Redux [#](https://deliciousreverie.co.uk/posts/comparing-redux-setup/#minimum-viable-redux)

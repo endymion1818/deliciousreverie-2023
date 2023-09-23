@@ -4,12 +4,7 @@ title: "First Steps with Flexbox - Delicious Reverie"
 description: "On a recent project for international research machine builder Anton Paar, I used the new flex-box CSS module for the first time. Here's how it went."
 categories:
 datePublished: 2015-02-15
-canonicalLink: "https://deliciousreverie.co.uk/posts/first-steps-with-flexbox/
 ---
-# First Steps with Flexbox
-
-Published on Sunday, 15 February 2015
-
 On a recent project for international research machine builder Anton Paar, I used the new flex-box CSS module for the first time. Here's how it went.
 
 The flex box module has had a long gestation period, and there are 2 main specs of the module, so when researching methods of using it you have to be careful to find recent enough posts which outline the latest spec.

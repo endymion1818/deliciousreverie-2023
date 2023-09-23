@@ -4,12 +4,7 @@ title: "Design is Broken - Delicious Reverie"
 description: "I was getting nowhere. For the previous four years, I had been self employed and had managed the transition from print design to web design. I was enjoying life, but then a desire to build on my success as part of a forward thinking and dynamic team motivated me to submit my CV to a number of local agencies."
 categories:
 datePublished: 2015-02-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/design-is-broken/
 ---
-# Design is Broken
-
-Published on Saturday, 14 February 2015
-
 I was getting nowhere. For the previous four years, I had been self employed and had managed the transition from print design to web design. I was enjoying life, but then a desire to build on my success as part of a forward thinking and dynamic team motivated me to submit my CV to a number of local agencies.
 
 But I was getting nowhere.

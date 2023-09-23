@@ -4,12 +4,7 @@ title: "2022 Website Rebuild - Delicious Reverie"
 description: "I've just relaunched my website with an entirely new stack, here's what it consists of and why I've made these technical decisions."
 categories:
 datePublished: 2022-11-25
-canonicalLink: "https://deliciousreverie.co.uk/posts/2022-website-rebuild/
 ---
-# 2022 Website Rebuild
-
-Published on Friday, 25 November 2022
-
 Around a year ago I rebuilt this website using [Eleventy](https://www.11ty.dev), the static site generator. I did this because my existing site was using [Gatsby](https://www.gatsbyjs.com) but was [using a plugin which removed the JavaScript in a way that caused errors on the site](https://www.gatsbyjs.com/plugins/gatsby-plugin-no-javascript/\). I didn't want to put the JavaScript-heavy build back, but the broken links were causing errors in the console and I knew it  wasn't the best approach to a JavaScript-less Gatsby site, but at the time there was no alternative.
 
 Eleventy is quite a unique tool. Whilst I can see it's appeal for some, I found the way it consumes data and then injects it back in at build time a bit of a black box. At the time I rebuilt it, I was hoping to use the revolutionary plugin Slinkity to provide client-side JavaScript so I build build back features such as animations and search. However, by the time I launched my site, the author of Slinkity had moved to Astro, and development had slowed.

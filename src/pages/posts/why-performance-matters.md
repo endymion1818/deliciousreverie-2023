@@ -5,7 +5,6 @@ description: "Performance seems to be increasingly becoming a battleground for t
 "
 categories:
 datePublished: 2015-10-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/why-performance-matters/
 ---
 # Why Performance Matters
 

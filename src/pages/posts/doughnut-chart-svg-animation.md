@@ -5,12 +5,7 @@ description: "For a recent project, I was asked to design an animation for a dou
 "
 categories:
 datePublished: 2017-05-30
-canonicalLink: "https://deliciousreverie.co.uk/posts/doughnut-chart-svg-animation/
 ---
-# Doughnut chart SVG Animation
-
-Published on Tuesday, 30 May 2017
-
 For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area.
 
 I started off by designing the assets in Adobe Illustrator. The design required a gray background with an overlay of a specific colour that would feature the main animation. To achieve this I layered 2 circles, one on top of the other.

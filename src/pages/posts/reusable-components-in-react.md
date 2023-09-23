@@ -5,12 +5,7 @@ description: "Structuring components in a reusable, discoverable way is a challe
 "
 categories:
 datePublished: 2019-01-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/reusable-components-in-react/
 ---
-# Reusable Components with Atomic Design
-
-Published on Wednesday, 9 January 2019
-
 Structuring components in a reusable, discoverable way is a challenge across teams with diverse requirements. It can be difficult for developers unfamiliar with your library. They need to learn quickly how adopt, use and discover, features it has. How do you help them do that without over-burdening your components with too much documentation? I'd like to introduce the idea of Atomic Development using React and styled-components.
 
 Atomic Design is an approach to development that Brad Frost came up with a few years ago. He's published an excellent book about it which you can buy, or read online at [https://atomicdesign.bradfrost.com/](https://atomicdesign.bradfrost.com/)

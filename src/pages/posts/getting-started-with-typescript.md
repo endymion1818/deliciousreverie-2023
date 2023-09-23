@@ -5,12 +5,7 @@ description: "TypeScript. You either love it, or hate it ... or are terrified of
 "
 categories:
 datePublished: 2019-08-22
-canonicalLink: "https://deliciousreverie.co.uk/posts/getting-started-with-typescript/
 ---
-# Getting Started with TypeScript
-
-Published on Thursday, 22 August 2019
-
 Mention TypeScript to a developer who works with JavaScript and you'll probably get one of two responses: they will either struggle to understand why someone would NOT want to use TypeScript, or they will struggle to see why someone WOULD use it.
 
 I think this sometimes depends on where you started your journey to JavaScript. Often people come to the language from a server-side language such as C or Java, which are statically typed. In these languages, dynamic typing is seen as a real hazard, an unsafe practice.

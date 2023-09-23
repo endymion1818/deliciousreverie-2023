@@ -5,9 +5,7 @@ description: "When Im explaining the idea of Serverless architecture it often ta
 "
 categories:
 datePublished: 2018-11-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/three-conversations-to-serverless/
 ---
-# Three Conversations to Serverless
 
 Published on Friday, 9 November 2018
 

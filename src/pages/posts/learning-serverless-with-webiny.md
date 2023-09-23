@@ -5,12 +5,7 @@ description: "Webiny is a new CMS in the market, one that seeks to compete with 
 "
 categories:
 datePublished: 2020-04-03
-canonicalLink: "https://deliciousreverie.co.uk/posts/learning-serverless-with-webiny/
 ---
-# Learning serverless with Webiny
-
-Published on Friday, 3 April 2020
-
 Webiny is a new CMS in the market, one that seeks to compete with other well-established headless CMS platforms and existing apps. But I've also come to enjoy using it for another reason: it's helping me learn how to apply principles of Serverless application architecture.
 
 I've spent a great deal of time over the past 2 years around the CMS space. I am particularly focused in self-hosted, javascript-based CMSes. I had already created sites with both Ghost and Strapi, two very competent systems with content APIs.

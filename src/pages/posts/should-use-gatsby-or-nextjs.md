@@ -4,11 +4,8 @@ title: "Should I Use Gatsby or Next.js For My Next Project? - Delicious Reverie"
 description: "Originally written for the Webiny blog and was written at a time when Gatsby was experiencing a bit of a resurgence. By writing it, I was hoping to tap into this renewed interest and provide value by highlighting the differences and advantages to each tool."
 categories:
 datePublished: 2022-09-23
-canonicalLink: "https://www.webiny.com/blog/should-use-gatsby-or-nextjs/
+canonicalLink: "https://www.webiny.com/blog/should-use-gatsby-or-nextjs/"
 ---
-# Should I Use Gatsby or Next.js For My Next Project?
-
-Published on Friday, 23 September 2022 , originally at [https://www.webiny.com/blog/should-use-gatsby-or-nextjs/](https://www.webiny.com/blog/should-use-gatsby-or-nextjs/)
 
 Developers tend to get very passionate about their tools. And rightly so: without the best tools for the job at hand, we couldn't achieve our objectives, make something awesome, or build a better world.
 

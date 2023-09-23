@@ -5,12 +5,7 @@ description: "I've been in & out of love with Bob Dylan for many years. I starte
 "
 categories:
 datePublished: 2016-12-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/a-journey-with-dylan/
 ---
-# A Journey with Dylan
-
-Published on Friday, 2 December 2016
-
 I've been in & out of love with Bob Dylan for many years. I started listening in my early 20's, bought a compilation album, but I have to say that I just didn't get it. Now, 16 years later, I'm listening to every album he's produced so far.
 
 I guess I might be a glutton for punishment, some of the albums aren't that easy to listen to. But I want to just chart this journey because Dylan is someone who demands constant reassessment. Every time you think you've got the guy sussed, he does something you don't expect.

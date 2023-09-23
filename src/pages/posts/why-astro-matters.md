@@ -5,7 +5,7 @@ description: "Next, Nuxt, Gatsby, SvelteKit ... there's been an explosion of fro
 "
 categories:
 datePublished: 2021-07-20
-canonicalLink: "https://dev.to/endymion1818/why-astro-matters-55nj/
+canonicalLink: "https://dev.to/endymion1818/why-astro-matters-55nj/"
 ---
 # Why Astro matters
 

@@ -5,12 +5,7 @@ description: "I've always been interested in psychology but never went further t
 "
 categories:
 datePublished: 2016-01-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/on-being-an-advocate/
 ---
-# On Being An Advocate
-
-Published on Saturday, 23 January 2016
-
 I've always been interested in psychology but never went further than college with it. Recently a friend introduced me to the Meyers-Briggs Type Indicator Test. It illuminated some important traits of my personality and hilighted the motivation behind the goals I have. I thought I'd go over a few points that interested me here.
 
 I studied Carl Jung a bit in college, and always found psychology an absorbing and fascinating field. I was particularly drawn to the practice of counselling, and pursued that for a while before realising that's not what I really wanted to achieve in life.

@@ -4,7 +4,6 @@ title: "Why 'Delicious Reverie'? - Delicious Reverie"
 description: "I may have confused some of you with titling my personal site "Delicious Reverie". So I'm going to attempt to explain my decision, and discuss perhaps the greatest work of fiction ever produced in either French or English..."
 categories:
 datePublished: 2015-02-11
-canonicalLink: "https://deliciousreverie.co.uk/posts/why-delicious-reverie/
 ---
 # Why 'Delicious Reverie'?
 

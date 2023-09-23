@@ -4,12 +4,7 @@ title: "First Steps with CSS Animations - Delicious Reverie"
 description: "CSS Animations are quickly complimenting if not replacing Javascript for generating a little bit of on-page whizz (that's the technical term). This is the first time I've delved into the syntax for CSS Animations that I hope can replace the tired carousels resident on many websites. Here's how I implemented it."
 categories:
 datePublished: 2015-04-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/first-steps-with-css-animations/
 ---
-# First Steps with CSS Animations
-
-Published on Tuesday, 14 April 2015
-
 CSS Animations are quickly complimenting if not replacing Javascript for generating a little bit of on-page whizz (that's the technical term). This is the first time I've delved into the syntax for CSS Animations that I hope can replace the tired carousels resident on many websites. Here's how I implemented it.
 
 First of all, I've stuck to using CSS for this project although I'm using SASS for this site. The reason is that I wanted to get familiar with the CSS syntax first. I don't want to chain myself to SASS because it's one step removed from what the browser renders. Anyway, that's a story for another day.

@@ -4,12 +4,7 @@ title: "Fun with Callbacks - Delicious Reverie"
 description: "I had the opportunity to integrate a callback function with a module I was building recently. But what is a callback? How do you use them? Let's take a closer look."
 categories:
 datePublished: 2023-02-26
-canonicalLink: "https://deliciousreverie.co.uk/posts/fun-with-callbacks/
 ---
-# Fun with Callbacks
-
-Published on Sunday, 26 February 2023
-
 I had the opportunity to integrate a callback function with a module I was building recently. But what is a callback? How do you use them? Let's take a closer look.
 
 I was building a module that could be pulled into a PHP application to upload videos using Uppy. But once the video was uploaded, there was another step that needed to run: the uploaded file needed to be sent to another application to be processed.

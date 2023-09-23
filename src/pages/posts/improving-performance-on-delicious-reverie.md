@@ -4,12 +4,7 @@ title: "Improving Performance on Deliciousreverie.co.uk - Delicious Reverie"
 description: "I can't possibly think I could get away with a post about performance when my own site wasn't as spot-on as I could get. So I've been spending a bit of time investigating how to reduce my load times. This is what I found out and how I implemented it."
 categories:
 datePublished: 2015-10-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/improving-performance-on-delicious-reverie/
 ---
-# Improving Performance on Deliciousreverie.co.uk
-
-Published on Tuesday, 6 October 2015
-
 I can't possibly think I could get away with [a post about performance](https://deliciousreverie.co.uk/post/why-performance-matters/)when my own site wasn't as spot-on as I could get. So I've been spending a bit of time investigating how to reduce my load times. This is what I found out and how I implemented it.
 
 I built this site in December 2014 when I was on paternity leave. Now that my little bairn is finally sleeping through the night I can look at my code again through significantly less zombified eyes. I found a few things I'd like to improve on, namely:

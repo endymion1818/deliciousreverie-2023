@@ -1,54 +1,14 @@
 ---
-import { ArticleCard } from '@frontends/article-card'
+import ArticleCard from '../../components/ArticleCard.astro'
 import Layout from '../../components/Layout.astro'
 
-const response = await fetch(
-    process.env.WEBINY_READ_URL,
-  {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${process.env.WEBINY_ACCESS_TOKEN}`,
-      'Content-Type' : 'application/json'
-    },
-    body: JSON.stringify({
-      query: `
-        {
-          listPosts(limit: 200, sort: publishDate_DESC) {
-            data {
-              id
-              title
-              slug
-              description
-              body
-              publishDate
-              shareCard
-              tags {
-                title
-                slug
-                description
-              }
-            }
-            error {
-              message
-            }
-          }
-        }
-      `
-    }),
-  }
-);
-const { data } = await response.json();
-
-if(data.listPosts.data.length >= 200) {
-  console.log('time to paginate!');
-  return false
-}
+const allPosts = await Astro.glob('./*.md')
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="posts">
     <h1 class="text-4xl">Archive</h1>
-    {data?.listPosts?.data.length ? (
+    {allPosts.length ? (
         <div class="grid grid-cols-1 gap-4 py-4">
-          {data?.listPosts?.data.map(post => (
+          {allPosts.map(post => (
             <ArticleCard post={post}/>
           ))}
         </div>

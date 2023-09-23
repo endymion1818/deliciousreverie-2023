@@ -5,7 +5,6 @@ description: "For me, as well as a lot of others, CSS Grid is the most exciting 
 "
 categories:
 datePublished: 2017-07-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/using-css-grid-in-production-today/
 ---
 # Using CSS Grid In Production Today
 

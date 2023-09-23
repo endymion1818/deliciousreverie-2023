@@ -5,6 +5,7 @@ import Layout from '../components/Layout.astro'
 import prettyNumber from '../components/prettyNumber';
 import Rabbits from '../components/Rabbits.astro'
 
+const allPosts = await Astro.glob('./posts/*.md');
 
 const getLatestYoutubeVideo = async (channelId) => {
   const response = await fetch(
@@ -29,14 +30,17 @@ const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
       <p class="mb-4 text-lg">I'm an experienced <strong>Developer Relations</strong> product evangelist and community builder, a Senior <strong>JavaScript Software Engineer</strong> with experience of FinTech and PropTech, and a literature buff.</p>
       <a class="mb-6 normal-case btn btn-primary" href="/about-benjamin-read">More about me</a>
       <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts about engineering:</h2>
-      <!-- {res[0].data?.listPosts?.data.length > 0 && (
+      {allPosts?.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
-            {res[0].data?.listPosts?.data.map(post => (
-              <ArticleCard post={post} tags={post.tags} />
+            {allPosts?.slice(0, 3).map(post => (
+              <div>
+                {JSON.stringify(post)}
+              </div>
             ))}
+
           </div>
       )}
-      <a class="mb-6 normal-case btn btn-primary" href="/tags/engineering">&rarr; See all {res[0].data?.listPosts?.meta.totalCount} posts about engineering</a> -->
+      <a class="mb-6 normal-case btn btn-primary" href="/tags/engineering">&rarr; See all {allPosts.length + 1} posts about engineering</a>
       <hr/>
       <h2 class="pb-4 mt-8 text-3xl tracking-wide">📼 YouTube Channel</h2>
       <p class="mb-2 text-lg text-inherit">I also run a YouTube channel called "The Coding Cocoon" where I teach young adults how to code and design.</p>

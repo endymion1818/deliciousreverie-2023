@@ -5,12 +5,7 @@ description: "I've recently been introduced to the use of monorepos to manage pr
 "
 categories:
 datePublished: 2021-07-04
-canonicalLink: "https://deliciousreverie.co.uk/posts/monorepos/
 ---
-# monorepos.
-
-Published on Sunday, 4 July 2021
-
 I've recently been introduced to the use of monorepos to manage projects, and have a few thoughts on the idea.
 
 First of all, I'd better explain what a monorepo is. The idea is that instead of having many different Git repositories for a group of related projects, you have just one, containing all of your different projects that come under a common umbrella.

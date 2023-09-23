@@ -4,12 +4,7 @@ title: "How I Created My Home Web Server - Delicious Reverie"
 description: "I decided to try to build my own web server using my home router, an old PC, and a Linux operating system."
 categories:
 datePublished: 2017-02-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/how-i-created-my-home-web-server/
 ---
-# How I Created My Home Web Server
-
-Published on Saturday, 18 February 2017
-
 Is it just me or does Apple's iCloud seem like a very simple solution to a problem all of us in a connected world face? That of storing, managing and sharing photos of our loved ones, holidays and interests with others?
 
 Instead of being faced with ever increasing charges from Apple to store my stuff, I decided to get a solution I could be more in control of.
@@ -28,7 +23,7 @@ $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade
 ```
 
-#### First hitch: Packages not upgrading [#](https://deliciousreverie.co.uk/posts/how-i-created-my-home-web-server/#first-hitch:-packages-not-upgrading)
+### First hitch: Packages not upgrading [#](https://deliciousreverie.co.uk/posts/how-i-created-my-home-web-server/#first-hitch:-packages-not-upgrading)
 
 About the first thing I noticed when I went into the Terminal app from the GUI was this message that I could upgrade packages, but when I tried to install stuff, it said that no packages were updated.
 
@@ -80,7 +75,7 @@ At first, I was amazed at how quickly my home IP address would change. I realise
 
 I now have a free plan with No-Ip, which has installed a program on my server to update a DNS server when my IP address changes. If this works successfully, I will likely get a paid pla, unless I can figure out how to do it myself!
 
-#### Fourth hitch: Uploading files using the CMS [#](https://deliciousreverie.co.uk/posts/how-i-created-my-home-web-server/#fourth-hitch:-uploading-files-using-the-cms)
+### Fourth hitch: Uploading files using the CMS [#](https://deliciousreverie.co.uk/posts/how-i-created-my-home-web-server/#fourth-hitch:-uploading-files-using-the-cms)
 
 I how had a working website I could use and refine. But when I tried to upload files I came across an error where the file could be uploaded, but couldn't be moved to the content directory.
 

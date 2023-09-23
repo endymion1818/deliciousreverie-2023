@@ -5,12 +5,7 @@ description: "It's always bothered me that the majority of internet users spend 
 "
 categories:
 datePublished: 2020-09-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/publishing-both-js-non-js-sites/
 ---
-# Publishing both JS and non-JS sites
-
-Published on Friday, 18 September 2020
-
 It's always bothered me that the majority of internet users spend a lot of money downloading and running JavaScript, yet I enjoy building things with JavaScript, and want to provide an enhanced experience using JS without sacrificing their needs to do so. Here's one way we can have the best of both worlds.
 
 I'm not going to argue JS vs no JS use here, I don't think it's even an argument. In my opinion we need to provide the best experience we can for all of our users, and that includes both those on slow connections and those on fast ones.

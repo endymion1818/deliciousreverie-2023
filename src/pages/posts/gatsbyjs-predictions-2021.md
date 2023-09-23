@@ -5,12 +5,7 @@ description: "It's no secret that NextJS is knocked the socks off Gatsby last ye
 "
 categories:
 datePublished: 2021-02-19
-canonicalLink: "https://deliciousreverie.co.uk/posts/gatsbyjs-predictions-2021/
 ---
-# Predictions for GatsbyConf 2021
-
-Published on Friday, 19 February 2021
-
 It's no secret that NextJS is knocked the socks off Gatsby last year in terms of developer adoption. I think the frameworks will keep learning from each other (read: steal features), and it's a good thing for both frameworks.
 
 Dustin Schau [asked in this tweet](https://twitter.com/schaudustin/status/1362223485523648512?s=21), "What do you think we're launching at #GatsbyConf on March 2nd?"

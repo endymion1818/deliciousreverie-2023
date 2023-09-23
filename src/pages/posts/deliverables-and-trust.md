@@ -1,16 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Deliverables and Trust - Delicious Reverie"
-description: "It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to "wow" clients into signoff? Here's why that is a bad idea.
-"
+description: "It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to "wow" clients into signoff? Here's why that is a bad idea."
 categories:
 datePublished: 2015-02-27
-canonicalLink: "https://deliciousreverie.co.uk/posts/deliverables-and-trust/
 ---
-# Deliverables and Trust
-
-Published on Friday, 27 February 2015
-
 It's vitally important to have success before you start a project-perhaps the most critical stage to have success. But how far should we go in order to get our clients on board? Should we try to "wow" clients into signoff? Here's why that is a bad idea.
 
 So you're taking this proposal to your new client. You sit down in the boardroom, a little nervous but trying to hide it. You naturally have done everything in your power to ensure the success of the meeting. What will win over this set of decision makers and stakeholders to invest in your proposal?

@@ -5,12 +5,7 @@ description: "I've been slowly perfecting a recipe for ramen that I can quickly 
 "
 categories:
 datePublished: 2020-01-28
-canonicalLink: "https://deliciousreverie.co.uk/posts/quick-and-dirty-ramen/
 ---
-# A recipe for quick and dirty ramen
-
-Published on Tuesday, 28 January 2020
-
 I really like asian food. I'll go for gyoza / jiaozi any day over a "traditional" sunday roast. One thing I love most is ramen, but it's taken me ages to invent my own recipe.
 
 So this is a very quick and loose recipe, please don't stick to it, I'm sure it can be improved upon!

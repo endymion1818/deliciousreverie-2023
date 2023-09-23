@@ -5,12 +5,7 @@ description: "Templating with JSX in React is easy ... until it's not. Recently 
 "
 categories:
 datePublished: 2021-05-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/should-i-use-ternary-or-logicaland-in-react/
 ---
-# Should I use ternary or the logical and operator?
-
-Published on Thursday, 6 May 2021
-
 Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...
 
 Quite often we follow this pattern for brevity, and there's good value doing it if there's only one variable at play:

@@ -4,12 +4,8 @@ title: "Atomic Development - Delicious Reverie"
 description: "Structuring components in a reusable, discoverable way has been a challenge for some recent projects I've worked on. I've seen different approaches used, but now I think I've found a method that's basically intuitive, avoids duplication of effort and facilitates easy discovery of components."
 categories:
 datePublished: 2018-10-04
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
-# Atomic Development
-
-Published on Thursday, 4 October 2018 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
-
 Structuring components in a reusable, discoverable way has been a challenge for some recent projects I've worked on. I've seen different approaches used, but now I think I've found a method that's basically intuitive, avoids duplication of effort and facilitates easy discovery of components.
 
 I didn't come up with this approach. [Brad Frost published the book "Atomic Design" 2 years ago](https://bradfrost.com/blog/post/atomic-web-design/), and I was fascinated with his idea, that you break down your components to the smallest reusable unit, then build them up again piece by piece. Just as living organisms are made up of atoms, then molecules, then larger entities until you get the complete creature.

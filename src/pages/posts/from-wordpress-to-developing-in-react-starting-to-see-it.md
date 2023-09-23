@@ -5,14 +5,8 @@ description: "I recently decided to dive into learning React with a few courses 
 "
 categories:
 datePublished: 2017-10-12
-canonicalLink: "https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/
+canonicalLink: "https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/"
 ---
-# From Wordpress to Developing in React — Starting to See It
-
-Published on Thursday, 12 October 2017 , originally at [https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/](https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/)
-
-Originally published [on the Gatsby.JS blog](https://www.gatsbyjs.com/blog/2017-10-20-from-wordpress-to-developing-in-react-starting-to-see-it/)
-
 As a frontend designer I've always prided myself on being an HTML and CSS specialist. My use of JavaScript has been limited to animations and DOM manipulation. However, at the agency I work we're branching out from our staple of WordPress and trying different methods of creating websites with functionality that our clients require, whilst maximizing their budget.
 
 We're also bracing ourselves for what we’re anticipating to be the stormfront of [Gutenberg](https://wordpress.org/plugins/gutenberg/)for our WordPress projects. Once it's included in the WordPress Core, writing components in JavaScript for the Gutenberg editor will be necessary for every developer on a project.

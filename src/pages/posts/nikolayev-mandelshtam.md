@@ -4,12 +4,7 @@ title: "Osip Mandelshtam / Philip Nikolayev - Delicious Reverie"
 description: "Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries."
 categories:
 datePublished: 2015-04-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/nikolayev-mandelshtam/
 ---
-# Osip Mandelshtam / Philip Nikolayev
-
-Published on Thursday, 2 April 2015
-
 Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries.
 
 Philip Nikolayev has a wonderful command of the English language, and his translations of Mandelshtam's poems is really delightful, particularly in his use of alliteration. Here's my favourite one:

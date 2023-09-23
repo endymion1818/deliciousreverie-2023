@@ -5,12 +5,7 @@ description: "I was inspired by Rachel Nabors' site to add a short delay to user
 "
 categories:
 datePublished: 2016-03-22
-canonicalLink: "https://deliciousreverie.co.uk/posts/delaying-click-event-vanilla-javascript/
 ---
-# Delaying click event in vanilla JavaScript
-
-Published on Tuesday, 22 March 2016
-
 I was inspired by Rachel Nabors' site to add a short delay to users' clicking on a link on my website, so that I could add a brief animation that would run before the redirection took place. Here's how I did it.
 
 "Animation" seems to be the theme of my year. Animation is what I think is going to be one of the big differentiator on websites in the coming months and years. And I really, really love the CSS animations API.

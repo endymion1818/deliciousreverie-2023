@@ -5,9 +5,7 @@ description: "At a recent WordPress conference in London I gave this talk. It wa
 "
 categories:
 datePublished: 2018-04-24
-canonicalLink: "https://deliciousreverie.co.uk/posts/talk-how-were-using-wordpress-as-a-headless-cms/
 ---
-# How Were Using WordPress as a Headless CMS
 
 Published on Tuesday, 24 April 2018
 

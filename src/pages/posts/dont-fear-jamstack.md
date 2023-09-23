@@ -5,12 +5,7 @@ description: "WordPress has long been the de facto publishing platform for the w
 "
 categories:
 datePublished: 2020-09-03
-canonicalLink: "https://deliciousreverie.co.uk/posts/dont-fear-jamstack/
 ---
-# Don't fear the JAMStack
-
-Published on Thursday, 3 September 2020
-
 WordPress has long been the de facto publishing platform for the web. But many developers are hearing more about the JAMStack. Here's why I switched, and my take on where I think things are going to go from here.
 
 I would like to acknowledge and address some recent efforts of those in WordPress circles to be vocal against the new approaches to publishing that have arisen in recent years, most significantly these 2 that I've seen:

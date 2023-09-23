@@ -5,12 +5,8 @@ description: "If we we've spent any time developing, specifically with JavaScrip
 "
 categories:
 datePublished: 2019-03-15
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
-# Capture and Minimise Errors in your React Applications
-
-Published on Friday, 15 March 2019 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
-
 We've all done it. Whether it's by forgetting to close a function, misspelling a variable or just plain old doing it wrong...
 
 If we we've spent any time developing, specifically with JavaScript, we've seen the White Screen of Death. Nothing renders to the screen, and the only way of investigating the issue we caused is by opening the console and looking at the stack trace.

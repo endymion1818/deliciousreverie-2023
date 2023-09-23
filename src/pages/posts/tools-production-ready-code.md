@@ -5,9 +5,7 @@ description: "Originally produced for Net print Magazine. Websites are great too
 "
 categories:
 datePublished: 2020-10-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/tools-production-ready-code/
 ---
-# Tools for Production Ready Code
 
 Published on Wednesday, 14 October 2020
 

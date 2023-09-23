@@ -5,12 +5,7 @@ description: "Over the past few days, I've moved tech stack entirely for delicio
 "
 categories:
 datePublished: 2017-05-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/continuous-deployment-with-netlify-and-hugo/
 ---
-# Continuous Deployment with Netlify and Hugo
-
-Published on Thursday, 18 May 2017
-
 Over the past few days, I've moved tech stack entirely for [deliciousreverie.co.uk](http://deliciousreverie.co.uk/), from reseller hosting using PHP to cloud hosting on AWS by Netlify, and using continuous deployment. This post details some of the hazards and benefits I encountered.
 
 Since I created this blog, I've always been a very proud user of Perch CMS and have recently upgraded to Perch 3, which brought loads of enhancements as well as an improved interface. So why the switch?
@@ -76,6 +71,6 @@ Continuous delivery can a bit cumbersome to manage for some projects in my view.
 
 That being said, it's certainly a lot more safe than the somewhat shakier transfers of FTP/SFTP. One of the benefits became real to me when a friend of mine submitted a pull request, but I was able to see before I merged the code that the change would've broken my site, resulting in down time. That was a really useful feature. Now I know I can change my theme, and even if it succeeds locally, if it fails on production you won't break your site, which I know I've done a few times.
 
-#### Addendum [#](https://deliciousreverie.co.uk/posts/continuous-deployment-with-netlify-and-hugo/#addendum)
+### Addendum [#](https://deliciousreverie.co.uk/posts/continuous-deployment-with-netlify-and-hugo/#addendum)
 
 This article was edited to remove the references to custom headers, which aren't yet available on Netlify yet."

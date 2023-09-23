@@ -5,12 +5,7 @@ description: "Writing documentation for new team members - or just to provide a 
 "
 categories:
 datePublished: 2015-11-01
-canonicalLink: "https://deliciousreverie.co.uk/posts/project-documentation-template/
 ---
-# Project Documentation Templates
-
-Published on Sunday, 1 November 2015
-
 Writing documentation for new team members - or just to provide a referenceable standard - is hard. I've provided these documents with the aim of helping this process.
 
 I'll be honest, I'm not naturally an organised person. But I think that gives me an advantage. It means I have to try harder to be organised. And because I hate the chaos that can result, I'm pretty determined to get things organised and keep them that way.

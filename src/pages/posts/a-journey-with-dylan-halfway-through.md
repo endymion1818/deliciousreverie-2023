@@ -1,16 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "A Journey With Dylan: Halfway Through - Delicious Reverie"
-description: "A Few weeks ago, I wrote a post about how I was taking a journey through the studio albums of Bob Dylan, starting with his first eponymous album, and discovering new albums and tracks along the way which resonated with me. I'm now about half way through the catalogue, and have encountered a few surprises.
-"
+description: "A Few weeks ago, I wrote a post about how I was taking a journey through the studio albums of Bob Dylan, starting with his first eponymous album, and discovering new albums and tracks along the way which resonated with me. I'm now about half way through the catalogue, and have encountered a few surprises."
 categories:
 datePublished: 2016-12-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/a-journey-with-dylan-halfway-through/
 ---
-# A Journey With Dylan: Halfway Through
-
-Published on Tuesday, 6 December 2016
-
 A Few weeks ago, I wrote a post about how I was taking a journey through the studio albums of Bob Dylan, starting with his first eponymous album, and discovering new albums and tracks along the way which resonated with me. I'm now about half way through the catalogue, and have encountered a few surprises.
 
 ([Here's the previous post,](https://deliciousreverie.co.uk/posts/a-journey-with-dylan/) in case you haven't read it.)

@@ -5,12 +5,7 @@ description: "I've been at Webiny two weeks now. I have had the most fun I've ha
 "
 categories:
 datePublished: 2022-03-11
-canonicalLink: "https://deliciousreverie.co.uk/posts/first-two-weeks-at-webiny/
 ---
-# First 2 weeks at Webiny
-
-Published on Friday, 11 March 2022
-
 I've been at Webiny two weeks now. I have had the most fun I've had in a long time career wise. Here's what I've learned and what my objectives are going to be for the coming few weeks.
 
 The first week at any company is always difficult. There's so much to learn, there's a new culture to adopt, and new personal dynamics to interact with. First steps always falter. But now, two weeks in, I'm beginning to feel more confident. I've made some contributions that I'm happy with, and I'm already feeling more settled with my decision to move.

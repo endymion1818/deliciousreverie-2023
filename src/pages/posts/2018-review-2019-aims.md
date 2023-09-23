@@ -5,12 +5,7 @@ description: "Wow. 2018 was a real rollercoaster for me. This is a brief review 
 "
 categories:
 datePublished: 2019-01-03
-canonicalLink: "https://deliciousreverie.co.uk/posts/2018-review-2019-aims/
 ---
-# 2018 Review / 2019 Aims
-
-Published on Thursday, 3 January 2019
-
 Twenty Eighteen was a whirlwind of changes for me professionally. I went from working in an agency to working for a FinTech, and the difference in those two roles and the tech stacks involved have brought me many new skills as a developer. But I still suffer anxiety with all the things I want to learn.
 
 ## What I Learned [#](https://deliciousreverie.co.uk/posts/2018-review-2019-aims/#what-i-learned)

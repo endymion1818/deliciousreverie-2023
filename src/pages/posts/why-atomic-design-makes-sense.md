@@ -4,7 +4,6 @@ title: "Why Atomic Design Makes Sense - Delicious Reverie"
 description: "Although I've really gotten into the SASS revolution, I haven't yet adopted a method for structuring elements of CSS. I guess it's because none of them strike me as particularly visual, and being a former print designer, I tend to think in those terms. But something about Brad Frost's Atomic Design principles makes sense to me. Here's why."
 categories:
 datePublished: 2015-11-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/why-atomic-design-makes-sense/
 ---
 # Why Atomic Design Makes Sense
 

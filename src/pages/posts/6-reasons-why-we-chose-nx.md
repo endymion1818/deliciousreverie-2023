@@ -5,12 +5,8 @@ description: "Nx is a modular build framework for architecting and maintaining c
 "
 categories:
 datePublished: 2021-09-23
-canonicalLink: "https://medium.com/purplebricks-digital/6-reasons-why-we-chose-nx-as-our-monorepo-management-tool-1fe5274a008e
+canonicalLink: "https://medium.com/purplebricks-digital/6-reasons-why-we-chose-nx-as-our-monorepo-management-tool-1fe5274a008e"
 ---
-# 6 reasons why we chose Nx as our monorepo management tool
-
-Published on Thursday, 23 September 2021 , originally at [https://medium.com/purplebricks-digital/6-reasons-why-we-chose-nx-as-our-monorepo-management-tool-1fe5274a008e](https://medium.com/purplebricks-digital/6-reasons-why-we-chose-nx-as-our-monorepo-management-tool-1fe5274a008e)
-
 Sharing code across multiple disparate projects, at scale, can be a problem for many organisations.
 
 The challenge is to eliminate code duplication and unify user interface design patterns, whilst at the same time providing (hopefully) speedier development for engineers.

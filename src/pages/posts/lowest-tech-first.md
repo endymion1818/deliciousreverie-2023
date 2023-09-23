@@ -5,12 +5,7 @@ description: "Should I use CSS or JavaScript to perform this task? If you're ask
 "
 categories:
 datePublished: 2021-06-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/lowest-tech-first/
 ---
-# Lowest tech first
-
-Published on Wednesday, 23 June 2021
-
 Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task.
 
 I did a lot of prop threading the other day. I was updating our navigation section so that the last dropdown in the navigation would be positioned better.

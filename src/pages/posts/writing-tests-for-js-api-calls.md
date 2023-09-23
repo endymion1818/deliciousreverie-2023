@@ -1,11 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "How to test JavaScript API Calls - Delicious Reverie"
-description: "In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API.
-"
+description: "In the January 2020 issue of Net Magazine, we walked through how to use React testing library to write basic unit tests for your React components. In this article I'm going to dive a little deeper and show how to write tests for some code that fetches data from an API."
 categories:
 datePublished: 2020-04-09
-canonicalLink: "https://deliciousreverie.co.uk/posts/writing-tests-for-js-api-calls/
+canonicalLink: "https://deliciousreverie.co.uk/posts/writing-tests-for-js-api-calls/"
 ---
 # How to test JavaScript API Calls
 

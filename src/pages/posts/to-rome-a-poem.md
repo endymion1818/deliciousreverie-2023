@@ -5,9 +5,7 @@ description: "I wrote this poem more than 10 years ago, but I've never published
 "
 categories:
 datePublished: 2015-11-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/to-rome-a-poem/
 ---
-# To Rome, a Poem
 
 Published on Monday, 23 November 2015
 

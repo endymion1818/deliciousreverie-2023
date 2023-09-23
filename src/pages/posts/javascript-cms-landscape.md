@@ -5,12 +5,7 @@ description: "I've been keenly interested in a specific subset of CMSes since ab
 "
 categories:
 datePublished: 2020-11-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/javascript-cms-landscape/
 ---
-# The JavaScript CMS Landscape
-
-Published on Monday, 23 November 2020
-
 I've been keenly interested in a specific subset of CMSes since about 2 years ago, when it became clear that Zopa would soon need to invest in one, and that I would be involved in choosing something that would be a good fit for the company. This post is a roundup of some of the great products available, and is the result of some of the research and proofs-of-concept I have made.
 
 The requirements I had for my search were:

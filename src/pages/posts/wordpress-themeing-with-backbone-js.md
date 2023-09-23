@@ -1,15 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Wordpress theming with Backbone.js - Delicious Reverie"
-description: "You'll notice that there's not a huge amount of posts about JavaScript on my site. That's not an accident, I'm really only beginning to gain my feet with the language. Despite this I took the plunge and decided to build a Wordpress theme that uses Backbone.js to render the posts in a list. Here's a bit about the project.
-"
+description: "You'll notice that there's not a huge amount of posts about JavaScript on my site. That's not an accident, I'm really only beginning to gain my feet with the language. Despite this I took the plunge and decided to build a Wordpress theme that uses Backbone.js to render the posts in a list. Here's a bit about the project."
 categories:
 datePublished: 2016-01-06
-canonicalLink: "https://deliciousreverie.co.uk/posts/wordpress-themeing-with-backbone-js/
 ---
-# Wordpress theming with Backbone.js
-
-Published on Wednesday, 6 January 2016
 
 You'll notice that there's not a huge amount of posts about JavaScript on my site. That's not an accident, I'm really only beginning to gain my feet with the language. Despite this I took the plunge and decided to build a Wordpress theme that uses Backbone.js to render the posts in a list. Here's a bit about the project.
 

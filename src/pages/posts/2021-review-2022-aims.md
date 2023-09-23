@@ -1,16 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "2021 Review / 2022 Aims - Delicious Reverie"
-description: "2021 continued the trend of being more challenging than any period before it, in terms of maintaining some sort of normality to our lives. However there have been some really good things too. Here's a review of what I set out to achieve and what I want to achieve this year
-"
+description: "2021 continued the trend of being more challenging than any period before it, in terms of maintaining some sort of normality to our lives. However there have been some really good things too. Here's a review of what I set out to achieve and what I want to achieve this year"
 categories:
 datePublished: 2021-12-29
-canonicalLink: "https://deliciousreverie.co.uk/posts/2021-review-2022-aims/
 ---
-# 2021 Review / 2022 Aims
-
-Published on Wednesday, 29 December 2021
-
 2021 continued the trend of being more challenging than any period before it, in terms of maintaining some sort of normality to our lives. However there have been some really good things too. Here's a review of what I set out to achieve and what I want to achieve this year
 
 When 2021 dawned I was still a Mid Level Software Engineer at Zopa. That changed in April as I took a new role as Senior JavaScript Engineer at Purple Bricks. It was a great boost for my self confidence and a fantastic team to work with. But 2022 finds me at another turning point: going from that to a split between DevRel and Fullstack Engineer at Webiny. With that change comes some reassessment of where I want my career to go in the next year.

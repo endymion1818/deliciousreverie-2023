@@ -5,14 +5,8 @@ description: "Originally published in print for Net Magazine issue 320. I wanted
 "
 categories:
 datePublished: 2019-06-15
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
-# Building an Accordion Component with React Hooks
-
-Published on Saturday, 15 June 2019 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
-
-Originally published in print for [Net Magazine](https://www.creativebloq.com).
-
 In this article, we takes a deep dive into creating an accordion module for React that renders on the server, and that works in Internet Explorer 11.
 
 On a recent project I was involved in creating this Accordion component with a few key requirements:

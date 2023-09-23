@@ -5,12 +5,7 @@ description: "I'm one of those guys that was terrified of the command line. Lite
 "
 categories:
 datePublished: 2016-08-24
-canonicalLink: "https://deliciousreverie.co.uk/posts/first-steps-with-zsh/
 ---
-# First Steps with zsh
-
-Published on Wednesday, 24 August 2016
-
 I'm one of those guys (coming from a design background) that was terrified of the command line. Literally, terrified. I knew enough that simple commands could irreparably break my computer, and that scared me. But gradually, I've begun to use more command line tools, and recently discovered ways to make my workflow easier by using zsh terminal commands.
 
 I started using the terminal because of the benefits of build tools. I use Grunt in everyday production of my websites now, to minify & concat my JS and SASS files, and sometimes to minify images and SVGs. If it hadn't been for these benefits, I doubt I would have ever used the terminal in the way I do now.

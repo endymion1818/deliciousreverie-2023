@@ -4,9 +4,8 @@ title: "Using WordPress as a Headless CMS - Delicious Reverie"
 description: "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
 categories:
 datePublished: 2018-07-25
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
-# Using WordPress as a Headless CMS
 
 Published on Wednesday, 25 July 2018 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
 

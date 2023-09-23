@@ -5,12 +5,7 @@ description: "Time is precious for me having a kid and a demanding job, so I'm p
 "
 categories:
 datePublished: 2016-06-15
-canonicalLink: "https://deliciousreverie.co.uk/posts/book-review-the-city-and-the-city-china-mieville/
 ---
-# Book Review: The City & The City, China Mieville
-
-Published on Wednesday, 15 June 2016
-
 Time is precious for me having a kid and a demanding job, so I'm pleased I've managed to find the time to read The City & The City, China Mieville's (very successful) attempt at the crime thriller genre.
 
 I'm not typically a reader of crime fiction, however I've really enjoyed some of Mieville's urban fantasy work in the past, and know he's a smart, well-researched writer who is prone to a bit of genre-hopping ... his plots often take unexpected twists, for which this work is no exception.

@@ -4,12 +4,7 @@ title: "Publishing Poetry with Webiny CMS and Astro - Delicious Reverie"
 description: "I've wanted to have the ability on my blog to render poetry in a way that was conducive to reading, and I think I've finally managed to achieve that with my current tech stack, and some repurposing of tools I already use."
 categories:
 datePublished: 2023-03-10
-canonicalLink: "https://deliciousreverie.co.uk/posts/publishing-poetry-with-webiny-cms-astro/
 ---
-# Publishing Poetry with Webiny CMS and Astro
-
-Published on Friday, 10 March 2023
-
 Publishing poetry on the web is ... tricky.
 
 I admit, some poetry is relatively straightforward: it's organised similarly to normal text, where on the left side, everything lines up nicely to the left, and right lines are "ragged", or not justified to any alignment. This is quite commonly how paragraphs appear.

@@ -5,12 +5,7 @@ description: "In the recent past, I've heard React being criticised for not bein
 "
 categories:
 datePublished: 2018-12-24
-canonicalLink: "https://deliciousreverie.co.uk/posts/react-accessibility/
 ---
-# React Accessibility
-
-Published on Monday, 24 December 2018
-
 Originally published in print for [Net Magazine](https://www.creativebloq.com).
 
 In the recent past, I've heard React being criticised for not being accessible, or for allowing practices that don't help developers think about accessibility.

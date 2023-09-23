@@ -5,12 +5,7 @@ description: "Search is a massive growth market but there is only one market lea
 "
 categories:
 datePublished: 2020-08-28
-canonicalLink: "https://deliciousreverie.co.uk/posts/search-service-landscape/
 ---
-# The search service landscape
-
-Published on Friday, 28 August 2020
-
 Search is a massive growth market but there is only one market leader and many inadequate contenders. Here's why I think we should be building more search providers to expand the market.
 
 When did you last use a site search tool? What engine powered that tool? I can pretty much guess what most of you would reply. And whilst they are by far the market leaders, I think that's an indication that search as a market is about to explode.

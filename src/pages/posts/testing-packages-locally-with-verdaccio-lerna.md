@@ -4,9 +4,8 @@ title: "Testing Packages Locally Using Lerna & Verdaccio - Delicious Reverie"
 description: "Originally published on the Webiny blog. We want to provide the easiest way for developers to get started when building a new Webiny project. So we have a create-webiny-project command line interface (CLI) that creates a new user project with their chosen AWS region and some other preferences they need."
 categories:
 datePublished: 2022-11-01
-canonicalLink: "https://www.webiny.com/blog/testing-packages-locally-with-verdaccio-lerna/
+canonicalLink: "https://www.webiny.com/blog/testing-packages-locally-with-verdaccio-lerna/"
 ---
-# Testing Packages Locally Using Lerna & Verdaccio
 
 Published on Tuesday, 1 November 2022 , originally at [https://www.webiny.com/blog/testing-packages-locally-with-verdaccio-lerna/](https://www.webiny.com/blog/testing-packages-locally-with-verdaccio-lerna/)
 

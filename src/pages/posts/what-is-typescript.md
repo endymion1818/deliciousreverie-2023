@@ -5,7 +5,6 @@ description: "What is TypeScript? How can it be useful to a person learning web 
 "
 categories:
 datePublished: 2020-05-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/what-is-typescript/
 ---
 # What is Typescript?
 

@@ -1,13 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Words Fail Me. - Delicious Reverie"
-description: "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here.
-"
+description: "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here."
 categories:
 datePublished: 2015-02-27
-canonicalLink: "https://deliciousreverie.co.uk/posts/words-fail-me/
+canonicalLink: "https://deliciousreverie.co.uk/posts/words-fail-me/"
 ---
-# Words Fail Me.
 
 Published on Friday, 27 February 2015
 

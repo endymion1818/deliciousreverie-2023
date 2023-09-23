@@ -5,12 +5,7 @@ description: "We've reached a point that, like the image carousel, sidebars have
 "
 categories:
 datePublished: 2015-02-23
-canonicalLink: "https://deliciousreverie.co.uk/posts/normal-people-dont-understand-sidebars/
 ---
-# Normal People Don't Understand Sidebars
-
-Published on Monday, 23 February 2015
-
 We've reached a point that, like the image carousel, sidebars have become overused and for a lot of projects superfluous. And, as I've discovered, people don't always understand the concept or how they work.
 
 Are you the type of person that tends towards simplification, or do you find that you complicate things?

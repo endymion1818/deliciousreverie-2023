@@ -4,12 +4,7 @@ title: "Serverless as a Competitive Advantage for your Business - Delicious Reve
 description: "I gave a talk at Moar Serverless Conf 2022. If you’re still wondering what Serverless is, or if you’ve got friends and colleagues who are asking you, this talk will highlight some of the benefits."
 categories:
 datePublished: 2022-08-21
-canonicalLink: "https://deliciousreverie.co.uk/posts/serverless-competitive-advantage-business/
 ---
-# Serverless as a Competitive Advantage for your Business
-
-Published on Sunday, 21 August 2022
-
 This week I gave a talk at Moar Serverless Conf 2022. The subject was aimed at helping people who are reticent about serverless, or who love it but struggle to convince other people to try it.
 
 [Watch the video here](https://www.youtube.com/watch?v=S3fqGuzpgMg&feature=emb_imp_woyt)

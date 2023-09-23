@@ -5,12 +5,7 @@ description: "I opened a YouTube channel! It was originally made to teach some k
 "
 categories:
 datePublished: 2022-05-30
-canonicalLink: "https://deliciousreverie.co.uk/posts/launched-youtube-channel/
 ---
-# I launched a YouTube channel
-
-Published on Monday, 30 May 2022
-
 Time flies, as they say, and as I'm getting older (reached 42 this year) I find I have as much to say but less time to say it. I'm thinking people who are interested in my content are likely to be in the same position.
 
 With that in mind, I [opened my own YouTube channel](https://www.youtube.com/channel/UCzbL3ZYvJWzJbrbHCgZLDJQ).

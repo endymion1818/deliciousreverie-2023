@@ -5,12 +5,7 @@ description: "Destructuring is a common pattern when it comes to using styled co
 "
 categories:
 datePublished: 2021-05-01
-canonicalLink: "https://deliciousreverie.co.uk/posts/nesting-styled-components-properties/
 ---
-# Working with styled components: multiple nested properties
-
-Published on Saturday, 1 May 2021
-
 I've seen this fairly frequently when it comes to using shared media queries. sometimes you want to set the width of an element based on one property, but you need to access the theme too.
 
 ```

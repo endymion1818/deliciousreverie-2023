@@ -4,12 +4,7 @@ title: "Polymorphic Elements in Astro - Delicious Reverie"
 description: "I'm building a component library in Astro, and one of the things I needed to do was to build a component that could render as either a button or an anchor tag. Here's how I achieved that."
 categories:
 datePublished: 2023-02-22
-canonicalLink: "https://deliciousreverie.co.uk/posts/polymorphic-elements-astro/
 ---
-# Polymorphic Elements in Astro
-
-Published on Wednesday, 22 February 2023
-
 I'm building a component library in Astro, and one of the things I needed to do was to build a component that could render as either a button or an anchor tag. Here's an example of the outcome I wanted to achieve:
 
 ```

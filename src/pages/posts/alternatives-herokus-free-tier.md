@@ -4,12 +4,8 @@ title: "Alternatives to Heroku’s Free Tier - Delicious Reverie"
 description: "Originally written for the Webiny blog. Heroku announced that it's extremely popular free tier plans were being phased out and I saw an opportunity to provide some high value content that could capture the audience and attract them to Webiny as a product."
 categories:
 datePublished: 2022-08-26
-canonicalLink: "https://www.webiny.com/blog/alternatives-herokus-free-tier/
+canonicalLink: "https://www.webiny.com/blog/alternatives-herokus-free-tier/"
 ---
-# Alternatives to Heroku’s Free Tier
-
-Published on Friday, 26 August 2022 , originally at [https://www.webiny.com/blog/alternatives-herokus-free-tier/](https://www.webiny.com/blog/alternatives-herokus-free-tier/)
-
 Heroku announced yesterday that it's extremely popular free tier plans are being phased out starting on November 28 this year (2022). It's the end of an era for a lot of people, particularly independent bloggers who have hobby sites, developers evaluating software for use at their organizations, and non-profits who host their Headless CMS backend. But is there an alternative to Heroku?
 
 ## The Heroku Story

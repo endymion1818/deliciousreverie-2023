@@ -5,10 +5,7 @@ description: "Typecheck should only run against the code you write for your proj
 "
 categories:
 datePublished: 2020-03-31
-canonicalLink: "https://deliciousreverie.co.uk/posts/typecheck-source-only/
 ---
-# How to scope Typecheck to your project folder
-
 Published on Tuesday, 31 March 2020
 
 I configured a command so that I can run a type check on my project, but the results always include stuff in the node\_modules folder. It took me a lot of investigation and asking around before I figured out how to scope tsc to only the ./src/ folder?

@@ -3,13 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: "4 things that I learned from counselling training - Delicious Reverie"
 description: "When I was younger, I studied a form of Cognitive Behavioural therapy called Counselling. I studied for over 2 years but never took it up as a career. Even so, there are some valuable lessons that continue to help me in my web development career. Here are four of them."
 datePublished: 2021-01-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/4-things-learned-from-counselling-training/"
-categories:
 ---
-# 4 things that I learned from counselling training
-
-Published on Saturday, 2 January 2021
-
 Most of us have moments in life where we question ourselves, often forced into being by some personal crisis or difficult situation. During one of these I enrolled on a course to learn Counselling, a form of Cognitive Behavioural therapy that is popular in the NHS and privately in the UK. I studied for about two years, and afterwards took a course in abnormal psychology. Even though I never qualified to become a counsellor, it's one skill I use often, even in web development.
 
 Here are some of the main takeaways I gleaned from my course:

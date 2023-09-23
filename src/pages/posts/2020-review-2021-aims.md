@@ -5,12 +5,7 @@ description: "2020 has been ... a lot. But I've also learned a ton of stuff. Tho
 "
 categories:
 datePublished: 2020-12-04
-canonicalLink: "https://deliciousreverie.co.uk/posts/2020-review-2021-aims/
 ---
-# 2020 Review / 2021 Aims
-
-Published on Friday, 4 December 2020
-
 2020 has been ... a lot. But I've also learned a ton of stuff. Though I can't ever say I know enough of anything, my objectives for 2021 are going to be quite different from previous years...
 
 I've definitely not been the smartest person in the room over the last year. I've worked with some incredible people, such as David Hewitt, David Fernandez, Romina Moya, Kate Beavis, Gerard Blanes, and many other great folk who have been good enough to explain stuff, pair code with me, and bear with my failures.

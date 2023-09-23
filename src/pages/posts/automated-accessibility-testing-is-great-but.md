@@ -5,12 +5,7 @@ description: "We recently had a situation using jest-axe in tests, where the lan
 "
 categories:
 datePublished: 2021-01-20
-canonicalLink: "https://deliciousreverie.co.uk/posts/automated-accessibility-testing-is-great-but/
 ---
-# Automated accessibility testing is great, but ...
-
-Published on Wednesday, 20 January 2021
-
 We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me verify why we shouldn't rely solely on automated tools, never mind how good they are.
 
 In unit tests for our [react component library](https://github.com/zopaUK/react-components) at Zopa, we have utilised [jest-axe](https://github.com/nickcolley/jest-axe) to test whether our components adhere to a number of accessibility rules.

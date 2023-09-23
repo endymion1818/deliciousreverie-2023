@@ -5,9 +5,7 @@ description: "Working as part of a larger team often involves skills that aren't
 "
 categories:
 datePublished: 2019-08-08
-canonicalLink: "https://deliciousreverie.co.uk/posts/the-art-of-compromise/
 ---
-# The Art of Compromise
 
 Published on Thursday, 8 August 2019
 

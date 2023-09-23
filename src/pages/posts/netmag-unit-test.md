@@ -4,12 +4,8 @@ title: "Unit Test your React apps - Delicious Reverie"
 description: "Originally published in print for Net Magazine issue 320. Do you want production-ready code without going to production first? This article shows how it's possible with React Testing Library. "
 categories:
 datePublished: 2020-02-28
-canonicalLink: "https://www.creativebloq.com
+canonicalLink: "https://www.creativebloq.com"
 ---
-# Unit Test your React apps
-
-Published on Friday, 28 February 2020 , originally at [https://www.creativebloq.com](https://www.creativebloq.com)
-
 Originally published in print for [Net Magazine](https://www.creativebloq.com).
 
 Do you really know what your code does what it is supposed to do? Have you tested it in the browser? What if you haven't, or you can't test everything, and it breaks in production?

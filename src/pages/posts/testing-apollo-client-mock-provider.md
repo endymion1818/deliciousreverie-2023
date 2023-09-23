@@ -5,9 +5,7 @@ description: "Apollo's MockProvider is a great tool for testing mutations, howev
 "
 categories:
 datePublished: 2022-01-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/testing-apollo-client-mock-provider/
 ---
-# Testing with Apollo Client mock provider
 
 Published on Sunday, 2 January 2022
 

@@ -5,9 +5,7 @@ description: "I came across a tool recently that I'm really excited about ... it
 "
 categories:
 datePublished: 2021-05-08
-canonicalLink: "https://deliciousreverie.co.uk/posts/towards-better-rehydration/
 ---
-# Towards better hydration
 
 Published on Saturday, 8 May 2021
 

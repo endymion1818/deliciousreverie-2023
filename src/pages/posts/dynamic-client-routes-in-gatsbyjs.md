@@ -5,12 +5,7 @@ description: "Would you use GatsbyJS for a dynamic app? Yes I would. The reason 
 "
 categories:
 datePublished: 2020-06-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/dynamic-client-routes-in-gatsbyjs/
 ---
-# Dynamic client side routes in GatsbyJS
-
-Published on Thursday, 18 June 2020
-
 Would you use GatsbyJS for a dynamic app? Yes I would. The reason is that I can make good use of Gatsby's great developer experience, as well as do everything I would normally do in a React application. Here's how I recently implemented dynamic routing.
 
 Disclaimer: My colleage Romina Moya originally discovered how Gatsby could do this, and showed it to me afterwards.

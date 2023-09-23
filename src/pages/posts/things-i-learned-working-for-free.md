@@ -4,11 +4,7 @@ title: "Things I Learned By Working for Free - Delicious Reverie"
 description: "Developers sometimes get asked to do stuff for free. If that happens, it generally can be a warning sign that would be right to steer well clear of. It's easy to end up feeling cheated. But I've been fortunate to be involved in two projects that, although I earned no money from, I felt that I benefited greatly."
 categories:
 datePublished: 2015-03-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/things-i-learned-working-for-free/
 ---
-# Things I Learned By Working for Free
-
-Published on Saturday, 14 March 2015
 
 Developers sometimes get asked to do stuff for free. If that happens, it generally can be a warning sign that would be right to steer well clear of. It's easy to end up feeling cheated. But I've been fortunate to be involved in two projects that, although I earned no money from, I felt that I benefited greatly.
 

@@ -4,12 +4,7 @@ title: "More Questions, Better Answers - Delicious Reverie"
 description: "Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to."
 categories:
 datePublished: 2018-06-08
-canonicalLink: "https://deliciousreverie.co.uk/posts/more-questions-better-answers/
 ---
-# More Questions, Better Answers
-
-Published on Friday, 8 June 2018
-
 Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to.
 
 One of the decisions that we have considered recently is how to deliver content into the new website we are building.

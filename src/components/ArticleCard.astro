@@ -2,49 +2,30 @@
 import Embeds from "./Embeds.astro"
 import FormatDate from "./FormatDate.astro"
 
-interface Props {
-  post?: {
-    title: string
-    shareCard?: string
-    description: string
-    slug: string
-    publishDate: string
-    firstPublishDate: string
-    embed?: {
-      link: string
-      type: 'spotify' | 'youtube'
-    }
-  }
-  postPrefix?: string
-  categoryPrefix?: string
-  tags?: Array<{
-    slug: string
-    title: string
-  }>
-}
-
-const { post, tags, postPrefix = 'posts', categoryPrefix = "tag" } = Astro.props
+const { post } = Astro.props
+const { frontmatter, url } = post
 ---
-<a href={`/${postPrefix}/${post.slug}/`} class="hover:tw-bg-zinc-400">
-  {post.shareCard && (
+<a href={`/${url}/`} class="hover:tw-bg-zinc-400">
+  <!-- {post.shareCard && (
     <img src={post.shareCard} />
-  )}
+  )} -->
+  {JSON.stringify(post)}
   <div class="py-5">
-    <h2 class="card-title text-2xl text-inherit mb-2 tracking-wide">
-      <a class="hover:underline" href={`/${postPrefix}/${post.slug}/`}>{post.title}</a>
+    <h2 class="mb-2 text-2xl tracking-wide card-title text-inherit">
+      <a class="hover:underline" href={`/${post.slug}/`}>{frontmatter.title}</a>
     </h2>
-    <p class="text-inherit text-lg">{post.description}</p>
-    {post.embed?.link && (
+    <p class="text-lg text-inherit">{post.description}</p>
+    <!-- {post.embed?.link && (
       <Embeds embed={post.embed}/>
-    )}
-    {post.publishDate && <p class="my-2">Published on <FormatDate datetime={post.publishDate}/></p>}
-    {tags?.length ? (
-      <div class="card-actions mt-5 justify-end items-center">
+    )} -->
+    {frontmatter.publishDate && <p class="my-2">Published on <FormatDate datetime={frontmatter.publishDate}/></p>}
+    <!-- {tags?.length ? (
+      <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
         {tags?.map(tag => (
-          <a href={`/${categoryPrefix}/${tag.slug}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
+          <a href={`/${tag.slug}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
         ))}
       </div>
-    ) : null}
+    ) : null} -->
   </div>
 </a>

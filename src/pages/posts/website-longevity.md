@@ -5,7 +5,6 @@ description: "When you build something, how long do you expect it to last? Whils
 "
 categories:
 datePublished: 2020-03-31
-canonicalLink: "https://deliciousreverie.co.uk/posts/website-longevity/
 ---
 # On website longevity
 

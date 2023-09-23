@@ -4,12 +4,7 @@ title: "Losing Peter - Delicious Reverie"
 description: "I found out one of my closest school friends committed suicide recently."
 categories:
 datePublished: 2017-09-14
-canonicalLink: "https://deliciousreverie.co.uk/posts/losing-peter/
 ---
-# Losing Peter
-
-Published on Thursday, 14 September 2017
-
 I don't recall how Peter and I became friends. We must've struck up some conversation at school, is the only thing I can think of, and quickly found out we had similar interests. Peter is the guy who I used to call up on a Tuesday evening after the latest episode of Babylon 5 aired, and talk abut the episode, speculate about further plot details, and share our amazement of its then cutting edge FX.
 
 Peter was adopted. He never talked about this situation apart from on one occasion where we were pranking each other that we were both secretly aliens. Of course, being adopted was great backstory material.

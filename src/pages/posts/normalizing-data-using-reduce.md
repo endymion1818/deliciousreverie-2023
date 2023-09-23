@@ -4,12 +4,7 @@ title: "Normalizing data using array.prototype.reduce - Delicious Reverie"
 description: "Normalizing data using array.prototype.reduce"
 categories:
 datePublished: 2019-06-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/normalizing-data-using-reduce/
 ---
-# Normalizing data using array.prototype.reduce
-
-Published on Tuesday, 18 June 2019
-
 reduce() has terrified me for some time! I hadn't wanted to touch this new array method because I couldn't quite follow what each of it's properties meant. But recently I had an opportunity to deep dive into this function. Here's how I refactored an object to get the results I needed:
 
 Edit: I realize this article doesn't really show you enough about how to use reduce, but it's still coming up in my SEO keywords quite frequently. So here's a more thorough article on the topic: [https://dev.to/ra1nbow1/5-ways-to-use-the-reduce-method-in-js-1k8h](https://dev.to/ra1nbow1/5-ways-to-use-the-reduce-method-in-js-1k8h)

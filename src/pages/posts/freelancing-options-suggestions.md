@@ -5,12 +5,7 @@ description: "Many of us dream someday of freelancing and living a ... less rest
 "
 categories:
 datePublished: 2020-09-07
-canonicalLink: "https://deliciousreverie.co.uk/posts/freelancing-options-suggestions/
 ---
-# Freelancing: options and suggestions
-
-Published on Monday, 7 September 2020
-
 Many of us dream someday of freelancing and living a ... less restrictive? ... lifestyle. But is it truly the best option? I freelanced for 7 years before the Credit Crunch killed my business. Looking back, here are a few of the questions I've been asked about freelancing.
 
 ## Is it better to freelance? [#](https://deliciousreverie.co.uk/posts/freelancing-options-suggestions/#is-it-better-to-freelance)

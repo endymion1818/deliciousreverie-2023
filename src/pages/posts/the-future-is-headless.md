@@ -5,9 +5,7 @@ description: "If you've been in the industry for any length of time, the chances
 "
 categories:
 datePublished: 2015-08-10
-canonicalLink: "https://deliciousreverie.co.uk/posts/the-future-is-headless/
 ---
-# The Future is Headless
 
 Published on Monday, 10 August 2015
 

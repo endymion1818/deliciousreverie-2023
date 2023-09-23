@@ -5,12 +5,7 @@ description: "In order for people outside of the development team or community t
 "
 categories:
 datePublished: 2018-08-18
-canonicalLink: "https://deliciousreverie.co.uk/posts/content-authoring-with-strapijs/
 ---
-# Content Authoring with StrapiJs
-
-Published on Saturday, 18 August 2018
-
 For years, WordPress has been the de facto standard for content authoring on the web. The reasons for this are many, but principal among them is it's clean, easy-to-use interface that gives content authors control over nearly every aspect of their content. WordPress isn't going away, but hosting and maintaining it safely can be a challenge.
 
 At the organisation I work for, we have a WordPress blog, but almost no PHP expertise as we were moving from Ruby towards a JavaScript stack. We also have another service that used a WordPress-like interface, but were tied into expensive hosted services - which was deprecated, and yet still fulfilled an essential function as a core part of our content strategy.

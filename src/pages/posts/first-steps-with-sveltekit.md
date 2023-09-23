@@ -3,14 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "First steps with Sveltekit - Delicious Reverie"
 description: "SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about."
 categories:
-datePublished: 2021-05-27
-canonicalLink: "https://deliciousreverie.co.uk/posts/first-steps-with-sveltekit/
+datePublished: 2021-05-27#
 ---
-# First steps with Sveltekit
-
-Published on Thursday, 27 May 2021
-
-velte is a new framework for JavaScript ... hear me out! It does seem to some people that there's a new JavaScript framework out every day. And there are a lot of new ones at the minute. But SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about.
+Svelte is a new framework for JavaScript ... hear me out! It does seem to some people that there's a new JavaScript framework out every day. And there are a lot of new ones at the minute. But SvelteKit is great for one reason: performance. And it's this above everything else (except accessibility) that I'm excited about.
 
 Svelte does have a lot of things going for it. It's as nice (if not nicer) to develop with than React, and getting started is a lot, lot quicker.
 

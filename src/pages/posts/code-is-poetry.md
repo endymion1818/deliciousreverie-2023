@@ -4,12 +4,7 @@ title: "Code really is Poetry - Delicious Reverie"
 description: "I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about Babylon 5 (yes, really) and yet not wanting to part company again."
 categories:
 datePublished: 2015-06-02
-canonicalLink: "https://deliciousreverie.co.uk/posts/code-is-poetry/
 ---
-# Code really is Poetry
-
-Published on Tuesday, 2 June 2015
-
 I'm not sure if you remember the early days of the web. I can. I remember when my friend and I would sit at home, bored of talking about Babylon 5 (yes, really) and yet not wanting to part company again.
 
 "Let's try to get on the internet!" I would excitedly yelp, and plug in the 14.4k modem, dial into Apple's [eWorld](https://en.wikipedia.org/wiki/EWorld) online community, and download an early version of Mosaic or Netscape.

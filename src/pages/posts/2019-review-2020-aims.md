@@ -5,12 +5,7 @@ description: "This year has solidified my JavaScript knowledge, and I think I ha
 "
 categories:
 datePublished: 2019-01-11
-canonicalLink: "https://deliciousreverie.co.uk/posts/2019-review-2020-aims/
 ---
-# 2019 Review / 2020 Aims
-
-Published on Friday, 11 January 2019
-
 I [opened last year's post](https://deliciousreverie.co.uk/post/2018-review-2019-aims/) by stating what a rollercoaster it had been for me. Well, this year has been no different; I started out the year becoming a father for the third time. That has been a wonderful, exhausting experience!
 
 Professionally too, my team went from a band of three (a developer, QA and project manager), to one of five to seven people, including another full-time developer, my personal friend and former colleague [David](https://way2adv.com/).

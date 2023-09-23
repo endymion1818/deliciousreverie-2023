@@ -4,12 +4,7 @@ title: "2016 Review / 2017 Aims - Delicious Reverie"
 description: "2016 as a year was as unconventional as they come. Globally there have been some massive shifts politically, socially and in other ways. My life too has taken some pretty interesting turns. I'm following suit here by posting a quick review of my year and what I hope I can achieve in 2017 from a professional perspective."
 categories:
 datePublished: 2017-05-12
-canonicalLink: "https://deliciousreverie.co.uk/posts/2016-review-2017-aims/
 ---
-# 2016 Review / 2017 Aims
-
-Published on Friday, 12 May 2017
-
 2016 as a year was as unconventional as they come. Globally there have been some massive shifts politically, socially and in other ways. My life too has taken some pretty interesting turns. I'm following suit here by posting a quick review of my year and what I hope I can achieve in 2017 from a professional perspective.
 
 When I look back at the start of 2016 it is with a huge amount of mixed feelings. Hannah and I were still getting used to the sleepless nights with Morgan, who was just then a year old. We'd also recently got told to move out of our house with 4 weeks notice. That proved to be incredibly stressful.

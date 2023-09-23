@@ -4,11 +4,7 @@ title: "SVG Animation on Hover with GreenSock - Delicious Reverie"
 description: "One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers."
 categories:
 datePublished: 2017-05-21
-canonicalLink: "https://deliciousreverie.co.uk/posts/svg-animation-on-hover-with-greensock/
 ---
-# SVG Animation on Hover with GreenSock
-
-Published on Sunday, 21 May 2017
 
 One thing I've tried to do more of is to use animations on frontend projects I've been involved with. GreenSock animation library is a great way of standardising and improving on animations that otherwise wouldn't be available on all browsers.
 

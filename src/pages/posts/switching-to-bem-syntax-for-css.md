@@ -5,11 +5,7 @@ description: "Like a lot of things in the web world, CSS is a bit of mess. As th
 "
 categories:
 datePublished: 2016-10-21
-canonicalLink: "https://deliciousreverie.co.uk/posts/switching-to-bem-syntax-for-css/
 ---
-# Switching to BEM Syntax for CSS
-
-Published on Friday, 21 October 2016
 
 Like a lot of things in the web world, CSS is a bit of mess. As the web gets more complicated, the tools and languages we use need to develop with us. This is currently happening as the W3C push forward with new functionality like Grid and Flexbox, but until those come into general use, we can aim to limit the risk of our code becoming unfathomable by other developers.
 
