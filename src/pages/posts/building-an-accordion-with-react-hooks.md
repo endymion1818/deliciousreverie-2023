@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Building an Accordion Component with React Hooks"
 description: "Originally published in print for Net Magazine issue 320. I wanted to showcase how I have begun using React Hooks, and hilight some best practices to follow for better accessibility.
 "
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2019-06-15
 canonicalLink: "https://www.creativebloq.com"
 ---

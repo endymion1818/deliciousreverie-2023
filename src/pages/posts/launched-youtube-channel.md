@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "I launched a YouTube channel"
 description: "I opened a YouTube channel! It was originally made to teach some kids coding schools, but I think it might prove to be a useful resource I'll be using more often.
 "
-tags: personal
+tags: 
+  - personal
 datePublished: 2022-05-30
 ---
 Time flies, as they say, and as I'm getting older (reached 42 this year) I find I have as much to say but less time to say it. I'm thinking people who are interested in my content are likely to be in the same position.

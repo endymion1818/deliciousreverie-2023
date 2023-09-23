@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Normalizing data using array.prototype.reduce"
 description: "Normalizing data using array.prototype.reduce"
-tags: javascript
+tags: 
+  - javascript
 datePublished: 2019-06-18
 ---
 reduce() has terrified me for some time! I hadn't wanted to touch this new array method because I couldn't quite follow what each of it's properties meant. But recently I had an opportunity to deep dive into this function. Here's how I refactored an object to get the results I needed:

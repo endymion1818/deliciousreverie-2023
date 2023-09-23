@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Some of my favourite books"
 description: "I was asked to list some of my favourite books recently, so I compiled the following list, which is very loose and still might be missing some of my favourites!
 "
-tags: personal, literature
+tags: 
+  - personal
+  - literature
 datePublished: 2020-06-27
 ---
 I have found it very difficult to collect this list together, I go through phases with books and these might be considered my current favourites ... but here goes!

@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Why Atomic Design Makes Sense"
 description: "Although I've really gotten into the SASS revolution, I haven't yet adopted a method for structuring elements of CSS. I guess it's because none of them strike me as particularly visual, and being a former print designer, I tend to think in those terms. But something about Brad Frost's Atomic Design principles makes sense to me. Here's why."
-tags: css
+tags: 
+  - css
 datePublished: 2015-11-23
 ---
 Although I've really gotten into the SASS revolution, I haven't yet adopted a method for structuring elements of CSS. I guess it's because none of them strike me as particularly visual, and being a former print designer, I tend to think in those terms. But something about Brad Frost's Atomic Design principles makes sense to me. Here's why.

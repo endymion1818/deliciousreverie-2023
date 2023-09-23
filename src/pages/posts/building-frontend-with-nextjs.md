@@ -2,7 +2,10 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Building a Frontend With NextJS"
 description: "This was originally published for Webiny's documentation portal and teaches readers how build a frontend for Webiny Headless CMS with NextJS."
-tags: javascript, react, nextjs
+tags: 
+  - javascript
+  - react
+  - nextjs
 datePublished: 2022-01-03
 canonicalLink: "https://www.webiny.com/docs/headless-cms/integrations/nextjs"
 ---

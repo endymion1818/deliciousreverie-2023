@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "First Steps with Flexbox
 description: "On a recent project for international research machine builder Anton Paar, I used the new flex-box CSS module for the first time. Here's how it went."
-tags: css
+tags: 
+  - css
 datePublished: 2015-02-15
 ---
 On a recent project for international research machine builder Anton Paar, I used the new flex-box CSS module for the first time. Here's how it went.

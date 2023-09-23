@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Switching to BEM Syntax for CSS"
 description: "Like a lot of things in the web world, CSS is a bit of mess. As the web gets more complicated, the tools and languages we use need to develop with us. This is currently happening as the W3C push forward with new functionality like Grid and Flexbox, but until those come into general use, we can aim to limit the risk of our code becoming unfathomable by other developers.
 "
-tags: css
+tags: 
+  - css
 datePublished: 2016-10-21
 ---
 

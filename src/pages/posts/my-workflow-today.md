@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "My Workflow Today"
 description: "Workflows and tools are constantly changing. The tools we use and the workflow we have means we've simplified our build process and cut out some of the repetitive tasks, so that we can concentrate on simply doing the stuff we love as well as we can. This is my current set up:
 "
-tags: personal
+tags: 
+  - personal
 datePublished: 2015-11-17
 ---
 Workflows and tools are constantly changing. The tools we use and the workflow we have means we've simplified our build process and cut out some of the repetitive tasks, so that we can concentrate on simply doing the stuff we love as well as we can. This is my current set up:

@@ -3,7 +3,10 @@ layout: ../../layouts/BlogLayout.astro
 title: "Working with styled components: multiple nested properties"
 description: "Destructuring is a common pattern when it comes to using styled components in complex situations. But it can be hazardous to clearly identify nesting. Here are a few suggestions.
 "
-tags: javascript, react, css
+tags: 
+  - javascript
+  - react
+  - css
 datePublished: 2021-05-01
 ---
 I've seen this fairly frequently when it comes to using shared media queries. sometimes you want to set the width of an element based on one property, but you need to access the theme too.

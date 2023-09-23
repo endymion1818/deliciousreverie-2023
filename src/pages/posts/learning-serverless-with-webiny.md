@@ -3,7 +3,11 @@ layout: ../../layouts/BlogLayout.astro
 title: "Learning serverless with Webiny"
 description: "Webiny is a new CMS in the market, one that seeks to compete with other well-established headless CMS platforms and existing apps. But I've also come to enjoy using it for another reason...
 "
-tags: javascript, serverless, webiny, cms
+tags: 
+  - javascript
+  - serverless
+  - webiny
+  - cms
 datePublished: 2020-04-03
 ---
 Webiny is a new CMS in the market, one that seeks to compete with other well-established headless CMS platforms and existing apps. But I've also come to enjoy using it for another reason: it's helping me learn how to apply principles of Serverless application architecture.

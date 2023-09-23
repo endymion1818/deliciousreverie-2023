@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "On website longevity"
 description: "When you build something, how long do you expect it to last? Whilst it might be easy to think about the things we create as our legacy to the world, that might not be the case when it comes to our online creations ...
 "
-tags: engineering
+tags: 
+  - engineering
 datePublished: 2020-03-31
 ---
 When you build something, how long do you expect it to last? Whilst it might be easy to think about the things we create as our legacy to the world, that might not be the case when it comes to our online creations ...

@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Poem Review: She Weeps Over Rahoon, James Joyce"
 description: "A very dear friend introduced me to James Joyce many years ago with his coming-of-age almost-biography, A Portrait of a Young Man, which had a deep impact on me. But it's only now I'm starting to pick up on just what a master of the English language Joyce was—through his poetry.
 "
-tags: literature
+tags: 
+  - literature
 datePublished: 2016-11-21
 ---
 A very dear friend introduced me to James Joyce many years ago with his coming-of-age almost-biography, A Portrait of a Young Man, which had a deep impact on me. But it's only now I'm starting to pick up on just what a master of the English language Joyce was—through his poetry.

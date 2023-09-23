@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Using the Srcset attribute on images"
 description: "So, I've been using the relatively new (and somewhat confusing) srcset attribute to serve a couple of interesting use cases lately. This spec is really, really useful in certain circumstances, two of which I'd like to share with you here.
 "
-tags: accessibility
+tags: 
+  - accessibility
 datePublished: 2016-01-15
 ---
 # Using the Srcset attribute on images

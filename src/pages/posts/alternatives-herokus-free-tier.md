@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Alternatives to Heroku’s Free Tier"
 description: "Originally written for the Webiny blog. Heroku announced that it's extremely popular free tier plans were being phased out and I saw an opportunity to provide some high value content that could capture the audience and attract them to Webiny as a product."
-tags: hosting
+tags: 
+  - hosting
 datePublished: 2022-08-26
 canonicalLink: "https://www.webiny.com/blog/alternatives-herokus-free-tier/"
 ---

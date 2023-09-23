@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Is JSDoc Better Than TypeScript? A Real World Example"
 description: "I've become an avid fan of TypeScript in recent years as it's improved my output, tightened up my appreciation for JavaScript's type coercion, and generally reduced my anxiety levels at work. However recently I've come into a place of work where JavaScript is written and often maintained by software engineers for whom JavaScript isn't their speciality. Not wanting to go back to the wild west of plain JavaScript, I adopted JSDoc. Here's how it went."
-tags: javascript, typescript
+tags: 
+  - javascript
+  - typescript
 datePublished: 2023-05-25
 ---
 **I've become an avid fan of [TypeScript](https://www.typescriptlang.org/) in recent years as it's improved my output, tightened up my appreciation for JavaScript's type coercion, and generally reduced my anxiety levels at work. However recently I've come into a place of work where JavaScript is written and often maintained by software engineers for whom JavaScript isn't their specialty. Not wanting to go back to the wild west of plain JavaScript, I adopted [JSDoc](https://jsdoc.app/). Here's how it went.**

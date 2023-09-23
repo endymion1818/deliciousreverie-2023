@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Wordpress theming with Backbone.js"
 description: "You'll notice that there's not a huge amount of posts about JavaScript on my site. That's not an accident, I'm really only beginning to gain my feet with the language. Despite this I took the plunge and decided to build a Wordpress theme that uses Backbone.js to render the posts in a list. Here's a bit about the project."
-tags: wordpress, javascript
+tags: 
+  - wordpress
+  - javascript
 datePublished: 2016-01-06
 ---
 

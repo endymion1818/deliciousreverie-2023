@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "I'm Not Proud"
 description: "I'm not proud of the code I wrote today. In fact, I hated it. But that's okay, it did what it needed to. And I'm going to redo it tomorrow.
 "
-tags: personal
+tags: 
+  - personal
 datePublished: 2019-01-30
 ---
 Today was a stressful day. I was working to a set deadline on which a lot of other tasks depended. I felt that if I failed to achieve my work, there would be a cascade effect that could lead to delaying the release of a product I have been working on.

@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "My Recipe for Crispy Beef"
 description: "I've tried several recipes for crispy beef, and have finally gained confidence enough to make it on my own terms. Here's a simplified version that I now follow. It's quite rough, and it's meant to be adapted.
 "
-tags: food
+tags: 
+  - food
 datePublished: 2022-07-28
 ---
 I've tried several recipes for crispy beef, and have finally gained confidence enough to make it on my own terms. Here's a simplified version that I now follow. It's quite rough, and it's meant to be adapted.

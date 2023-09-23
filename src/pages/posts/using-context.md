@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Better Performance with the React Context API"
 description: "Build for complexity and performance in this deep dive into React's Context API. This article was originally published in Net Magazine.
 "
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2019-04-08
 canonicalLink: "https://www.creativebloq.com"
 ---

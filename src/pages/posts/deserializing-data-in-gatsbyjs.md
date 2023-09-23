@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Deserializing Data in GatsbyJS"
 description: "One of the great strengths in static site generator Gatsbyjs is the node API but it can present a few issues in certain circumstances when content is stored as escaped HTML, such as in WordPress posts and pages. Here's how we recently dealt with this issue when using react-helmet."
-tags: javascript, gatsby
+tags: 
+  - javascript
+  - gatsby
 datePublished: 2018-03-17
 ---
 One of the great strengths in static site generator Gatsbyjs is it's node API. This API gives Gatsby flexibility by allowing data to be transformed from myriad sources into a format that can easily be rendered as HTML: JSON. However, this can present a few issues when content is stored as escaped HTML, such as in WordPress posts and pages. Here's how a colleague and I worked around a tricky problem we discovered when working with content pulled in from WordPress.

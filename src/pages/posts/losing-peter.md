@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Losing Peter"
 description: "I found out one of my closest school friends committed suicide recently."
-tags: personal
+tags: 
+  - personal
 datePublished: 2017-09-14
 ---
 I don't recall how Peter and I became friends. We must've struck up some conversation at school, is the only thing I can think of, and quickly found out we had similar interests. Peter is the guy who I used to call up on a Tuesday evening after the latest episode of Babylon 5 aired, and talk abut the episode, speculate about further plot details, and share our amazement of its then cutting edge FX.

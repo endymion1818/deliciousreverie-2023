@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "React: data fetching results in type error: object is not a function"
 description: "Sometimes I get frustrated with React, there can still sometimes be obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ..."
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2021-07-12
 ---
 Sometimes I get frustrated with React, there can still sometimes be obscure errors that are a result of it's component lifecycle methods. But at least it means I can tell you about how to avoid them ...

@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Using WordPress as a Headless CMS"
 description: "This is the reproduction of an article I wrote for Net Magazine and was published in Issue 308 (August 2018)."
-tags: cms, wordpress
+tags: 
+  - cms
+  - wordpress
 datePublished: 2018-07-25
 canonicalLink: "https://www.creativebloq.com"
 ---

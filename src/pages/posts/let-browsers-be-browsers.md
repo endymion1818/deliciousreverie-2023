@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Let Browsers be Browsers"
 description: "I've been hearing a lot of different, seemingly contradictory messages from the industry in recent weeks regarding frontend frameworks and progressive enhancement. I got so frustrated that I started a discussion on Web Freelancers Hub about it. I felt the answers that came back were worth documenting.
 "
-tags: engineering
+tags: 
+  - engineering
 datePublished: 2015-11-23
 ---
 I've been hearing a lot of different, seemingly contradictory messages from the industry in recent weeks regarding frontend frameworks and progressive enhancement. I got so frustrated that I started a discussion on Web Freelancers Hub about it. I felt the answers that came back were worth documenting.

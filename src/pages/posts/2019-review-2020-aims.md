@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "2019 Review / 2020 Aims"
 description: "This year has solidified my JavaScript knowledge, and I think I have also developed more of the holistic skills around the framework of tools and teams that surround me. But there's still a lot more I need to work on...
 "
-tags: personal
+tags: 
+  - personal
 datePublished: 2019-01-11
 ---
 I [opened last year's post](https://deliciousreverie.co.uk/post/2018-review-2019-aims/) by stating what a rollercoaster it had been for me. Well, this year has been no different; I started out the year becoming a father for the third time. That has been a wonderful, exhausting experience!

@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "How Were Using WordPress as a Headless CMS"
 description: "At a recent WordPress conference in London I gave this talk. It was a terrifying and yet validating experience!
 "
-tags: wordpress, cms
+tags: 
+  - wordpress
+  - cms
 datePublished: 2018-04-24
 ---
 

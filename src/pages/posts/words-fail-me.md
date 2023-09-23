@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Words Fail Me."
 description: "I'm a great fan of Virginia Woolf's Stream of Consciousness writing, but that isn't why this post is here."
-tags: personal
+tags: 
+  - personal
 datePublished: 2015-02-27
 ---
 

@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "A recipe for quick and dirty ramen"
 description: "I've been slowly perfecting a recipe for ramen that I can quickly make at home for a quick meal. If you too like that sort of thing ... here's my hopefully simple recipe!
 "
-tags: food
+tags: 
+  - food
 datePublished: 2020-01-28
 ---
 I really like asian food. I'll go for gyoza / jiaozi any day over a "traditional" sunday roast. One thing I love most is ramen, but it's taken me ages to invent my own recipe.

@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Why Astro matters"
 description: "Next, Nuxt, Gatsby, SvelteKit ... there's been an explosion of frontend application frameworks lately. It's never been a more delightful experience to spin up a new project. What's the point of difference with this one? Why does it 'matter' so much?
 "
-tags: javascript, astro
+tags: 
+  - javascript
+  - astro
 datePublished: 2021-07-20
 canonicalLink: "https://dev.to/endymion1818/why-astro-matters-55nj/"
 ---

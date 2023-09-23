@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Towards better hydration"
 description: "I came across a tool recently that I'm really excited about ... it's something that I think can solve one of the most pressing concerns in JavaScript development: rehydration.
 "
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2021-05-08
 ---
 

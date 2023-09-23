@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "More Questions, Better Answers"
 description: "Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to."
-tags: engineering, personal
+tags: 
+  - engineering
+  - personal
 datePublished: 2018-06-08
 ---
 Working with a large FinTech organisation has taught me a lot about the potential loopholes and considerations around certain technical decisions that I have been asked to contribute to.

@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Doughnut chart SVG Animation"
 description: "For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area.
 "
-tags: javascript, animation
+tags: 
+  - javascript
+  - animation
 datePublished: 2017-05-30
 ---
 For a recent project, I was asked to design an animation for a doughnut chart. The data could be dynamically editable by the content author, who could also choose how many animations to display on a given content area.

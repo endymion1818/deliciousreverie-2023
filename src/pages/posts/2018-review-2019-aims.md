@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "2018 Review / 2019 Aims"
 description: "Wow. 2018 was a real rollercoaster for me. This is a brief review so that I can look back on what I achieved, and set out what I hope I can achieve in web development this year.
 "
-tags: personal
+tags: 
+  - personal
 datePublished: 2019-01-03
 ---
 Twenty Eighteen was a whirlwind of changes for me professionally. I went from working in an agency to working for a FinTech, and the difference in those two roles and the tech stacks involved have brought me many new skills as a developer. But I still suffer anxiety with all the things I want to learn.

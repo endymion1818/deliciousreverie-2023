@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Poems about Time"
 description: "Time is a funny thing. Whilst modern science has helped us to see it's not as constant as we might have imagined, we still rarely are able to see it and our experiences within it from different perspectives. Although I really enjoy these few poems that seem to be able to step outside of the flow in one way or another."
-tags: literature
+tags: 
+  - literature
 datePublished: 2023-01-02
 ---
 Time is a funny thing. Whilst modern science has helped us to see it's not as constant as we might have imagined, we still rarely are able to see it and our experiences within it from different perspectives. Although I really enjoy these few poems that seem to be able to step outside of the flow in one way or another.

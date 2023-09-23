@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Unit Test your React apps"
 description: "Originally published in print for Net Magazine issue 320. Do you want production-ready code without going to production first? This article shows how it's possible with React Testing Library. "
-tags: javascript, testing
+tags: 
+  - javascript,
+  - testing
 datePublished: 2020-02-28
 canonicalLink: "https://www.creativebloq.com"
 ---

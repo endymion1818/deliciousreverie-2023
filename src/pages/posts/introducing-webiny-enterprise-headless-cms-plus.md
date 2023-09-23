@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Introducing Webiny Enterprise CMS+"
 description: "Originally published for the Webiny community and Product Hunt launch. It introduces a new marketing term that was conjured up to provoke discussions about what value Webiny brings to organizations apart from the CMS aspect, and because of it's serverless nature."
-tags: devrel, webiny
+tags: 
+  - devrel
+  - webiny
 datePublished: 2022-10-12
 canonicalLink: "https://www.webiny.com/blog/introducing-webiny-enterprise-headless-cms-plus/"
 ---

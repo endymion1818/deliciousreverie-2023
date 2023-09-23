@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Predictions for GatsbyConf 2021"
 description: "It's no secret that NextJS is knocked the socks off Gatsby last year in terms of developer adoption. I think the frameworks will keep learning from each other (read: steal features), and it's a good thing for both frameworks. Here's my take on what could be announced at Gatsby's forthcoming conference.
 "
-tags: javascript, gatsby
+tags: 
+  - javascript
+  - gatsby
 datePublished: 2021-02-19
 ---
 It's no secret that NextJS is knocked the socks off Gatsby last year in terms of developer adoption. I think the frameworks will keep learning from each other (read: steal features), and it's a good thing for both frameworks.

@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Is Gatsby in decline?"
 description: "I'm sure I was one of the earliest users of Gatsby. But is it in decline? The title is a bit click-baity because I don't really feel that it is. Rather, I think it's well on it's way to finding it's niche."
-tags: javascript, gatsby
+tags: 
+  - javascript
+  - gatsby
 datePublished: 2022-08-13
 ---
 Recently I encountered a Reddit thread along the lines of "is Gatsby dead?", and even some colleagues I respect were agreeing that yes, Gatsby is in decline, suggesting there are better technologies out there.

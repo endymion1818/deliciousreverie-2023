@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Fun with Callbacks"
 description: "I had the opportunity to integrate a callback function with a module I was building recently. But what is a callback? How do you use them? Let's take a closer look."
-tags: javascript
+tags: 
+  - javascript
 datePublished: 2023-02-26
 ---
 I had the opportunity to integrate a callback function with a module I was building recently. But what is a callback? How do you use them? Let's take a closer look.

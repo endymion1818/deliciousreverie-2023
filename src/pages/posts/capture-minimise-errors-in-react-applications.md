@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Capture and Minimise Errors in your React Applications"
 description: "If we we've spent any time developing, specifically with JavaScript, we've seen the White Screen of Death. Nothing renders to the screen, and the only way of investigating the issue we caused is by opening the console and looking at the stack trace.
 "
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2019-03-15
 canonicalLink: "https://www.creativebloq.com"
 ---

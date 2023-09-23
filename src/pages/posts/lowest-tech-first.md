@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Lowest tech first"
 description: "Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task.
 "
-tags: engineering
+tags: 
+  - engineering
 datePublished: 2021-06-23
 ---
 Should I use CSS or JavaScript to perform this task? If you're asking yourself this question, I have an answer for you: use the lowest technology available to you which can complete the task.

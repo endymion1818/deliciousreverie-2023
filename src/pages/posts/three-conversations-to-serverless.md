@@ -3,7 +3,8 @@ layout: ../../layouts/BlogLayout.astro
 title: "Three Conversations to Serverless"
 description: "When Im explaining the idea of Serverless architecture it often takes three conversations before someone understands where I'm coming from, why we put up with the sometimes difficult to understand restrictions it puts on development, and ultimately why it can be extremely useful. In this post, I'm going to document these three conversations that Ive had with many people in the last few months.
 "
-tags: serverless
+tags: 
+  - serverless
 datePublished: 2018-11-09
 ---
 

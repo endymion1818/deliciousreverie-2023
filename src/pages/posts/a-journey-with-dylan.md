@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "A Journey with Dylan"
 description: "I've been in & out of love with Bob Dylan for many years. I started listening in my early 20's, bought a compilation album, but I have to say that I just didn't get it. Now, 16 years later, I'm listening to every album he's produced so far."
-tags: music
+tags: 
+  - music
 datePublished: 2016-12-02
 ---
 I've been in & out of love with Bob Dylan for many years. I started listening in my early 20's, bought a compilation album, but I have to say that I just didn't get it. Now, 16 years later, I'm listening to every album he's produced so far.

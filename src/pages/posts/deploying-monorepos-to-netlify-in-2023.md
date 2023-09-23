@@ -2,7 +2,9 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Deploying Nx monorepos to Netlify in 2023"
 description: "Monorepos with Nx on Netlify has been my stack of choice over the past few years. I really enjoy using both tools to publish an ever-growing series of websites for my hobbies. But there have been a few changes to both Nx and Netlify in that time. This article updates one on the Netlify blog that's a little out of date."
-tags: hosting, javascript
+tags: 
+  - hosting
+  - javascript
 datePublished: 2023-05-31
 ---
 **Monorepos with Nx on Netlify has been my stack of choice over the past few years. I really enjoy using both tools to publish an ever-growing series of websites for my hobbies. But there have been a few changes to both Nx and Netlify recently. This article updates one on the Netlify blog that's a little out of date.**

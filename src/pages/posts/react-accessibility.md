@@ -3,7 +3,10 @@ layout: ../../layouts/BlogLayout.astro
 title: "React Accessibility"
 description: "In the recent past, I've heard React being criticised for not being accessible, or for allowing practices that don't help developers think about accessibility. This is an article I wrote for the print magazine Net.
 "
-tags: javascript, react, accessibility
+tags: 
+  - javascript
+  - react
+  - accessibility
 datePublished: 2018-12-24
 ---
 Originally published in print for [Net Magazine](https://www.creativebloq.com).

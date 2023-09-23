@@ -3,7 +3,10 @@ layout: ../../layouts/BlogLayout.astro
 title: "From PHP to JavaScript: How I Switched Stacks"
 description: "I've been working in web development for the past 8 years or so. Traditionally, I have worked at agencies, creating sites that have been designed in Photoshop, and built afterwards with a CMS integration such as Perch, WordPress, or similar, with occasional forays into Laravel.
 "
-tags: php, serverless, engineering
+tags: 
+  - php
+  - serverless
+  - engineering
 datePublished: 2016-08-08
 ---
 I've been working in web development for the past 8 years or so. Traditionally, I have worked at agencies, creating sites that have been designed in Photoshop, and built afterwards with a CMS integration such as Perch, WordPress, or similar, with occasional forays into Laravel.

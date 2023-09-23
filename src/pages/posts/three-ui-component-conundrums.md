@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Three UI Component Conundrums"
 description: "I really like using React with Styled Components for building effective user interfaces. However I have recently come across three conundrums to solve.
 "
-tags: css, javascript
+tags: 
+  - css
+  - javascript
 datePublished: 2020-10-30
 ---
 React combined with Styled Components is a flexible and maintainable way of composing reusable user interfaces for the web. However, every set of tools has as well as awesome features, a few tricky problems to solve. Here are three that I've come across recently.

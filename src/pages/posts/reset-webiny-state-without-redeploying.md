@@ -2,7 +2,10 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Reset Webiny State Without Redeploying"
 description: "This post was written for Webiny's technical documentation portal. Learn how to roll back the data in your Webiny project by restoring from DynamoDB backups and Elastic Search / OpenSearch snapshots."
-tags: javascript, webiny, cms
+tags: 
+  - javascript
+  - webiny
+  - cms
 datePublished: 2022-11-01
 canonicalLink: "https://www.webiny.com/docs/infrastructure/additional-resources/reset-state-without-redeploy"
 ---

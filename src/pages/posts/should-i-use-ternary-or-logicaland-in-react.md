@@ -3,7 +3,9 @@ layout: ../../layouts/BlogLayout.astro
 title: "Should I use ternary or the logical and operator?"
 description: "Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...
 "
-tags: javascript, react
+tags: 
+  - javascript
+  - react
 datePublished: 2021-05-06
 ---
 Templating with JSX in React is easy ... until it's not. Recently a colleague recommended I use the logical and operator instead of a ternary. However once we'd dug into it a little, we found these operators do very different things ...

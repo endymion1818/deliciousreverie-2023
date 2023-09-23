@@ -3,7 +3,10 @@ layout: ../../layouts/BlogLayout.astro
 title: "Building a Frontend With GatsbyJS"
 description: "This article was originally published for Webiny's technical documentation portal and takes readers through how to build a frontend for Webiny Headless CMS with Gatsby.
 "
-tags: javascript, react, gatsby
+tags: 
+  - javascript
+  - react
+  - gatsby
 datePublished: 2022-01-02
 canonicalLink: "https://www.webiny.com/docs/headless-cms/integrations/gatsby"
 ---

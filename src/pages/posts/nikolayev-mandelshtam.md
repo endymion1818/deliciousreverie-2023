@@ -2,7 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Osip Mandelshtam / Philip Nikolayev"
 description: "Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries."
-tags: literature
+tags: 
+  - literature
 datePublished: 2015-04-02
 ---
 Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his poetry. I've just discovered the wonderful contemporary Russian poet Osip Mandelshtam, who, like Pasternak, evokes some wonderful imagery and delightful reveries.

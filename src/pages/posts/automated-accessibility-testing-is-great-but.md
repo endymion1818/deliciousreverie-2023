@@ -3,7 +3,10 @@ layout: ../../layouts/BlogLayout.astro
 title: "Automated accessibility testing is great, but ..."
 description: "We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me verify why we shouldn't rely solely on automated tools, never mind how good they are.
 "
-tags: javascript, react, accessibility
+tags: 
+  - javascript
+  - react
+  - accessibility
 datePublished: 2021-01-20
 ---
 We recently had a situation using jest-axe in tests, where the landmarks feature wasn't work as expected. This helped me verify why we shouldn't rely solely on automated tools, never mind how good they are.
