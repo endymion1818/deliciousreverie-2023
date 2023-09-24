@@ -5,7 +5,7 @@ layout: ../layouts/PageLayout.astro
 ---
 Hi, I'm Ben, an experienced Senior Software Engineer, who has spent most of my career focused on frontend technologies like React, Svelte and Vue, and writing isomorphic JavaScript code for both GraphQL and REST APIs. I have also enjoyed success as a hands-on DevRel, which saw an increase of 140% month-on-month of website sessions, and a 24% growth in organic traffic. More details below.
 
-![An ugly mug if ever I saw one.](../images/benjamin-read.JPG)
+![An ugly mug if ever I saw one.](../images/benjamin-read.jpg)
 ## Developer Relations Successes:
 
 ### Evangelising Products:
