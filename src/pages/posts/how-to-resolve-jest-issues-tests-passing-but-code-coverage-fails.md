@@ -18,7 +18,7 @@ As I've mentioned the test setup is slightly immaterial, however I'm writing thi
 
 Here's the test using waitFor:
 
-```
+```javascript
 it("renders the page", () => {
   render(
     <ThemeProvider theme={defaultTheme}>
@@ -52,7 +52,7 @@ Basically the assertion cannot be verified because it's no longer there, the re
 
 Here's an example of a working test:
 
-```
+```javascript
 it("renders the page", async () => {
   render(
     <ThemeProvider theme={defaultTheme}>

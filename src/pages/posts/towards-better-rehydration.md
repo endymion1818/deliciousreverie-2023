@@ -27,7 +27,7 @@ I have just come across a tool that makes me think we're much closer to finding 
 
 JavaScript is inextricably tied to the other building blocks of the web: html and css. There's one single line of code that has allowed more and more control to be given to JavaScript:
 
-```
+```javascript
 const root = document.getElementById("root");
 ```
 

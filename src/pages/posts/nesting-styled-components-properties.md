@@ -11,7 +11,7 @@ datePublished: 2021-05-01
 ---
 I've seen this fairly frequently when it comes to using shared media queries. sometimes you want to set the width of an element based on one property, but you need to access the theme too.
 
-```
+```javascript
 const StyledContainer = styled.div`
   ${(props) =>
     props.narrow
@@ -30,7 +30,7 @@ const StyledContainer = styled.div`
 
 You could destructure them like this however it can become difficult to read, particularly the position of the closing bracket, which becomes difficult to see with the template literal syntax:
 
-```
+```javascript
 const StyledContainer = styled.div`
     ${({ narrow, theme })) => narrow ? css `
         @media (min-width: ${theme.desktopMin}) {

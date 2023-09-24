@@ -34,7 +34,7 @@ I often find myself with this UI layout in my projects: 2 repeating columns of c
 
 The way I've traditionally coped with this is very convoluted:
 
-```
+```php
 <div class="row">
 <?php $count=0; foreach ($items as $item) : ?>
 <?php if ($count % 2 == 0 { ?>
@@ -56,7 +56,7 @@ Here's the alternative. I can support IE11, Edge, and older versions of some bro
 
 First, I declare the flexbox layout:
 
-```
+```css
 @media(min-width: 768px) {
   .container {
     display: flex;
@@ -85,7 +85,7 @@ Please note: this is 22 lines of code that I hope I will be able to remove from 
 
 Now, below that I use an @supports rule to scope the grid layouts:
 
-```
+```css
 @supports (display: grid) {
 
   @media (min-width: 768px) {

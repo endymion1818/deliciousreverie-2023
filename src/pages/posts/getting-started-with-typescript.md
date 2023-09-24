@@ -38,7 +38,7 @@ TypeScript works by forcing us to tell it what properties are going into, and co
 
 Let's add our first interface!
 
-```
+```javascript
 export interface ISContainerProps {}
 ```
 
@@ -46,7 +46,7 @@ Here we're declaring what will interface with our function. As a convention we s
 
 Let's add our first property:
 
-```
+```javascript
 export interface ISContainerProps {  bgColor: string;}
 ```
 
@@ -54,19 +54,19 @@ I've given bgColor the type "string" here. This means that it can only be a s
 
 I want to restrict the use of the next property, text colour, a little more than that. I want them to have the choice between only black and gray text. Because of this, I'm going to rename textColour to lighterText:
 
-```
+```javascript
     lighterText?: boolean;
 ```
 
 The question mark (?) tells the compiler that lighterText is an optional property. If nothing is declared, it'll be false by defaut. Within my styled component, I can output grey or black based on this boolean value:
 
-```
+```javascript
     color: ${props.lighterText => (props.lighterText ? `black` : `gray`)};
 ```
 
 This can be shortened a little bit by some destructuring:
 
-```
+```javascript
     color: ${({ lighterText }) => (lighterText ? `black` : `gray`)};
 ```
 
@@ -76,7 +76,7 @@ For my final property, I want to introduce you to the humble enum. enums, I'm t
 
 My enum is going to declare the container widths I want people to have access to:
 
-```
+```javascript
 export enum EContainerWidth {
   SMALL = "36rem",
   MEDIUM = "48rem",
@@ -88,7 +88,7 @@ Can you see the name I've given the enum starts with a capital E? This is the
 
 Now I'm going to declare that my containerWidth property is a type of EContainerWidth:
 
-```
+```javascript
 export interface ISContainerProps {
   bgColor: string;
   lighterText: boolean;
@@ -100,7 +100,7 @@ This makes sure someone can only use these values for the container width. In th
 
 So, now, how do I tell my styled component about my interface? By adding chevrons after the tag declaration, but before the body of the function (inside the backticks), and writing the name of my interface there:
 
-```
+```javascript
 export interface ISContainerProps {
   containerWidth: EContainerWidth;
 }
@@ -117,7 +117,7 @@ const SContainer =
 
 Now we need to tell the compiler what the type is for our JSX template. I'm using a React functional component (FC) for this project. The type for this can be imported directly from React at the top of our module:
 
-```
+```javascript
 import { FC } from "react";
 
 export const Container: FC = ({
@@ -125,7 +125,7 @@ export const Container: FC = ({
 
 Now we need to pass in our properties. They're the same as the ones we've used above, with one addition: the children, other react nodes we want to render inside the template.
 
-```
+```javascript
 export interface IContainerProps {}
 
 export const Container: FC<IContainerProps> = ({
@@ -135,13 +135,13 @@ export const Container: FC<IContainerProps> = ({
 
 Interfaces can be re-used and extended by other interfaces. This is going to be particularly useful when it comes to our JSX template:
 
-```
+```javascript
 export interface IContainerProps extends ISContainerProps {}
 ```
 
 Now the template has the same types as our styled component. Now let's add the additional property. We mentioned that this was a React node, and that's another type we can import from react:
 
-```
+```javascript
 import {FC, ReactNode} from 'react'
 
 ...
@@ -159,7 +159,7 @@ We've declared an enum for our container width. We need other developers to ha
 
 Because we have already exported our enum, we can import it along with our component:
 
-```
+```javascript
 import Container, { EContainerWidth } from "./Container";
 ```
 
@@ -167,7 +167,7 @@ I have a global file in my src/ folder (usually I call it "tokens") where all 
 
 Now, instead of assigning properties to the template at will, every time you or another developer comes to use it, you or they will have reason to pause and make sure they're using it in the way it was intended:
 
-```
+```javascript
 <Container
   bgColor="red"
   lighterText={true}
@@ -193,7 +193,7 @@ TypeScript needs to be compiled to normal JavaScript to be used on a browser. Bu
 
 One of the most powerful features of any programming language is the ability to store things in allocated memory, often called a variable, the value of which can be updated or changed by the program.
 
-```
+```javascript
 // define a variable
 var a = 1;
 
@@ -214,7 +214,7 @@ This demonstrates how powerful JavaScript's dynamic typing is. The variable a ca
 
 The problem with that is it can easily break stuff:
 
-```
+```javascript
 function addOneToA() {
   a = a + 1;
 }
@@ -227,7 +227,7 @@ console.log(a);
 
 By contrast, static typing means that you'll only use one type of thing, and if that changes, you will know about it before you even run the code:
 
-```
+```javascript
 var a: number = 1;
 
 function updateAVariable() {

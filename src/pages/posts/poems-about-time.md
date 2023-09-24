@@ -12,7 +12,7 @@ Time is a funny thing. Whilst modern science has helped us to see it's not as co
 
 **Why I like it:** Joni has an amazing mind and all of her music shares the immediacy and intimacy of a life of experiences. Yet this one in particular is written from three unique perspectives: the first verse is Joni as a child looking at clouds and noticing, perhaps for the first time, the passing of time. As the verses progress, she gets older and reaches adulthood and then old age, and has time to reflect on the similarities between clouds, and love, and indeed life itself
 
-```
+```poetry
 Rows and flows of angel hair
 And ice cream castles in the air
 And feather canyons everywhere
@@ -59,7 +59,7 @@ I really don't know life at all
 
 **Why I like it:** This is one of the songs I grew up with: my dad played it for me when I was a teen. It's bound to a young mans' perspective but is remarkably foresighted; the writer already perceives that life will go by quickly and will inevitably end in regret one way or another.
 
-```
+```poetry
 Ticking away the moments that make up a dull day
 Fritter and waste the hours in an offhand way
 Kicking around on a piece of ground in your hometown
@@ -85,7 +85,7 @@ The time is gone, the song is over, thought I'd something more to say
 
 **Why I like it:** Maybe Dylan Thomas was thinking of this sonnet when he was writing "do not go gentle", another poem I admire but for different reasons. In this poem, the protagonist (it could be Shakespeare; but he hardly ever wrote from his own perspective) rages against time, almost sticking a thumb up, because he believes he has found a way to outwit time: by writing this very verse.
 
-```
+```poetry
 Devouring Time,  blunt thou the lion’s paws,
 And make the earth devour her own sweet brood;
 Pluck the keen teeth from the fierce tiger’s jaws,
@@ -106,7 +106,7 @@ My love shall in my verse ever live young.
 
 **Why I like it:** This ode remains my favourite verse on the subject of time. In it, time is frozen in one single moment by the creation of art. It's almost a response to Sonnet 19 above, where someone future is able to appreciate that time is beaten; but Keats' luscious and very living words betray a sad fact: the impression is real, but the people, as Keats himself, are gone.
 
-```
+```poetry
 Thou still unravish'd bride of quietness,
   Thou foster-child of silence and slow time,
 Sylvan historian, who canst thus express

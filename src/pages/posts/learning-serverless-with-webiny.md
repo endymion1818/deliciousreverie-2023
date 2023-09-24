@@ -42,7 +42,7 @@ Although you can create serverless applications using the online interfaces give
 
 This is incredibly powerful. Here's my Webiny application code:
 
-```
+```yaml
 name: webiny-apps-xxxxxxx
 
 vars:

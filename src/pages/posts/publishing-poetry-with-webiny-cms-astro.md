@@ -12,7 +12,7 @@ I admit, some poetry is relatively straightforward: it's organised similarly to 
 
 Some poems, and some poets, choose to organise their work in more ... unusual ways. Take Keat's Ode on a Grecian Urn, which has meaningful indentations which I think really helps you to appreciate the lyrical cadence of the poem:  
 
-```
+```poetry
 Thou still unravish'd bride of quietness,
        Thou foster-child of silence and slow time,
 Sylvan historian, who canst thus express
@@ -52,7 +52,7 @@ So far so good. I don't mind that the display looks like a code block, for me it
 
 Now that I have my code block coming through with an appropriate field type identifier, I could modify my frontend Astro app to render blocks of poetry as part of the rich text renderer, which I'd already built.
 
-```
+```javascript
       {field.type === 'poetry' && (
         <RenderPoetry poetry={field.data.poetry} />
       )}

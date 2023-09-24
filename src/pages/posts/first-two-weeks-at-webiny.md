@@ -22,13 +22,13 @@ I quickly found a bug: we have a custom rich text renderer package for React, wh
 
 I struggled with figuring out how to customise our babel configuration, and Pavel, the CTO, helped me get through some silly misunderstanding I had about how to do that: how do you customise this babel configuration so that it overrides just this package, not any of the others in our monorepo?
 
-```
+```javascript
 module.exports = require("../../babel.react")({    path: __dirname, })
 ```
 
 The answer is simply this:
 
-```
+```javascript
 const defaults = require("../../.babel.react")({
     path: __dirname,
  })

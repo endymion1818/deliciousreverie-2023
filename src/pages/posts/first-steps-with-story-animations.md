@@ -26,7 +26,7 @@ This is because the easiest way to create the perception of movement I have foun
 
 Each element is changed by modifying the opacity in GreenSock Animation Platform, which is tied to ScrollMagic, in order to perform the animations not on a timeline, but on scroll.
 
-```
+```javascript
 window.onload = function(){
 
   // smController = new ScrollMagic.Controller();
@@ -111,7 +111,7 @@ I didn't think this approach was robust enough, especially since I want to build
 
 Loading up these libraries does have a performance cost of course. A cost that is most noticeable on mobile devices. So instead of enqueueing my Javascript in the normal way, I've been working on a script that writes the tag into the DOM once you're at a certain breakpoint:
 
-```
+```javascript
 if ('querySelector' in document && 'addEventListener' in window) {
     var windowWidth = document.body.clientWidth;
     if(windowWidth > 1024){

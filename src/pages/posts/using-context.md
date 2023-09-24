@@ -38,7 +38,7 @@ The easiesy way I can think of explaining this relationship is that the "Consume
 
 Create a new module called "Context.js" adding the following code:
 
-```
+```javascript
 import React from "react";
 
 export const MyContext = React.createContext();
@@ -77,7 +77,7 @@ Inside our class I've set up a few items in state to demonstrate what's going 
 
 Next, create a module containing a few items the user can interact with:
 
-```
+```javascript
 import React from "react";
 import { MyContextConsumer } from "./Context";
 
@@ -118,7 +118,7 @@ In the next module we're basically going to duplicate this code but leave out th
 
 Next we can create our main app.js file, or index.js if you like:
 
-```
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import MyContextProvider from "./Context";

@@ -32,7 +32,7 @@ It was tricky to figure out how to render this content in Astro. Rather than usi
 
 Actually I really like Shiki's API:
 
-```
+```javascript
 import shiki from 'shiki'
 
 const { code } = Astro.props

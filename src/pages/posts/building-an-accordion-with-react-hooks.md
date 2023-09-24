@@ -24,7 +24,7 @@ Let's get started!
 
 Here's the basic layout for the module:
 
-```
+```javascript
 import React from "react"
 const Accordion = (props) => {
   return (
@@ -61,19 +61,19 @@ Next, I'm going to import our first hook. Hooks allow us to write React lifecyle
 
 First, I need to import the useState hook along with React from the React library:
 
-```
+```javascript
 import React, { useState } from "react"
 ```
 
 Next, I set my state items. There are 2 because setContentVisible will be a function to update isContentVisible.
 
-```
+```javascript
   let [isContentVisible, setContentVisible] = useState(true)
 ```
 
 I'm setting a default of true here because I'm using server-side-rendering, so that users without JavaScript (and search engines) can see this content. Now I can use this state directly on my button:
 
-```
+```javascript
 <button onClick={() => setContentVisible(isContentVisible = !isContentVisible)}>
 {question}
 </button>
@@ -85,7 +85,7 @@ Doesn't this look a lot more straightforward than writing a function before the�
 
 Next, I'm going to add some aria roles to the accordion to indicate to users when the component's content area is visible or not:
 
-```
+```jsx
 <li>
       <h3>
         <button
@@ -113,7 +113,7 @@ But that id isn't going to cut it for more than one use on a page.
 
 To do that, we need to set a unique id of the accordion item so we can show the relationship between the control and content elements.
 
-```
+```javascript
 const elementId = (((1 + Math.random()) * 0x10000) | 0)
     .toString(16)
     .substring(1)
@@ -127,7 +127,7 @@ One of the requirements you might have with an accordion of this kind is that wh
 
 You can define a separate toggleElement function to get the ID of the current element, and scroll to the content area.
 
-```
+```javascript
 const domElementTop = elementId.offsetTop - 150
   const toggleVisibility = () => {
     window.setTimeout(function() {
@@ -140,7 +140,7 @@ There's an IE11 caveat with this though. IE calculates scrollTodifferently, wit
 
 There's a bug in iOS Safari too! If you want to support Safari on iOS (particularly some iPad versions) it's advisable to set a timeout when you start scrolling:
 
-```
+```javascript
     window.setTimeout(() => {
       // call the polyfill (to support IE11)
       smoothscroll.polyfill()
@@ -152,7 +152,7 @@ There's a bug in iOS Safari too! If you want to support Safari on iOS (particula
 
 The last item we need to take care of is showing / hiding the content area. Now, we could do it this way:
 
-```
+```javascript
 {isContentVisible && (
     <div
        aria-hidden={!isContentVisible}
@@ -171,13 +171,13 @@ Lastly, I want to make sure that when my user has got the JavaScript bundle and 
 
 First, import that from React the same way as the useState hook:
 
-```
+```javascript
 import React, { useState, useEffect } from "react"
 ```
 
 Then reverse the value of setContentVisible:
 
-```
+```javascript
   useEffect(() => {
     setContentVisible(isContentVisible = !isContentVisible)
   }, [])

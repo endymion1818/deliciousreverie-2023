@@ -34,7 +34,7 @@ Now there are a few updates to the plugin too, let's go through them.
 
 First, as this utility function returns a boolean you'll notice I renamed it to something that's much easier to follow. This new name shows the intent of the function so it makes it much easier for a newcomer to identify what's going on.  
 
-```
+```javascript
 function hasProjectChanged(currentProject, lastDeployedCommit, latestCommit) {
   const execSync = require('child_process').execSync;
   const getAffected = `npm run nx print-affected --base=${lastDeployedCommit} --head=${latestCommit}`;
@@ -57,7 +57,7 @@ The other thing I did here was to sanitise the output of the execSync function, 
 
 Netlify's API has also changed slightly, instead of having onInit, we now have onPreBuild, so I've updated that here:
 
-```
+```javascript
   onPreBuild: ({ utils }) => {
     const currentProject = process.env.PROJECT_NAME;
     const lastDeployedCommit = process.env.CACHED_COMMIT_REF;

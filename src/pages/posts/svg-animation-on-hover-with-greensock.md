@@ -28,7 +28,7 @@ I found that there are a few caveats when working with SVGs. The first is how to
 
 Initially, to animate this I tried to create one timeline that targeted both elements, but this resulted in an effect that looked artificial, since the animations didn't overlap each other. One scale effect was applied to one element. It was only after that that the other scale effect started.
 
-```
+```javascript
 var connectCircles = new TimelineMax();
 
 connectCircles.staggerTo($(this).find(".cloud, .microphone, .handset"), 0.3, {
@@ -49,7 +49,7 @@ Output: https://codepen.io/endymion1818/pen/dWQevw
 
 To resolve this issue, I split the functions into seperate timelines that allowed them to run seperately:
 
-```
+```javascript
 var connectCircles = new TimelineMax();
 var connectShapes = new TimelineMax();
 

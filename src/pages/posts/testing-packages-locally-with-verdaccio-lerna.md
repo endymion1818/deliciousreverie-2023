@@ -23,7 +23,7 @@ Here's how we use leverage Verdaccio to test packages at Webiny, using [our rep
 
 First of all, edit something in a package and build it. Then start Verdaccio. We can do this from the webiny-js project root directory using the following command:
 
-```
+```bash
 yarn verdaccio -c .verdaccio.yml
 ```
 
@@ -35,7 +35,7 @@ npm config set registry http://localhost:4873
 
 Did it work? To check, you can cat ~/.npmrc, you will hopefully see the following:
 
-```
+```bash
 registry=http://localhost:4873
 ```
 
@@ -43,7 +43,7 @@ registry=http://localhost:4873
 
 If you're running Yarn v2 or greater, Yarn no longer recognizes this config file. Instead you will also need to create a .yarnrc.yml in the user root folder with the following parameters:
 
-```
+```bash
 npmRegistryServer: "http://localhost:4873"unsafeHttpWhitelist: - localhost
 ```
 
@@ -53,19 +53,19 @@ There's more information about this [on Verdaccio's docs site](https://verdacci
 
 The final steps before we test our user project is to create a new Beta version and release the packages. This is where our existing setup in the Webiny project with Lerna steps in. You can see details of how this command works by [looking at the package.json in our repository](https://github.com/webiny/webiny-js/blob/next/package.json#L157).
 
-```
+```bash
 yarn lerna:version:verdaccio
 ```
 
 Under the hood this runs the Lerna version command but doesn't push or create a changelog. It also creates a new tag for the release. If this is the first time you've run the command, the tag will be v{version}-beta.0, then v{version}-beta.1, and so on. Once this has completed you will see a new release commit on the branch which you will need to roll back afterwards. Now we can release the new version to Verdaccio.
 
-```
+```bash
 yarn lerna:publish:verdaccio
 ```
 
 This takes the existing packages with the appropriate tag and publishes them to our local Verdaccio registry. Please note that if you are running Verdaccio on anything other than the default port you'll need to run the full command:
 
-```
+```bash
 yarn lerna publish from-package --dist-tag next --registry=\"http://localhost:{port}\" --no-verify-access --no-verify-registry --yes
 ```
 
@@ -73,7 +73,7 @@ yarn lerna publish from-package --dist-tag next --registry=\"http://localhost:{p
 
 The next step is to create a new Webiny user project. You can create it in a subdirectory of the webiny-js repo, or in another folder. We can use NPX to do this using the following command:
 
-```
+```bash
 npx create-webiny-project@next test-project --tag next --no-interactive "unsafeHttpWhitelist":["localhost"]}' --template-options '{"region":"us-east-1","storageOperations":"ddb"}'
 ```
 
@@ -90,17 +90,17 @@ Once you have some changes you need to make, or you're satisfied that your chang
 1.  Stop Verdaccio
 2.  Point local registry back to npmjs.org:
 
-npm config set registry https://registry.npmjs.org
+`npm config set registry https://registry.npmjs.org``
 
-1.  Remove yarn config files
+3.  Remove yarn config files
 
-rm ~/.yarnrc.yml\# if you think you might need this file later, you can instead do mv ~/.yarnrc.yml ~/.yarnrc.yml.bkup
+`rm ~/.yarnrc.yml\# if you think you might need this file later, you can instead do mv ~/.yarnrc.yml ~/.yarnrc.yml.bkup``
 
-1.  Roll back the release commit
+4.  Roll back the release commit
 
 git reset \--hard HEAD~
 
-1.  Delete the prerelease tag
+5.  Delete the prerelease tag
 
 git tag \-d${tag}
 

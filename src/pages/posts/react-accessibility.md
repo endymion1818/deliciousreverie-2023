@@ -27,14 +27,16 @@ However, if we're thinking about accessibility, we're committing ourselves befo
 
 Another way to encourage others using your components to think in an accessible way is to compose components to include accessibility features. For example, this component passes down a prop that's an image source.
 
-```
+```jsx
 <img src={this.prop.imgurl} />
 ```
 
 What are we missing here? The alt attribute. How do we encourage accessibility in this instance? Wrap the component in a conditional, so that it doesn't render without the alt tag:
 
-```
-{  this.props.imgalt ? (    <img src={this.prop.imgurl} alt={this.props.imgalt} />  ) : null}
+```jsx
+{this.props.imgalt ? (    
+    <img src={this.prop.imgurl} alt={this.props.imgalt} />  
+) : null}
 ```
 
 You could go a bit further with this, and check that the length of imgaltis greater than 0.

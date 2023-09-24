@@ -18,7 +18,7 @@ If you take a look at the code on the [FutureLearn website](https://futurelearn
 
 Yes, it's true that you can nest elements inside one another, and therefore more easily scan your CSS. So an element would be described something like this:
 
-```
+```css
 .panel {
     ...
 
@@ -39,7 +39,7 @@ Yes, it's true that you can nest elements inside one another, and therefore more
 
 But have you ever looked at the output for that in your CSS file?
 
-```
+```css
 .panel {
     ...
 }
@@ -61,7 +61,7 @@ Although this is still fairly easy for us to scan quickly, the downside is that 
 
 BEM allows us to use a much flatter format, which can be even more descriptive:
 
-```
+```css
 .panel {}
 .panel__body {}
 .panel__title {}
@@ -77,13 +77,13 @@ This gets even more useful when you add in Modifiers.
 
 An elements might have a variant that we would use in a different context:- say, for example, a navbar in the footer: we could re-use the same Block-level code, with a few modifications. Keeping with our example, we could do this:
 
-```
+```css
 .panel—-large {}
 ```
 
 In the HTML I would then have
 
-```
+```html
 <article class=“panel panel—large”>
 	…
 </article>

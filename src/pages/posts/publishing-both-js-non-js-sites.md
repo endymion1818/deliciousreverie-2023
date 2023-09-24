@@ -34,13 +34,13 @@ JS_DISABLED=false
 
 then in my gatsby-config.js I access this variable by adding the following to the top of the file:
 
-```
+```javascript
 require("dotenv").config()
 ```
 
 However, I wanted to keep everything else about the configurations the same. Since the export in this file is a single JavaScript object, I could compose it up from separate elements. I could have one array for the plugins, another array for my noJS plugins, like this:
 
-```
+```javascript
 const defaultPlugins = [
   // everything else
 ];
@@ -60,7 +60,7 @@ const noJsPlugins = [
 
 And now combine them into one object, conditionally choosing which array of plugins to choose, and export it as a module:
 
-```
+```javascript
 module.exports = {
   siteMetadata: {
     pathPrefix: "/",
@@ -83,7 +83,7 @@ When I checked the noJS version of my site, the search bar was still visible, al
 
 I tried using process.env.JS\_DISABLED in the JSX, but Gatsby separates environment variables. If I wanted to access this variable on the frontend, I could rename it GATSBY\_JS\_DISABLED, but I thought of another way of doing it that proved just as effective...
 
-```
+```javascript
 {typeof window !== 'undefined' && <SearchForm />}
 ```
 
@@ -91,7 +91,7 @@ Now, the JSX that gets built on the server doesn't render the searchform because
 
 I used this again to display a message in the footer to let users know which version of the site they are on:
 
-```
+```javascript
 {
   typeof window === "undefined" ? (
     <p>
@@ -121,7 +121,7 @@ Finally, I needed to discourage robots from indexing the JS enabled version of t
 
 I could have used the same trick I've already used above to add this meta tag to the Layout file, but I opted instead to use Netlify's postprocessing tool to add it to the appropriate site:
 
-```
+```html
 <meta name="robots" content="noindex" />
 ```
 

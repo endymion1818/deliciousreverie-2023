@@ -21,13 +21,13 @@ This results in the result we expected, the content rendered as HTML inside the 
 
 However, the post.title is stored as escaped HTML, so when you try to pop the post.title into the meta tag using Helmet, like this:
 
-```
+```jsx
 <Helmet title={`${post.title}`} />
 ```
 
 you get whatever markup is stored. This is fine in most cases ... however, in WordPress land you'll quite often find people using things like <br> tags to adapt their layouts a little, or in my case, using a dash. When rendered as a meta tag, that looked like this:
 
-```
+```javascript
 mytitle \&#8221; contains a dash
 ```
 
@@ -41,7 +41,7 @@ We knew we needed to parse the element so that it returned as HTML again, but th
 
 In the end we turned to the xmldom package on NPM, and pulled the DOMParser method in, decoding the string and then grabbing the textcontent.
 
-```
+```javascript
 import React from 'react'
 import Helmet from 'react-helmet'
 import { DOMParser } from 'xmldom'
@@ -86,13 +86,13 @@ Here's a better way to do it:
 
 In your gatsby-node.js file
 
-```
+```javascript
 import { decode } from 'he'
 ```
 
 Then in the onCreateNode function:
 
-```
+```javascript
 createNodeField({
   node,
   name: 'renderedTitle',

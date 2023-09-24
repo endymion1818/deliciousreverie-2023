@@ -15,7 +15,7 @@ Apollo's MockProvider is a great tool for testing mutations, however it's a litt
 
 I'm currently building a UI for a messages app, but encountered issues when testing sending new messages. Here's my component:
 
-```
+```javascript
 export function SubmitForm() {
     const [message, setMessage] = useState('');
     const [submitMessage, { loading, error }] = useMutation(MESSAGE_MUTATION);
@@ -59,7 +59,7 @@ export function SubmitForm() {
 
 I wrote a test suite for this component, all of which worked correctly, until I got to the stage when I was testing the error state:
 
-```
+```javascript
 it('should render the error state UI', async () => {
         const mockErrorMutation = {
             request: {
@@ -101,7 +101,7 @@ This test consistently failed, because all we ever got was the loading state. Ye
 
 The solution? Async the submitMessage() function:
 
-```
+```javascript
             onSubmit={async event => {
                 event.preventDefault();
 

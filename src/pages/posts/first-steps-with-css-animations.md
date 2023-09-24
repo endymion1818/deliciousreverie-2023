@@ -19,7 +19,7 @@ What they weren't so good at displaying is the end state of the animation. Would
 
 ### Step 2: The HTML [#](https://deliciousreverie.co.uk/posts/first-steps-with-css-animations/#step-2:-the-html)
 
-```
+```jsx
 <div class="container">
     <a href="services.php">
       <div class="col-sm-3 home-circle" id="one">
@@ -49,7 +49,8 @@ This took me a few attempts to work out. I try to avoid using position:absolute
 
 ### Step 3: Declaring the First Animation [#](https://deliciousreverie.co.uk/posts/first-steps-with-css-animations/#step-3:-declaring-the-first-animation)
 
-```
+```css
+
 @-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
 @-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
 @keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
@@ -79,7 +80,7 @@ Because I'm a visually-minded person, I decided to break my CSS into two parts a
 
 I've heard it said a few times that timing is the hardest thing to get right in an animation. It was quite difficult to work out the gaps that their should be between each animation state, and took quite a few goes before it appeared to flow smoothly, almost as if there was a short increase in speed in the middle two animations, although this is just a perception.
 
-```
+```css
 .home-banner #one {
   background:url('/assets/img/propcons.svg') center no-repeat;
   background-size: 100%;

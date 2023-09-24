@@ -9,7 +9,7 @@ datePublished: 2023-02-22
 ---
 I'm building a component library in Astro, and one of the things I needed to do was to build a component that could render as either a button or an anchor tag. Here's an example of the outcome I wanted to achieve:
 
-```
+```html
 
  // renders an <a> tag
 <Button href="https://some-link">This is an anchor tag</Button>
@@ -21,7 +21,7 @@ With Astro you're writing the best parts of JSX there could be;  for example, t
 
 Thankfully with some clever prop handling, we can have the best of both worlds:
 
-```
+```javascript
 // button.astro
 
 const { href } = Astro.props
@@ -46,7 +46,7 @@ With this code, the default output is a <button> element, but if you pass a \`hr
 
 But what if you wanted more polymorphic elements? Say you had a container that could sometimes be a section, and sometimes you'd want to render it as a plain ol' div element. Here's a solution for that:
 
-```
+```javascript
 ---
 interface Props {
   as?: "section";
@@ -74,7 +74,7 @@ By specifying the types, we give whoever is using this component the hints to sh
 
 It's nicely extensible too: if you wanted to have another tag, say an <aside>, you could just add that to the types and to the return:
 
-```
+```javascript
 <>
   {as === 'aside' && (
       <aside>
@@ -100,7 +100,7 @@ I really like this because the person using this code doesn't have to worry abou
 
 For my component I wanted to pass in a default set of Tailwind classes, but also allow the person using the component to be able to override them by passing in an arbitrary string. So I used Astro's class:list helper:
 
-```
+```javascript
 const { overrideClasses, as } = Astro.props;
 
 const classList = new Set([

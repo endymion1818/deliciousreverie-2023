@@ -11,13 +11,13 @@ Should I use CSS or JavaScript to perform this task? If you're asking yourself t
 
 I did a lot of prop threading the other day. I was updating our navigation section so that the last dropdown in the navigation would be positioned better.
 
-```
+```jsx
 <NavList isLastItem={index.length - 1 ? true : false} />
 ```
 
 My colleague pointed out that I was threading this through 3 successive components so I could apply some CSS to the menu, which is OK sometimes, but there could be a better way of doing it.
 
-```
+```css
 &:last-of-type {  left: 0;}
 ```
 

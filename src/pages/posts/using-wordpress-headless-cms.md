@@ -73,7 +73,7 @@ You can check by opening your terminal, typing gatsby develop and watch what h
 
 If the last few lines looks something like this, you're probably OK:
 
-```
+```bash
 You can now view gatsby-starter-default in the browser.
 
   https://localhost:8000/
@@ -100,7 +100,7 @@ This built-in tool is called GraphiQL, and is another secret power of Gatsby.
 
 GraphQL is similar to REST : it's a way to query data. But with GraphQL, you can interact with your data much more easily. GraphiQL (a visual IDE for GraphQL) can show us some of these tricks. On the left panel, try typing the following:
 
-```
+```javascript
 {  allWordpressPost {    edges {      node {        id        slug        status        template        format      }    }  }}
 ```
 

@@ -21,7 +21,7 @@ I can't claim to have thought of this myself, Sara Soueidan covered this concept
 
 The markup for this could actually be quite minimal:
 
-```
+```html
 <img src="logo.png"	srcset="logo.svg"	alt="alt text goes here" />
 ```
 
@@ -37,7 +37,7 @@ Just recently I had a client requirement for an image that would be wide & narro
 
 Yes I could do this with background images in CSS, but then the browser would have to download both images, increasing the page weight. Srcset solves this problem by fetching the appropriate image based on what sizes you stipulate in your media queries. This took me a few tries to get right, but I ended up with a robust solution that would conserve bandwidth:
 
-```
+```html
 <img
 	src="fallback.png"
 	srcset="

@@ -25,13 +25,13 @@ The other thing I want to talk about is the developer experience of Svelte. It's
 
 I have to say, I do kinda prefer React's slightly more JavaScript-y approach.
 
-```
+```javascript
 {condition && <div>conditional item</div>;}
 ```
 
 However, when it comes to rendering HTML content, it's much more succinct.
 
-```
+```javascript
 {@html htmlContent}
 ```
 

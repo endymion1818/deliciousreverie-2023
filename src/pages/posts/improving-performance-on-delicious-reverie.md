@@ -30,7 +30,7 @@ My CSS is pretty important to the experience of the site, but I'm aware that by 
 
 Since my CSS is pretty lean on this project (119 lines, 2kb uncompressed or minified), I opted not to use a Taskrunner tool but instead use a PHP include instead:
 
-```
+```php
  <style><?php include 'assets/css/deliciousreverie.min.css'; ?></style>
 ```
 

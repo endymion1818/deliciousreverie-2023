@@ -36,7 +36,7 @@ It failed because currently, by default, Netlify seems to default to an older ve
 
 I eventually found out that you need to add a netlify.toml file in the root directory to specify the Hugo version you need:
 
-```
+```javascript
 [context.production.environment]
   HUGO_VERSION = "0.20"
 ```

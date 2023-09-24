@@ -33,7 +33,7 @@ As you can see, this required a number of connecting services, which were not 
 
 I found installing these two tools was fairly easy using wget, and adding to my BASH profile. The only hitch (that I discovered later) was that the php user didn't have the necessary permissions to create the wp-config.phpfile. I discovered that by changing ownership of the folder I was using for my web projects to www-data was the key.
 
-```
+```bash
 $ chown -R www-data /var/www/html/
 ```
 
@@ -51,7 +51,7 @@ Once I had gone through all this and changed a few things, I found that links st
 
 The final piece in this particular puzzle was GIT. I needed to set up global credentials and store them in the system memory so that the build script could use them when it required. I eventually discovered that you can use a credential helper to store your user and pass in memory:
 
-```
+```bash
 $ git config --global credential.helper cache
 ```
 

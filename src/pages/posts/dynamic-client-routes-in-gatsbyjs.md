@@ -32,7 +32,7 @@ In my applications as in most Gatsby sites, I use a wrapping component that I na
 
 In that file I needed to first import { Router } from "@reach-router", and also import { navigate } from "gatsby" then in the render function add this:
 
-```
+```jsx
 <Router>
   <BounceToHome default />
 </Router>
@@ -40,7 +40,7 @@ In that file I needed to first import { Router } from "@reach-router", and also
 
 The BounceToHome function is for any path the router comes across that isn't defined (as you can see from the default prop I passed to it). This is useful for if the user types anything That function uses navigate() that I imported earlier:
 
-```
+```javascript
 const BounceToHome = () => {
   useEffect(() => {
     navigate("/", { replace: true });
@@ -55,13 +55,13 @@ As you can see I use the useEffect hook to navigate the user home on the first
 
 At the top of the file I've imported the functionality I already defined for rendering, editing and deleting notes:
 
-```
+```javascript
 import Notes from "./Notes";
 ```
 
 Now as a child of the Router component I'm going to add in my Notes component:
 
-```
+```jsx
 <Notes path="/notes/:noteId/" component={Notes} />
 ```
 
@@ -71,7 +71,7 @@ On the following line I've passed to the router which component I want to render
 
 Now I can use that component in the page in this way:
 
-```
+```javascript
 export default function Notes({noteId}) {
   useEffect(() => {
     function loadNote() {

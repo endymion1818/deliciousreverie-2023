@@ -11,7 +11,7 @@ I'm not a huge fan of Advanced Custom Fields, but there was a requirement to use
 
 I started with the basic HTML markup for Bootstrap's Nav Tabs:
 
-```
+```html
 <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a href="tabone">TabOne</a></li>
   <li role="presentation"><a href="tabtwo">TabTwo</a></li>
@@ -32,7 +32,7 @@ I started with the basic HTML markup for Bootstrap's Nav Tabs:
 
 In the Field Groups settings, I created a Repeater (this is a paid-for add on to the standard Advanced Custom Fields) called "tab Panes", with 2 sub-fields, "Tab Title" and "Tab Contents".
 
-```
+```php
 <?php
 <!-- Check for parent repeater row -->
 <?php if( have_rows('tab_panes') ): ?>
@@ -56,7 +56,7 @@ In the Field Groups settings, I created a Repeater (this is a paid-for add on to
 
 The PHP above displays the tabs. The code below, very similarly, displays the tab panes:
 
-```
+```php
 <?php if( have_rows('tab_panes') ): ?>
   <div class="tab-content">
   <?php// number rows ?>
@@ -79,7 +79,7 @@ There are a number of ways to do this. I could ask the user to input a number to
 
 On the other hand, Wordpress has a very useful function called Sanitize HTML, which we input the value of the title, take out spaces and capitals, and use this as the link:
 
-```
+```php
 <a href="#<?php echo sanitize_html_class( the_sub_field( 'tab_title' ) ); ?>"
 ```
 
@@ -89,19 +89,19 @@ So now we need to get a class of 'active' only on the first tab. The Bootstrap
 
 I added this code just inside the while loop, inside the ul tag:
 
-```
+```php
 <?php $row = 1; // number rows ?>
 ```
 
 This php is a counter. So we can identify the first instance and assign an if statement to it.
 
-```
+```php
 <a class="<?php if($row == 1) {echo 'active';}?>">
 ```
 
 The final thing to do, is to keep the counter running, but adding this just before the endwhile.
 
-```
+```php
 <?php $row++; endwhile; // (have_rows('tab_panes') ):?>
 ```
 
@@ -109,7 +109,7 @@ Once you've added these to the tab panes in a similar way, you'll be up and runn
 
 Full code:
 
-```
+```php
 <?php if( have_rows('tab_panes') ): ?>
   <div class="tab-content">
   <?php // Step 2: Loop through rows, now displaying tab contents

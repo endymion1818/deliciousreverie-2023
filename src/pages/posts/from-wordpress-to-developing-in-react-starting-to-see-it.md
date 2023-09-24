@@ -30,7 +30,7 @@ Every time a client returned with a last-minute change, I would open up the code
 
 Now with Gatsby and React, I have my logic in one language, and in a way that makes groking easier. I have my layout, template and config modules at hand in the folder structure, without duplication.
 
-```
+```javascript
 import React from "react"
 // Template for blog page
 export default function BlogPost({ data }) {
@@ -68,7 +68,7 @@ This approach to data is really adaptable. I love the fact that you can install 
 
 Gatsby.js comes with GraphiQL, which is a simple web-based IDE so you can query your data and get back examples of content immediately. You can then copy this query into your React module and get back the information you need, whether it's the title, content, featured image, categories or any other frontmatter you might have set up.
 
-```
+```javascript
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

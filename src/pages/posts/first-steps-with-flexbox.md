@@ -18,7 +18,7 @@ It's not a biggie, but I like things to line up nicely. As it stood, the four co
 
 Here's the HTML:
 
-```
+```jsx
 <div class="row home-features">
 	<div class="col-md-3 home-feature">
 		<div class="well">
@@ -62,7 +62,7 @@ As you can see from the following screenshot from before the site went live, the
 
 But using Flexbox allowed us to simplify the code by removing the wellDIVs as well as provide a solution to the problem:
 
-```
+```css
 .home-features {
   display: -webkit-box;
   display: -moz-box;

@@ -19,7 +19,7 @@ I decided that I'd like to use the current LTS issue of Debian for my hosting pl
 
 The main commands for this are:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade

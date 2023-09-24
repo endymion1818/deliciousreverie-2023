@@ -37,7 +37,7 @@ To be honest, since using it seriously, I've been impressed with how far I've be
 
 If I need to negate the "object is possible undefined" error that you've probably seen a hundred times if you're doing DOM manipulation or data fetching:
 
-```
+```javascript
 const thing = document.querySelector('#my-element')
 addStuff(thing); // Error: type undefined is not assignable to type Thing 
 // or
@@ -47,7 +47,7 @@ return data.results // error: data is possibly undefined
 
 In TS, you can either force or cast it:
 
-```
+```javascript
 const thing = document.querySelector('#my-element')
 addStuff(thing!); // although probably don't do this 
 addStuff(thing as Thing) // still not great but maybe you don't want to cascade down to catch undefined and oh yes this is so contrived
@@ -55,7 +55,7 @@ addStuff(thing as Thing) // still not great but maybe you don't want to cascade 
 
 But in JSDoc I'm forced to add a lengthier explanation:
 
-```
+```javascript
 const thing = document.querySelector('#my-element')
 addStuff(
 // thing is definitely defined by this point, see line 120
@@ -70,7 +70,7 @@ I don't know maybe this is better than a sneaky hashbang. But it sometimes feels
 
 OK, so this is quite similar but I found it super frustrating.
 
-```
+```javascript
 const thing = document.querySelector('#my-element');
 
 thing.style.display = 'block'; // Error: property style is not available on type Element

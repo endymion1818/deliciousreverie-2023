@@ -16,7 +16,7 @@ This became an issue when I had a requirement to display them by categories. The
 
 Here's an example of the object once I'd parsed the JSON:
 
-```
+```javascript
 {
     ---
 layout: ../../layouts/BlogLayout.astro
@@ -29,7 +29,7 @@ title: "some title",
 
 What I needed for it to be displayed was this:
 
-```
+```javascript
 {
     teamone: {
         [{
@@ -50,7 +50,7 @@ title: "some title",
 
 The first thing I did was to map the new values of the team using the following method:
 
-```
+```javascript
 itemsTeamsMap {
                 "teamone" : "team1",
                 "teamtwo" : "team2",
@@ -70,7 +70,7 @@ This was especially important because it wasn't a 1:1 match, some teams would be
 
 Once I had that, I needed to sort my items by the new team values I'd given them so that grouping would be easier using a bubble sort:
 
-```
+```javascript
 const sortedItems = ItemsMapped.reduce((acc, current) => {
     acc[current.node.categories.team] = acc[current.node.categories.team] || []
     acc[current.node.categories.team].push(current)
@@ -86,7 +86,7 @@ Here' I'm pushing the current value into the team item of each item in the accum
 
 The result of this function on my original data is this:
 
-```
+```javascript
 {
     team1: [{
             title: 'some title',
@@ -107,7 +107,7 @@ This was a good deal closer to the final object that I needed. Of course though,
 
 ## Step 3: Array of Objects [#](https://deliciousreverie.co.uk/posts/normalizing-data-using-reduce/#step-3:-array-of-objects)
 
-```
+```javascript
   const finalisedItems = Object.entries(sortedItems).reduce(
     (acc, [team, items]) =>
       acc.concat({
@@ -120,7 +120,7 @@ This was a good deal closer to the final object that I needed. Of course though,
 
 I love the new object methods introduced recently to JavaScript. They allow you to do so much more with objects natively ... in this function, for each entry of the object I'm passing in, it will concat the team into an array of objects, where team is the title, and each group of items is an array of objects inside of that:
 
-```
+```javascript
 [{
         team: 'team1',
         items: [{
@@ -152,7 +152,7 @@ I love the new object methods introduced recently to JavaScript. They allow you 
 
 Step 4: templatingNow I can iterate over each team, then each item in that team, outputting semantic elements (‹li›s) for each item:
 
-```
+```javascript
  {finalisedItems.map(itemsTeam => (
         <div key={itemsTeam.team}>
           <h3>{itemsTeam.team}</h3>

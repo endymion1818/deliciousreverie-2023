@@ -14,7 +14,7 @@ I recently came across two different examples of setup that used Redux to manage
 
 Redux used to be pretty much the only way of managing state in React without "prop drilling" or mutating state (which means changing it so that the original state is lost) as you go. There are a bunch of different options now, but Redux is still in common use. However that use doesn't always have a common pattern. Take this example I found on a JSFiddle by Caner Dagli:
 
-```
+```javascript
 import { Provider, connect } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";

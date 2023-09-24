@@ -20,7 +20,7 @@ I'm weighing into this discussion on a different level to most. In this post, I'
 
 The basic tenet of CSS assumes inheritance. It's in the name: CascadingStyle Sheets. If you started your web development career from this angle, then you're probably quite used to seeing things like:
 
-```
+```css
 div {
   color: lightblue;
   background-color: green;
@@ -38,7 +38,7 @@ But this has also led us into some complications... here's the conundrum and sol
 
 Here's a real-world example in React using the CSS-in-JS library Styled Components:
 
-```
+```javascript
 // declared in an external library
 const Text = styled.p`
     color: lightblue;
@@ -71,7 +71,7 @@ In this instance, our solution was to change the API of <Text /> so that by de
 
 I'm not sure what the average number of DOM elements on a page is. We have some pages that have a lot of elements, around 1,100. Just about every element is a separate React.Component, and due to design variation, we extend a lot of them in a similar way to this:
 
-```
+```javascript
 import Card from "component-library";
 
 const SCard = styled(Card)`

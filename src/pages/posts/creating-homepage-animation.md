@@ -57,7 +57,7 @@ It was also easier to use a pre-built hook, react-use-scroll-position, rather t
 
 I'm using this one on my homepage now, but with TypeScript:
 
-```
+```javascript
 const Rabbits = () => {
 
   if(typeof window === 'undefined') { return <></> }
@@ -112,7 +112,7 @@ function getScrollPercent() {
 
 The hardest part of the TypeScript implementation was to find out how to get the .current value of useRef(), because the initial value as you can see is null (the dom element doesn't exist yet). Unfortunately the only help you get from the compiler is:
 
-```
+```javascript
 Argument of type 'null' is not assignable to parameter of type 'HTMLDivElement'
 ```
 

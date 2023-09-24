@@ -12,7 +12,7 @@ I was building a module that could be pulled into a PHP application to upload vi
 
 The original API I envisaged was something like this. A script could be placed on the page (wherever the backend team wanted the uploader to appear). They could pass a DOM element and a message to be displayed on the upload screen:
 
-```
+```javascript
 <script type="text/javascript">
       largeFileUploader(
         ".large-file-uploader", // target DOM element
@@ -22,7 +22,7 @@ The original API I envisaged was something like this. A script could be placed o
 
 The application itself was rendered with Uppy, and included some form validation and other things to help the users upload their videos easily:
 
-```
+```javascript
 async function largeFileUploader(
   targetDomElement,
   onScreenMessage,
@@ -46,7 +46,7 @@ async function largeFileUploader(
 
 To provide functionality for the callback, I passed an extra parameter to my function:
 
-```
+```javascript
 <script type="text/javascript">
       largeFileUploader(
         // target DOM element
@@ -61,7 +61,7 @@ To provide functionality for the callback, I passed an extra parameter to my fun
 
 With this extra parameter, you can run the function inside the context of your application and do something with the result, for example:
 
-```
+```javascript
 <script type="text/javascript">
       largeFileUploader(
         ".large-file-uploader", 
@@ -85,7 +85,7 @@ With this extra parameter, you can run the function inside the context of your a
 
 This allows us to provide an extra notification, rendered by Uppy,  to inform users that the video has been sent for processing, even though this step has happened outside of the context of Uppy. As my friend Chris Geary said, "The callback you pass is just a reference to a function, so in theory, as long as that reference remains in scope, you can call it."
 
-```
+```javascript
 export function largeFileUploader() {
    ... // other code
    Uppy.on("complete", async (result) => {

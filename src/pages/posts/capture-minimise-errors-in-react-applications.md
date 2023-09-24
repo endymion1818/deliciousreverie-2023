@@ -37,7 +37,7 @@ We're going to create a new file, FormErrorBoundary.js and add some code there
 2.  Use a built-in React function to set state if there is an error
 3.  Send the error message somewhere we can examine and track it
 
-```
+```javascript
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props)
@@ -53,7 +53,7 @@ export default class ErrorBoundary extends React.Component {
 
 Next, let's provide our fallback UI component:
 
-```
+```javascript
 
   // ... continued from above
 
@@ -94,13 +94,13 @@ Now, let's assume that - even though you've tested your app thoroughly - you sus
 
 Let's add Sentry to this project.
 
-```
+```bash
 npm install @sentry/browser
 ```
 
 This gets the Sentry package which we can now import into our ErrorBoundary, and initialise with our credentials to enable Sentry to recieve our errors:
 
-```
+```javascript
 import * as Sentry from "@sentry/browser"
 
 Sentry.init({
@@ -110,7 +110,7 @@ Sentry.init({
 
 Update the componentDidCatch() function with the following:
 
-```
+```javascript
   componentDidCatch(error, errorInfo) {
     Sentry.withScope(scope => {
       Object.keys(errorInfo).forEach(key => {
@@ -139,7 +139,7 @@ Sentry specifically mentions this in their document, stating that their error re
 
 On some projects this is harder to achieve than others without some serious hacking about. On projects with server-side-rendering I've been able to write the script into Helmet. That way, the error can be captured by using the window.onerror browser API instead of React's built-in API that we're discussing in the article:
 
-```
+```javascript
 import * as Sentry from "@sentry/browser"
 // ...
 <Helmet

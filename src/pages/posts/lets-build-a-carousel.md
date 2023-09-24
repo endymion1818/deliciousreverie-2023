@@ -20,7 +20,7 @@ I'll start with explaining the HTML layout here. I'm using Tailwind because that
 
 First, we have an opening tag:
 
-```
+```html
 <div id="animation-carousel" class="tw-relative tw-w-full tw-h-36 md:tw-h-96 tw-my-8" data-carousel>
 ```
 
@@ -30,7 +30,7 @@ Lastly, we're setting a data attribute. This is what we're going to pick up in t
 
 Next, I've got the inner wrapper. This will contain the images, previous and next buttons, and indicators (the little navigation pips you sometimes see).
 
-```
+```html
   <div class="tw-relative tw-overflow-hidden tw-rounded-lg tw-h-36 md:tw-h-96">
 ```
 
@@ -38,7 +38,7 @@ Next, I've got the inner wrapper. This will contain the images, previous and nex
 
 Indicators are optional in this setup. If they're not in the DOM, we won't render them. To facilitate that, I've used a template tag so they don't render initially, rather, we can clone this template's inner HTML as many times as we need to render the pips:
 
-```
+```html
       <div id="indicator-container" class="tw-absolute tw-z-30 tw-flex tw-space-x-3 tw--translate-x-1/2 tw-bottom-5 tw-left-1/2">
         <template id="carousel-indicator">
           <button type="button" class="tw-w-3 tw-h-3 tw-rounded-full tw-border tw-border-white" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0">
@@ -60,7 +60,7 @@ Next come the items themselves.
 
 The slides have an opacity of zero to start with - except the  item we wish to set as initially active. We do this so that if there's a problem with the JavaScript loading, the user will still see one image and not just an empty part of the screen:  
 
-```
+```html
       <div class="tw-opacity-0 tw-transition tw-duration-150 tw-ease-in-out tw-h-36 md:tw-h-96" data-carousel-item="active">
           <img src="https://placehold.co/600x400/orange/blue" alt="..."  class="tw-absolute tw-block tw-w-full tw--translate-x-1/2 tw--translate-y-1/2 tw-top-1/2 tw-left-1/2 tw-h-36 md:tw-h-96">
           <div class="tw-absolute tw-inset-0 tw-flex">
@@ -90,7 +90,7 @@ We're going to be using the data-carousel-item attribute again in the JavaScript
 
 These controls render to the left and right of the slider and allow users to cycle through the images in order or reverse order. They have icons indicating the direction they're cycling in when they're clicked and a visually hidden label to aid assistive technology users.  
 
-```
+```html
   <button type="button" class="tw-absolute tw-top-0 tw-left-0 tw-z-30 tw-flex tw-items-center tw-justify-center tw-h-full tw-px-4 tw-cursor-pointer tw-group focus:tw-outline-none" data-carousel-prev>
       <span class="tw-inline-flex tw-items-center tw-justify-center tw-w-8 tw-h-8 tw-rounded-full sm:tw-w-10 sm:tw-h-10 tw-bg-white/30 tw-dark:bg-gray-800/30 group-hover:tw-bg-white/50 dark:group-hover:tw-bg-gray-800/60 group-focus:tw-ring-4 group-focus:tw-ring-white dark:group-focus:tw-ring-gray-800/70 group-focus:tw-outline-none tw-transition-all tw-ease-in-out">
           <svg aria-hidden="true" class="tw-w-5 tw-h-5 tw-text-zinc-400 hover:tw-text-zinc-800 sm:tw-w-6 sm:tw-h-6 tw-dark:text-gray-800 tw-transition-all tw-ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -111,7 +111,7 @@ That's the HTML, now the fun part.
 
 Firstly, we have to ensure that the DOM has fully loaded before trying to select our elements, so we wrap the function like this:
 
-```
+```javascript
 window.addEventListener("DOMContentLoaded", () => {
   // our code goes here
 });
@@ -121,7 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 Next, let's define our createCarousel function, and just return early in case of some easy to detect errors, for example, if there isn't a window object, or the selector (the HTML element we want to create a carousel with) hasn't been passed to the function:  
 
-```
+```javascript
 function createCarousel(selector) {
   if (typeof window === 'undefined') {
     return;
@@ -134,7 +134,7 @@ function createCarousel(selector) {
 
 Now let's pick up some HTML elements relative to the selector that we're going to need shortly:
 
-```
+```javascript
   const carouselItems = selector.querySelectorAll('[data-carousel-item]');
   const carouselItemsArray = Array.from(carouselItems);
   const indicatorTemplate = selector.querySelector('#carousel-indicator');
@@ -148,7 +148,7 @@ In this bit of code we're getting the slides themselves. But using querySelector
 
 Now for some helper functions:
 
-```
+```javascript
 function getActiveItem() {
     return selector.querySelector('[data-carousel-item="active"]');
   }
@@ -209,7 +209,7 @@ That's it for the helpers, now I want to set up some actions that the carousel w
 
 Actions define either responses to user interactions or things that happen at a set interval
 
-```
+```javascript
 function cycle() {
     intervalInstance = window.setInterval(() => {
         next();
@@ -275,7 +275,7 @@ This is functionally very similar to the next() function except it's only called
 
 I could have put this segment of code into the main closure of the createCarousel() function, but I think having it as a separate body makes it easier to see the intent of what we're doing and it's also clearer to read.
 
-```
+```javascript
 function init() {
     const activeItem = getActiveItem();
 
@@ -314,7 +314,7 @@ Here we're leveraging the small helper and action functions we defined above to 
 
 Lastly in the main body of the createCarousel() function we call these functions:
 
-```
+```javascript
   init();
   // if we have an indicator template, create the indicators
   indicatorTemplate && createIndicators();
@@ -326,7 +326,7 @@ Like I said, this last step could've been avoided if I'd put the body of init() 
 
 Here's the final step, which we'll do outside of our createCarousel() function but still inside the DOMContentLoaded listener:
 
-```
+```javascript
 const allCarousels = document.querySelectorAll('[data-carousel]')
 allCarousels.forEach((carouselElement) => {
     createCarousel(carouselElement);

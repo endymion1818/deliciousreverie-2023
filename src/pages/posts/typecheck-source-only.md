@@ -14,7 +14,7 @@ I configured a command so that I can run a type check on my project, but the res
 
 in package.json:
 
-```
+```json
 "scripts: {
   "typecheck": "tsc --noEmit"
 }
@@ -22,7 +22,7 @@ in package.json:
 
 With this configuration, he compiler should pick up config from tsconfig.json, which looks like this:
 
-```
+```json
 {
   "compilerOptions": {
   ...
@@ -33,7 +33,7 @@ With this configuration, he compiler should pick up config from tsconfig.json, w
 
 But I still get results from node\_modules when I run the command. It took me ages to figure it out, but for anyone else coming across this one, I managed to find that submitting an empty array to types did it:
 
-```
+```json
 "compilerOptions": {
     "types": []
 }

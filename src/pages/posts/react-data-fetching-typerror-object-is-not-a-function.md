@@ -13,7 +13,7 @@ Take a look at this code a second. There's nothing wrong with the fetch() resolu
 
 But if you try to run this code you'll get some error like Error: Objects are not valid as a React child (found: \[object Promise\]).
 
-```
+```javascript
 async function getFacts() {
   const response = await fetch("https://cat-fact.herokuapp.com/facts/random?amount=10")
   if (!response.ok) {
@@ -36,7 +36,7 @@ export default async function Home() {
 
 The problem is that the data you fetched isn't consumed by the components' lifecycle. Yet there's nothing to tell you that in the error. Here's what you need to do to resolve it:
 
-```
+```javascript
 import { useEffect, useState } from 'react'
 
 async function getFacts() {

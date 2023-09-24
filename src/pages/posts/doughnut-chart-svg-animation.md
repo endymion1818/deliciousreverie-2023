@@ -18,7 +18,7 @@ To easily enable animating, these layers are SVG path elements. I'm cheating a b
 
 For the initial setup I grabbed the elements and a few values, wrapping these in a jQuery each() function to isolate them from sibling animations that were occurring on the same page:
 
-```
+```javascript
   var values = $('.statistic');
 
   values.each(function () {
@@ -31,7 +31,7 @@ For the initial setup I grabbed the elements and a few values, wrapping these in
 
 As I already had jQuery as a dependency in this project I used the animate() function to handle the text, a number that would rise from 0 to the one specified by the user.
 
-```
+```javascript
  percentage.prop('Counter',0).animate({
       Counter: textcontent
   }, {
@@ -53,7 +53,7 @@ I'm still keen to make sure I provide a useable fallback just in case the user c
 
 Then, using a Tween and Draw SVG I was able to find the path, and choose an appropriate animation for the effect.
 
-```
+```javascript
  function initTweens() {
       // animate circle path using GSAP DrawSVG
       TweenMax.fromTo(circle, 1.5, {

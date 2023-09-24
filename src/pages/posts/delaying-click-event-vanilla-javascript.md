@@ -29,7 +29,7 @@ So I turned to StackOverflow and posed the question, which helped immensely, and
 
 Reading some other posts on Stack Overflow helped me see that I needed to grab all of the <a> tags into a variable, then listen for an event.
 
-```
+```javascript
 var links = document.getElementsByTagName('a');for( var i=0,il = links.length; i< il; i ++ ){links[i].onclick = clickHandler;}
 ```
 
@@ -37,7 +37,7 @@ var links = document.getElementsByTagName('a');for( var i=0,il = links.length; i
 
 Then, I needed a function called clickHandler that would fire on click:
 
-```
+```javascript
 function clickHandler(event) {
 
 event.preventDefault();
@@ -51,8 +51,13 @@ The first job of this handler was to stop the link from being followed, using p
 
 The next step was to add my animation class to the elements I wanted:
 
-```
-var animOut = document.getElementsByClassName("animateOut");// iterate `animOut` elementsfor (var i = 0; i < animOut.length; i++) {   // add `out` `className` to `animOut` element at index `i`   animOut[i].classList.add("out");};
+```javascript
+var animOut = document.getElementsByClassName("animateOut");
+// iterate `animOut` 
+elementsfor (var i = 0; i < animOut.length; i++) {   
+  // add `out` `className` to `animOut` element at index `i`   
+  animOut[i].classList.add("out");
+};
 ```
 
 This looks for each element that has a class of animOut, and adds a further class, out when the function runs.
@@ -61,7 +66,7 @@ This looks for each element that has a class of animOut, and adds a further cla
 
 Next, we needed to send the user on their way using the travelTovariable we stored earlier and using the setTimeout function to add a bit of a delay:
 
-```
+```javascript
 setTimeout(function() {  window.location.href = travelTo;}, 1000);
 ```
 

@@ -20,7 +20,7 @@ Git on the command line is fantastically useful, and I've never been more comfor
 
 I find the following things really useful: This is the time I ran the command. So if I'm working through a project I can see exactly what time something was done ... this gets useful if you're tracking how long a certain task has taken, especially if your time is billable.
 
-```
+```bash
 ~/S/ech-ech
 ```
 
@@ -28,7 +28,7 @@ The next bit shows the current path in an abbreviated form. For example, the /S
 
 Following that is the git information I was telling you about:
 
-```
+```bash
 git:(master)
 ```
 
@@ -36,7 +36,7 @@ This shows that the current directory is a git project, and that the current bra
 
 This reference, in purple in the screenshot:
 
-```
+```bash
 0dd6b659
 ```
 

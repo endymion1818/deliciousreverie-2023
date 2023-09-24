@@ -17,7 +17,7 @@ I wrote it after I read [Andrew Motion's biography of John Keats](https://www.a
 
 ### To Rome [#](https://deliciousreverie.co.uk/posts/to-rome-a-poem/#to-rome)
 
-```
+```poetry
 It's a rose you've given, and a rose I'll take
   As I leave you awash in my wake.
 Though I travel to distant shores

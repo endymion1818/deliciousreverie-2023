@@ -71,7 +71,7 @@ This means there’s less risk of unexpected breaking changes, and no sprints wa
 
 In previous iterations of our development workspaces, it could take up to 3 days to deploy a new application. With Nx, it can take a few hours. All you need is to run one command:
 
-```
+```bash
 nx g @nrwl/next:app becky-quotes && yarn generate
 ```
 

@@ -26,7 +26,7 @@ Looking back, I certainly was pushed to move my skills forwards, at times much f
 
 I also moved to an agency for the chance to work with the current team and their excellent in-house Wordpress theme. This theme has many fantastic features, including the fact that it uses OO PHP and has command-line interface similar to Laravel's Artisan tool for making meta fields, widgets and custom settings area.
 
-```
+```bash
 $ origin make:metabox mymetabox
 ```
 

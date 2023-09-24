@@ -26,7 +26,7 @@ I'm going to use create-react-app for this demo, because it already comes precon
 
 To start let's create a new app. If you have a recent version of Node.js already, you can run the following command without installing anything else globally:
 
-```
+```bash
 npx create-react-app netmag-javascript-testing
 ```
 
@@ -56,7 +56,7 @@ We want to ensure that the code we wrote to call another function works as we as
 
 Let's write our first test. Create a new file called MyComponent.unit.test.js in the same folder as the component. By adding test.js at the end, it'll be automatically picked by the testing library. The contents of that file are below:
 
-```
+```javascript
 import React from 'react'
 
 import { render } from '@testing-library/react'
@@ -78,7 +78,7 @@ The second argument are your tests. The describe() function will run all of th
 
 Let's introduce helper function called beforeEach(). We need to use this because each time we do something with the component, we want a fresh copy without the props we previously had passed to it still existing in the component. Or we might need to re-render the component. beforeEach() does that for us, and we can pass it the cleanup function:
 
-```
+```javascript
 import { render, cleanup } from '@testing-library/react'
 ...
 describe('the component should render', () => {
@@ -90,7 +90,7 @@ describe('the component should render', () => {
 
 In this step, we're going to "mount" our component (or render it).
 
-```
+```javascript
 describe('the component should render', () => {
   beforeEach(cleanup)
   it('renders with basic props', () => {
@@ -103,7 +103,7 @@ This render gives us access to all of the rendered properties of the compiled co
 
 If you do, you'll see that there's a few useful properties we can take advantage of here. I'm going to make an assertion (make a testable declaration) and test it by extracting the container. The container "contains" the DOM nodes (all of the HTML) associated with the component.
 
-```
+```javascript
 it('renders with basic props', () => {
     const { container } = render(<MyComponent />)
 })
@@ -115,7 +115,7 @@ A snapshot is like a photograph. It takes a snapshot of our component at a spe
 
 However, if it doesn't we might have uncovered an issue that originated in another component, one that we might not have spotted previously:
 
-```
+```javascript
   it('renders with basic props', () => {
     const { container } = render(<MyComponent />
     expect(container).toMatchSnapshot()
@@ -128,7 +128,7 @@ Props, or properties, of a component can be tested with snapshots too. Testing t
 
 Add this object to the top of your file:
 
-```
+```javascript
 const lightProperties = {
     backgroundColour: 'white',
     textColour: 'darkblue'
@@ -137,7 +137,7 @@ const lightProperties = {
 
 We define the properties in an object and then use the spread operator (three dots followed by the object name, ...lightproperties) in this way because we can only pass one argument in when we render in this way. It's also useful to see what properties you're passing in isolation:
 
-```
+```javascript
     it('renders with basic props', () => {
         const { container } = render(<MyComponent />
       )
@@ -163,7 +163,7 @@ So whether or not the state has updated is immaterial; what we want to test is w
 
 Let's imagine we're testing the outcome of a function that changes the UI from dark mode to light mode. Here's the component:
 
-```
+```javascript
 const modeToggle = () => {
     const [mode, setMode] = useState['light']
    const toggleTheme = () => {
@@ -183,7 +183,7 @@ const modeToggle = () => {
 
 First, we should add a test id onto the button so that we can find it in the render phase:
 
-```
+```javascript
 return (
     <ToggleButton
       data-testid="mode-toggle"
@@ -199,7 +199,7 @@ Did you notice we added the new attribute data-testid to the button? Here's ho
 
 First, import a new function, fireEvent from the testing library:
 
-```
+```javascript
 import { cleanup,
           fireEvent,
           render
@@ -208,7 +208,7 @@ import { cleanup,
 
 Now we can use that function to test that there are changes in the UI, and that those changes are consistent:
 
-```
+```javascript
 it('renders with basic props', () => {
     const { container } = render(<ToggleButton />
   )
@@ -235,7 +235,7 @@ Sometimes we need to test a call to a function, but that function is outside the
 
 I don't need to test what the result of that module is. I need to test that my function does as expected. For more information about why this is, please see the box "unit and integration tests". In this case, we could "mock" that function:
 
-```
+```javascript
 const getPiValue = jest.fn()
 it('calls the function on click', () => {
     const { container, getByTestId } = render(<ToggleButton />)
