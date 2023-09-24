@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 const { tag } = Astro.props;
 ---
 <Layout pageTitle={`Tags with the topic ${tag.title}`} pageDescription={tag.description} slug={`${siteUrl}/tags/${tag.title}`}>
-    <h1 class="text-4xl">{tag.title}:</h1>
+    <h1 class="mb-6 text-4xl">Articles about {tag.title}:</h1>
     <ul class="pl-4 list-disc">
       {tag.posts.length > 0 && (
         <ul class="list-disc">
