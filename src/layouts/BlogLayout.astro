@@ -10,10 +10,10 @@ const { frontmatter } = Astro.props;
   {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
   {frontmatter?.tags?.length > 0 && (
       <p class="mb-4">
-      <span>This article is about:</span>
-      {frontmatter.tags?.map(tag => (
-        <a href={`${siteUrl}${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
-      ))}
+        <span>This article is about:</span>
+        {frontmatter.tags?.map(tag => (
+          <a href={`${siteUrl}${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+        ))}
       </p>
   )}
   <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800">

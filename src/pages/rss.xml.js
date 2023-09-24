@@ -1,13 +1,13 @@
-import rss, { pagesGlobToRssItems } from '@astrojs/rss';import { title, siteLanguage, subtitle, siteUrl } from "../../sitedata"
+import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+import { title, subtitle } from "../../sitedata"
 
 export async function GET(context) {
   return rss({
-  title: title,
-  description: subtitle,
-  site:  siteUrl,
-  items: await pagesGlobToRssItems(
-    import.meta.glob("./src/pages/**/*.md")
-  ),
-  customData: `<language>${siteLanguage}</language>`,
-  })
+    title,
+    description: subtitle,
+    site: context.site,
+    items: await pagesGlobToRssItems(
+      import.meta.glob('./src/pages/posts/*.{md}'),
+    ),
+  });
 }
