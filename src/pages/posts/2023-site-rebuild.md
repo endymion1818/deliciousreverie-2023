@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "2023 Site Rebuild"
-description: "Sorry to those people who subscribe to my RSS feed, I had a bug which I couldn't fix before I re-launched deliciousreverie.co.uk, but which I've resolved now. Yes, I've rebuilt my site _again_. This is the fifth iteration"
+description: "Sorry to those people who subscribe to my RSS feed, I had a bug which I couldn't fix before I re-launched deliciousreverie.co.uk, but which I've resolved now. Yes, I've rebuilt my site again. This is the fifth iteration. Here's why."
 tags: 
   - personal
-  - engineering
+  - javascript
 datePublished: 2023-09-27
 ---
 Sorry to those people who subscribe to my RSS feed, I had a bug which I couldn't fix before I re-launched deliciousreverie.co.uk, but which I've resolved now.
