@@ -23,14 +23,14 @@ export let menuItems = [{
 export let footerMenuItems = [{
   title: 'Links',
   items: [{
-    title: 'Talks',
-    link: '/tags/talks/'
+    title: 'JavaScript',
+    link: '/tags/javascript/'
   }, {
-    title: 'Published Content',
-    link: '/tags/published-content/'
+    title: 'Engineering',
+    link: '/tags/engineering/'
   },{
-    title: 'Documentation',
-    link: '/tags/documentation/'
+    title: 'Personal',
+    link: '/tags/personal/'
   }]
 }, {
   title: 'Menu',
