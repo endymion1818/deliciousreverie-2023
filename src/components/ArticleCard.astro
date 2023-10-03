@@ -1,11 +1,10 @@
 ---
-import { siteUrl } from "../../sitedata";
 import FormatDate from "./FormatDate.astro"
 
 const { post } = Astro.props
 const { frontmatter, url } = post
 ---
-<a href={`${siteUrl}${url}/`} class="hover:tw-bg-zinc-400">
+<a href={`${url}/`} class="hover:tw-bg-zinc-400">
   {post.shareCard && (
     <img src={post.shareCard} />
   )}
@@ -19,7 +18,7 @@ const { frontmatter, url } = post
       <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
         {frontmatter.tags?.map(tag => (
-          <a href={`${siteUrl}${tag}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+          <a href={`/tags/${tag}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
         ))}
       </div>
     )}

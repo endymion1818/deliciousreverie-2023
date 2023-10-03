@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
 import { SEO } from 'astro-seo'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
@@ -64,6 +65,7 @@ const pathname = new URL(Astro.request.url).pathname;
     {...seoProps}
     canonical={canonical ?? `${siteUrl}${pathname}`}
    />
+   <ViewTransitions />
 </head>
 <body class="leading-relaxed text-black bg-secondary">
     <Header title={title} menuItems={menuItems} subtitle={subtitle} />
