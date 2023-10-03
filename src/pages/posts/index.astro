@@ -14,7 +14,7 @@ const postsByDate = allPosts?.sort((a, b) => {
     {postsByDate.length ? (
         <div class="grid grid-cols-1 gap-4 py-4">
           {postsByDate.map(post => (
-            <ArticleCard post={`/posts/${post}`}/>
+            <ArticleCard post={post} />
           ))}
         </div>
       ) : null}
