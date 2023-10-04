@@ -23,12 +23,9 @@ const getYouTubeStatistics = async (channelId) => {
 const stats = await getYouTubeStatistics('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 
-const latestJavascriptPosts = allPosts?.filter(
-  (post) => post.frontmatter.tags?.includes('javascript')
-).sort((a, b) => {
-        // Sort newest posts first
-        return new Date(b.frontmatter.datePublished).getTime() - new Date(a.frontmatter.datePublished).getTime();
-      }).slice(0, 3)
+const latestPosts = allPosts?.sort((a, b) => {
+  return new Date(b.frontmatter.datePublished).getTime() - new Date(a.frontmatter.datePublished).getTime();
+}).slice(0, 3)
 ---
 <script src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module"></script>
 
@@ -36,10 +33,10 @@ const latestJavascriptPosts = allPosts?.filter(
       <p class="mb-2 text-lg">Delicious Reverie is the personal home of <a class="underline" href="/about-benjamin-read">Benjamin Read</a> on the web.</p>
       <p class="mb-4 text-lg">I'm an experienced <strong>Developer Relations</strong> product evangelist and community builder, a Senior <strong>JavaScript Software Engineer</strong> with experience of FinTech and PropTech, and a literature buff.</p>
       <a class="mb-6 normal-case btn btn-primary" href="/about-benjamin-read">More about me</a>
-      <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts about JavaScript:</h2>
-      {latestJavascriptPosts?.length > 0 && (
+      <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts:</h2>
+      {latestPosts?.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
-            {latestJavascriptPosts.map(post => (
+            {latestPosts.map(post => (
               <ArticleCard post={post} />
             ))}
           </div>
