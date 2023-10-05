@@ -1,7 +1,6 @@
 ---
 import Layout from '../components/Layout.astro';
 import FormatDate from '../components/FormatDate.astro';
-import { siteUrl } from '../../sitedata';
 
 const { frontmatter } = Astro.props;
 ---
@@ -12,7 +11,7 @@ const { frontmatter } = Astro.props;
       <p class="mb-4">
         <span>This article is about:</span>
         {frontmatter.tags?.map(tag => (
-          <a href={`${siteUrl}${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+          <a href={`/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
         ))}
       </p>
   )}
@@ -23,7 +22,7 @@ const { frontmatter } = Astro.props;
     <p class="mt-6 mb-4">
     <span>Read more articles about:</span>
     {frontmatter.tags?.map(tag => (
-      <a href={`${siteUrl}/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+      <a href={`/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
     ))}
     </p>
 )}
