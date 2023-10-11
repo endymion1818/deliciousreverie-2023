@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Iterate"
+title: "Iterate."
 description: "A few times during the past year I've caught myself advocating for iterative changes. Both in software and in terms of our processes I've found that I far prefer smaller, incremental improvements over stressful, complicated and far-reaching changes that may or may not improve fulfilment, delivery and other metrics."
 tags: 
   - engineering
 datePublished: 2023-10-11
 ---
-Despite better marketing opportunities, the days of big bang releases are gone. In today's software market, iterative releases are the hallmark of good planning, well organised teams, and software stability.
+**Despite better marketing opportunities, the days of big bang releases are gone. In today's software market, iterative releases are the hallmark of good planning, well organised teams, and software stability.**
 
 A few times during the past year I've caught myself advocating for iterative changes. Both in software and in terms of our processes I've found that I far prefer smaller, incremental improvements over stressful, complicated and far-reaching changes that may or may not improve fulfilment, delivery and other metrics.
 
@@ -32,7 +32,7 @@ So when I found at my new place of work we didn't have a retrospective, I was ke
 
 When someone puts a ticket in the "what went badly" row, I spend a bit more time to identify exactly what caused the issue and try to turn it into an action point.
 
-In the approximately 10 months since we started, some team members have come up with really good ideas which we've implemented. We've eliminated a large number of things that were causing unwanted friction or frustration, and it seems to me that we're delivering faster too.
+In the approximately 10 months since we started, some team members have come up with really good ideas which we've implemented. We've eliminated a large number of things that were causing unwanted friction or frustration, and I hope it has also helped the team's wellbeing.
 
 
 
