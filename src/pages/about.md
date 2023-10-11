@@ -12,6 +12,8 @@ The style of the site reflects my enjoyment of the countryside, especially durin
 
 ![Cold autum lake with trees swaying in the wind](../images/chill-october-millais.jpg)
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4qwyDI0dW7hhQbQXUfHOUv?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 Text and background colours have been selected that hopefully improve readability for those with cognitive and visual impairments.
 
 The original font on this site was Skybird. As soon as I saw the "Skybird" typeface I fell in love with it. It perfectly reflects my interest in a personal, home-grown, labour-of-love approach to crafted work instead of what can end up looking mass-produced, impersonal and somewhat homogenous.
