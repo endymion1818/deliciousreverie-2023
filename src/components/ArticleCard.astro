@@ -12,8 +12,8 @@ const { frontmatter, url } = post
     <h2 class="mb-2 text-2xl tracking-wide card-title text-inherit">
       {frontmatter.title}
     </h2>
-    <p class="text-lg text-inherit">{post.frontmatter.description}</p>
-    {frontmatter.datePublished && <p class="my-2 ml-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
+    <p class="text-xl text-inherit">{post.frontmatter.description}</p>
+    {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
     {frontmatter?.tags?.length > 0 && (
       <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
