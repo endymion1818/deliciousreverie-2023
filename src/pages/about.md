@@ -4,7 +4,7 @@ description: "About this website"
 layout: ../layouts/PageLayout.astro
 ---
 
-Delicious Reverie is the personal blog of Benjamin Read, a web developer from just outside London, UK.
+Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read), a web developer from just outside London, UK.
 
 ## The Design
 
