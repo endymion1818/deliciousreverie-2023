@@ -61,6 +61,7 @@ const pathname = new URL(Astro.request.url).pathname;
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/styles/global.css">
   <link rel="preload" href="/fonts/Lovechild-Regular.woff2" as="font" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
   <SEO
     {...seoProps}
     canonical={canonical ?? `${siteUrl}${pathname}`}
