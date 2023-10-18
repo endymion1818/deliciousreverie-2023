@@ -4,7 +4,7 @@ title: "Tailwind progressively collapsing menu."
 description: "When I first saw this method of being able to progressively hide individual navigation items instead of all of them, and to do so without the use of JavaScript, I was impressed with the idea. Here's a remix using Tailwind."
 tags: 
   - engineering
-datePublished: 2023-10-11
+datePublished: 2023-10-18
 ---
 **I had the opportunity to rework one of my favourite codepens recently. When I first saw this method of being able to progressively hide individual navigation items instead of all of them, and to do so without the use of JavaScript, I was impressed with the idea. Here's a remix using Tailwind.**
 
