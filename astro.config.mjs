@@ -6,6 +6,13 @@ export default defineConfig({
   site: 'https://deliciousreverie.co.uk',
   integrations: [
     tailwind(),
-    sitemap()
+    sitemap({
+      serialize(item) {
+        console.log( item );
+        return {
+          ...item,
+        };
+      }
+    })
   ]
 });
