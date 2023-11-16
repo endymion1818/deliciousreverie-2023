@@ -4,7 +4,7 @@ layout: ../../layouts/BlogLayout.astro
 description: "The scope of this project was to track how much of a video has been watched periodically, send the data to an API at regular intervals. Here's how I achieved that in a developer-friendly way."
 tags: 
   - javascript
-datePublished: 2020-03-31
+datePublished: 2023-11-16
 ---
 The scope of this project was to track how much of a video has been watched periodically, send the data to an API at regular intervals, to be able to track different video providers (YouTube, Vimeo and others), and to track multiple videos on a page, all of which could be playing simultaneously.
 
