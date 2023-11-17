@@ -6,7 +6,7 @@ tags:
   - javascript
 datePublished: 2023-11-16
 ---
-The scope of this project was to track how much of a video has been watched periodically, send the data to an API at regular intervals, to be able to track different video providers (YouTube, Vimeo and others), and to track multiple videos on a page, all of which could be playing simultaneously.
+**The scope of this project was to track how much of a video has been watched periodically, send the data to an API at regular intervals, to be able to track different video providers (YouTube, Vimeo and others), and to track multiple videos on a page, all of which could be playing simultaneously.**
 
 It was a little tricky because each player sends different events in the course of a video play, for example when the video has been paused, that we would need to respond to.
 
