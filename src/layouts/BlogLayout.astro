@@ -15,7 +15,7 @@ const { frontmatter } = Astro.props;
         ))}
       </p>
   )}
-  <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800 prose-code:text-slate-900">
+  <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800 prose-code:text-slate-900 prose-blockquote:text-slate-800">
     <slot />
   </article>
   {frontmatter?.tags?.length > 0 && (
