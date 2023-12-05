@@ -6,9 +6,9 @@ tags:
   - engineering
 datePublished: 2023-12-05
 ---
-**One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, when I eventually leave, I want to make sure that whoever is brought in to replace me can easily continue with the objectives I've laid out, or otherwise make deliberate, conscious changes to deviate from what I have set out.**
+**One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, I have outlined a definitive plan to continuously improve the code here.**
 
-If you're a senior engineer, or employed in a technical leadership capacity, having a structured plan for the codebases in your project will likely help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
+If you're a senior engineer, or employed in a technical leadership capacity, having a structured plan for the codebases in your project will likely help extend it's lifecycle. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
 
 ## Index
 
