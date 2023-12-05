@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Managing Quality across Different Codebases"
-description: "If you're employed in a technical leadership capacity, having a structured plan for the codebases in your project will likely help keep them in good shape. I've written this document as a guideline of sorts, feel free to adopt it, adapt it or use it as a basis your own."
+description: "If you're employed in a technical leadership capacity, having a structured plan for the codebases in your project will help keep them in good shape. I've written this document as a guideline of sorts, feel free to adopt it, adapt it or use it as a basis your own."
 tags: 
   - engineering
 datePublished: 2023-12-05
 ---
 **One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, I have outlined a definitive plan to continuously improve the code here.**
 
-If you're a senior engineer, or employed in a technical leadership capacity, having a structured plan for the codebases in your project will likely help extend it's lifecycle. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
+If you're a senior engineer, or employed in a technical leadership capacity, having a structured plan for the codebases in your project will help extend their lifecycles. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
 
 ## Index
 
@@ -33,7 +33,7 @@ Lists the sections in this document, hyperlinking them for easy navigation.
 
 ## Rationale
 
-I have tried to answer the question "Why does this Document Exist?" and clarified why this is a helpful document to maintain.
+I have tried to answer the question "Why does this document exist?" and clarified why this is a helpful document to maintain.
 
 > This should be a living document that helps chart the progress and objectives for JavaScript concerns at [company name].
 
@@ -44,6 +44,8 @@ Outlines the nature of the code in use at the company from a very high level. Fo
 ## Sections
 
 For each of the sections mentioned in the index, give a high level overview or history, outline what objectives you have for the future, show the current status of those objectives and explain what has been done so far:
+
+### Example of Section 1:
 
 > ### 1. Code Quality
 
@@ -59,7 +61,7 @@ For each of the sections mentioned in the index, give a high level overview or h
 > #### Status:
 > Not started / In Progress / Completed / Cancelled
 
-#### Details:
+> #### Details:
 > We will use Vite as a bundler and transpile from ESM where necessary. Each major concern of JavaScript code will be renovated and receive maintenance when possible.
 
 ## Appendices
@@ -76,7 +78,7 @@ At the end of the sections, I have two appendices: one which has an overview of 
 > **Pipeline**: Github Actions  
 > **Code quality**: Good/ Bad / Reasonable  
 > **Tests**: None / Some / E2E only / Unit only  
-> **Status**: In development / In production / Being renovated
+> **Status**: In development / In production / Being renovated / Up to date
 
 ### Example of Appendix 2 (How we write JavaScript Code):
 
