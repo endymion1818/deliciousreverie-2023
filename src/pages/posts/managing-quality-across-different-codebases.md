@@ -34,10 +34,14 @@ Lists the sections in this document, hyperlinking them for easy navigation.
 ## Rationale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 I have tried to answer the question "Why does this document exist?" and clarified why this is a helpful document to maintain.
 =======
 I have tried to answer the question "Why does this Document Exist?" and clarified why this is a helpful document to maintain.
 >>>>>>> b8c2354 (feat: article on maintaining quality)
+=======
+I have tried to answer the question "Why does this document exist?" and clarified why this is a helpful document to maintain.
+>>>>>>> 15bbd17 (improve style and copy)
 
 > This should be a living document that helps chart the progress and objectives for JavaScript concerns at [company name].
 
@@ -50,10 +54,15 @@ Outlines the nature of the code in use at the company from a very high level. Fo
 For each of the sections mentioned in the index, give a high level overview or history, outline what objectives you have for the future, show the current status of those objectives and explain what has been done so far:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Example of Section 1:
 
 =======
 >>>>>>> b8c2354 (feat: article on maintaining quality)
+=======
+### Example of Section 1:
+
+>>>>>>> 15bbd17 (improve style and copy)
 > ### 1. Code Quality
 
 > All of the JavaScript code repositories are working well and producing the needed outcomes for the business. There are some things that could yet be done to improve and standardise the quality of code to ensure that we are efficiently using developer time and improving deliverability and confidence.
@@ -69,10 +78,14 @@ For each of the sections mentioned in the index, give a high level overview or h
 > Not started / In Progress / Completed / Cancelled
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > #### Details:
 =======
 #### Details:
 >>>>>>> b8c2354 (feat: article on maintaining quality)
+=======
+> #### Details:
+>>>>>>> 15bbd17 (improve style and copy)
 > We will use Vite as a bundler and transpile from ESM where necessary. Each major concern of JavaScript code will be renovated and receive maintenance when possible.
 
 ## Appendices
@@ -90,10 +103,14 @@ At the end of the sections, I have two appendices: one which has an overview of 
 > **Code quality**: Good/ Bad / Reasonable  
 > **Tests**: None / Some / E2E only / Unit only  
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Status**: In development / In production / Being renovated / Up to date
 =======
 > **Status**: In development / In production / Being renovated
 >>>>>>> b8c2354 (feat: article on maintaining quality)
+=======
+> **Status**: In development / In production / Being renovated / Up to date
+>>>>>>> 15bbd17 (improve style and copy)
 
 ### Example of Appendix 2 (How we write JavaScript Code):
 
