@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Managing Quality across Different Codebases"
-description: "If you're employed in a technical leadership capacity, having a structured plan for the codebases in your project will help keep them in good shape. I've written this document as a guideline of sorts, feel free to adopt it, adapt it or use it as a basis your own."
+description: "Having a structured plan for the codebases in your project will help keep them in good shape. I've written this document as a guideline of sorts, feel free to adopt it, adapt it or use it as a basis your own."
 tags: 
   - engineering
 datePublished: 2023-12-05
 ---
 **One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, I have outlined a definitive plan to continuously improve the code here.**
 
-If you're a senior engineer, or employed in a technical leadership capacity, having a structured plan for the codebases in your project will help extend their lifecycles. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
+Having a structured plan for the codebases in your project will help extend their lifecycles. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
 
 ## Index
 
