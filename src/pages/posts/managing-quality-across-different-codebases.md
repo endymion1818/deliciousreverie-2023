@@ -8,7 +8,9 @@ datePublished: 2023-12-05
 ---
 **One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, I have outlined a definitive plan to continuously improve the code here.**
 
-Having a structured plan for the codebases in your project will help extend their lifecycles. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. I've written this document as a guideline of sorts, feel free to adopt, adapt it or use it as a basis your own.
+Having a structured plan for the codebases in your project will help extend their lifecycles. It will also help those using the code to more easily manipulate them to fulfil new business requirements whatever these might be. 
+
+To that end, I wrote this document as a guideline for my company, feel free to adopt, adapt it or use it as a basis your own.
 
 ## Index
 
