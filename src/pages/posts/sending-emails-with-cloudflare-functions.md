@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "Sending Emails via SendGrid with Cloudflare Functions"
-description: "SendGrid remains a popular no-fuss tool for routing emails in today's applications. But it isn't without pitfalls. Here's my setup."
+description: "SendGrid remains a popular tool for routing emails in today's applications. But it isn't without pitfalls. Here's my setup."
 tags:
   - javascript
 datePublished: 2024-01-18
 ---
 
-**SendGrid remains a popular no-fuss tool for routing emails in today's applications. But it isn't without pitfalls. Here's my setup.**
+**SendGrid remains a popular tool for routing emails in today's applications. But it isn't without pitfalls. Here's my setup.**
 
 I am very grateful [to Aman for his article](https://blog.amanbhargava.com/send-email-using-cloudflare-worker/), which this article updates to reflect changes in the Cloudflare Functions API, some issues I found with SendGrid, and some other useful stuff like local development with Wrangler.
 
@@ -83,7 +83,7 @@ async function handlePostRequest(request, env) {
 
 I'll pause there because I need to tell you what's happening in `readRequestBody` and `composeRequest`.
 
-`readRequestBody` is mostly unchanged from Amans implementation, except I didn't think it was necessary to go too deep; I am only anticipating requests that contain JSON and formData.
+`readRequestBody` is mostly unchanged from Aman's implementation, except I didn't think it was necessary to go too deep; I am only anticipating requests that contain JSON and formData.
 
 ```javascript
 async function readRequestBody(request) {
@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## HTML Templates
 
-With HTML templates I don't need to construct HTML out of JavaScript. Whilst these do have some limitations (good luck rendering the error message into a ``<slot/> or whatever), they are a lot nicer to use in my opinion.
+With HTML templates I don't need to construct HTML out of JavaScript. Whilst these do have some limitations (good luck rendering the error message into a `<slot/>` or whatever), they are a lot nicer to use in my opinion.
 
 ```html
 <template name="submission-success">
