@@ -38,9 +38,14 @@ h6 {
 .max-w-contain {
   max-width: 30em;
 }
-
 @media (max-width: 640px) {
   .max-w-contain {
     padding: 0 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .astro-code {
+    margin-right: -6rem;
+    margin-left: -6rem;
   }
 }

@@ -3,7 +3,7 @@ layout: ../../layouts/BlogLayout.astro
 title: "A Collection of Tailwind UI Loading States"
 description: "I made a collection of loading states for Tailwind. It was relatively easy exercise, and I'm surprised I didn't find anything like it out there already."
 tags: 
-  - engineering
+  - css
 datePublished: 2023-10-04
 ---
 
