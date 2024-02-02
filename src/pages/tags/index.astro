@@ -2,9 +2,9 @@
 import Layout from '../../components/Layout.astro'
 import Otters from '../../components/Otters.astro'
 import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
-import { siteUrl } from '../../../sitedata';
+import { getCollection } from 'astro:content';
 
-const allPosts = await Astro.glob('../posts/*.md');
+const allPosts = await getCollection('posts');
 
 const tags = getTagsArrayFromPostList(allPosts)
 
@@ -35,8 +35,8 @@ const alphabeticalTags = tags.sort((a, b) => {
                 <ul class="list-disc">
                   {tag.posts.map(post => (
                     <li class="ml-4">
-                      <a class="inline-block px-1 hover:underline" href={`${post.url}/`}>
-                        {post.frontmatter.title}
+                      <a class="inline-block px-1 hover:underline" href={`/posts/${post.slug}/`}>
+                        {post.data.title}
                       </a>
                     </li>
                   ))}

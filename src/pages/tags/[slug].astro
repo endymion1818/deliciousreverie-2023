@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import { siteUrl } from '../../../sitedata';
 import Layout from '../../components/Layout.astro'
 import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
@@ -6,7 +7,7 @@ import getTagsArrayFromPostList from '../../components/getTagsArrayFromPostList'
 export async function getStaticPaths() {
 
   
-  const allPosts = await Astro.glob('../posts/*.md');
+  const allPosts = await getCollection('posts');
 
   const tags = getTagsArrayFromPostList(allPosts)
 
@@ -26,8 +27,8 @@ const { tag } = Astro.props;
         <ul class="list-disc">
           {tag.posts.map(post => (
             <li class="ml-4">
-              <a class="inline-block px-1 hover:underline" href={`${post.url}/`}>
-                {post.frontmatter.title}
+              <a class="inline-block px-1 hover:underline" href={`/posts/${post.slug}/`}>
+                {post.data.title}
               </a>
             </li>
           ))}
