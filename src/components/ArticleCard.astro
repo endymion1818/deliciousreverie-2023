@@ -2,9 +2,9 @@
 import FormatDate from "./FormatDate.astro"
 
 const { post } = Astro.props
-const { data, url } = post
+const { data } = post
 ---
-<a href={`${url}/`} class="hover:tw-bg-zinc-400">
+<a href={`/posts/${post.slug}/`} class="hover:tw-bg-zinc-400">
   {post.shareCard && (
     <img src={post.shareCard} />
   )}
