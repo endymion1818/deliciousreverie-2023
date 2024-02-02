@@ -1,24 +1,30 @@
 import rss from '@astrojs/rss';
-import { title, subtitle, siteUrl } from "../../sitedata"
+import { getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
-import { getCollection } from 'astro:content';
 const parser = new MarkdownIt();
 
+import { title, subtitle } from '../../sitedata.js';
+
+const composeContent = (body, title) => sanitizeHtml(`
+  ${parser.render(body)}
+  <hr>
+  <footer>
+  <p>Thanks for reading this article via RSS. Let me know what you think by <a href="mailto:endymion1818@gmail.com?subject=re:${title}">sending me an email.</a></p></footer>
+`) 
+
 export async function GET(context) {
-  const postImportResult = getCollection('posts');
-  const posts = Object.values(postImportResult);
-  const items = posts.map((post) => ({
-    title: post.data.title,
-    description: post.data.description,
-    pubDate: post.data.datePublished,
-    link: `${siteUrl}${post.url}`,
-    content: sanitizeHtml(`${parser.render(post.body)}<hr><p>Thanks for reading this via RSS. Let me know what you thought by <a href="re: ${post.data.title}">sending me an email</a></p>`),
-  }))
+  const blog = await getCollection('posts');
   return rss({
     title,
     description: subtitle,
     site: context.site,
-    items,
+    items: blog.map((post) => ({
+      link: `/blog/${post.slug}/`,
+      pubDate: post.data.datePublished,
+      title: post.data.title,
+      description: `${post.data.description}`,
+      content: composeContent(post.body, post.data.title),
+    })),
   });
 }
