@@ -10,25 +10,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/svelte": "^4.0.1",
-    "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.0.9",
+    "@astrojs/rss": "^4.0.4",
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.2.6",
     "astro-seo": "^0.8.0",
-    "autoprefixer": "^10.4.15",
-    "daisyui": "^3.7.3",
-    "eslint": "~8.48.0",
-    "eslint-config-prettier": "9.0.0",
-    "postcss": "^8.4.29",
-    "prettier": "^3.0.3",
-    "sass": "^1.66.1",
-    "svelte": "^4.2.0",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.2.2"
+    "autoprefixer": "^10.4.17",
+    "daisyui": "^4.6.1",
+    "eslint": "~8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "svelte": "^4.2.9",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.0.1",
+    "@astrojs/sitemap": "^3.0.5",
     "@tailwindcss/typography": "^0.5.10",
+    "markdown-it": "^14.0.0",
     "sanitize-html": "^2.11.0"
   }
 }

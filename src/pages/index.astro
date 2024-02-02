@@ -1,11 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import ArticleCard from '../components/ArticleCard.astro'
 import Embeds from '../components/Embeds.astro';
 import Layout from '../components/Layout.astro'
 import prettyNumber from '../components/prettyNumber';
 import Rabbits from '../components/Rabbits.astro'
 
-const allPosts = await Astro.glob('./posts/*.md');
+const allPosts = await getCollection('posts');
 
 const getLatestYoutubeVideo = async (channelId) => {
   const response = await fetch(
@@ -24,7 +25,7 @@ const stats = await getYouTubeStatistics('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 const videos = await getLatestYoutubeVideo('UCzbL3ZYvJWzJbrbHCgZLDJQ')
 
 const latestPosts = allPosts?.sort((a, b) => {
-  return new Date(b.frontmatter.datePublished).getTime() - new Date(a.frontmatter.datePublished).getTime();
+  return new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime();
 }).slice(0, 3)
 ---
 <script src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module"></script>

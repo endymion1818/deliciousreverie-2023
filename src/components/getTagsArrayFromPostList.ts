@@ -11,7 +11,7 @@ interface Tags {
 
 const getTagsArrayFromPostsList = (data) => {
   const tagsArrayFromPostsList = data.reduce((prev, curr) => {
-    curr.frontmatter.tags?.forEach(tag => {
+    curr.data.tags?.forEach(tag => {
       prev.set(tag, {
         title: tag,
         posts: [...(prev.get(tag)?.posts || []), curr],

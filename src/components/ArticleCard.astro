@@ -2,22 +2,22 @@
 import FormatDate from "./FormatDate.astro"
 
 const { post } = Astro.props
-const { frontmatter, url } = post
+const { data } = post
 ---
-<a href={`${url}/`} class="hover:tw-bg-zinc-400">
+<a href={`/posts/${post.slug}/`} class="hover:tw-bg-zinc-400">
   {post.shareCard && (
     <img src={post.shareCard} />
   )}
   <div class="py-5">
     <h2 class="mb-2 text-2xl tracking-wide card-title text-inherit">
-      {frontmatter.title}
+      {data.title}
     </h2>
-    <p class="text-xl text-inherit">{post.frontmatter.description}</p>
-    {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
-    {frontmatter?.tags?.length > 0 && (
+    <p class="text-xl text-inherit">{post.data.description}</p>
+    {data.datePublished && <p class="my-2">Published on <FormatDate datetime={data.datePublished}/></p>}
+    {data?.tags?.length > 0 && (
       <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
-        {frontmatter.tags?.map(tag => (
+        {data.tags?.map(tag => (
           <a href={`/tags/${tag}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
         ))}
       </div>

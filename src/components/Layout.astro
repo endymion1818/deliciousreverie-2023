@@ -62,6 +62,7 @@ const pathname = new URL(Astro.request.url).pathname;
   <link rel="stylesheet" href="/styles/global.css">
   <link rel="preload" href="/fonts/Lovechild-Regular.woff2" as="font" />
   <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="RSS feed for deliciousreverie.co.uk" href="/rss.xml" />
   <SEO
     {...seoProps}
     canonical={canonical ?? `${siteUrl}${pathname}`}
