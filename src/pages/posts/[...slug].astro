@@ -11,11 +11,14 @@ export async function getStaticPaths() {
 }
 const comments = await getComments();
 
-console.log(comments)
+const path = Astro.url.pathname.split('/')[2];
+
+const filteredComments = comments.filter(comment => comment.article === path);
+
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<BlogLayout frontmatter={entry.data}>
+<BlogLayout frontmatter={entry.data} comments={filteredComments}>
   <Content />
 </BlogLayout>

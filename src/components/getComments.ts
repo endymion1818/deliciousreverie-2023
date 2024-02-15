@@ -15,6 +15,7 @@ async function getComments() {
                   body
                   name
                   article
+                  createdOn
                 }
               }
             }
