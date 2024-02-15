@@ -1,0 +1,83 @@
+---
+const { slug } = Astro.props;
+---
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const formHandlerResponse = new URLSearchParams(window.location.search).get(
+      "success"
+    );
+    // return early
+    if (!formHandlerResponse) return;
+
+    // was it successful as a boolean instead of a string
+    const isSuccessful = formHandlerResponse === "true";
+
+    // grab the original form
+    const form = document.getElementById("contact-form");
+
+    // ahh HTML templates. What joy.
+    /**
+     * @type {HTMLTemplateElement}
+     */
+    const submissionSuccessTemplate = document.querySelector(
+      'template[name="submission-success"]'
+    );
+    /**
+     * @type {HTMLTemplateElement}
+     */
+    const submissionFailureTemplate = document.querySelector(
+      'template[name="submission-failure"]'
+    );
+
+    const formParent = form?.parentElement;
+
+    form && formParent?.removeChild(form);
+
+    formParent?.appendChild(
+      isSuccessful
+        ? submissionSuccessTemplate?.content
+        : submissionFailureTemplate?.content
+    );
+  });
+</script>
+<template name="submission-success">
+  <div class="p-7">
+    <p class="text-lg">
+      Thank you for submitting your comment! It's awaiting approval.
+    </p>
+  </div>
+</template>
+<template name="submission-failure">
+  <div class="p-7">
+    <p class="text-lg">
+      Sorry, something went wrong when we tried to submit your request. Please try again later.
+    </p>
+  </div>
+  <p><slot name="reason" /></p>
+</template>
+<div>
+  <form id="contact-form" method="POST" action="/functions/send-email">
+    <input
+      required
+      type="text"
+      name="name"
+      id="name"
+      placeholder="name"
+      class="w-full max-w-xs mb-2 input"
+    />
+    <input
+      required
+      type="email"
+      name="email"
+      id="email"
+      placeholder="email"
+      class="w-full max-w-xs mb-2 input"
+    />
+    <textarea id="message" placeholder="Message" name="message" rows="3" class="w-full max-w-xs mb-2 textarea" 
+    ></textarea>
+    <input type="hidden" name="slug" value={slug} />
+    <br/>
+    <input type="submit" class="btn btn-primary" value="Send message" />
+  </form>
+</div>
