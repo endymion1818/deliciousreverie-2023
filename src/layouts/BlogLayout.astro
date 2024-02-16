@@ -3,7 +3,7 @@ import Layout from '../components/Layout.astro';
 import FormatDate from '../components/FormatDate.astro';
 import SubmitComment from '../components/SubmitComment.astro';
 
-const { frontmatter, comments } = Astro.props;
+const { frontmatter, comments, slug } = Astro.props;
 
 const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 ---
@@ -38,6 +38,6 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       <p>{comment.body}</p>
     </div>
   ))}
-  <SubmitComment />
+  {slug && <SubmitComment slug={slug} />}
 </Layout>
 

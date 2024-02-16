@@ -1,14 +1,43 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
-  console.log({ event })
+  if(!event.body) {
+    return Response.redirect('/comment-submission??success=false&error=No%20data%20to%20send')
+  }
   try {
-    const subject = event.queryStringParameters.name || 'World'
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject}` }),
+    const { payload } = JSON.parse(event.body)
+    const result = await fetch(process.env.WEBINY_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.WEBINY_API_KEY}`
+      },
+      body: JSON.stringify({
+        query: `
+          mutation CreateComment($data: CreateCommentInput!) {
+            comments {
+              createComment(data: $data) {
+                id
+              }
+            }
+          }
+        `,
+        variables: {
+          data: {
+            name: payload.name,
+            email: payload.email,
+            message: payload.message,
+            article: payload.slug,
+          }
+        }
+      })
+    })
+    const { data, errors } = await result.json();
+    if(errors || !data.comments.createComment.id) {
+      return Response.redirect('/comment-submission?success=false&error=Failed%20to%20create%20comment')
     }
+    return Response.redirect('/comment-submission??success=true')
   } catch (error) {
-    return { statusCode: 500, body: error.toString() }
+    return Response.redirect(`/comment-submission??success=false&error=${error.toString()}`)
   }
 }
 
