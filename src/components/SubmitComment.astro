@@ -62,13 +62,9 @@ const isDev = import.meta.env.DEV;
   <form 
     id="contact-form" 
     method="POST" 
-    class="flex flex-col" 
     data-netlify="true"
-    action={
-      isDev
-        ? "http://localhost:8888/.netlify/functions/post-comment"
-        : "/.netlify/functions/post-comment"
-    } 
+    class="flex flex-col" #
+    action="/comment-success/" 
   >
     <input
       required
