@@ -57,15 +57,19 @@ const isDev = import.meta.env.DEV;
       Sorry, something went wrong when we tried to submit your request. Please try again later.
     </p>
   </div>
-  <p><slot name="reason" /></p>
 </template>
 <div>
-  <form id="contact-form" method="POST" action={
-    isDev
-      ? "http://localhost:8888/.netlify/functions/post-comment"
-      : "/.netlify/functions/post-comment"
-  } class="flex flex-col"
-  }>
+  <form 
+    id="contact-form" 
+    method="POST" 
+    class="flex flex-col" 
+    data-netlify="true"
+    action={
+      isDev
+        ? "http://localhost:8888/.netlify/functions/post-comment"
+        : "/.netlify/functions/post-comment"
+    } 
+  >
     <input
       required
       type="text"
