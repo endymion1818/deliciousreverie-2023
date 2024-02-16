@@ -1,13 +1,13 @@
 ---
-const { slug } = Astro.props;
+const { slug, domain } = Astro.props;
 ---
 <div>
   <form 
     id="contact-form" 
     method="POST" 
     data-netlify="true"
-    class="flex flex-col" #
-    action="/comment-submission/" 
+    class="flex flex-col"
+    action={domain}
   >
     <input
       required
@@ -16,6 +16,7 @@ const { slug } = Astro.props;
       id="name"
       placeholder="name"
       class="w-full max-w-xs mb-2 input"
+      max="100"
     />
     <input
       required
@@ -24,8 +25,9 @@ const { slug } = Astro.props;
       id="email"
       placeholder="email"
       class="w-full max-w-xs mb-2 input"
+      max="100"
     />
-    <textarea id="message" placeholder="Message" name="message" rows="3" class="w-full max-w-xs mb-2 textarea" 
+    <textarea id="message" placeholder="Message" name="message" rows="3" class="w-full max-w-xs mb-2 textarea" maxlength="500" 
     ></textarea>
     <input type="hidden" name="slug" value={slug} />
     <br/>

@@ -1,10 +1,43 @@
-// Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
   if(!event.body) {
-    return Response.redirect('/comment-submission??success=false&error=No%20data%20to%20send')
+    return Response.redirect('https//deliciousreverie.co.uk/404?success=false&error=No%20data%20to%20send', 302)
   }
+  
+  const { payload } = JSON.parse(event.body)
+  
+  // let's just check that shall we?
+  if(!payload?.data) {
+    return Response.redirect('https//deliciousreverie.co.uk/404?success=false&error=No%20data%20to%20send', 302)
+  }
+  const url = new URL(payload.data.referrer);
+  const validReferrers = ['localhost', 'deliciousreverie.co.uk'];
+  
+  if (!validReferrers.includes(url.hostname)) {
+    console.log('invalid referrer');
+    return new Response('Invalid referrer', { status: 405 });
+  }
+  if(!payload.data.referrer.includes('localhost')) {
+    console.log('invalid domain')
+    return new Response('Invalid domain', { status: 405 })
+  }
+  if(payload.data.message.length > 500) {
+    console.log('message too long')
+    return new Response('Message too long', { status: 405 })
+  }
+  if(payload.data.name.length > 100) {
+    console.log('Name too long')
+    return new Response('Name too long', { status: 405 })
+  }
+  if(payload.data.email.length > 100) {
+    console.log('Email too long')
+    return new Response('Email too long', { status: 405 })
+  }
+  if(!/^[\w\-\s]+$/.test(payload.data.message)) {
+    console.log('dodgy message')
+    return new Response('Looks dodgy to me', { status: 405 })
+  }
+  // looks legit
   try {
-    const { payload } = JSON.parse(event.body)
     const result = await fetch(process.env.WEBINY_API_URL, {
       method: 'POST',
       headers: {
@@ -13,35 +46,32 @@ const handler = async (event) => {
       },
       body: JSON.stringify({
         query: `
-          mutation CreateComment($data: CreateCommentInput!) {
-            comments {
-              createComment(data: $data) {
+          mutation CreateCommentMutation($CommentInput: CommentInput!) {
+            createComment(data: $CommentInput) {
+              data {
                 id
               }
             }
           }
         `,
         variables: {
-          data: {
-            name: payload.name,
-            email: payload.email,
-            message: payload.message,
-            article: payload.slug,
+          CommentInput: {
+            name: payload.data.name,
+            email: payload.data.email,
+            body: payload.data.message,
+            article: payload.data.slug,
           }
         }
       })
     })
     const { data, errors } = await result.json();
-    if(errors || !data.comments.createComment.id) {
-      return Response.redirect('/comment-submission?success=false&error=Failed%20to%20create%20comment')
+    if(errors || data.error) {
+      return Response.redirect(`${payload.data.referrer}?success=false&error=${errors.map(e => e.message).join(', ')}`, 302)
     }
-    return Response.redirect('/comment-submission??success=true')
+    return Response.redirect(`${payload.data.referrer}?success=true`, 200)
   } catch (error) {
-    return Response.redirect(`/comment-submission??success=false&error=${error.toString()}`)
+    return Response.redirect(`${payload.data.referrer}?success=false&error=${error.toString()}`, 302)
   }
 }
 
 module.exports = { handler }
-
-
-// body: '{"payload":{"name":"ben","email":"endymion1818@gmail.com","data":{"name":"ben","email":"endymion1818@gmail.com","message":"test","slug":"","ip":"::ffff:127.0.0.1","user_agent":"Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0","referrer":"http://localhost:8888/posts/2023-site-rebuild"},"created_at":"2024-02-16T19:41:24.598Z","human_fields":{"Name":"ben","Email":"endymion1818@gmail.com","Message":"test","Slug":""},"ordered_human_fields":[{"title":"Name","name":"name","value":"ben"},{"title":"Email","name":"email","value":"endymion1818@gmail.com"},{"title":"Message","name":"message","value":"test"},{"title":"Slug","name":"slug","value":""}],"site_url":"https://deliciousreverie.co.uk"}}',
