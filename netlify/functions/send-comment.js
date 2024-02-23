@@ -1,40 +1,53 @@
 const handler = async (event) => {
+
+  const { host } = event.headers;
+
   if(!event.body) {
-    return Response.redirect('https//deliciousreverie.co.uk/404?success=false&error=No%20data%20to%20send', 302)
+    return {
+      headers: {
+        'Location': `${host}/404?success=false&error=No%20data%20to%20send` 
+      }, 
+      statusCode: 302
+    }
   }
   
-  const { payload } = JSON.parse(event.body)
+  console.log(event)
   
   // let's just check that shall we?
   if(!payload?.data) {
-    return Response.redirect('https//deliciousreverie.co.uk/404?success=false&error=No%20data%20to%20send', 302)
+    return {
+      headers: {
+        'Location': `${host}/404?success=false&error=No%20data%20to%20send` 
+      }, 
+      statusCode: 302
+    }
   }
-  const url = new URL(payload.data.referrer);
+  const url = new URL(host);
   const validReferrers = ['localhost', 'deliciousreverie.co.uk'];
   
   if (!validReferrers.includes(url.hostname)) {
     console.log('invalid referrer');
-    return new Response('Invalid referrer', { status: 405 });
+    return { message: 'Invalid referrer', statusCode: 405 };
   }
-  if(!payload.data.referrer.includes('localhost')) {
+  if(!host.includes('localhost')) {
     console.log('invalid domain')
-    return new Response('Invalid domain', { status: 405 })
+    return { message: 'Invalid domain', statusCode: 405 }
   }
   if(payload.data.message.length > 500) {
     console.log('message too long')
-    return new Response('Message too long', { status: 405 })
+    return { message: 'Message too long', statusCode: 405 }
   }
   if(payload.data.name.length > 100) {
     console.log('Name too long')
-    return new Response('Name too long', { status: 405 })
+    return { message: 'Name too long', statusCode: 405 }
   }
   if(payload.data.email.length > 100) {
     console.log('Email too long')
-    return new Response('Email too long', { status: 405 })
+    return { message: 'Email too long', statusCode: 405 }
   }
   if(!/^[\w\-\s]+$/.test(payload.data.message)) {
     console.log('dodgy message')
-    return new Response('Looks dodgy to me', { status: 405 })
+    return { message: 'Looks dodgy to me', statusCode: 405 }
   }
   // looks legit
   try {
@@ -66,11 +79,26 @@ const handler = async (event) => {
     })
     const { data, errors } = await result.json();
     if(errors || data.error) {
-      return Response.redirect(`${payload.data.referrer}?success=false&error=${errors.map(e => e.message).join(', ')}`, 302)
+      return {
+        headers: {
+          'Location': `${host}?success=false&error=${errors.map(e => e.message).join(', ')}` 
+        }, 
+        statusCode: 302
+      }
     }
-    return Response.redirect(`${payload.data.referrer}?success=true`, 200)
+    return {
+      headers: {
+        'Location': `${host}?success=true` 
+      }, 
+      statusCode: 200 
+  }
   } catch (error) {
-    return Response.redirect(`${payload.data.referrer}?success=false&error=${error.toString()}`, 302)
+    return {
+      headers: {
+        'Location': `${host}?success=false&error=${error.toString()}` 
+      }, 
+      statusCode: 302
+    }
   }
 }
 

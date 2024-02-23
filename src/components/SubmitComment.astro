@@ -1,15 +1,33 @@
 ---
-const { slug, domain } = Astro.props;
+const { slug } = Astro.props;
 
-// @TODO: submit using formData instead of netlify forms 
 ---
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      e.target.querySelector('input[type="submit"]').disabled = true;
+      console.log(form)
+      // const response = await fetch(form.action, {
+      //   method: 'POST',
+      //   body: new FormData(form),
+      // });
+      // if (response.ok) {
+      //   console.log('Message sent');
+      //   form.reset();
+      // } else {
+      //   console.log('Error sending message');
+      // }
+    });
+  });
+
+</script>
 <div>
   <form 
     id="contact-form" 
     method="POST" 
-    data-netlify="true"
     class="flex flex-col"
-    action={domain}
   >
     <input
       required
