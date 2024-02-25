@@ -2,32 +2,13 @@
 const { slug } = Astro.props;
 
 ---
-<script is:inline>
-  window.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      e.target.querySelector('input[type="submit"]').disabled = true;
-      console.log(form)
-      // const response = await fetch(form.action, {
-      //   method: 'POST',
-      //   body: new FormData(form),
-      // });
-      // if (response.ok) {
-      //   console.log('Message sent');
-      //   form.reset();
-      // } else {
-      //   console.log('Error sending message');
-      // }
-    });
-  });
-
-</script>
 <div>
   <form 
     id="contact-form" 
     method="POST" 
     class="flex flex-col"
+    data-netlify="true"
+    action="/comment-thanks/"
   >
     <input
       required
