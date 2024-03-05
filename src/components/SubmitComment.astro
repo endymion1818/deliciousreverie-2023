@@ -2,13 +2,46 @@
 const { slug } = Astro.props;
 
 ---
-<div>
+<script is:inline>
+  function respondToCommentSubmission(successful) {
+    const formContainer = document.getElementById('form-container');
+    if (successful) {
+      formContainer.innerHTML = '<p class="text-center">Thank you for your message!</p>';
+      return;
+    }
+    formContainer.appendChild('<p class="text-center">Sorry, we couldn\'t submit your message.</p>');
+    return;
+  }
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const body = JSON.stringify(Object.fromEntries(data))
+    
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body,
+        headers: {
+          'content-type': 'application/json',
+        },
+      });
+      if (response.ok) {
+        respondToCommentSubmission(true)
+        return;
+      }
+      respondToCommentSubmission(false)
+    } catch (error) {
+      respondToCommentSubmission(false)
+    }
+  });
+</script>
+<div id="form-container">
   <form 
     id="contact-form" 
     method="POST" 
     class="flex flex-col"
-    data-netlify="true"
-    action="/comment-thanks/"
+    action="/.netlify/functions/send-comment"
   >
     <input
       required
@@ -28,7 +61,7 @@ const { slug } = Astro.props;
       class="w-full max-w-xs mb-2 input"
       max="100"
     />
-    <textarea id="message" placeholder="Message" name="message" rows="3" class="w-full max-w-xs mb-2 textarea" maxlength="500" 
+    <textarea id="body" placeholder="Message" name="body" rows="3" class="w-full max-w-xs mb-2 textarea" maxlength="500" 
     ></textarea>
     <input type="hidden" name="slug" value={slug} />
     <br/>

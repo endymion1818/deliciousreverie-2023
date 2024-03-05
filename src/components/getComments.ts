@@ -1,6 +1,6 @@
 async function getComments() {
     try {
-      const res = await fetch(`${import.meta.env.WEBINY_API_URL}`, {
+      const res = await fetch(`${import.meta.env.WEBINY_API_READ_URL}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ async function getComments() {
                   id
                   body
                   name
-                  article
+                  slug
                   createdOn
                 }
               }

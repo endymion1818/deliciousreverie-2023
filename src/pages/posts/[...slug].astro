@@ -13,7 +13,7 @@ const comments = await getComments();
 
 const slug = Astro.url.pathname.split('/')[2];
 
-const filteredComments = comments.filter(comment => comment.article === slug);
+const filteredComments = comments.filter(comment => comment.slug === slug);
 
 
 const { entry } = Astro.props;
