@@ -67,28 +67,12 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
   <h2 class="mb-2 text-2xl font-bold">Comments</h2>
   {!comments.length && <p>No comments yet. Be the first to comment!</p>}
   {comments?.map(comment => (
-    <div class="mt-8">
+    <div class="pb-2 mt-8 mb-2 border-b border-primary-950">
       <h2 class="text-2xl font-bold">{comment.name} wrote:</h2>
       <time datetime={comment.createdOn} class="text-zinc-600">{(new Date(comment.createdOn).toLocaleDateString('en-GB', dateFormatOptions))}</time>
       <p>{comment.body}</p>
     </div>
   ))}
   {slug && <SubmitComment slug={slug} domain={Astro.url} />}
-  <template name="submission-success">
-    <div class="p-7">
-        <h1 class="text-4xl">Awesome.</h1>
-        <p class="mb-4 text-lg">Thanks for submitting a comment!</p>
-        <p class="mb-4 text-lg">I will approve it in the next few days.</p>
-        <p class="mb-4 text-lg">Have you considered subscribing to my RSS feed?</p>
-    </div>
-    </template>
-    <template name="submission-failure">
-    <div class="p-7">
-        <h1 class="text-4xl">Drat.</h1>
-        <p class="text-lg">
-        Sorry, something went wrong when we tried to submit your request. Please try again later.
-        </p>
-    </div>
-    </template>
 </Layout>
 

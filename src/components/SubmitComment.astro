@@ -3,13 +3,13 @@ const { slug } = Astro.props;
 
 ---
 <script is:inline>
-  function respondToCommentSubmission(successful) {
+  function respondToCommentSubmission(isSuccessful) {
     const formContainer = document.getElementById('form-container');
-    if (successful) {
-      formContainer.innerHTML = '<p class="text-center">Thank you for your message!</p>';
+    if (isSuccessful) {
+      formContainer.innerHTML = '<p>Thank you for your message! It\'s awaiting moderation, but that shouldn\'t take too long.</p>';
       return;
     }
-    formContainer.appendChild('<p class="text-center">Sorry, we couldn\'t submit your message.</p>');
+    formContainer.appendChild('<p>Sorry, we couldn\'t submit your message.</p>');
     return;
   }
   const form = document.getElementById('contact-form');
@@ -19,7 +19,7 @@ const { slug } = Astro.props;
     const body = JSON.stringify(Object.fromEntries(data))
     
     try {
-      const response = await fetch(form.action, {
+      const response = await fetch('/.netlify/functions/send-comment', {
         method: 'POST',
         body,
         headers: {
@@ -41,7 +41,6 @@ const { slug } = Astro.props;
     id="contact-form" 
     method="POST" 
     class="flex flex-col"
-    action="/.netlify/functions/send-comment"
   >
     <input
       required
