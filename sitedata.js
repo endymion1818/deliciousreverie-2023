@@ -53,7 +53,7 @@ export let socialLinks = {
     link: "https://github.com/endymion1818"
   },
   rss: {
-    title: "RSS Feed",
+    title: "RSS",
     link: "https://deliciousreverie.co.uk/rss.xml"
   }
 }
