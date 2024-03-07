@@ -11,11 +11,11 @@ const handler = async (event) => {
 
   console.log(event)
 
-  const { host } = event.headers;
+  const domain = new URL(event.headers.host);
 
-  console.log(host)
+  const host = domain.hostname;
 
-  const validReferrers = ['localhost:8888', 'deliciousreverie.co.uk', 'netlify.app'];
+  const validReferrers = ['localhost', 'deliciousreverie', 'netlify'];
 
   // let's just check that shall we?
   if(!event.body) {
