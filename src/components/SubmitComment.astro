@@ -81,24 +81,20 @@ const { slug } = Astro.props;
   </form>
    <template name="submission-success">
     <div class="mt-4 alert alert-info">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 stroke-current shrink-0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <div>
-          <h1 class="text-lg">Awesome.</h1>
-          <p class="mb-2">Thanks for submitting a comment!</p>
-          <p class="mb-2">I will approve it in the next few days.</p>
-          <p class="mb-2">Have you considered subscribing to my RSS feed?</p>
-        </div>
+      <div>
+        <h1 class="text-2xl text-white">Awesome.</h1>
+        <p class="mb-2 text-white">Thanks for submitting a comment! It's awaiting approval, but that should happen next few days.</p>
+      </div>
     </div>
     </template>
     <template name="submission-failure">
     <div class="mt-4 alert alert-error">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 stroke-current shrink-0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
-        <div>
-          <h1 class="text-4xl">Drat.</h1>
-          <p class="text-lg">
-            Sorry, something went wrong when we tried to submit your request. Please try again later.
-          </p>
-        </div>
+      <div>
+        <h1 class="text-2xl text-white">Drat.</h1>
+        <p class="text-white">
+          Sorry, something went wrong when we tried to submit your request. I'll look into it soon I promise.
+        </p>
+      </div>
     </div>
   </template>
 </div>
