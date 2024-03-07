@@ -74,27 +74,5 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
     </div>
   ))}
   {slug && <SubmitComment slug={slug} domain={Astro.url} />}
-  <template name="submission-success">
-    <div class="alert alert-info">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 stroke-current shrink-0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <div>
-          <h1 class="text-4xl">Awesome.</h1>
-          <p class="mb-4 text-lg">Thanks for submitting a comment!</p>
-          <p class="mb-4 text-lg">I will approve it in the next few days.</p>
-          <p class="mb-4 text-lg">Have you considered subscribing to my RSS feed?</p>
-        </div>
-    </div>
-    </template>
-    <template name="submission-failure">
-    <div class="alert alert-error">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 stroke-current shrink-0"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
-        <div>
-          <h1 class="text-4xl">Drat.</h1>
-          <p class="text-lg">
-            Sorry, something went wrong when we tried to submit your request. Please try again later.
-          </p>
-        </div>
-    </div>
-  </template>
 </Layout>
 
