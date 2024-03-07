@@ -74,5 +74,21 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
     </div>
   ))}
   {slug && <SubmitComment slug={slug} domain={Astro.url} />}
+  <template name="submission-success">
+    <div class="p-7">
+        <h1 class="text-4xl">Awesome.</h1>
+        <p class="mb-4 text-lg">Thanks for submitting a comment!</p>
+        <p class="mb-4 text-lg">I will approve it in the next few days.</p>
+        <p class="mb-4 text-lg">Have you considered subscribing to my RSS feed?</p>
+    </div>
+    </template>
+    <template name="submission-failure">
+    <div class="p-7">
+        <h1 class="text-4xl">Drat.</h1>
+        <p class="text-lg">
+        Sorry, something went wrong when we tried to submit your request. Please try again later.
+        </p>
+    </div>
+  </template>
 </Layout>
 
