@@ -31,7 +31,6 @@ async function getComments() {
       console.log(data.errors);
       return;
     }
-    console.log('getcomments', JSON.stringify(data.data.listComments.data));
     return data.data.listComments.data;
     } catch (error) {
       console.log(error);
