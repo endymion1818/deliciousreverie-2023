@@ -9,6 +9,8 @@
  */
 const handler = async (event) => {
 
+  console.log(event.headers.host)
+
   const domain = new URL(event.headers.host);
 
   const host = domain.href;
