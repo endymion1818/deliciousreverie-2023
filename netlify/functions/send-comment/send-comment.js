@@ -13,7 +13,7 @@ const handler = async (event) => {
 
   const { host } = event.headers;
 
-  const validReferrers = ['localhost:8888', 'deliciousreverie.co.uk'];
+  const validReferrers = ['localhost:8888', 'deliciousreverie.co.uk', 'netlify.app'];
 
   // let's just check that shall we?
   if(!event.body) {
