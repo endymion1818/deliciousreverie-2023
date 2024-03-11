@@ -29,6 +29,13 @@ I don't believe it is. I've seen the world wide web morph from AOL and eWorld to
 - [Free Babylon 5 campaign](https://freebabylon5.com/)
 - [Awesome Developer Blogs](https://github.com/endymion1818/awesome-developer-blogs)
 
+## The Indie web
+
+Concerned that personal blogs come lower and lower in search results? Fret no more.
+
+- [Ye Olde Blogroll](https://blogroll.org/)
+- [Ooh Directory](https://ooh.directory)
+
 ## Uses
 
 - [Oh My ZSH with Amuse theme](https://ohmyz.sh/)
