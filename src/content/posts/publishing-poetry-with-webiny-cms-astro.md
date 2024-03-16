@@ -11,7 +11,9 @@ I admit, some poetry is relatively straightforward: it's organised similarly to 
 
 Some poems, and some poets, choose to organise their work in more ... unusual ways. Take Keat's Ode on a Grecian Urn, which has meaningful indentations which I think really helps you to appreciate the lyrical cadence of the poem:  
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Thou still unravish'd bride of quietness,
        Thou foster-child of silence and slow time,
 Sylvan historian, who canst thus express
@@ -23,6 +25,8 @@ What leaf-fring'd legend haunts about thy shape
 What mad pursuit? What struggle to escape?
                What pipes and timbrels? What wild ecstasy?
 ```
+
+</div>
 
 There are much more ... adventurous, shall we say? layouts for poems, but this was the main use case I wanted to meet: lines which respect the indentation of the author. But there was something else I wanted to achieve as well:
 

@@ -11,7 +11,9 @@ Time is a funny thing. Whilst modern science has helped us to see it's not as co
 
 **Why I like it:** Joni has an amazing mind and all of her music shares the immediacy and intimacy of a life of experiences. Yet this one in particular is written from three unique perspectives: the first verse is Joni as a child looking at clouds and noticing, perhaps for the first time, the passing of time. As the verses progress, she gets older and reaches adulthood and then old age, and has time to reflect on the similarities between clouds, and love, and indeed life itself
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Rows and flows of angel hair
 And ice cream castles in the air
 And feather canyons everywhere
@@ -54,11 +56,15 @@ I really don't know life
 I really don't know life at all
 ```
 
+</div>
+
 ## Time - Pink Floyd (David Gilmour, Nick Mason,  Roger Waters and Richard Wright)
 
 **Why I like it:** This is one of the songs I grew up with: my dad played it for me when I was a teen. It's bound to a young mans' perspective but is remarkably foresighted; the writer already perceives that life will go by quickly and will inevitably end in regret one way or another.
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Ticking away the moments that make up a dull day
 Fritter and waste the hours in an offhand way
 Kicking around on a piece of ground in your hometown
@@ -80,11 +86,15 @@ Hanging on in quiet desperation is the English way
 The time is gone, the song is over, thought I'd something more to say
 ```
 
+</div>
+
 ## Shakespeare - Sonnet 19​
 
 **Why I like it:** Maybe Dylan Thomas was thinking of this sonnet when he was writing "do not go gentle", another poem I admire but for different reasons. In this poem, the protagonist (it could be Shakespeare; but he hardly ever wrote from his own perspective) rages against time, almost sticking a thumb up, because he believes he has found a way to outwit time: by writing this very verse.
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Devouring Time,  blunt thou the lion’s paws,
 And make the earth devour her own sweet brood;
 Pluck the keen teeth from the fierce tiger’s jaws,
@@ -101,11 +111,15 @@ Yet do thy worst, old Time: despite thy wrong,
 My love shall in my verse ever live young.
 ```
 
+</div>
+
 ## Keats - Ode on a Grecian Urn
 
 **Why I like it:** This ode remains my favourite verse on the subject of time. In it, time is frozen in one single moment by the creation of art. It's almost a response to Sonnet 19 above, where someone future is able to appreciate that time is beaten; but Keats' luscious and very living words betray a sad fact: the impression is real, but the people, as Keats himself, are gone.
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Thou still unravish'd bride of quietness,
   Thou foster-child of silence and slow time,
 Sylvan historian, who canst thus express
@@ -163,5 +177,7 @@ Than ours, a friend to man, to whom thou say'st,
       "Beauty is truth, truth beauty,—that is all
        Ye know on earth, and all ye need to know."
 ```
+
+</div>
 
 I find time fascinating because its so intrinsic to our nature as humans; if we were to not exist within the stream of time we would hardly be called such. Yet I can also appreciate that there exists a perspective that is outside its bounds."

@@ -3,7 +3,7 @@ title: "Alliteration in Poetry"
 description: "I've slowly begun to realise something about my taste in poetry, and I wonder how much this is because of my Welsh heritage. As a result, I'm diving more into traditional Welsh poetry, and really enjoying what I find.
 "
 tags: 
-  - poetry
+  - literature
 datePublished: 2024-03-15
 ---
 **I've slowly begun to realise something about my taste in poetry, and I wonder how much this is because of my Welsh heritage. As a result, I'm diving more into traditional Welsh poetry, and really enjoying what I find.**
@@ -22,12 +22,17 @@ I have no idea how I stumbled on the Moldovan / Russian / English poet [Philip N
 
 But I loved his keen sense of alliteration. Within each line he places such delightfully similar-sounding words that for me began to exceed even the profound pleasure I got from the deeply meaningful poems I'd read so far.
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+
+```plaintext
 Insomnia, Homer, taunt sails: my lips have lisped
 Down to the middle the detailed list of ships
 That long brood and angular train of cranes
 That rose above Hellas once on wings of waves.
 ```
+
+</div>
 
 In the first line, the alliteration is in the sound at the start of "lips" and "lisped", and is carried on in the second line's "list" and "ships". It's very playful.
 
@@ -43,12 +48,16 @@ That's a bit of an odd term. Let me explain what is meant by "Anglo-Welsh". When
 
 His poems didn't so much paint pictures of the landscapes of South Wales that he was familiar with as make you think about his personal connection with them. And he used alliteration extensively to convey that.
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 To you I give a golden garden, Wales
 To play in: half a hundred voels and vales
 Shall be your toys, and you shall sing and laugh 
 amid a noise of flights of nightingales
 ```
+
+</div>
 
 To me this poem sounds very rich (as in chocolate cake) because of the frequency of alliterations, "golden garden" and "half a hundred", "Wales", "voels" and "vales" ... he didn't happen upon these as if they were coincidences: alliteration is woven in the very fabric of his verse.
 
@@ -66,12 +75,16 @@ The forms poetry takes is unique to each language it's spoken in. To translate a
 
 But let me try to help you understand why that isn't always necessary:
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 Gwae'r gwan dan oedran nid edrych, ni chwardd,
 ni cherdda led y rhych 
 Gwae ni wyl yn gynilwych
 Gwae ni chlyw organ a chlych
 ```
+
+</div>
 
 This is a form of medieval Welsh poetry called "cynghanedd sain", and to me it seems remarkably similar to the alliteration (a term we use for poetry written in English) of Raymond Garlick's poems and the cascading rhythym of Dylan Thomas's as well. The words tumble and fall, trip, skip and scatter in interesting ways across the page.
 

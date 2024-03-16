@@ -16,7 +16,9 @@ I wrote it after I read [Andrew Motion's biography of John Keats](https://www.a
 
 ### To Rome [#](https://deliciousreverie.co.uk/posts/to-rome-a-poem/#to-rome)
 
-```poetry
+<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+
+```plaintext
 It's a rose you've given, and a rose I'll take
   As I leave you awash in my wake.
 Though I travel to distant shores
@@ -40,6 +42,8 @@ The dregs become of this earthly root
 And I might live again to see
   That rose you gave, you gave to me.
 ```
+
+</div>
 
 ## Notes
 
