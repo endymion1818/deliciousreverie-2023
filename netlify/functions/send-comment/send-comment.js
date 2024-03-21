@@ -21,6 +21,8 @@ const handler = async (event) => {
     }
   }
 
+  console.log(host)
+
   const payload = JSON.parse(event.body);
   
   if (!validReferrers.includes(host)) {
