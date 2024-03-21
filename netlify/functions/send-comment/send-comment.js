@@ -11,7 +11,7 @@ const handler = async (event) => {
 
   const { host } = event.headers;
 
-  const validReferrers = ['localhost:8888', 'deliciousreverie.co.uk', 'https://deploy-preview-22--gleaming-melba-90c3d4.netlify.app'];
+  const validReferrers = ['localhost:8888', 'deliciousreverie.co.uk', 'deploy-preview-22--gleaming-melba-90c3d4.netlify.app'];
 
   // let's just check that shall we?
   if(!event.body) {
@@ -20,8 +20,6 @@ const handler = async (event) => {
       message: 'no data to send',
     }
   }
-
-  console.log(host)
 
   const payload = JSON.parse(event.body);
   
