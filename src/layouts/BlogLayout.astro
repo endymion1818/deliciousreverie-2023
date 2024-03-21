@@ -1,9 +1,47 @@
 ---
 import Layout from '../components/Layout.astro';
 import FormatDate from '../components/FormatDate.astro';
+import SubmitComment from '../components/SubmitComment.astro';
 
-const { frontmatter } = Astro.props;
+const { frontmatter, comments, slug } = Astro.props;
+
+const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 ---
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const formHandlerResponse = new URLSearchParams(window.location.search).get(
+      "success"
+      );
+      // return early
+      if (!formHandlerResponse) return;
+  
+      // was it successful as a boolean instead of a string
+      const isSuccessful = formHandlerResponse === "true";
+  
+      // grab the original form
+      const content = document.getElementById("contact-form");
+  
+      // ahh HTML templates. What joy.
+      /**
+       * @type {HTMLTemplateElement}
+       */
+      const submissionSuccessTemplate = document.querySelector(
+      'template[name="submission-success"]'
+      );
+      /**
+       * @type {HTMLTemplateElement}
+       */
+      const submissionFailureTemplate = document.querySelector(
+      'template[name="submission-failure"]'
+      );
+  
+      content?.appendChild(
+      isSuccessful
+          ? submissionSuccessTemplate?.content
+          : submissionFailureTemplate?.content
+      );
+  });
+  </script>
 <Layout pageTitle={frontmatter.title} canonical={frontmatter.canonicalLink} pageDescription={frontmatter.description}>
   <h1 class="mb-4 text-6xl text-zinc-800">{frontmatter.title}</h1>
   {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
@@ -25,6 +63,16 @@ const { frontmatter } = Astro.props;
       <a href={`/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
     ))}
     </p>
-)}
+  )}
+  <h2 class="mb-2 text-2xl font-bold">Comments</h2>
+  {!comments.length && <p>No comments yet. Be the first to comment!</p>}
+  {comments?.map(comment => (
+    <div class="pb-2 mt-8 mb-2 border-b border-primary-950">
+      <h2 class="text-2xl font-bold">{comment.name} wrote:</h2>
+      <time datetime={comment.createdOn} class="text-zinc-600">{(new Date(comment.createdOn).toLocaleDateString('en-GB', dateFormatOptions))}</time>
+      <p>{comment.body}</p>
+    </div>
+  ))}
+  {slug && <SubmitComment slug={slug} domain={Astro.url} />}
 </Layout>
 

@@ -1,0 +1,111 @@
+---
+const { slug } = Astro.props;
+---
+
+<script is:inline>
+  function respondToCommentSubmission(isSuccessful) {
+    const formContainer = document.getElementById("form-container");
+    // ahh HTML templates. What joy.
+    /**
+     * @type {HTMLTemplateElement}
+     */
+    const submissionSuccessTemplate = document.querySelector(
+      'template[name="submission-success"]'
+    );
+    /**
+     * @type {HTMLTemplateElement}
+     */
+    const submissionFailureTemplate = document.querySelector(
+      'template[name="submission-failure"]'
+    );
+
+    const template = isSuccessful
+      ? submissionSuccessTemplate?.content.cloneNode(true)
+      : submissionFailureTemplate?.content.cloneNode(true);
+
+    formContainer?.appendChild(template);
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    form?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const body = JSON.stringify(Object.fromEntries(data));
+
+      try {
+        const response = await fetch("/.netlify/functions/send-comment", {
+          method: "POST",
+          body,
+          headers: {
+            "content-type": "application/json",
+          },
+        });
+        if (response.ok) {
+          respondToCommentSubmission(true);
+          return;
+        }
+        respondToCommentSubmission(false);
+      } catch (error) {
+        respondToCommentSubmission(false);
+      }
+    });
+  });
+</script>
+<div id="form-container">
+  <form id="contact-form" method="POST" class="flex flex-col">
+    <input
+      required
+      type="text"
+      name="name"
+      id="name"
+      placeholder="name"
+      class="w-full max-w-xs mb-2 input"
+      max="100"
+    />
+    <input
+      required
+      type="email"
+      name="email"
+      id="email"
+      placeholder="email"
+      class="w-full max-w-xs mb-2 input"
+      max="100"
+    />
+    <textarea
+      id="body"
+      placeholder="Message"
+      name="body"
+      rows="3"
+      class="w-full max-w-xs mb-2 textarea"
+      maxlength="500"></textarea>
+    <input type="hidden" name="slug" value={slug} />
+    <br />
+    <input
+      type="submit"
+      class="w-full max-w-xs btn btn-primary"
+      value="Send message"
+    />
+  </form>
+  <template name="submission-success">
+    <div class="mt-4 alert alert-info">
+      <div>
+        <h1 class="text-2xl text-white">Awesome.</h1>
+        <p class="mb-2 text-white">
+          Thanks for submitting a comment! It's awaiting approval, but that
+          should happen next few days.
+        </p>
+      </div>
+    </div>
+  </template>
+  <template name="submission-failure">
+    <div class="mt-4 alert alert-error">
+      <div>
+        <h1 class="text-2xl text-white">Drat.</h1>
+        <p class="text-white">
+          Sorry, something went wrong when we tried to submit your request. I'll
+          look into it soon I promise.
+        </p>
+      </div>
+    </div>
+  </template>
+</div>

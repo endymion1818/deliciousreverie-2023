@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
-
+import getComments from '../../components/getComments';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts');
@@ -9,31 +9,16 @@ export async function getStaticPaths() {
     params: { slug: entry.slug }, props: { entry },
   }));
 }
+const comments = await getComments();
+
+const slug = Astro.url.pathname.split('/')[2];
+
+const filteredComments = comments.filter(comment => comment.slug === slug);
+
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<BlogLayout frontmatter={entry.data}>
+<BlogLayout frontmatter={entry.data} comments={filteredComments} slug={slug}>
   <Content />
 </BlogLayout>
-<!-- ---
-import ArticleCard from '../components/ArticleCard.astro'
-import Layout from '../components/Layout.astro'
-
-const allPosts = await Astro.glob('./*.md')
-
-const postsByDate = allPosts?.sort((a, b) => {
-        // Sort newest posts first
-        return new Date(b.frontmatter.datePublished).getTime() - new Date(a.frontmatter.datePublished).getTime();
-      })
----
-<Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="posts">
-    <h1 class="text-4xl">Archive</h1>
-    {postsByDate.length ? (
-        <div class="grid grid-cols-1 gap-4 py-4">
-          {postsByDate.map(post => (
-            <ArticleCard post={post} />
-          ))}
-        </div>
-      ) : null}
-</Layout> -->
