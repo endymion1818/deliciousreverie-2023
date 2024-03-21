@@ -1,5 +1,5 @@
 ---
-title: "Comments on are now live"
+title: "Comments are now live"
 description: "A system to allow visitors to comment on my blog posts has just gone live."
 tags: 
   - personal
