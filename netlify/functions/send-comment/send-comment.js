@@ -39,10 +39,6 @@ const handler = async (event) => {
     console.log('Email too long')
     return { message: 'Email too long', statusCode: 405 }
   }
-  if(!/^[\w\-\s]+$/.test(payload.body)) {
-    console.log('dodgy message')
-    return { message: 'Looks dodgy to me', statusCode: 405 }
-  }
   // looks legit
   try {
     const result = await fetch(process.env.WEBINY_API_URL, {
