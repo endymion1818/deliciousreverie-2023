@@ -1,5 +1,5 @@
 ---
-title: "Comments on deliciousreverie.co.uk are now live"
+title: "Comments on are now live"
 description: "A system to allow visitors to comment on my blog posts has just gone live."
 tags: 
   - personal
