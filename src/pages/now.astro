@@ -1,0 +1,27 @@
+---
+import Image from "astro/components/Image.astro";
+import Layout from "../components/Layout.astro";
+import getNows from "../components/getNows"
+import prettyDate from "../components/prettyDate";
+
+const nows = await getNows();
+---
+<Layout pageTitle="Now">
+  <h1 class="text-4xl">Now</h1>
+  <p class="mb-4 text-lg">What I'm working on, listening to or just want to share as it happens ... sort of.</p>
+  {
+    nows?.map((now, index) => (
+      <>
+        {index !== 0 && <hr class="my-8 border-zinc-500" />}
+        <div class="mb-4">
+        <div class="flex"><h2 class="text-2xl">{now.title}</h2><time datetime={now.createdOn}>{prettyDate(now.createdOn)}</time></div>
+        <p class="text-lg">{
+          now.description
+        }</p>
+        {
+          now.image && <Image src={now.image} width="800" height="600" class="w-full" alt=""/>
+        }
+      </div>
+      </>
+  ))}
+</Layout>
