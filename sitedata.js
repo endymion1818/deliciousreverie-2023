@@ -10,11 +10,14 @@ export let menuItems = [{
   title: 'About',
   link: '/about/',
 }, {
-  title: 'Links',
-  link: '/links/',
-}, {
   title: 'Articles',
   link: '/tags/',
+}, {
+  title: 'Now',
+  link: '/now/',
+}, {
+  title: 'Links',
+  link: '/links/',
 }, {
   title: 'Contact',
   link: '/contact/',
@@ -31,6 +34,9 @@ export let footerMenuItems = [{
   },{
     title: 'Personal',
     link: '/tags/personal/'
+  }, {
+    title: 'Guestbook',
+    link: '/guestbook/'
   }]
 }, {
   title: 'Menu',

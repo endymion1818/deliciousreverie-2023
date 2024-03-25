@@ -21,7 +21,7 @@ interface Props {
 
 const { footerMenuItems, logo, title, acknowledgementText, socialLinks } = Astro.props;
 ---
-<footer class="text-white bg-accent text-base-content">
+<footer class="text-white bg-accent">
   <div class="py-10 mx-auto max-w-contain">
     <div class="my-10 footer gap-x-16">
       <div>
@@ -33,9 +33,9 @@ const { footerMenuItems, logo, title, acknowledgementText, socialLinks } = Astro
       {footerMenuItems?.map(itemGroup => (
           <div>
             <span class="footer-title">{itemGroup.title}</span>
-            <ul class="list-inside">
+            <ul class="list-inside lg:flex lg:gap-2 lg:flex-col">
             {itemGroup.items.map(item => (
-              <li><a href={item.link} class="link link-hover sm:p-2 sm:inline-block">{item.title}</a></li>
+              <li><a href={item.link} class="-ml-4 lg:-ml-2 btn btn-ghost hover:border-white">{item.title}</a></li>
             ))}
             </ul>
           </div>
