@@ -1,5 +1,6 @@
 ---
 import Layout from "../components/Layout.astro";
+import SubmitGuestbookEntry from "../components/SubmitGuestbookEntry.astro";
 import getGuestbookEntries from "../components/getGuestbookEntries"
 import prettyDate from "../components/prettyDate";
 
@@ -8,20 +9,21 @@ const entries = await getGuestbookEntries();
 <Layout pageTitle="Now">
   <h1 class="text-4xl">Guestbook</h1>
   <p class="mb-4 text-lg">Hello! Welcome to the guestbook. Feel free to complete the form and see your entry here (once it's been approved).</p>
+  <SubmitGuestbookEntry />
   {
     entries?.map((entry) => (
-      <div class="mb-4">
-        <h2 class="text-2xl">{entry.title}</h2>
-        <time datetime={entry.createdOn}>{prettyDate(entry.createdOn)}</time>
-        <p class="text-lg">{
-          entry.description
-        }</p>
-        {
-          entry.link && <a href={entry.link} class="text-blue-500 break-all hover:underline">{entry.link}</a>
-        }
-        {
-          entry.image && <img src={entry.image} class="w-full" alt=""/>
-        }
-      </div>
+      <>
+        <hr class="my-4 border border-b-stone-600"/>
+        <div class="mb-4">
+          <h2 class="text-2xl">{entry.title}</h2>
+          <time datetime={entry.createdOn}>{prettyDate(entry.createdOn)}</time>
+          <p class="text-lg">{
+            entry.description
+          }</p>
+          {
+            entry.link && <a href={entry.link} class="text-blue-500 break-all hover:underline">{entry.link}</a>
+          }
+        </div>
+      </>
   ))}
 </Layout>
