@@ -4,11 +4,13 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://deliciousreverie.co.uk',
+  image: {
+    domains: ['d3720zlxyfesv8.cloudfront.net', 'd3129htoztmcjy.cloudfront.net/']
+  },
   integrations: [
     tailwind(),
     sitemap({
       serialize(item) {
-        console.log( item );
         return {
           ...item,
         };
