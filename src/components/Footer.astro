@@ -10,7 +10,6 @@ interface Props {
   }>;
   logo?: string;
   title: string;
-  acknowledgementText: string;
   socialLinks: {
     [key: string]: {
       title: string,
@@ -19,7 +18,7 @@ interface Props {
   }
 }
 
-const { footerMenuItems, logo, title, acknowledgementText, socialLinks } = Astro.props;
+const { footerMenuItems, logo, title, socialLinks } = Astro.props;
 ---
 <footer class="text-white bg-accent">
   <div class="py-10 mx-auto max-w-contain">
@@ -28,7 +27,8 @@ const { footerMenuItems, logo, title, acknowledgementText, socialLinks } = Astro
         <a class="items-center grid-flow-col" href={siteUrl}>
           {logo ? <img class="max-w-xs" src={logo}> : <span class="text-3xl tracking-wide font-display text-secondary">{title}</span>}
         </a>
-        {acknowledgementText}
+        <p>Delicious Reverie is the blog of Benjamin Read. © Some rights are reserved.</p>
+        <p><a class="hover:underline" href="/guestbook">Have some feedback?Please visit the guestbook</a>.</p>
       </div>
       {footerMenuItems?.map(itemGroup => (
           <div>

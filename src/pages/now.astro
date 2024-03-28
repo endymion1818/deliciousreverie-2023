@@ -19,8 +19,12 @@ const nows = await getNows();
           now.description
         }</p>
         {
+            now.link && <a href={now.link} class="inline-block py-2 pr-2 text-blue-800 break-all hover:underline hover:text-blue-600">{now.link}</a>
+          }
+        {
           now.image && <Image src={now.image} width="800" height="600" class="w-full" alt=""/>
         }
+        
       </div>
       </>
   ))}

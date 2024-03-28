@@ -18,7 +18,6 @@ import {
   subtitle,
   menuItems,
   footerMenuItems,
-  acknowledgementText,
   socialLinks, 
 siteUrl} from '../../sitedata';
 
@@ -79,6 +78,6 @@ const pathname = new URL(Astro.request.url).pathname;
         <blockquote><h2 class="text-4xl">“Wisest are they who know they do not know.”</h2><attr>— Jostein Gaarder</attr></blockquote>
       </div>
     </div>
-    <Footer title={title} footerMenuItems={footerMenuItems} acknowledgementText={acknowledgementText} socialLinks={ socialLinks } />
+    <Footer title={title} footerMenuItems={footerMenuItems} socialLinks={ socialLinks } />
 </body>
 </html>

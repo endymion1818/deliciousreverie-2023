@@ -43,8 +43,6 @@ export let footerMenuItems = [{
   items: menuItems
 }]
 
-export let acknowledgementText = "Delicious Reverie is the blog of Benjamin Read. © Some rights are reserved."
-
 export let socialLinks = {
   linkedin: {
     title: "LinkedIn",
