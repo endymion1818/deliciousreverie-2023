@@ -87,6 +87,21 @@ describe("template spec", () => {
 
 Great! Annoying if you don't know about it, but works fine once you do.
 
+However Cypress isn't responsible for rendering the DOM, which means I can't do something like this
+
+```javascript
+it('should render a different video', () => {
+  cy.get("media-player#my-player")
+    .invoke('attr', 'videourl', 'https://www.w3schools.com/tags/movie.mp4')
+    .shadow()
+    .find('video')
+    .should('have.attr', 'src', 'https://www.w3schools.com/tags/movie.mp4')
+})
+```
+In my complex Web Component, the player responds to over 30 different attributes, rendering different UI items and sometimes and entirely different DOM structure based on these attributes.
+
+Not being able to test these in Cypress is a blocker for using it to test my application.
+
 ## Storybook: Works fine
 
 I've found Storybook particularly useful for manually testing that each argument I pass to the component works properly. And since Storybook re-renders the component when you change an input, you can see the player reacting to the arguments you pass it.
