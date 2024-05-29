@@ -5,7 +5,7 @@ tags:
   - personal
 datePublished: 2024-05-29
 ---
-This is a little trick that wasn't on any of the articles I found using the old search engines. Although those articles did contain a lot of ads .. if you, y'know ... like ads. So I'm posting it here. It's about how you can use an aluminium coffee mocha on an induction hob.
+**This is a little trick that wasn't on any of the articles I found using the old search engines. Although those articles did contain a lot of ads .. if you, y'know ... like ads. So I'm posting it here. It's about how you can use an aluminium coffee mocha on an induction hob.**
 
 I went to Southern Italy a few weeks ago. It was great, thank you for asking. We stayed with a local family so enjoyed the best of the area and the cuisine.
 
