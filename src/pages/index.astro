@@ -38,7 +38,7 @@ const latestPosts = allPosts?.sort((a, b) => {
       <hr/>
       <h2 class="pb-4 mt-8 text-3xl">📼 YouTube Channel</h2>
       <p class="mb-2 text-xl text-inherit">I also run a YouTube channel called "The Coding Cocoon" where I teach young adults how to code and design.</p>
-      {!stats.error && (<p class="text-xl text-inherit">The channel currently has {stats.items[0].statistics.subscriberCount.toLocaleString('en-GB')} subscribers and {prettyNumber(stats.items[0].statistics.viewCount)} views.</p>)}
+      {!stats.error && (<p class="mb-6 text-xl text-inherit">The channel currently has {stats.items[0].statistics.subscriberCount.toLocaleString('en-GB')} subscribers and {prettyNumber(stats.items[0].statistics.viewCount)} views.</p>)}
       <a class="normal-case btn btn-primary" href="https://www.youtube.com/channel/UCzbL3ZYvJWzJbrbHCgZLDJQ">See all videos</a>
       <Rabbits />
       <hr class="my-8 border-1 border-slate-600"/>
