@@ -31,7 +31,7 @@ Context consists of 2 components:
 1.  A "Provider"
 2.  A "Consumer"
 
-The easiesy way I can think of explaining this relationship is that the "Consumer" is what will be using features "Provided" by our Context.
+The easiest way I can think of explaining this relationship is that the "Consumer" is what will be using features "Provided" by our Context.
 
 ### Initial Setup [#](https://deliciousreverie.co.uk/posts/netmag-using-context/#initial-setup)
 
@@ -174,7 +174,7 @@ By moving onItemSelect out of the class and into the state object, we can call
 
 ## Try Using Context Today [#](https://deliciousreverie.co.uk/posts/netmag-using-context/#try-using-context-today)
 
-Have you found yourself writing props={props} all over the place, or using the spread operator to pass props down anonymously (like this: <MyModule {...props}/>)? Then perhaps Context is a way out of the hole you could have drilled yourself into.
+Have you found yourself writing props={props} all over the place, or using the spread operator to pass props down anonymously (like this: `<MyModule {...props}/>`)? Then perhaps Context is a way out of the hole you could have drilled yourself into.
 
 If you're looking for a way to reduce the potential for complexity in a project, or reduce performance bottlenecks and you don't need the extra features that a dedicated state management tool or client-side GraphQL server would provide, chances are Context could equally be your tool for the job.
 

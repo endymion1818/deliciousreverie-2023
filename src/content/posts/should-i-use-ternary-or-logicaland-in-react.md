@@ -57,7 +57,7 @@ is not equivalent to:
 }
 ```
 
-With the ternary operator (isTrue ? dothis : dothat), our <NotificationMessage/> will show when any of the conditions are met. The logical AND (isTrue && dothat) will only show the component if all of the conditions are met.
+With the ternary operator (`isTrue ? dothis : dothat`), our `<NotificationMessage/>` will show when any of the conditions are met. The logical `AND` (`isTrue && dothat`) will only show the component if all of the conditions are met.
 
 Why?
 
@@ -71,7 +71,7 @@ In our case, when checking for form errors, we want to show a notification if a
 
 ## Alternative 1: abstract it [#](https://deliciousreverie.co.uk/posts/should-i-use-ternary-or-logicaland-in-react/#alternative-1:-abstract-it)
 
-There is another way of handling this situation where you could use the logical AND: chain those errors in a variable before returning the JSX:
+There is another way of handling this situation where you could use the logical `AND`: chain those errors in a variable before returning the JSX:
 
 ```javascript
 const hasError =
@@ -92,7 +92,7 @@ return (
 
 ## Alternative 2: Wrap it [#](https://deliciousreverie.co.uk/posts/should-i-use-ternary-or-logicaland-in-react/#alternative-2:-wrap-it)
 
-My friend Warrick Hill mentioned that you could also wrap the options in brackets to ensure they get evaluated together and therefore don't short circuit. This is how mathematical bracket operators work, where everything inside the brackets gets evaluated first, for example (2 \* 3) + 2 = 8but 2 \\\* (3 + 2) = 10:
+My friend Warrick Hill mentioned that you could also wrap the options in brackets to ensure they get evaluated together and therefore don't short circuit. This is how mathematical bracket operators work, where everything inside the brackets gets evaluated first, for example `(2 \* 3) + 2 = 8` but `2 * (3 + 2) = 10`:
 
 ```javascript
 return (

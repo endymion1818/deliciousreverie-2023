@@ -20,7 +20,7 @@ This article was originally published in Net Magazine issue 316.
 
 ## Let's Get Started! [#](https://deliciousreverie.co.uk/posts/capture-minimise-errors-in-react-applications/#let's-get-started!)
 
-To save this tutorial from being too long, I've included the code for the above on GitHub at [https://github.com/endymion1818/netmag-react-error-reporting](https://github.com/endymion1818/netmag-react-error-reporting). It's a basic create-react-app setup with axios hooked up to get some data from the Star Wars API. However, there's a deliberately placed issue in the render() method that's causing the app to crash.
+To save this tutorial from being too long, I've included the code for the above on GitHub at [https://github.com/endymion1818/netmag-react-error-reporting](https://github.com/endymion1818/netmag-react-error-reporting). It's a basic create-react-app setup with axios hooked up to get some data from the Star Wars API. However, there's a deliberately placed issue in the `render()` method that's causing the app to crash.
 
 To see this code in action, download or clone the repo. Open this directory in your terminal and install dependencies by running npm i.
 
@@ -73,13 +73,19 @@ Next, let's provide our fallback UI component:
 }
 ```
 
-Now let's import that into our form, and wrap it around the rest of the component:import ErrorBoundary from './ErrorBoundary'Now if an exception occurs in that component, the visitor will see this message instead. You can trigger it on your machine easily by leaving a tag unclosed or doing something else you know would ordinarily break your app.
+Now let's import that into our form, and wrap it around the rest of the component:
+
+```javascript
+import ErrorBoundary from './ErrorBoundary' 
+```
+
+Now if an exception occurs in that component, the visitor will see this message instead. You can trigger it on your machine easily by leaving a tag unclosed or doing something else you know would ordinarily break your app.
 
 But, how do we capture what has caused our error so we can fix it?
 
 ## Grab, Bag and Tag [#](https://deliciousreverie.co.uk/posts/capture-minimise-errors-in-react-applications/#grab-bag-and-tag)
 
-This is where a logging service comes in. Now, inside the componentDidCatch() method of our ErrorBoundary component, we can send the exception data to a 3rd party service.
+This is where a logging service comes in. Now, inside the `componentDidCatch()` method of our ErrorBoundary component, we can send the exception data to a 3rd party service.
 
 For Enterprise level applications, I've enjoyed using Splunk. Splunk is built for more than error reporting and I've seen people use it as a conversion metric tool as well. Splunk's strength is in the vast volumes of data it can collect. It also allows you to visualise your data in charts so you can track trends and analyse data more easily.
 
@@ -107,7 +113,7 @@ Sentry.init({
 })
 ```
 
-Update the componentDidCatch() function with the following:
+Update the `componentDidCatch()` function with the following:
 
 ```javascript
   componentDidCatch(error, errorInfo) {
@@ -126,7 +132,7 @@ Now each time an error occurs, the data will be sent to Sentry, and you can even
 
 Are you ready to see what we've been doing? To do that, we need to build our application, and serve it somewhere - ideally your local computer. This step involves installing a local javaScript web server to your computer.
 
-First, in your terminal, run npm install --global sentry. Next, from your project directory, run npm build. This builds the production-ready app. Now we can serve this folder locally by running serve -s build. Opening up a browser and typing [https://localhost:5000](https://localhost:5000/) and you should be able to see our beautiful error message!
+First, in your terminal, run `npm install --global sentry`. Next, from your project directory, run npm build. This builds the production-ready app. Now we can serve this folder locally by running serve -s build. Opening up a browser and typing [https://localhost:5000](https://localhost:5000/) and you should be able to see our beautiful error message!
 
 Congratulations! You are no longer in the dark about your JavaScript errors. Now you can increase the usefulness of your app and improve your stability by not only providing a fallback state for your app, but also by reporting and squashing all of your remaining bugs.
 
@@ -166,4 +172,4 @@ It may not surprise you to know that the way browsers report errors differs acro
 
 ## Errors or Exceptions? [#](https://deliciousreverie.co.uk/posts/capture-minimise-errors-in-react-applications/#errors-or-exceptions)
 
-You may have heard situations whre your application fail termed Exceptions instead of errors. The reason for that is that they're not errors insofar as a problem with the language but instead exceptional results from the way that language has been used. This means the problem has originated with something that is not driven by by pure logic ... that means you or I. Therefore they are exceptional results from the way you have applied the language."
+You may have heard situations where your application fail termed Exceptions instead of errors. The reason for that is that they're not errors insofar as a problem with the language but instead exceptional results from the way that language has been used. This means the problem has originated with something that is not driven by by pure logic ... that means you or I. Therefore they are exceptional results from the way you have applied the language."

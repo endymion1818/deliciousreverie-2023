@@ -158,7 +158,7 @@ if (!env ?? env.SENDGRID_API_KEY) {
 
 let emailResponse = await sendEmail(requestBody, env);
 
-// contined below
+// continued below
 ```
 
 ## Submitting to the API

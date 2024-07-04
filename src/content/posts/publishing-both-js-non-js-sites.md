@@ -25,9 +25,9 @@ I used two plugins to render an HTML & CSS site with Gatsby: gatsby-plugin-no-j
 
 After installing and configuring these plugins, the next step was to setup an environment variable:
 
-In a file called .env in the root of the project, I added:
+In a file called **.env** in the root of the project, I added:
 
-```
+```bash
 JS_DISABLED=false
 ```
 
@@ -80,7 +80,7 @@ Netlify is very smart. I only needed to do a few things: I initiated a new site 
 
 When I checked the noJS version of my site, the search bar was still visible, although it didn't work. So I had to stop it from showing on the noJS version.
 
-I tried using process.env.JS\_DISABLED in the JSX, but Gatsby separates environment variables. If I wanted to access this variable on the frontend, I could rename it GATSBY\_JS\_DISABLED, but I thought of another way of doing it that proved just as effective...
+I tried using `process.env.JS_DISABLED` in the JSX, but Gatsby separates environment variables. If I wanted to access this variable on the frontend, I could rename it `GATSBY_JS_DISABLED`, but I thought of another way of doing it that proved just as effective...
 
 ```javascript
 {typeof window !== 'undefined' && <SearchForm />}

@@ -17,7 +17,7 @@ So I decided to dive into learning React with a few courses and some experimenta
 
 ## Letting Go
 
-The first thing I had to do while investigating React was to let go of some preconceived ideas I had – that JSX is just plain weird, that JSS (JavaScript Stylesheets) was an unnecessary abstraction. So I tried not to be bothered by the templating weirdness too much and embrace the differences. My classes soon became classNamess, my <a> tags became <Links>, and I quickly saw what people had been enthusing about.
+The first thing I had to do while investigating React was to let go of some preconceived ideas I had – that JSX is just plain weird, that JSS (JavaScript Stylesheets) was an unnecessary abstraction. So I tried not to be bothered by the templating weirdness too much and embrace the differences. My `class`es soon became `classNames`s, my `<a>` tags became `<Links>`, and I quickly saw what people had been enthusing about.
 
 Managing everything in one place is such a cathartic experience.
 

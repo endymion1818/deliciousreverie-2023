@@ -20,7 +20,7 @@ One of the common mistakes I've seen is that we sometimes put click events on no
 
 I think one of the reasons for this is that with React, our JavaScript is our single source of truth, so we tend to think in JavaScript. One DOM element is like any other DOM element, and they all can be manipulated in much the same way.
 
-However, if we're thinking about accessibility, we're committing ourselves before we start coding, that we're going to do things the right way, including using semantic elements. If we do this, we'll ensure we assign a click event to a semantic element to start with - a <button> or an <a> tag - or we'll do all the extra legwork that's required to make up for it.
+However, if we're thinking about accessibility, we're committing ourselves before we start coding, that we're going to do things the right way, including using semantic elements. If we do this, we'll ensure we assign a click event to a semantic element to start with - a `<button>` or an `<a>` tag - or we'll do all the extra legwork that's required to make up for it.
 
 ## Encourage Accessibility in Components [#](https://deliciousreverie.co.uk/posts/react-accessibility/#encourage-accessibility-in-components)
 
@@ -30,7 +30,7 @@ Another way to encourage others using your components to think in an accessible 
 <img src={this.prop.imgurl} />
 ```
 
-What are we missing here? The alt attribute. How do we encourage accessibility in this instance? Wrap the component in a conditional, so that it doesn't render without the alt tag:
+What are we missing here? The `alt` attribute. How do we encourage accessibility in this instance? Wrap the component in a conditional, so that it doesn't render without the `alt` tag:
 
 ```jsx
 {this.props.imgalt ? (    

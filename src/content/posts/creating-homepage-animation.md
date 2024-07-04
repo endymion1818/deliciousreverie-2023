@@ -40,15 +40,13 @@ This is only 35 lines, and without any libraries, it's much faster and better fo
 
 When I switched to React I was conscious that my JavaScript bundle had increased quite a lot, and I wanted to try to make compensation for that by implementing some other performance gains before I started getting fancy.
 
-It took some time to get this to work in React. Building this honestly got me to question whether React is "just javascript" ...
-
-(click the left side to see the code)
+It took some time to get this to work in React. Building this honestly got me to question whether React is "just javascript".
 
 The actual animation code is 43 lines, a significant step up. There were a few tricky things I had to work out too:
 
 [View on CodeSandBox](https://y2in6.csb.app)
 
-React re-renders the page at different stages, so needs a way of getting the current element that's in the DOM. The useRef() hook allows us to do that. There's a caveat with that though: the initial value of current is undefined, it wasn't until I realised I needed to get the elements first then call them inside of a useEffect() hook.
+React re-renders the page at different stages, so needs a way of getting the current element that's in the DOM. The `useRef()` hook allows us to do that. There's a caveat with that though: the initial value of current is undefined, it wasn't until I realised I needed to get the elements first then call them inside of a `useEffect()` hook.
 
 It was also easier to use a pre-built hook, react-use-scroll-position, rather than write my own code. It's pretty minimal so I don't mind that too much.
 

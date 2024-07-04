@@ -28,7 +28,7 @@ For the initial setup I grabbed the elements and a few values, wrapping these in
 });
 ```
 
-As I already had jQuery as a dependency in this project I used the animate() function to handle the text, a number that would rise from 0 to the one specified by the user.
+As I already had jQuery as a dependency in this project I used the `animate()` function to handle the text, a number that would rise from 0 to the one specified by the user.
 
 ```javascript
  percentage.prop('Counter',0).animate({

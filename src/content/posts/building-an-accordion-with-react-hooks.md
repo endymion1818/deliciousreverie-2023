@@ -42,7 +42,7 @@ const Accordion = (props) => {
 export default Accordion
 ```
 
-This will render a basic section and can accept our content labelled question and answer. Outside the accordion, I will define an unordered list, <ul>, to wrap around the items.
+This will render a basic section and can accept our content labelled question and answer. Outside the accordion, I will define an unordered list, `<ul>`, to wrap around the items.
 
 The elements used here are one of the suggestions made by Sara Souiedan in her blog post "How do you mark up an accordion?". It's well worth a read because it dives deep into the semantic meaning of these elements.
 
@@ -50,7 +50,7 @@ You can find her excellent article here: [https://www.sarasoueidan.com/blog/acc
 
 ## IE Support Not Needed? Use <details> [#](https://deliciousreverie.co.uk/posts/building-an-accordion-with-react-hooks/#ie-support-not-needed-use-lessdetailsgreater)
 
-On Sara's blog post above, using the <details> and <summary>elements here for more semantic markup is discussed. This is a HTML-native accordion element!
+On Sara's blog post above, using the `<details>` and `<summary>` elements here for more semantic markup is discussed. This is a HTML-native accordion element!
 
 If you don't need to support Internet Explorer 11, use these and skip most of this tutorial: you'll see that the accordion collapses and opens without any css or javascript.
 
@@ -58,13 +58,13 @@ If you don't need to support Internet Explorer 11, use these and skip most of th
 
 Next, I'm going to import our first hook. Hooks allow us to write React lifecyle methods without classes. This means our code can be more functional, or at least not a mix of OO and functional programming.
 
-First, I need to import the useState hook along with React from the React library:
+First, I need to import the `useState` hook along with React from the React library:
 
 ```javascript
 import React, { useState } from "react"
 ```
 
-Next, I set my state items. There are 2 because setContentVisible will be a function to update isContentVisible.
+Next, I set my state items. There are 2 because setContentVisible will be a function to update `isContentVisible`.
 
 ```javascript
   let [isContentVisible, setContentVisible] = useState(true)
@@ -118,7 +118,7 @@ const elementId = (((1 + Math.random()) * 0x10000) | 0)
     .substring(1)
 ```
 
-Once I've replaced id="accordion-1" with id={elementId} I should have a fairly unique ID that links up the content and the button.
+Once I've replaced `id="accordion-1"` with `id={elementId}` I should have a fairly unique ID that links up the content and the button.
 
 ## The Slings & Arrows of Outrageous Smooth Scrolling [#](https://deliciousreverie.co.uk/posts/building-an-accordion-with-react-hooks/#the-slings-and-arrows-of-outrageous-smooth-scrolling)
 
@@ -135,7 +135,7 @@ const domElementTop = elementId.offsetTop - 150
   }
 ```
 
-There's an IE11 caveat with this though. IE calculates scrollTodifferently, with a px value instead of a string or ID. You can use scrollTop instead, but this doesn't allow you to have smooth scrolling behaviour which is a nicer effect for users. If you want to support IE11 with smooth scrolling, you can use smoothscroll-polyfill and call that before window.scrollTo.
+There's an IE11 caveat with this though. IE calculates `scrollTo` differently, with a px value instead of a string or ID. You can use scrollTop instead, but this doesn't allow you to have smooth scrolling behaviour which is a nicer effect for users. If you want to support IE11 with smooth scrolling, you can use smoothscroll-polyfill and call that before `window.scrollTo`.
 
 There's a bug in iOS Safari too! If you want to support Safari on iOS (particularly some iPad versions) it's advisable to set a timeout when you start scrolling:
 
@@ -164,17 +164,17 @@ The last item we need to take care of is showing / hiding the content area. Now,
 
 Note the use of the double-ampersand. If the isContentVisible is true, the following block (inside brackets) will show.
 
-You can also do the show/hide with a class attributes, using the displayproperty to show & hide them using CSS.
+You can also do the show/hide with a class attributes, using the display property to show & hide them using CSS.
 
 Lastly, I want to make sure that when my user has got the JavaScript bundle and the page has been rehydrated (see box, "What is Rehydration"), the content is collapsed, ready for them to interact with. I can do that with the useEffect hook, but I need to make sure I call useEffect only once, similar to how componentDidMount was used.
 
-First, import that from React the same way as the useState hook:
+First, import that from React the same way as the `useState` hook:
 
 ```javascript
 import React, { useState, useEffect } from "react"
 ```
 
-Then reverse the value of setContentVisible:
+Then reverse the value of `setContentVisible`:
 
 ```javascript
   useEffect(() => {
@@ -182,7 +182,7 @@ Then reverse the value of setContentVisible:
   }, [])
 ```
 
-Did you see the extra square brackets (\[\]) at the end? By passing an empty array to the useEffect hook we can call it only once. If we didn't do that, the state would be updated every time the component updated in some way.
+Did you see the extra square brackets (`[]`) at the end? By passing an empty array to the useEffect hook we can call it only once. If we didn't do that, the state would be updated every time the component updated in some way.
 
 ## Conclusion [#](https://deliciousreverie.co.uk/posts/building-an-accordion-with-react-hooks/#conclusion)
 

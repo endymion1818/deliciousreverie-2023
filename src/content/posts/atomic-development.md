@@ -29,7 +29,8 @@ But I believe we can utilise this approach in development so that there's more c
 
 On a recent project I decided to investigate whether this approach could be uilised in development. In my React project I typically use Styled Components to write my CSS styles. I therefore structured my project like this:
 
-```
+
+```markdown
 - components/
   - Atoms
   - Molecules/
@@ -37,6 +38,7 @@ On a recent project I decided to investigate whether this approach could be uili
   - Templates/
   - Pages/
 ```
+
 
 ### Atoms [#](https://deliciousreverie.co.uk/posts/atomic-web-development/#atoms)
 
@@ -229,7 +231,7 @@ query notFoundPageQuery {
 `
 ```
 
-As you can see from this code, an approach I started to adopt included importing everything from atoms and using <atom.band> to identify clearly what grouping it came under. It also made imports much shorter and somewhat tidier.
+As you can see from this code, an approach I started to adopt included importing everything from atoms and using `<atom.band>` to identify clearly what grouping it came under. It also made imports much shorter and somewhat tidier.
 
 ### Atomic Could Be the Future [#](https://deliciousreverie.co.uk/posts/atomic-web-development/#atomic-could-be-the-future)
 
