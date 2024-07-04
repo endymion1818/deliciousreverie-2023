@@ -147,7 +147,7 @@ I love the new object methods introduced recently to JavaScript. They allow you 
 ]
 ```
 
-Step 4: templatingNow I can iterate over each team, then each item in that team, outputting semantic elements (‹li›s) for each item:
+Step 4: templatingNow I can iterate over each team, then each item in that team, outputting semantic elements (`<li>`s) for each item:
 
 ```javascript
  {finalisedItems.map(itemsTeam => (

@@ -69,13 +69,13 @@ describe('the <MyComponent />', () => {
 })
 ```
 
-The first thing I want to draw your attention to is the describe() function, which takes 2 arguments: the first is a string that you can use to better describe as a string of text what your test is going to be doing. In our case we've said simply that it should render. This is very useful when someone else looks at your code, or you have to remember what you did at a later stage. Writing good "describe" statements is a form of code documentation, and another good reason for writing tests!
+The first thing I want to draw your attention to is the `describe()` function, which takes 2 arguments: the first is a string that you can use to better describe as a string of text what your test is going to be doing. In our case we've said simply that it should render. This is very useful when someone else looks at your code, or you have to remember what you did at a later stage. Writing good "describe" statements is a form of code documentation, and another good reason for writing tests!
 
-The second argument are your tests. The describe() function will run all of these tests one after the other.
+The second argument are your tests. The `describe()` function will run all of these tests one after the other.
 
 ## Cleanups [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#cleanups)
 
-Let's introduce helper function called beforeEach(). We need to use this because each time we do something with the component, we want a fresh copy without the props we previously had passed to it still existing in the component. Or we might need to re-render the component. beforeEach() does that for us, and we can pass it the cleanup function:
+Let's introduce helper function called `beforeEach()`. We need to use this because each time we do something with the component, we want a fresh copy without the props we previously had passed to it still existing in the component. Or we might need to re-render the component. beforeEach() does that for us, and we can pass it the cleanup function:
 
 ```javascript
 import { render, cleanup } from '@testing-library/react'
@@ -224,9 +224,9 @@ This is great, we don't have to manually go to the site and look around, then cl
 
 ### A Note about Test IDs [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#a-note-about-test-ids)
 
-Personally, I dislike using data-testid to find something in the DOM. After all, the object of tests is to mimic what the user is doing, and to test what happens when they do. data-testid feels like a bit of a cheat -- although data-testids will likely come in handy for your QA Engineer (see the box "The Role of Quality Assurance Engineers").
+Personally, I dislike using `data-testid` to find something in the DOM. After all, the object of tests is to mimic what the user is doing, and to test what happens when they do. `data-testid` feels like a bit of a cheat -- although `data-testid`s will likely come in handy for your QA Engineer (see the box "The Role of Quality Assurance Engineers").
 
-Instead we could use getByText() and pass in the text of our button. That would be a lot more behaviour specific.
+Instead we could use `getByText()` and pass in the text of our button. That would be a lot more behaviour specific.
 
 ## Mocking and Spying [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#mocking-and-spying)
 
@@ -243,8 +243,7 @@ it('calls the function on click', () => {
   )
 })
 ```
-
-toHaveBeenCalledTimes() is one of the many helper functions in the testing library that allow us to test the output of functions. This allows us not only to scope our tests only to the module we want to test, but also allow us to "spy" on, or see what our function does when it calls that function.
+The function`toHaveBeenCalledTimes()` is one of the many helper functions in the testing library that allow us to test the output of functions. This allows us not only to scope our tests only to the module we want to test, but also allow us to "spy" on, or see what our function does when it calls that function.
 
 ## Start Testing your React Applications Today [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#start-testing-your-react-applications-today)
 

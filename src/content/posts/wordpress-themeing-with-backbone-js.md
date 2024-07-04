@@ -15,17 +15,17 @@ Backbone.js is one of the most stable of the Javascript frameworks, which is one
 
 I'm going to talk as little as I can about the tools here. I'm exhausted at having to learn someone else's toolset to enable me to accomplish my work. I'm just going to say that it's good practice to break down your files into small blocks of code, this will really help you when it comes to debugging and maintenance of your code later on. So here's my JavaScript project folder setup:
 
-```
+```markdown
 -src
-|
---js
-|
----1 underscore.js
----2 backbone.js
----3 models.js
----4 views.js
----5 collection.js
----6 router.js
+  |
+  --js
+    |
+    ---1 underscore.js
+    ---2 backbone.js
+    ---3 models.js
+    ---4 views.js
+    ---5 collection.js
+    ---6 router.js
 ```
 
 note: I'm loading jQuery in separately from a CDN.

@@ -24,7 +24,7 @@ In the case where you cannot use Nx Cloud, here's how to do it:
 
 So the original article wasn't super clear about where your build plugin should be located. I put it in the tools directory under a new directory called skip-build. You should then have a netlify.toml in the root of your project referencing the folder (not the JS file) in the project:
 
-```
+```yml
 [[plugins]]
 package = "./tools/skip-build"
 ```

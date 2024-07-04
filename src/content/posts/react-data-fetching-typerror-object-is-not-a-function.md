@@ -10,7 +10,7 @@ Sometimes I get frustrated with React, there can still sometimes be obscure erro
 
 Take a look at this code a second. There's nothing wrong with the fetch() resolution, the API works fine. There's nothing wrong with the render method either.
 
-But if you try to run this code you'll get some error like Error: Objects are not valid as a React child (found: \[object Promise\]).
+But if you try to run this code you'll get some error like `Error: Objects are not valid as a React child (found: [object Promise])`.
 
 ```javascript
 async function getFacts() {
@@ -63,7 +63,7 @@ export default async function Home() {
 }
 ```
 
-You see that we imported the useEffect and useState hooks, then when the component mounts, we fetch the data, and pass it to state using setFacts.
+You see that we imported the `useEffect` and `useState` hooks, then when the component mounts, we fetch the data, and pass it to state using setFacts.
 
 Now, once the data has been retrieved, you won't get that error any more.
 

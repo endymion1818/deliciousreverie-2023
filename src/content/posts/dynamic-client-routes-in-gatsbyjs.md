@@ -17,7 +17,7 @@ I wanted to diverge from the tutorial a little on the frontend, especially since
 
 One of the lessons uses React Router to render routes for notes like this:
 
-```
+```markdown
 /notes/2074d6b0-c5d7-11ea-bd39-5f447bbc7b39
 ```
 

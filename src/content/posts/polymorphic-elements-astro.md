@@ -41,7 +41,7 @@ const { href } = Astro.props
 </>
 ```
 
-With this code, the default output is a <button> element, but if you pass a \`href\`, it will instead render an \`<a>\` tag. What I love about this is that we are also using another trick first implemented by React, the Fragment. By wrapping the component in fragments (empty tags, or <> </>), you're still returning one element, which is a requirement for Astro components, but eliminating the wrapper in the compiled code. This way you don't have an extra <div> which could cause styling issues later on.
+With this code, the default output is a `<button>` element, but if you pass a `href`, it will instead render an `<a>` tag. What I love about this is that we are also using another trick first implemented by React, the Fragment. By wrapping the component in fragments (empty tags, or `<> </>`), you're still returning one element, which is a requirement for Astro components, but eliminating the wrapper in the compiled code. This way you don't have an extra \`div\` which could cause styling issues later on.
 
 But what if you wanted more polymorphic elements? Say you had a container that could sometimes be a section, and sometimes you'd want to render it as a plain ol' div element. Here's a solution for that:
 
@@ -71,7 +71,7 @@ const { as } = Astro.props;
 
 By specifying the types, we give whoever is using this component the hints to show them what elements they can render this component to.
 
-It's nicely extensible too: if you wanted to have another tag, say an <aside>, you could just add that to the types and to the return:
+It's nicely extensible too: if you wanted to have another tag, say an `<aside>`, you could just add that to the types and to the return:
 
 ```javascript
 <>

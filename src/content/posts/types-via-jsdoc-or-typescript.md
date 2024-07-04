@@ -81,11 +81,11 @@ The querySelector method annoyingly returns an Element type, not HTMLElement, so
 
 All in all, I'm super happy JSDoc exists. Without it, I would be getting super frustrated because there would be no types - and therefore no documentation - for our codebases. However, I'll be even happier if we can make the switch to TypeScript syntax one day.
 
-Addendum
+### Addendum
 
 Since writing this article, I have found a few tools that have improved the feedback I'm getting from the TypeScript compiler: instead of relying on my IDE (which caused issues when other team members were using a different IDE), I've since implemented [eslint-plugin-jsdoc](https://www.npmjs.com/package/eslint-plugin-jsdoc), which as you might imagine, has much better standardised linting and ensures that any errors or warnings aren't left up to the IDE, because both WebStorm and VS Code report different errors and sometimes miss things natively."
 
-Addendum 2
+### Addendum 2
 
 As things have progressed, I have learned how you can override types for document.querySelector():
 
@@ -96,4 +96,4 @@ const thing = document.querySelector('#my-element');
 thing.style.display = 'block'; // no error :tada:
 ```
 
-The only thing I'm having real trouble with is React's setState hook. I'm hoping to have a write up for that ... once I solve it. 
+The only thing I'm having real trouble with is React's `setState` hook. I'm hoping to have a write up for that ... once I solve it. 
