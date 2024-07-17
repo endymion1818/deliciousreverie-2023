@@ -24,11 +24,11 @@ const currentPath = pathname.slice(1).replaceAll("/","");
   </div>
   <div class="mx-auto max-w-contain">
     <div class="text-white header--top py-11">
-      <a class="text-xl normal-case shadow-lg header--logo hover:text-underline" href={siteUrl}>
+      <a class="normal-case shadow-lg header--logo hover:text-underline" href={siteUrl}>
         {logo ? (
           <img class="w-6/8" src={logo} />
         ) : (
-          <span class="text-5xl font-display text-secondary">{title || null}</span>
+          <span class="text-7xl font-display text-secondary">{title || null}</span>
         )}
       </a>
       {subtitle && <p class="mt-2 text-3xl font-display">{subtitle}</p>}
@@ -59,7 +59,6 @@ const currentPath = pathname.slice(1).replaceAll("/","");
 
 <style lang="scss" is:global>
   a.header--logo > span {
-    font-size: 5rem;
     line-height: 0.8;
     text-shadow: 1px 1px 2px rgb(167, 162, 31), 0 0 1em rgb(142, 139, 75), 0 0 0.2em black;
   }
