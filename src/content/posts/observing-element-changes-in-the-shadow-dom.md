@@ -91,7 +91,7 @@ My issue with this is there are lots of nested `if` statements going on here, I 
 
 But essentially it works the same by checking for the existence of a `shadowRoot` and resolving the element if it's found there.
 
-There's only one other thing we need to fix, which is to ensure it doesn't keep running indefinitely if the element doesn't show up in a reasonable amount of time.
+There's only one other thing we need to fix: to ensure it doesn't keep running indefinitely if the element doesn't show up in a reasonable amount of time.
 
 
 ## Timeout
@@ -177,3 +177,5 @@ function waitForElement(root, selector, timeout = 1000) {
 }
 export default waitForElement;
 ```
+
+Hopefully this will provide you with a basis for a utility of your own.
