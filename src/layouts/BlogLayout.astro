@@ -43,7 +43,7 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
   });
   </script>
 <Layout pageTitle={frontmatter.title} canonical={frontmatter.canonicalLink} pageDescription={frontmatter.description}>
-  <h1 class="mb-4 text-3xl font-black text-zinc-800">{frontmatter.title}</h1>
+  <h1 class="mb-4 text-5xl font-black text-zinc-800">{frontmatter.title}</h1>
   {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
   {frontmatter?.tags?.length > 0 && (
       <p class="mb-4">

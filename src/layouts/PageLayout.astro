@@ -4,7 +4,7 @@ import Layout from '../components/Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 <Layout pageTitle={frontmatter.title} pageDescription={frontmatter.description}>
-  <h1 class="mb-4 text-3xl text-zinc-800">{frontmatter.title}</h1>
+  <h1 class="mb-4 text-5xl text-zinc-800">{frontmatter.title}</h1>
   <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-code:text-slate-900 prose-a:text-slate-900 prose-a:break-all">
     <slot />
   </article>
