@@ -43,7 +43,7 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
   });
   </script>
 <Layout pageTitle={frontmatter.title} canonical={frontmatter.canonicalLink} pageDescription={frontmatter.description}>
-  <h1 class="mb-4 text-6xl text-zinc-800">{frontmatter.title}</h1>
+  <h1 class="mb-4 text-5xl font-black text-zinc-800">{frontmatter.title}</h1>
   {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
   {frontmatter?.tags?.length > 0 && (
       <p class="mb-4">
@@ -53,7 +53,8 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
         ))}
       </p>
   )}
-  <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800 prose-code:text-slate-900 prose-blockquote:text-slate-800">
+  <hr class="mb-4 bg-transparent border-b border-b-slate-400 border-t-transparent">
+  <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800 prose-code:text-slate-900 prose-blockquote:text-slate-800 prose-a:break-all">
     <slot />
   </article>
   {frontmatter?.tags?.length > 0 && (
