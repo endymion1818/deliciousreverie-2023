@@ -8,7 +8,7 @@ datePublished: 2023-05-25
 ---
 **I've become an avid fan of [TypeScript](https://www.typescriptlang.org/) in recent years as it's improved my output, tightened up my appreciation for JavaScript's type coercion, and generally reduced my anxiety levels at work. However recently I've come into a place of work where JavaScript is written and often maintained by software engineers for whom JavaScript isn't their specialty. Not wanting to go back to the wild west of plain JavaScript, I adopted [JSDoc](https://jsdoc.app/). Here's how it went.**
 
-**Update:** I've written a [follow up article](posts/better-type-safety-with-jsdoc) about how JSDoc is more robust than TypeScript. 
+**Update:** I've written a [follow up article](posts/better-type-safety-with-jsdoc) about how JSDoc leads to better type safety than TypeScript.
 
 I remember going through projects a few years ago and taking out all of the JSDoc notations. We were switching to TypeScript and JSDoc was seen as old and no longer needed. However it's gained a resurgence in recent months, most notably because [Svelte is switching back to JSDoc from TS](https://github.com/sveltejs/kit/discussions/4429#discussioncomment-2423814). But it has other benefits, and disadvantages, compared to TypeScript. Here's a few of the ones I've noticed.
 
