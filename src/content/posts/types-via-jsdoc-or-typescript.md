@@ -8,6 +8,8 @@ datePublished: 2023-05-25
 ---
 **I've become an avid fan of [TypeScript](https://www.typescriptlang.org/) in recent years as it's improved my output, tightened up my appreciation for JavaScript's type coercion, and generally reduced my anxiety levels at work. However recently I've come into a place of work where JavaScript is written and often maintained by software engineers for whom JavaScript isn't their specialty. Not wanting to go back to the wild west of plain JavaScript, I adopted [JSDoc](https://jsdoc.app/). Here's how it went.**
 
+**Update:** I've written a [follow up article](posts/better-type-safety-with-jsdoc) about how JSDoc can result in better type safety than TypeScript.
+
 I remember going through projects a few years ago and taking out all of the JSDoc notations. We were switching to TypeScript and JSDoc was seen as old and no longer needed. However it's gained a resurgence in recent months, most notably because [Svelte is switching back to JSDoc from TS](https://github.com/sveltejs/kit/discussions/4429#discussioncomment-2423814). But it has other benefits, and disadvantages, compared to TypeScript. Here's a few of the ones I've noticed.
 
 Heads up! If you're looking for more info about this subject, there's an excellent [syntax.fm podcast episode](https://syntax.fm/show/624/is-jsdoc-better-than-typescript) about it, which covers more ground than I have here.  
@@ -33,6 +35,8 @@ JSDoc is a totally different syntax but it is feature-rich, especially when comp
 To be honest, since using it seriously, I've been impressed with how far I've been able to get with JSDoc. I have been able to [import type dictionaries](https://stackoverflow.com/questions/49836644/how-to-import-a-typedef-from-one-file-to-another-in-jsdoc-using-node-js#answer-52847569) and found out how to use [VSCode Intellisense](https://dev.to/sumansarkar/how-to-use-jsdoc-annotations-with-vscode-for-intellisense-7co) to get type hinting. But there have still been some caveats.  
 
 ### 1\. It's not as flexible
+
+**UPDATE:** It _is_ as flexible, I just didn't know enough when I wrote this ... please see the "addendums" section on how I solve these issues
 
 If I need to negate the "object is possible undefined" error that you've probably seen a hundred times if you're doing DOM manipulation or data fetching:
 
@@ -97,3 +101,9 @@ thing.style.display = 'block'; // no error :tada:
 ```
 
 The only thing I'm having real trouble with is React's `setState` hook. I'm hoping to have a write up for that ... once I solve it. 
+
+### Follow up article
+
+This article is overwhelmingly the most popular article on my blog, so I'll keep writing more articles as I solve different issues.
+
+I've written a [follow up article](posts/better-type-safety-with-jsdoc) which includes a section about typing events with JSDoc. 
