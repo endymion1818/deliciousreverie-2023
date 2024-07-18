@@ -37,7 +37,7 @@ button.addEventListener("click", ((
 }));
 ```
 
-However, we have to think a little bit differently with JSDoc. However, we can have _more_ type safety with JSDoc:
+We have to think a little bit differently with JSDoc. However, we can have _more_ type safety with JSDoc:
 
 ```javascript
 const button = document.querySelector("button#my-button");
@@ -56,11 +56,11 @@ Why do I say _more_ type safety?
 
 Because TypeScript is compiled away at run time. It doesn't make it into code that runs in a browser, because it's not valid JavaScript.
 
-But what if the button wasn't in the DOM? Where's your static analysis now?
+What would happen if the button wasn't in the DOM? Where's your static analysis now?
 
 This is something that's very easy to miss if you're writing TypeScript because (a) you can easily _force_ the compiler to recognise the button is there (via a dirty `!` after the selector), resulting in (b) a possible error in production if the button isn't there for some reason (for example, some code that produces it has failed, some developer in another squad removed it without telling you, or somebody replaced it with a `<span>`).
 
-It's very easy to get into this situation ... JSDoc ensures that type safety is baked into your _production_ environments, not just your development code.
+It could be relatively easy to get into one of these situations ... JSDoc ensures that type safety is baked into your _production_ environments, not just your development code.
 
 I've been using mostly JSDoc for the last 18 months, and I'm definitely preferring it to TypeScript. I would lean on TS for React still but other than that it's very robust. It's really sad that there isn't more documentation for it, and I think that causes a lot of people to steer towards TypeScript.
 
