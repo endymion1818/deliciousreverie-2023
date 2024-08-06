@@ -106,4 +106,4 @@ The only thing I'm having real trouble with is React's `setState` hook. I'm hopi
 
 This article is overwhelmingly the most popular article on my blog, so I'll keep writing more articles as I solve different issues.
 
-I've written a [follow up article](posts/better-type-safety-with-jsdoc) which includes a section about typing events with JSDoc. 
+I've written a [follow up article](better-type-safety-with-jsdoc) which includes a section about typing events with JSDoc. 
