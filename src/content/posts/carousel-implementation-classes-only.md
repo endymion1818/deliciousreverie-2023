@@ -3,7 +3,7 @@ title: "Implementing a carousel with classes only."
 description: "Last year I built a carousel project and showcased it here. I've just updated the code I used so that you can implement a carousel by only adding the class name to the parent element. Here's a breakdown."
 tags: 
   - javascript
-datePublished: 2023-05-13
+datePublished: 2024-08-15
 ---
 **Last year I built a carousel project and showcased it here. I've just updated the code I used so that you can implement a carousel by only adding the class name to the parent element. Here's a breakdown.**
 
