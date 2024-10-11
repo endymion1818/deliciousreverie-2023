@@ -34,9 +34,6 @@ h5,
 h6 {
   @apply mb-4;
 }
-p a {
-  @apply break-words;
-}
 
 .max-w-contain {
   max-width: 30em;
