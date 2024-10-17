@@ -13,7 +13,7 @@ Some 8 or so years ago I was fairly invested in the WordPress ecosystem. I liked
 
 However when they introduced the "Gutenberg" editor, I read the writing on the wall.
 
-## An editor that empowers non technically minded
+## An editor that empowers ... who?
 
 Gutenberg was a new editor environment that focused WordPress heavily on the end user. It allowed users to create more dynamic pages and to edit more content that would have been previously outside of their ability to change (headers and footer content, particularly).
 
@@ -29,7 +29,7 @@ I moved on to have a successful career with JavaScript and left the ecosystem be
 
 And hearing all that's been happening, if you're a developer or own a digital agency or other technical company, one that builds sites for end users with WordPress, I encourage you to do the same.
 
-## WordPress doesn't want you
+## You are not WordPress customers
 
 Digital agencies and technical organisations that deliver sites built on WordPress are not who WordPress sees as it's customers. 
 
