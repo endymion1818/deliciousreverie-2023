@@ -1,11 +1,11 @@
 ---
-title: "The WordPress Implosion"
-description: "I've long moved away from building things with WordPress. My reason for doing so also has a bearing on what is happening now. It's time I tried to help people understand what I think that means for people still in the ecosystem."
+title: "The WordPress 'Implosion'"
+description: "Many years ago I moved away from building things with WordPress. But it's time I tried to help people understand what I think the current situation means for people still in the ecosystem."
 tags: 
   - wordpress
 datePublished: 2024-10-17
 ---
-**I've long moved away from building things with WordPress. My reason for doing so also has a bearing on what is happening now. It's time I tried to help people understand what I think that means for people still in the ecosystem.**
+**Many years ago I moved away from building things with WordPress. But it's time I tried to help people understand what I think the current situation means for people still in the ecosystem.**
 
 If you haven't heard about it yet, try entering "WordPress" and "WPEngine" into a search engine.
 
@@ -29,7 +29,7 @@ I moved on to have a successful career with JavaScript and left the ecosystem be
 
 And hearing all that's been happening, if you're a developer or own a digital agency or other technical company, one that builds sites for end users with WordPress, I encourage you to do the same.
 
-## You are not WordPress customers
+## Digital agencies are not WordPress customers
 
 Digital agencies and technical organisations that deliver sites built on WordPress are not who WordPress sees as it's customers. 
 
