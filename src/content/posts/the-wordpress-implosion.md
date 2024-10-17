@@ -9,7 +9,7 @@ datePublished: 2024-10-17
 
 If you haven't heard about it yet, try entering "WordPress" and "WPEngine" into a search engine.
 
-Some 8 or so years ago I was fairly invested in the WordPress ecosystem. I liked how empowering WordPress was as a foundation for normal people to be able to create their own content-rich websites.
+Some 8 or so years ago I was fairly invested in the WordPress ecosystem. I liked how empowering WordPress was as a foundation for people without a technical background to be able to create their own content-rich websites.
 
 However when they introduced the "Gutenberg" editor, I read the writing on the wall.
 
