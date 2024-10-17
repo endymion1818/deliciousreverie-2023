@@ -1,13 +1,13 @@
 ---
 title: "The WordPress Implosion"
-description: "I've long moved away from building things with WordPress. The reason for doing so is that I can see what the platform wants to be. I think it's time I tried to help people understand that."
+description: "I've long moved away from building things with WordPress. My reason for doing so also has a bearing on what is happening now. It's time I tried to help people understand what I think that means for people still in the ecosystem."
 tags: 
   - wordpress
 datePublished: 2024-10-17
 ---
-**I've long moved away from building things with WordPress. The reason for doing so is that I can see what the platform wants to be. I think it's time I tried to help people understand that.**
+**I've long moved away from building things with WordPress. My reason for doing so also has a bearing on what is happening now. It's time I tried to help people understand what I think that means for people still in the ecosystem.**
 
-This is especially true given the current situation, which, if you haven't heard about it yet, try entering "WordPress" and "WPEngine" into a search engine.
+If you haven't heard about it yet, try entering "WordPress" and "WPEngine" into a search engine.
 
 Some 8 or so years ago I was fairly invested in the WordPress ecosystem. I liked how empowering WordPress was as a foundation for normal people to be able to create their own content-rich websites.
 
