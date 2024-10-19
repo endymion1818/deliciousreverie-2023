@@ -3,8 +3,7 @@ title: "The Art of Compromise"
 description: "Working as part of a larger team often involves skills that aren't readily taught as part of a person's development career. But they are essential if you're going to be developing software as part of a team.
 "
 tags: 
-  - personal
-  - engineering
+  - leadersip
 datePublished: 2019-08-08
 ---
 We developers are inherently precious about things. Our tools. Our technologies. But we can't afford to be precious about those things too much. In fact, working in cross-functional teams and with other teams means that we sometimes need to compromise.

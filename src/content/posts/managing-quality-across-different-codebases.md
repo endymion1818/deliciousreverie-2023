@@ -2,7 +2,7 @@
 title: "Managing Quality across Different Codebases"
 description: "Having a structured plan for the codebases in your project will help keep them in good shape. I've written this document as a guideline of sorts, feel free to adopt it, adapt it or use it as a basis your own."
 tags: 
-  - engineering
+  - leadership
 datePublished: 2023-12-05
 ---
 **One of my roles as the sole JavaScript Engineer is that of planning for the future. I hope that the company will grow to the point where other JavaScript engineers will be able to join. But even if it doesn't, I have outlined a definitive plan to continuously improve the code here.**
