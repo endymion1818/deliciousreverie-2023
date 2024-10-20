@@ -3,7 +3,7 @@ title: "On digital estates"
 description: "I recently heard the term 'Digital estate' to mean the technical property of an organisation. This, and the associations the term provides, have got me thinking about how we contribute to the success of organisations over time...
 "
 tags: 
-  - engineering
+  - leadership
 datePublished: 2021-11-29
 ---
 I recently heard the term 'Digital estate' to mean the technical property of an organisation. This, and the associations the term provides, have got me thinking about how we contribute to the success of organisations over time...

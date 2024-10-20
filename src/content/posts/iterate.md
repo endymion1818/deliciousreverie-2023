@@ -2,7 +2,7 @@
 title: "Iterate."
 description: "A few times during the past year I've caught myself advocating for iterative changes. Both in software and in terms of our processes I've found that I far prefer smaller, incremental improvements over stressful, complicated and far-reaching changes that may or may not improve fulfilment, delivery and other metrics."
 tags: 
-  - engineering
+  - leadership
 datePublished: 2023-10-11
 ---
 **Despite better marketing opportunities, the days of big bang releases are gone. In today's software market, iterative releases are the hallmark of good planning, well organised teams, and software stability.**
