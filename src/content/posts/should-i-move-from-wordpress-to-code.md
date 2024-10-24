@@ -3,7 +3,6 @@ title: "Should I move from WordPress to code?"
 description: "I'm getting asked this question a lot lately, so I made a few charts that I hope explains the choices people face when they are thinking about switching, and the effort that might take."
 tags: 
   - wordpress
-  - frontend
 datePublished: 2024-10-24
 ---
 **I'm getting asked this question a lot lately, so I made a few charts that I hope explains the choices people face when they are thinking about switching, and the effort that might take. I hope it helps someone.**
