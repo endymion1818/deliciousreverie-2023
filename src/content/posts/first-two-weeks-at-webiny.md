@@ -3,7 +3,6 @@ title: "First 2 weeks at Webiny"
 description: "I've been at Webiny two weeks now. I have had the most fun I've had in a long time career wise. Here's what I've learned and what my objectives are going to be for the coming few weeks.
 "
 tags: 
-  - personal
   - devrel
 datePublished: 2022-03-11
 ---

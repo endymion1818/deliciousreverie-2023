@@ -3,7 +3,7 @@ title: "Introspection: comparing myself to others, glorifying the past"
 description: "This post is a little bit of introspection for me. I've recently been given a bit of time to think about certain things, and I'd like a make a note of them for my own personal growth.
 "
 tags: 
-  - personal
+  - leadership
 datePublished: 2021-09-18
 ---
 This post is a little bit of introspection for me. I've recently been given a bit of time to think about certain things, and I'd like a make a note of them for my own personal growth.

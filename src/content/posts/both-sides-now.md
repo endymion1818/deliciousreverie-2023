@@ -3,8 +3,7 @@ title: "Both Sides, Now"
 description: "Many people I respect and admire have voiced conflicting opinions on their blogs and Twitter recently. I wanted to reply in general with reference to a song that pops into my head every time I hear those conflicting opinions being discussed.
 "
 tags: 
-  - music
-  - personal
+  - engineering
 datePublished: 2019-03-12
 ---
 CSS isn't a programming language. CSS is a programming language. JavaScript shouldn't be used to render HTML. JavaScript is the only way of writing HTML. CSS is overly complicated, difficult to learn and hopelessly outdated. All of these opinions provoke a response in me. It's just perhaps not the one the authors intended.
