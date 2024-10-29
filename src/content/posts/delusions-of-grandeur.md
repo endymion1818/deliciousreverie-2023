@@ -3,8 +3,7 @@ title: "On Having Delusions of Grandeur"
 description: "I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.
 "
 tags: 
-  - engineering
-  - personal
+  - leadership
 datePublished: 2015-06-02
 ---
 I'm not as good at this as I thought I was. This much became apparent to me recently, when I tried to run with some industry leaders and found that my abilities in web development are still comparatively lacking.
@@ -17,4 +16,4 @@ It doesn't help either that I wasn't even aware of them.
 
 What I take away from this experience is that I need to "stay foolish", and instead of having delusions of grandeur, be prepared to take knocks like this as jolts of advancement. I realise too that I want to improve—I'm not content to go through life without continuously improving my professional abilities.
 
-And that, I think, can count for something."
+And that, I think, can count for something.
