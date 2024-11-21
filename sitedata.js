@@ -31,6 +31,9 @@ export let footerMenuItems = [{
   }, {
     title: 'Engineering',
     link: '/tags/engineering/'
+  }, {
+    title: 'Operations',
+    link: '/tags/operations/'
   },{
     title: 'Personal',
     link: '/tags/personal/'

@@ -4,11 +4,9 @@ import { SEO } from 'astro-seo'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
 
-import defaultShareCard from '../images/default-share-card.png'
 interface Props {
   pageTitle: string
   pageDescription?: string
-  shareCard?: string
   canonical?: string
   slug?: string
 }
@@ -21,7 +19,7 @@ import {
   socialLinks, 
 siteUrl} from '../../sitedata';
 
-const { pageTitle, pageDescription, shareCard, canonical } = Astro.props
+const { pageTitle, pageDescription, canonical } = Astro.props
 
 const seoTitle = pageTitle ? `${pageTitle} - ${title}`: title
 
@@ -32,10 +30,10 @@ const seoProps = {
     basic: {
       title: seoTitle,
       type: 'website',
-      image:  shareCard ?? defaultShareCard,
+      image:  `${Astro.url.protocol}//${Astro.url.host}/images/default-share-card.png`,
     },
     image: {
-      url:  shareCard ?? defaultShareCard,
+      url:  `${Astro.url.protocol}//${Astro.url.host}/images/default-share-card.png`,
       type: 'image/png',
       alt: 'Share card',
     },

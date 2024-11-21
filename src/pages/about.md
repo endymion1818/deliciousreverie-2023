@@ -4,11 +4,13 @@ description: "About this website"
 layout: ../layouts/PageLayout.astro
 ---
 
-Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read), a web developer from just outside London, UK.
+Delicious Reverie is the personal blog of [Benjamin Read](/about-benjamin-read), a web developer previously residing just outside London, UK, but more recently in North Wales. 
 
 ## The Design
 
-The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed. I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams and the painting "Chill October" by John Everett Millais.
+The style of the site reflects my enjoyment of the countryside, especially during the fresh, bright winter days we often get here after an intense storm has passed.
+
+I particularly enjoy taking long walks around Aylesbury and Tring reservoirs in Hertfordshire after one of these storms. During these walks I'm frequently reminded of the classical musical piece "The Lark Ascending" by Vaughn Williams and the painting "Chill October" by John Everett Millais.
 
 ![Cold autum lake with trees swaying in the wind](../images/chill-october-millais.jpg)
 
