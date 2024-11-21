@@ -24,9 +24,10 @@ const latestPosts = allPosts?.sort((a, b) => {
 
 <Layout pageTitle="home" slug="index">
       <h1 class="mb-2 text-2xl md:mb-4 md:text-4xl">Delicious Reverie is the personal home of <a class="underline" href="/about-benjamin-read">Benjamin Read</a> on the web.</h1>
-      <p class="mb-4 text-xl">I'm a Senior JavaScript Software Engineer with experience of FinTech and Property Tech markets. I enjoy leadership roles. I'm also a poetry and literature nerd.</p>
+      <p class="mb-4 text-xl">I'm a Senior and sometimes Lead JavaScript Software Engineer with experience of FinTech and Property Tech markets. I mostly enjoy frontend stuff but I'm not a stranger to Node and friends.</p>
       <a class="mb-6 normal-case btn btn-primary" href="/about-benjamin-read/">More about me</a>
-      <h2 class="mt-8 text-3xl tracking-wide">⚙ Recent posts:</h2>
+      <p class="mb-16 text-xl">Outside of work my focus is on my family but I also enjoy walks in the countryside and the occasional bit of code tinkering. I'm also a poetry and literature nerd.</p>
+      <h2 class="text-3xl tracking-wide">⚙ Recent posts:</h2>
       {latestPosts?.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
             {latestPosts.map(post => (
@@ -34,9 +35,9 @@ const latestPosts = allPosts?.sort((a, b) => {
             ))}
           </div>
       )}
-      <a class="mb-6 normal-case btn btn-primary" href="/tags/">&rarr; See all {allPosts.length + 1} posts</a>
+      <a class="mb-12 normal-case btn btn-primary" href="/tags/">&rarr; See all {allPosts.length + 1} posts</a>
       <hr/>
-      <h2 class="pb-4 mt-8 text-3xl">📼 YouTube Channel</h2>
+      <h2 class="pb-4 text-3xl">📼 YouTube Channel</h2>
       <p class="mb-2 text-xl text-inherit">I also run a YouTube channel called "The Coding Cocoon" where I teach young adults how to code and design.</p>
       {!stats.error && (<p class="mb-6 text-xl text-inherit">The channel currently has {stats.items[0].statistics.subscriberCount.toLocaleString('en-GB')} subscribers and {prettyNumber(stats.items[0].statistics.viewCount)} views.</p>)}
       <a class="normal-case btn btn-primary" href="https://www.youtube.com/channel/UCzbL3ZYvJWzJbrbHCgZLDJQ">See all videos</a>
