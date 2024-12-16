@@ -7,11 +7,11 @@ datePublished: 2024-12-16
 ---
 **An asynchronous solution which waits for elements to appear in the document. Covers both a normal Document and the Shadow DOM.**
 
-I've been working extensively with asynchronous HTML loading lately. Normally there are built-in APIs you can use to hook into when DOM elements are available. But a few times lately, my code has run outside of those APIs. So my friends* and I came up with this solution.
+I've been working extensively with asynchronous HTML loading lately. Normally there are built-in APIs you can use to hook into when DOM elements are available. But a few times lately, my code has run outside of those APIs.
 
-^ my friends included GitHub Copilot
+So I came up with this implementation that's proved really useful for resolving elements that can appear asynchronously and even if they're inside the shadow DOM.
 
-## A Drupal Project
+## Using on a Drupal Project
 
 If you're writing JavaScript for a Drupal project, youll notice that Drupal loads the DOM asynchronously. This is because it can have normal taxonomies and content, but also featured queues, which as I understand it, can get quite complex and need to be retrieved from the database. This can result in DOM elements being loaded out of order.
 
