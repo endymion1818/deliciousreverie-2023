@@ -1,5 +1,5 @@
 ---
-title: "Waiting for an Element to appear in the DOM or shadow DOM with intersectionObserver"
+title: "Waiting for an Element to appear in the DOM or shadow DOM with an Intersection Observer"
 description: "An asynchronous solution which waits for elements to appear in the document. Covers both a normal Document and the Shadow DOM."
 tags: 
   - javascript
