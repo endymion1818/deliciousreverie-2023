@@ -1,0 +1,42 @@
+---
+import Layout from '../../components/Layout.astro'
+import Otters from '../../components/Otters.astro'
+import ArticleCard from '../../components/ArticleCard.astro'
+import { getCollection } from 'astro:content';
+import FormatDate from '../../components/FormatDate.astro';
+
+const allPosts = await getCollection('posts');
+
+const postsInDateOfPublished = allPosts?.sort((a, b) => {
+  return new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime();
+})
+---
+<Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
+    <div class="my-5">
+      <h1 class="mb-2 text-4xl">All articles by order of date published:</h1>
+      <ul class="card bg-secondary">
+        <div class="grid grid-cols-1 gap-4">
+          {postsInDateOfPublished.map(post => (
+            <a href={`/posts/${post.slug}/`} class="hover:tw-bg-zinc-400">
+            <div class="py-5">
+              <h2 class="mb-2 text-2xl tracking-wide card-title text-inherit">
+                <FormatDate datetime={post.data.datePublished}/>
+              </h2>
+              {post.data.datePublished && <p class="mb-2 text-lg">{post.data.title}</p>}
+              <p class="mb-2 text-sm">{post.data.description}</p>
+              {post.data?.tags?.length > 0 && (
+                <div class="items-center justify-end mt-5 card-actions">
+                  <span>This article is about:</span>
+                  {post.data.tags?.map(tag => (
+                    <a href={`/tags/${tag}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </a>
+          ))}
+        </div>
+      </ul>
+    </div>
+    <Otters />
+</Layout>
