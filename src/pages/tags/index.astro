@@ -20,7 +20,8 @@ const alphabeticalTags = tags.sort((a, b) => {
 ---
 <Layout pageTitle="archive" pageDescription="Archive of all articles published on this blog" slug="tags">
     <div class="my-5">
-      <h1 class="mb-2 text-4xl">All Topics:</h1>
+      <h1 class="mb-4 text-4xl">All Topics:</h1>
+      <p class="mb-6 text-xl">This is a list of all articles published on this by topic, <a href="/posts" class="underline">Click here to see articles by date published.</a>.</p>
       {alphabeticalTags.map(tag => (
         <a href={`#${tag.title}`} class="m-2 badge badge-outline hover:badge-primary hover:text-white">{tag.title}</a>
       ))}
