@@ -190,6 +190,8 @@ I think using React Hooks is a simpler and tidier workflow that helps our code t
 
 You can find this example on Code Sandbox: [https://codesandbox.io/s/wqnmql8l78](https://codesandbox.io/s/wqnmql8l78)
 
+------
+
 ## Boxout: What is Rehydration? [#](https://deliciousreverie.co.uk/posts/building-an-accordion-with-react-hooks/#boxout:-what-is-rehydration)
 
 Think of a carton of orange juice. You'll often see on the side of the packet "from concentrate" or "rehydrated".
@@ -201,6 +203,8 @@ Rehydration in JavaScript can be compared with this method. With some frameworks
 The advantage is a fully interactive application that is better for SEO and for users.
 
 There are still some key puzzles to solve with rehydration. I'm looking forward to seeing a time when only parts of a page that need interactivity are rehydrated, instead of having to replace the entire page. But it's a great way of making faster and more resilient interactive experiences.
+
+------
 
 ## Boxout: MVT, Object-Oriented or Functional Programming? [#](https://deliciousreverie.co.uk/posts/building-an-accordion-with-react-hooks/#boxout:-mvt-object-oriented-or-functional-programming)
 

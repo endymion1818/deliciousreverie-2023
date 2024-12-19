@@ -9,6 +9,12 @@ datePublished: 2024-07-16
 
 Working with large Drupal sites is interesting from a management perspective. It does do a lot of AJAX calls to the backend, and sometimes that might result in the DOM structure changing because of that call.
 
+------
+
+**NOTE:** I've got an [updated article](/posts/waiting-for-an-element-with-intersection-observer) which simplifies this example, and talks about the implementation in detail.
+
+------
+
 But this happens a lot in complex applications, and isn't limited to apps managed by PHP. For example, sometimes we need to, or want to do something similar to this:
 
 ```javascript

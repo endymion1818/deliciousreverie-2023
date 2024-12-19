@@ -182,11 +182,15 @@ If you got this far and followed along, congratulations on making your first Typ
 
 TypeScript is one of the fastest growing trends in JavaScript. Reinforcing types in your application can help you avoid making fatal errors in production, especially when working with teams of developers. By using TypeScript we can lean on our IDEs more and simplify our workflow, introduce self-documentation and better code hinting.
 
+------
+
 ## Boxout: What is TypeScript? [#](https://deliciousreverie.co.uk/posts/getting-started-with-typescript/#boxout:-what-is-typescript)
 
 TypeScript was developed by Google specifically for the frontend framework AngularJS. It's not a separate language to JavaScript, but a superset, it adds to the existing language. You can write in normal JavaScript, but you add special syntax to identify types for functions, variables etc.
 
 TypeScript needs to be compiled to normal JavaScript to be used on a browser. But this is an advantage: errors that are generated can be caught and mitigated before anything goes into production.
+
+------
 
 ## Boxout: Static vs Dynamic Typing [#](https://deliciousreverie.co.uk/posts/getting-started-with-typescript/#boxout:-static-vs-dynamic-typing)
 
@@ -242,6 +246,8 @@ In that case, we now have a failure in the application. It could be crashing in 
 Instead, your code editor, terminal or CI tool lets you know, potentially before even running the code that there could be the possibility of a failure like this in your application.
 
 That's one reason why I like using Typescript: my code editor tells me where I've made a mistake, and it won't let me push code to my Git repo unless some TypeScript rules I've given it are followed.
+
+------
 
 ## Boxout: Resources [#](https://deliciousreverie.co.uk/posts/getting-started-with-typescript/#boxout:-resources)
 

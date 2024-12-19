@@ -19,7 +19,22 @@ In our example of fetching data from an API, the API call could be successful, t
 Let's look at our imaginary API call to see what outcomes exist. Here's the code we're going to test:
 
 ```javascript
-import env from "./ENV";import axios from "axios";const getApiData = (parameters = {}, domain = env.domain) =>  axios    .get(`${domain}/api/v1/data/?${parameters}`)    .then(function (response) {      // handle success      if (!Array.isArray(data) || !data.length) {        return [];      }      return data;    })    .catch(function (error) {      // handle error      console.log(error);    });
+import env from "./ENV";
+import axios from "axios";
+
+const getApiData = (
+  parameters = {}, 
+  domain = env.domain
+) =>  axios.get(`${domain}/api/v1/data/?${parameters}`).then(function (response) {
+  // handle success
+  if (!Array.isArray(data) || !data.length) {
+    return [];      
+  }
+  return data;
+  }).catch(function (error) {      
+    // handle error      
+    console.log(error);   
+  });
 ```
 
 Looking at my code, I can see the following outcomes:
@@ -45,13 +60,16 @@ Although this test is about fetching data from the API, I don't want to actually
 To do that, I'm going to "mock" this function. When you "mock" something you essentially overwrite the function with a fake function. Let's first import the code that was written to fetch data from that API, and also the library that we used to connect to the API, Axios:
 
 ```javascript
-import GetApiData from "./GetApiData";import axios from "axios";
+import GetApiData from "./GetApiData";
+import axios from "axios";
 ```
 
 After importing it, we can overwrite the functionality of axios like this:
 
 ```javascript
-jest.mock("axios");const mockedAxios = axios.get;
+jest.mock("axios");
+
+const mockedAxios = axios.get;
 ```
 
 Now, every time we call GetApiData in this file, and that calls Axios, it'll use our mocked implementation. Using it in the variable mockedAxios will help us identify clearly what we're doing when we write our tests.
@@ -77,9 +95,25 @@ By using Jest's SpyOn function, we can examine when that function was called, 
 Finally, because we're not contacting the api, we need to provide mocked data to test against as if though it did:
 
 ```javascript
-const mockedDataOne = {  id: 1234,  ---
-title: "Super Blog Post",  categories: ["1"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};const mockedDataTwo = {  id: 165,  ---
-title: "Super Post Two",  categories: ["2"],  _embedded: {    term: [[{ name: "Category" }]],    author: [{ name: "Author" }],  },};
+const mockedDataOne = {
+  id: 1234,
+title: "Super Blog Post",
+categories: ["1"],
+_embedded: {
+  
+  term: [[{ name: "Category" }]],
+
+author: [{ name: "Author" }],
+},};const mockedDataTwo = {
+  id: 165,
+title: "Super Post Two",
+categories: ["2"],
+_embedded: {
+  
+  term: [[{ name: "Category" }]],
+
+author: [{ name: "Author" }],
+},};
 ```
 
 Right! Let's begin our tests with a wrapping description:
@@ -93,7 +127,10 @@ describe('GetApiData() Source data so we can consume it', () => {
 Last piece of setup here: we want to reset our mocked API call and console log before each new test, otherwise we'll have stale data left over from the previous test, which could cause subsequent tests to fail:
 
 ```javascript
-beforeEach(() => {  mockedAxios.mockReset();  mockedConsole.mockReset();});
+beforeEach(() => {
+  mockedAxios.mockReset();
+  mockedConsole.mockReset();
+});
 ```
 
 Right, now we've set up our tests, and mocked the important stuff, let's dive into our first test ...
@@ -109,7 +146,13 @@ describe('GetApiData()', () => {
 This wrapping function describes the component, or makes a short statement to help us understand what these tests are for. If your function name adequately describes what it does, and you don't need a longer description, that's a good sign that you have named your function well!
 
 ```javascript
-it("Should get api data", async () => {  mockedAxios.mockResolvedValueOnce({ data: [{ test: "Hi I worked!" }] });  const data = await getApiData(domain);  expect(mockedAxios).toBeCalledTimes(1);});
+it("Should get api data", async () => {
+  mockedAxios.mockResolvedValueOnce({ 
+    data: [{ test: "Hi I worked!" }] 
+  });
+  const data = await getApiData(domain);
+  expect(mockedAxios).toBeCalledTimes(1);
+});
 ```
 
 First thing to note: this is an asynchronous function! axios.get is already an async function so it makes sense to test it asynchronously too. It's best to make api calls async because you have a callback even if something fails, rather than the request simply hanging indefinitely, which is bad for user experience.
@@ -129,19 +172,26 @@ Well ... how do we know our code contacted the right API endpoint? How do we kno
 Our next test will check that we have the data we expected in the return value of the GetApiData() function:
 
 ```javascript
-it('Should get data from the api', async () => {	mockedAxios.mockResolvedValueOnce({ data: [ mockedDataOne, mockedDataTwo ] })
+it('Should get data from the api', async () => {	mockedAxios.mockResolvedValueOnce({ 
+  data: [ mockedDataOne, mockedDataTwo ] 
+})
 ```
 
 This time we're mocking the return value containing the two objects we originally set up.
 
 ```javascript
-const data = await getApiData(domain);expect(mockedAxios).toBeCalledTimes(1);
+const data = await getApiData(domain);
+expect(mockedAxios).toBeCalledTimes(1);
 ```
 
 Just as before, I like to check that we did actually call the mockedAxiosfunction. Next I'm going to check one of the data objects to make sure it has the same id as mockedDataOne:
 
 ```javascript
-  expect(data[0]).toEqual(  expect.objectContaining({      id: mockedDataOne.id    })  )})
+expect(data[0]).toEqual(
+  expect.objectContaining({
+    id: mockedDataOne.id
+  })
+)})
 ```
 
 You could do more tests, perhaps making sure that data\[1\] also has the corresponding ID, but this is enough to convince me that the data is returning correctly.
@@ -155,13 +205,27 @@ If nobody threw our ball back, then something is very wrong with the code we're 
 Here's our next assertion. We want to make sure our code passed the parameters we wanted, and returned the value we expected.
 
 ```javascript
-  it('should get data using parameters', async () => {    const params = {      categories: ['2'],    }
+
+it('should get data using parameters', async () => {
+    const params = {
+    categories: ['2'],
+  }
 ```
 
 So this time our params contain an array specifying category 2 should be fetched. Remember we mocked some data in our setup? How many of those mocked data sets has the category of 2? Only one of them:mockedDataTwo.
 
 ```javascript
-    mockAxios.mockResolvedValueOnce({ data: mockedDataTwo })    await GetApiData(domain, params)    expect(mockAxios).toHaveBeenCalled()    expect(mockAxios).toBeCalledWith(`${domain}/api/v1/data/`, {      params: {        categories: params.categories,      },    })  })
+mockAxios.mockResolvedValueOnce({ 
+  data: mockedDataTwo 
+})
+await GetApiData(domain, params)
+expect(mockAxios).toHaveBeenCalled()
+expect(mockAxios).toBeCalledWith(`${domain}/api/v1/data/`, {
+  params: {
+    categories: params.categories,
+  },
+})
+})
 ```
 
 Okay, so if this test passes, our code is passing the categories correctly. Great! But does the data reflect that?
@@ -206,6 +270,8 @@ There's a lot to these functions and it can take quite a bit of time to get used
 
 I would say that thoroughly testing your code is an important step, along with static typing, quality checking, and pre-release validation, to ensuring that your code is indeed production ready!
 
+------
+
 ## Boxout: The price of confidence [#](https://deliciousreverie.co.uk/posts/writing-tests-for-js-api-calls/#boxout:-the-price-of-confidence)
 
 Developers will spend more time writing tests than writing the components they’re building. That makes sense if you think about it: you need to test every possible outcome of the code that’s being written. As is demonstrated in this article, one API call with some basic functionality can result in a number of differing outcomes.
@@ -213,6 +279,8 @@ Developers will spend more time writing tests than writing the components they�
 The benefit of adding tests to your code can easily override the time spent by developers following this practice. If your business or customers needs the confidence that things won’t break, then testing is definitely a good practice to introduce at the start of a project.
 
 Other ways that testing can benefit a project include during refactors. Often project requirements will change after the code has been written. That introduces more risk into the codebase because on revisiting the code a developer might decide to refactor to make it simpler … which could include deleting things that were actually needed! Looking at the test serves as documentation: developers can see that there was a decision behind every code outcome that has been written.
+
+------
 
 ## Boxout: Scoping outcomes [#](https://deliciousreverie.co.uk/posts/writing-tests-for-js-api-calls/#boxout:-scoping-outcomes)
 

@@ -262,6 +262,8 @@ I also enjoyed this one on Level Up Tutorials, it's the one that got me started 
 
 [https://www.leveluptutorials.com/tutorials/react-testing-for-beginners](https://www.leveluptutorials.com/tutorials/react-testing-for-beginners)
 
+------
+
 ## Boxout: Unit and Integration Tests [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#boxout:-unit-and-integration-tests)
 
 There are generally two types of tests we talk about in the context of code tests:
@@ -276,6 +278,8 @@ When two or more modules are used in conjunction, then it's a good practice to w
 
 These are the two kinds of tests that developers are usually responsible for writing. There are other kinds of tests that QA Engineers write (see the box "The Role of Quality Assurance Engineers").
 
+------
+
 ## Boxout: What is Test Driven Development? [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#boxout:-what-is-test-driven-development)
 
 TDD, or test-driven development, is a testing discipline that forces you to think about edge cases when you're in the process of development.
@@ -287,6 +291,8 @@ Only after you have at least 3 robust tests that you can use to verify what your
 I like this concept because it forces you to think about the structure of your component from completely different angles. You're not trying to preserve the code you already wrote, so you can find different ideas more easily.
 
 Be careful though: you can write tests that will pass under any circumstances! For this reason, three or more tests are often required that allow you to "triangulate", or effectively define the functionality of your component, before you can start building it.
+
+------
 
 ## Boxout: The Role of Quality Assurance Engineers [#](https://deliciousreverie.co.uk/posts/netmag-unit-test/#boxout:-the-role-of-quality-assurance-engineers)
 

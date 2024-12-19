@@ -148,6 +148,8 @@ As you can see, the two modules we've created don't have any props passed down f
 
 But wait! There's more we can do to boost performance here.
 
+------
+
 ## Boxout: Analyse Performance with React Developer Tools [#](https://deliciousreverie.co.uk/posts/netmag-using-context/#boxout:-analyse-performance-with-react-developer-tools)
 
 React Developer Tools, an extension available on both Firefox and Chrome browsers, is a tool provided by Facebook to help debug your React apps.
@@ -161,6 +163,8 @@ If you click on the cog icon, you'll see some additional settings, including "Hi
 Try interacting with your site when "Hilight Updates" is ticked. You might be surprised at how much re-rendering is happening, slowing down the experience for users and having a negative impact on your conversions.
 
 Now you know where to start fixing the problem!
+
+------
 
 ## Boxout: Reducing Re-rendering [#](https://deliciousreverie.co.uk/posts/netmag-using-context/#boxout:-reducing-re-rendering)
 
