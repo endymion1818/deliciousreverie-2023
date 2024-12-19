@@ -16,7 +16,7 @@ const latestPosts = allPosts?.sort((a, b) => {
       <h1 class="mb-2 text-2xl md:mb-4 md:text-4xl">Delicious Reverie is the personal home of <a class="underline" href="/about-benjamin-read">Benjamin Read</a> on the web.</h1>
       <p class="mb-4 text-xl">I'm a Senior and sometimes Lead JavaScript Software Engineer with experience of FinTech and Property Tech markets. I enjoy hanging out with my friends and family. I'm a partial to poetry and book collecting.</p>
       <a class="mb-12 normal-case btn btn-primary" href="/about-benjamin-read/">More about me</a>
-      <h2 class="text-3xl tracking-wide">⚙ Recent posts:</h2>
+      <h2 class="text-3xl tracking-wide">Recent posts:</h2>
       {latestPosts?.length > 0 && (
           <div class="grid grid-cols-1 gap-4">
             {latestPosts.map(post => (
@@ -24,9 +24,11 @@ const latestPosts = allPosts?.sort((a, b) => {
             ))}
           </div>
       )}
-      <a class="mb-12 normal-case btn btn-primary" href="/tags/">&rarr; See all {allPosts.length + 1} posts</a>
+      <p class="mt-6 text-lg">So far, {allPosts.length} total posts published.</p>
+      <a class="my-6 normal-case btn btn-primary hover:bg-accent" href="/tags/">See all posts by topic</a>
+      <a class="normal-case btn btn-primary hover:bg-accent" href="/posts/">See all posts by date published</a>
       <Rabbits />
-      <hr class="my-8 border-1 border-slate-600"/>
+      <hr class="mt-12 mb-8 border-1 border-slate-600"/>
       <h2 class="mb-4 text-2xl">Webrings</h2>
       <the-claw-webring-widget />
 </Layout>
