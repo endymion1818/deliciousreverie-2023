@@ -3,7 +3,7 @@ title: "Building a media player with Web Components"
 description: "This past year I've been involved in replatforming our media player to use media-chrome from Mux instead of JWPlayer. Here's how that went."
 tags: 
   - javascript
-datePublished: 2025-12-23
+datePublished: 2024-12-23
 ---
 **This past year I've been involved in replatforming our media player to use media-chrome from Mux instead of JWPlayer. Here's how that went.**
 
