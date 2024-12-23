@@ -165,6 +165,10 @@ Internally, this fetches the chapters, parses the VTT file and fires off the eve
 
 This project hasn't been without it's pitfalls and struggles especially since it's been in development for around a year, so significant (and very positive) upgrades needed to me merged in.
 
+We also found it a challenge to ensure that the code was as well tested as it can be. This is hard because most test runners assume components are instantiated in JS after the real DOM has loaded, and in this case that isn't true. I've come up with a solution, and Storybook's support has got a lot better in it's latest release. But there are still significant gaps.
+
+You can find a [full write up on the testing situation here](/posts/testing-web-components/).
+
 However I'm so pleased to have stumbled across the media-chrome project, and to have in that time also got to grips with native Web Components.
 
 And yes, I did a case study for integration with Vue, React 17 and 18, and with Svelte, and the player rendered fine in all of them.
