@@ -10,8 +10,8 @@ datePublished: 2024-12-23
 I hate JWPlayer with a passion. Everything that should be easy about it causes us as a development team headaches every day. Here's an example:
 
 ```javascript
+let numberOfTimesChecked = 0;
 function doSomething() {
-  let numberOfTimesChecked = 0;
   setTimeout(() => {
     if(typeof jwplayer === 'function' && jwplayer().hasOwnProperty("play")) {
       doSomething();
