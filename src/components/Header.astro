@@ -38,6 +38,8 @@ const currentPath = pathname.slice(1).replaceAll("/","");
   </div>
   <div class="justify-start flex-1 mx-auto navbar max-w-contain">
     <Search id="search" className="pagefind-ui"  />
+  </div>
+  <div class="justify-start flex-1 mx-auto navbar max-w-contain">
     {menuItems?.length > 0 && (
       <ul class="overflow-y-auto header--navigation">
         {menuItems.map(item => (
