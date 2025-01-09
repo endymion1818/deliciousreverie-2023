@@ -51,11 +51,8 @@ h6 {
 }
 .pagefind-ui {
   --pagefind-ui-scale: 0.75;
-    --pagefind-ui-scale: 0.75;
-    --pagefind-ui-primary: navy;
-    --pagefind-ui-text: var(--text-zinc-600);
-    --pagefind-ui-border-width: 0px;
-    width: 100%;
+  --pagefind-ui-border-width: 0px;
+  width: 100%;
   }
 /* Pagefind */
 .pagefind-ui .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
