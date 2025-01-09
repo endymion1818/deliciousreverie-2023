@@ -49,3 +49,24 @@ h6 {
     margin-left: -6rem;
   }
 }
+.pagefind-ui {
+  --pagefind-ui-scale: 0.75;
+  --pagefind-ui-border-width: 0px;
+  width: 100%;
+  }
+/* Pagefind */
+.pagefind-ui .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0.2rem;
+  z-index: 20;
+  padding: 0 2em 1em;
+  overflow-y: auto;
+  box-shadow:
+    0 10px 10px -5px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: var(--pagefind-ui-border-radius);
+  border-bottom-left-radius: var(--pagefind-ui-border-radius);
+  background-color: var(--pagefind-ui-background);
+}
