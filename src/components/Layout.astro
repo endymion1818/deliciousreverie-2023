@@ -1,4 +1,5 @@
 ---
+import Search from "astro-pagefind/components/Search";
 import { ViewTransitions } from 'astro:transitions'
 import { SEO } from 'astro-seo'
 import Header from './Header.astro'
@@ -68,7 +69,12 @@ const pathname = new URL(Astro.request.url).pathname;
 </head>
 <body class="leading-relaxed text-black bg-secondary">
     <Header title={title} menuItems={menuItems} subtitle={subtitle} />
-    <main class="py-10 mx-auto max-w-contain" id="main">
+    <div class="py-4 bg-accent">
+      <div class="py-4 mx-auto max-w-contain">
+        <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }}  />
+      </div>
+    </div>
+    <main class="pt-6 pb-10 mx-auto max-w-contain" id="main">
       <slot />
     </main>
     <div class="text-white prefooter bg-primary py-11">

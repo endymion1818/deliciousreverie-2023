@@ -1,5 +1,4 @@
 ---
-import Search from "astro-pagefind/components/Search";
 import { siteUrl } from '../../sitedata';
 
 interface Props {
@@ -35,9 +34,6 @@ const currentPath = pathname.slice(1).replaceAll("/","");
       </a>
       {subtitle && <p class="mt-2 text-3xl font-display">{subtitle}</p>}
     </div>
-  </div>
-  <div class="justify-start flex-1 mx-auto navbar max-w-contain">
-    <Search id="search" className="pagefind-ui"  />
   </div>
   <div class="justify-start flex-1 mx-auto navbar max-w-contain">
     {menuItems?.length > 0 && (
