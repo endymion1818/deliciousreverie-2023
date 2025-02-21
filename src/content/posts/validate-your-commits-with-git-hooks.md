@@ -1,5 +1,5 @@
 ---
-title: "BValidate your commits with Git Hooks"
+title: "Validate your commits with Git Hooks"
 description: "With everything else we need to remember, checking formatting and linting is easy to forget. If this sounds like you, there are some great solutions out there. Here's how to use Git Hooks."
 tags: 
   - operations
