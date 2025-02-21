@@ -5,7 +5,7 @@ tags:
   - operations
 datePublished: 2025-02-21
 ---
-MAny of us run linters (probably eslint) and formatters (like prettier) to make sure code is in a suitable state before merging. We do this so that it's easier for other people to modify the code we've written. But have you, like me, gotten frustrated by failures in pipelines due to this seemingly small problems? It's comparatively costly for failures to happen there too, since the compute time in pipelines needs to paid for. 
+Many of us run linters (probably eslint) and formatters (like prettier) to make sure code is in a suitable state before merging. We do this so that it's easier for other people to modify the code we've written. But have you, like me, gotten frustrated by failures in pipelines due to this seemingly small problems? It's comparatively costly for failures to happen there too, since the compute time in pipelines needs to paid for. 
 
 With everything else we need to remember, checking formatting and linting is easy to forget. If this sounds like you, there are some great solutions out there.
 
