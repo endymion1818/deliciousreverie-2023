@@ -29,11 +29,11 @@ export let footerMenuItems = [{
     title: 'JavaScript',
     link: '/tags/javascript/'
   }, {
+    title: 'Leadership',
+    link: '/tags/leadership/'
+  }, {
     title: 'Engineering',
     link: '/tags/engineering/'
-  }, {
-    title: 'Operations',
-    link: '/tags/operations/'
   },{
     title: 'Personal',
     link: '/tags/personal/'

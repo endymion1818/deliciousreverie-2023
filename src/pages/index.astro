@@ -1,34 +1,77 @@
 ---
-import { getCollection } from 'astro:content';
-import ArticleCard from '../components/ArticleCard.astro'
-import Layout from '../components/Layout.astro'
-import Rabbits from '../components/Rabbits.astro'
+import { getCollection } from "astro:content";
+import ArticleCard from "../components/ArticleCard.astro";
+import Layout from "../components/Layout.astro";
+import Rabbits from "../components/Rabbits.astro";
 
-const allPosts = await getCollection('posts');
+const allPosts = await getCollection("posts");
 
-const latestPosts = allPosts?.sort((a, b) => {
-  return new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime();
-}).slice(0, 3)
+const latestPosts = allPosts
+  ?.sort((a, b) => {
+    return (
+      new Date(b.data.datePublished).getTime() -
+      new Date(a.data.datePublished).getTime()
+    );
+  })
+  .slice(0, 1);
+
+const leadershipPosts = allPosts.filter((post) => {
+  return post.data.tags.some((tag) => tag === "leadership");
+}).slice(0, 3);
 ---
-<script src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs" type="module"></script>
+
+<script
+  src="https://the-claw-webring-widget.netlify.app/the-claw-webring-widget.mjs"
+  type="module"></script>
 
 <Layout pageTitle="home" slug="index">
-      <h1 class="mb-2 text-2xl md:mb-4 md:text-4xl">Delicious Reverie is the personal home of <a class="underline" href="/about-benjamin-read">Benjamin Read</a> on the web.</h1>
-      <p class="mb-4 text-xl">I'm a Senior and sometimes Lead JavaScript Software Engineer with experience of FinTech and Property Tech markets. I enjoy hanging out with my friends and family. I'm a partial to poetry and book collecting.</p>
-      <a class="mb-12 normal-case btn btn-primary" href="/about-benjamin-read/">More about me</a>
-      <h2 class="text-3xl tracking-wide">Recent posts:</h2>
-      {latestPosts?.length > 0 && (
-          <div class="grid grid-cols-1 gap-4">
-            {latestPosts.map(post => (
-              <ArticleCard post={post} />
-            ))}
-          </div>
-      )}
-      <p class="mt-6 text-lg">So far, {allPosts.length} total posts published.</p>
-      <a class="my-6 normal-case btn btn-primary hover:bg-accent" href="/tags/">See all posts by topic</a>
-      <a class="normal-case btn btn-primary hover:bg-accent" href="/posts/">See all posts by date published</a>
-      <Rabbits />
-      <hr class="mt-12 mb-8 border-1 border-slate-600"/>
-      <h2 class="mb-4 text-2xl">Webrings</h2>
-      <the-claw-webring-widget />
+  <h1 class="mb-2 text-2xl md:mb-4 md:text-4xl">
+    Delicious Reverie is the personal home of <a
+      class="underline"
+      href="/about-benjamin-read">Benjamin Read</a
+    > on the web.
+  </h1>
+  <p class="mb-4 text-xl">
+    I'm a Senior and sometimes Lead JavaScript Software Engineer with experience
+    of FinTech and Property Tech markets. I enjoy hanging out with my friends
+    and family. I'm a partial to poetry and book collecting.
+  </p>
+  <a class="mb-12 normal-case btn btn-primary" href="/about-benjamin-read/"
+    >More about me</a
+  >
+  <h2 class="text-3xl tracking-wide">Most Recent post:</h2>
+  <ul class="pl-2 mb-12 list-disc md:pl-6">
+  {
+    latestPosts?.length > 0 && (
+      <li class="grid grid-cols-1 gap-4">
+        {latestPosts.map((post) => (
+          <ArticleCard post={post} as="li"/>
+        ))}
+      </li>
+    )
+  }
+  </ul>
+  <h2 class="text-3xl tracking-wide">Posts about Leadership:</h2>
+  <ul class="pl-2 mb-12 md:pl-6">
+    {
+      leadershipPosts?.length > 0 && (
+        <li class="grid grid-cols-1 gap-4">
+          {leadershipPosts.map((post) => (
+            <ArticleCard post={post} />
+          ))}
+        </li>
+      )
+    }
+  </ul>
+  <p class="mt-6 text-lg">So far, {allPosts.length} total posts published.</p>
+  <a class="my-6 normal-case btn btn-primary hover:bg-accent" href="/tags/"
+    >See all posts by topic</a
+  >
+  <a class="normal-case btn btn-primary hover:bg-accent" href="/posts/"
+    >See all posts by date published</a
+  >
+  <Rabbits />
+  <hr class="mt-12 mb-8 border-1 border-slate-600" />
+  <h2 class="mb-4 text-2xl">Webrings</h2>
+  <the-claw-webring-widget></the-claw-webring-widget>
 </Layout>
