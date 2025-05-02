@@ -11,21 +11,7 @@ I enjoy working with diverse teams and collaborating closely with others to achi
 
 ![Benjamin Read profile picture](../images/benjamin-read.jpg)
 
-## Senior Engineer Successes:
-
-### Leading initiatives
-
-I was Lead developer and directly responsible to senior management on a chat application, utilizing a new GraphQL API, which also involved building new UI elements, caching queries and sequential loading (as the GraphQL team had not yet built subscriptions due to complications from underlying APIs).
-
-### Refactoring and improvements
-
-Over a 10 month period, I rebuilt a React application (Gatsby) from the ground up to be from JavaScript to TypeScript (with `strict` enabled), with 60-70% test coverage, both unit and end-to-end, and utilize internal react components, and integrated it with several APIs.
-
-### Using new and advanced JS functionality
-
-I completely re-wrote a video tracker application which allowed my company to track multiple videos on a web page. The service used Service Workers and browser Cache to offload main thread work. This allowed it to respond to events posted by the video players (of which there could be multiple on a page, from Vimeo, YouTube and various others), sending data for the correct video, user and other tracking data to an API. It was built on Vite and hosted as a package on NPM.
-
-## Engineering Management Successes:
+## Leadership Successes:
 
 ### Strategy and Planning
 
@@ -62,6 +48,21 @@ The document also outlined a set of standard tools to use so that I could gradua
 I also made recommendations about which packages to use (eg. recommended the use of TanStack Query). 
 
 The objective to this documentation was that any new engineers coming into the team could easily pick up a new code base and fulfil any business requirement without having to do unnecessary decision making, with the aim of making us more efficient as a team.   
+
+## Senior Engineer Successes:
+
+### Leading initiatives
+
+I was Lead developer and directly responsible to senior management on a chat application, utilizing a new GraphQL API, which also involved building new UI elements, caching queries and sequential loading (as the GraphQL team had not yet built subscriptions due to complications from underlying APIs).
+
+### Refactoring and improvements
+
+Over a 10 month period, I rebuilt a React application (Gatsby) from the ground up to be from JavaScript to TypeScript (with `strict` enabled), with 60-70% test coverage, both unit and end-to-end, and utilize internal react components, and integrated it with several APIs.
+
+### Using new and advanced JS functionality
+
+I completely re-wrote a video tracker application which allowed my company to track multiple videos on a web page. The service used Service Workers and browser Cache to offload main thread work. This allowed it to respond to events posted by the video players (of which there could be multiple on a page, from Vimeo, YouTube and various others), sending data for the correct video, user and other tracking data to an API. It was built on Vite and hosted as a package on NPM.
+
 
 ### Can I help you to deliver?
 
