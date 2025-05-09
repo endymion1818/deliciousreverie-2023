@@ -7,17 +7,27 @@ import Rabbits from "../components/Rabbits.astro";
 const allPosts = await getCollection("posts");
 
 const latestPosts = allPosts
+  ?.filter((post) => {
+    return post.data.tags.some((tag) => tag !== "leadership");
+  })
   ?.sort((a, b) => {
     return (
       new Date(b.data.datePublished).getTime() -
       new Date(a.data.datePublished).getTime()
     );
   })
-  .slice(0, 1);
+  .slice(0, 2);
 
 const leadershipPosts = allPosts.filter((post) => {
   return post.data.tags.some((tag) => tag === "leadership");
-}).slice(0, 3);
+  })
+  ?.sort((a, b) => {
+      return (
+        new Date(b.data.datePublished).getTime() -
+        new Date(a.data.datePublished).getTime()
+      );
+    })
+  .slice(0, 2);
 ---
 
 <script
@@ -39,36 +49,36 @@ const leadershipPosts = allPosts.filter((post) => {
   <a class="mb-12 normal-case btn btn-primary" href="/about-benjamin-read/"
     >More about me</a
   >
-  <h2 class="text-3xl tracking-wide">Most Recent post:</h2>
+  <h2 class="text-3xl tracking-wide">Most Recent articles:</h2>
   <ul class="pl-2 mb-12 list-disc md:pl-6">
   {
     latestPosts?.length > 0 && (
       <li class="grid grid-cols-1 gap-4">
         {latestPosts.map((post) => (
-          <ArticleCard post={post} as="li"/>
+          <ArticleCard post={post} />
         ))}
       </li>
     )
   }
   </ul>
-  <h2 class="text-3xl tracking-wide">Posts about Leadership:</h2>
+  <h2 class="text-3xl tracking-wide">Latest articles about Leadership:</h2>
   <ul class="pl-2 mb-12 md:pl-6">
     {
       leadershipPosts?.length > 0 && (
         <li class="grid grid-cols-1 gap-4">
           {leadershipPosts.map((post) => (
-            <ArticleCard post={post} />
+            <ArticleCard post={post} showTags={false} />
           ))}
         </li>
       )
     }
   </ul>
-  <p class="mt-6 text-lg">So far, {allPosts.length} total posts published.</p>
+  <p class="mt-6 text-lg">So far, {allPosts.length} total articles published.</p>
   <a class="my-6 normal-case btn btn-primary hover:bg-accent" href="/tags/"
-    >See all posts by topic</a
+    >See all articles by topic</a
   >
   <a class="normal-case btn btn-primary hover:bg-accent" href="/posts/"
-    >See all posts by date published</a
+    >See all articles by date published</a
   >
   <Rabbits />
   <hr class="mt-12 mb-8 border-1 border-slate-600" />

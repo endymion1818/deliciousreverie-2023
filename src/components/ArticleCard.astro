@@ -1,7 +1,7 @@
 ---
 import FormatDate from "./FormatDate.astro"
 
-const { post } = Astro.props
+const { post, showTags = true } = Astro.props
 const { data } = post
 ---
 <a href={`/posts/${post.slug}/`} class="hover:tw-bg-zinc-400">
@@ -14,7 +14,7 @@ const { data } = post
     </h2>
     <p class="text-xl text-inherit">{post.data.description}</p>
     {data.datePublished && <p class="my-2">Published on <FormatDate datetime={data.datePublished}/></p>}
-    {data?.tags?.length > 0 && (
+    {showTags && data?.tags?.length > 0 && (
       <div class="items-center justify-end mt-5 card-actions">
         <span>This article is about:</span>
         {data.tags?.map(tag => (
