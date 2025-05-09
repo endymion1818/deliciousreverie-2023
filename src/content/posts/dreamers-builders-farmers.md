@@ -1,5 +1,5 @@
 ---
-title: "Three types of engineers: Dreamers, Builders and Farmers"
+title: "Dreamers, Builders and Farmers"
 description: "In a well established team, personality traits often come into play. Here we group three main types that, when recognised and supported, can help the business and the technology team to thrive."
 tags: 
   - leadership
