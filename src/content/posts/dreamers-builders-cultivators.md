@@ -1,5 +1,5 @@
 ---
-title: "Dreamers, Builders and Farmers"
+title: "Dreamers, Builders and Cultivators"
 description: "In a well established team, personality traits often come into play. Here we group three main types that, when recognised and supported, can help the business and the technology team to thrive."
 tags: 
   - leadership
@@ -21,7 +21,7 @@ If you watch the personalities of certain teams in your organisation, you might 
 
 And I think it's likely that you are a leader because of the traits you have.
 
-For simplicity, and to help us understand differences in individuals I've observed within a software team, I'm going to group them into three terms: "dreamer", "builder" and "farmer".
+For simplicity, and to help us understand differences in individuals I've observed within a software team, I'm going to group them into three terms: "dreamer", "builder" and "cultivator".
 
 I can't take credit for identifying these groups myself: they were first outlined [in this Reddit thread](https://www.reddit.com/r/ExperiencedDevs/comments/1ki0i60/comment/mrb9t0t/?context=3) by user [j_d_q](https://www.reddit.com/user/j_d_q/), which I'm now expanding on.
 
@@ -44,13 +44,13 @@ Builders aren't focused on concepts as much as they are execution: it's more dif
  
 Leverage their love of documentation, clean code and automation to refine and protect code that needs attention or that is difficult to work with. Allow them to introduce coding standards and tools that free up cognitive ability for the whole team.
 
-Use builders to solve problems that farmers cannot because they're engrossed in delivering on their current workload.
+Use builders to solve problems that cultivators cannot because they're engrossed in delivering on their current workload.
 
-## Farmers: implementors that tend
+## Cultivators: implementors that tend
 
-Farmers like structure. They see their role as tending to the land that the dreamers and builders have set up. 
+Cultivators like structure. They see their role as tending to the land that the dreamers and builders have set up. 
 
-Have a project with a large bug backlog? Give it to a farmer and watch them steadily and happily clear it. 
+Have a project with a large bug backlog? Give it to a cultivator and watch them steadily and happily clear it. 
 
 They can take a product requirement that has a clear implementation path and be confident to carry it out. Anything well documented that has a lot of clarity, and less room for the unexpected and they will thrive.
 
@@ -58,7 +58,7 @@ Leverage their deep knowledge of the codebase by pairing them with one of the ot
 
 Try to avoid giving these people a sketchy feature with no description and expect them to fulfil it.
 
-Farmers are essential to carrying out tasks that builders and dreamers would struggle with.
+Cultivators are essential to carrying out tasks that builders and dreamers would struggle with.
 
 ## There are no rules
 
