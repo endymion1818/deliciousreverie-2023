@@ -1,16 +1,18 @@
 ---
 title: "Augmenting the details element"
-description: "I've found the <details> element superbly useful lately. I added only one or two things to make this useful element suit two very different use cases"
+description: "I've found the details element superbly useful lately. I added only one or two things to make this useful element suit two very different use cases"
 tags:
   - javascript
 datePublished: 2025-07-23
 ---
 
-**_I've found the <details> element superbly useful lately. I added only one or two things to make this useful element suit two very different use cases_**
+**_I've found the details element superbly useful lately. I added only one or two things to make this useful element suit two very different use cases_**
 
-Our flagship sites have huge mega menus with shed loads of content. If you're wondering how many people actually use that to navigate around the site, it's very minimal. Probably about 30 people a month out of a few thousand visitors on desktop. If this puts you off adding a megamenu to a product, good. Don't do it unless you can demonstrate a clear need from your users.
+Our flagship sites have huge mega menus with <s>a shed</s> sheds loads of content in each main item. 
 
-But since it's there now, we have to support it.
+If you're wondering how many people actually use them to navigate around the site, it's very minimal. Probably about 30 people a month out of a few thousand visitors on desktop. If those figures put you off adding a megamenu to a product, good. Don't do it unless you can demonstrate a clear need from your users.
+
+But since they're there now, we have to support it.
 
 I recently rebuilt these dropdowns with a very minimal amount of JavaScript, and most of that is to support Safari's lack of support for the `:marker` pseudoelement.
 
@@ -50,7 +52,7 @@ Next to that of course we had a bunch of JS that would do the following when one
 4. Reset the `aria-role` on other buttons
 5. Reset the `aria-role` on other dropdown elements
 
-And we didn't actually just do this. In my first iteration of JavaScript I neglected to notice that you can add modifier Tailwind classes to the HTML so that when `aria-role`s change, different styling can be applied:
+The HTML for something like this would be
 
 ```html
 <div
@@ -60,6 +62,7 @@ And we didn't actually just do this. In my first iteration of JavaScript I negle
   class="tw-hidden aria-expanded:tw-block"
 ></div>
 ```
+And we didn't actually just do this. In my first iteration of JavaScript I neglected to notice that you can add modifier Tailwind classes to the HTML so that when `aria-role`s change, different styling can be applied:
 
 Instead I was doing the following:
 
@@ -157,13 +160,11 @@ The one thing I did add was that when you open one menu item, the others should 
 ```javascript
 document.addEventListener("click", (event) => {
   detailsElements.forEach((detailsElement) => {
-    detailsElements.forEach((detailsElement) => {
-      if (event.target.closest("details") === detailsElement) {
-        return;
-      }
-      detailsElement.open = false;
-      isSafari && detailsElement.classList.remove("details-open");
-    });
+    if (event.target.closest("details") === detailsElement) {
+      return;
+    }
+    detailsElement.open = false;
+    isSafari && detailsElement.classList.remove("details-open");
   });
 });
 ```
