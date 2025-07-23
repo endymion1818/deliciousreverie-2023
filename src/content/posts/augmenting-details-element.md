@@ -89,11 +89,7 @@ Now with the details element the markup looks a lot more sane, although to be ho
       Link parent
       <svg class="caret"></svg>
     </summary>
-    <div
-      id="mega-menu-one-dropdown"
-      aria-controlledby="mega-menu-one-button"
-      aria-expanded="false"
-    >
+    <div>
       <ul>
         <li>
           <a href="#"> link child </a>
