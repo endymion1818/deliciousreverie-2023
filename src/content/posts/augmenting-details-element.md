@@ -8,13 +8,7 @@ datePublished: 2025-07-23
 
 **_I've found the details element superbly useful lately. I added only one or two things to make this useful element suit two very different use cases_**
 
-Our flagship sites have huge mega menus with <s>a shed</s> sheds loads of content in each main item. 
-
-If you're wondering how many people actually use them to navigate around the site, it's very minimal. Probably about 30 people a month out of a few thousand visitors on desktop. If those figures put you off adding a megamenu to a product, good. Don't do it unless you can demonstrate a clear need from your users.
-
-But since they're there now, we have to support it.
-
-I recently rebuilt these dropdowns with a very minimal amount of JavaScript, and most of that is to support Safari's lack of support for the `:marker` pseudoelement.
+I recently rebuilt some dropdowns with a very minimal amount of JavaScript, and most of that is to support Safari's lack of support for the `:marker` pseudoelement.
 
 Previously, we had a structure similar to this:
 
