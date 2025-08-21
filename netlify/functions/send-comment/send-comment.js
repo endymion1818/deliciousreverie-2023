@@ -41,7 +41,7 @@ const handler = async (event) => {
   }
   // looks legit
   try {
-    const result = await fetch(process.env.WEBINY_API_URL, {
+    const result = await fetch(`${process.env.WEBINY_API_URL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

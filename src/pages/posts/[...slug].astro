@@ -9,11 +9,15 @@ export async function getStaticPaths() {
     params: { slug: entry.slug }, props: { entry },
   }));
 }
-const comments = await getComments();
+let comments = await getComments();
+
+if(!comments?.length) {
+ comments = []
+}
 
 const slug = Astro.url.pathname.split('/')[2];
 
-const filteredComments = comments.filter(comment => comment.slug === slug);
+const filteredComments = comments?.filter(comment => comment.slug === slug);
 
 
 const { entry } = Astro.props;
