@@ -22,7 +22,12 @@ async function getComments() {
           `,
         })
     });
+    if(res.status !== 200) {
+      console.log("Bad API status", {res});
+      return;
+    }
     const data = await res.json();
+
     if(!data) {
       console.log('No data');
       return;
