@@ -193,7 +193,9 @@ Other than that, we're using the `@rollup/plugin-replace` to provide an environm
 
 You'll notice in the Vitest set up above we have our test setup configuration as part of vitest.config.js, which saves an additional file.
 
-Test are located in **src/test** folder exclusively to keep them out of the way of the production code. However we do need to make one change to the production code:
+Test are located in **src/test** folder exclusively to keep them out of the way of the production code.
+
+We also need to stop the IIFE from executing as soon as it's imported for the test suite, and before any test setups can be performed. This can be handled by wrapping it in this `if` statement:
 
 ```javascript
 if(!process.env.NODE_ENV !== "test") {
@@ -215,7 +217,7 @@ if(!process.env.NODE_ENV !== "test") {
 }
 ```
 
-This is necessary otherwise the code under test would run immediately once the module is imported. Another option is to separate the code under test from the module containing the IIFE completely.
+But ideally the code is in a separate JS module from the IIFE, since that is much neater than this solution.
 
 #### Building the JS for Production
 
