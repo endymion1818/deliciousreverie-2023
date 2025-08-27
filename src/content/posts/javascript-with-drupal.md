@@ -82,17 +82,32 @@ As I emphasise this is for really small things like setting some text on a DOM e
 
 ### 2. With bundling
 
-When adding external dependencies from NPM.js we always switch to using a bundler. This is so dependencies are encapsulated into the JS project instead of being globally available (eg. on the `window` object). This helps with our upgrade path: if a dependency is global, it might be used in several modules, which could mean that in attempting an upgrade we could easily break something.
+We've avoided tools like [Foxy](https://www.drupal.org/project/foxy), which allows us to bundle with Vite on the site level and integrates with Composer. Whilst it would be appealing from an organisational perspective to be able to have one JS bundle, it could be wasteful as we'd be unable to customise that for the user. It would also likely be very large on the initial load which could delay interactivity in some cases. 
+
+We do use some dependencies from [Asset Packagist](https://asset-packagist.org/). These are typically large dependencies such as JSPDF and Chart.js which we use in more than one Drupal extension.
+
+When dependencies are loaded in via Asset Packagist, they are loaded in on the global object, and are accessed directly from that:
+
+```javascript
+
+const { Chart } = window
+
+const chart = new Chart()
+```
+
+Care must be maintained not to overwrite globals. Also upgrading requires extensive testing since it might be used in several modules, which means that we could easily break something.
+
+We find Asset Packagist to be problematic because packages are often not available until _after_ they have been requested for the first time. This has repeatedly led to failed builds. 
+
+It's also a mirror of NPM which has more opaque security implications.
+
+Therefore, When adding external dependencies from NPM we typically switch to using a bundler for that extension.
 
 The downside of this is that we might have several versions of a specific dependency on one page, or across the whole site. But since they are encapsulated in the module they are not globally available so clashes aren't a possibility. 
 
-One thing that does concern us is that the JavaScript bundles could be larger as a result which might have been avoided with global dependencies. However this is the tradeoff we have chosen to make.
+It also means that the JavaScript bundles could be larger as a result which might have been avoided with global dependencies. However the upgrade path is much easier since dependencies are easily identifiable. 
 
-We've avoided tools like [Foxy](https://www.drupal.org/project/foxy), which allows us to use Vite on the site level and integrate with Composer, and [Asset Packagist](https://asset-packagist.org/). 
-
-Asset Packagist in particular is problematic because packages are not available until _after_ they have been requested for the first time. This has repeatedly led to failed builds. It's also a mirror of NPM which has more opaque security implications.
-
-If an external dependency is needed, or the complexity of the JS rises above a certain level (we haven't specified where we should switch, instead leave it up to the good judgement of each developer), we have a significantly different setup:
+If an external dependency is needed, or the complexity of the JS rises above a certain level (we haven't specified where we should switch, instead leave it up to the good judgement of each developer), we have adopted the following setup:
 
 #### 1. Introduction of /src and /dist folders
 
