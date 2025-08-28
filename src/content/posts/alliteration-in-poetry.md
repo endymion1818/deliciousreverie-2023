@@ -22,7 +22,7 @@ I have no idea how I stumbled on the Moldovan / Russian / English poet [Philip N
 
 But I loved his keen sense of alliteration. Within each line he places such delightfully similar-sounding words that for me began to exceed even the profound pleasure I got from the deeply meaningful poems I'd read so far.
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 
 ```plaintext
@@ -48,7 +48,7 @@ That's a bit of an odd term. Let me explain what is meant by "Anglo-Welsh". When
 
 His poems didn't so much paint pictures of the landscapes of South Wales that he was familiar with as make you think about his personal connection with them. And he used alliteration extensively to convey that.
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 ```plaintext
 To you I give a golden garden, Wales
@@ -75,7 +75,7 @@ The forms poetry takes is unique to each language it's spoken in. To translate a
 
 But let me try to help you understand why that isn't always necessary:
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 ```plaintext
 Gwae'r gwan dan oedran nid edrych, ni chwardd,
