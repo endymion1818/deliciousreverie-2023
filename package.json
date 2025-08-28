@@ -1,6 +1,7 @@
 {
   "name": "delicious-reverie-2023",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "netlify dev",
     "build": "astro build",
@@ -10,6 +11,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
     "@netlify/functions": "^4.2.4",
+    "@tailwindcss/postcss": "^4.1.12",
     "astro": "^5.13.4",
     "astro-pagefind": "^1.8.4",
     "astro-seo": "^0.8.4",
