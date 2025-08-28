@@ -25,19 +25,19 @@ const currentPath = pathname.slice(1).replaceAll("/","");
   </div>
   <div class="mx-auto max-w-contain">
     <div class="text-white header--top py-11">
-      <a class="normal-case shadow-lg header--logo hover:text-underline" href={siteUrl}>
+      <a class="normal-case shadow-lg header--logo hover:text-underline lovechild" href={siteUrl}>
         {logo ? (
           <img class="w-6/8" src={logo} />
         ) : (
           <span class="text-7xl font-display text-secondary">{title || null}</span>
         )}
       </a>
-      {subtitle && <p class="mt-2 text-3xl font-display">{subtitle}</p>}
+      {subtitle && <p class="mt-2 text-3xl font-display lovechild">{subtitle}</p>}
     </div>
   </div>
   <div class="justify-start flex-1 mx-auto navbar max-w-contain">
     {menuItems?.length > 0 && (
-      <ul class="overflow-y-auto header--navigation">
+      <ul class="flex flex-row overflow-y-auto">
         {menuItems.map(item => (
           <li class="text-white">
             <a class={
