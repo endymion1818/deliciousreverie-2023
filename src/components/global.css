@@ -3,16 +3,13 @@
 @plugin "daisyui/theme" {
   name: "coffee";
   default: true;
-  /* --color-primary: "#333333";
-  --color-secondary: "#f7ebc1";
-  --color-base: "red"; */
   --color-base-100: "#331f33";
   --color-base-200: "#333333";
   --color-base-300: "orange";
   --color-base-content: "#f7ebc1";
   --color-primary: "#333333";
   --color-primary-content: "#f7ebc1";
-  --color-secondary: "wheat";
+  --color-secondary: "#f7ebc1";
   --color-secondary-content: "yellow";
   --color-accent: "#331f33";
   --color-accent-content: "#331f33";
@@ -29,7 +26,7 @@
 :root {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 h1,

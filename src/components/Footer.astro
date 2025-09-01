@@ -22,16 +22,16 @@ const { footerMenuItems, logo, title, socialLinks } = Astro.props;
 ---
 <footer class="text-white bg-accent">
   <div class="py-10 mx-auto max-w-contain">
-    <div class="pt-6 mb-10 footer gap-x-16">
-      <div>
-        <a class="items-center grid-flow-col lovechild" href={siteUrl}>
+    <div class="flex pt-6 mb-10 gap-x-16">
+      <div class="md:w-1/2">
+        <a class="items-center grid-flow-col text- lovechild" href={siteUrl}>
           {logo ? <img class="max-w-xs" src={logo}> : <span class="text-3xl tracking-wide font-display text-secondary">{title}</span>}
         </a>
         <p>Delicious Reverie is the blog of Benjamin Read. © Some rights are reserved.</p>
         <p><a class="hover:underline" href="/guestbook">Have some feedback? Please visit the guestbook</a>.</p>
       </div>
       {footerMenuItems?.map(itemGroup => (
-          <div>
+          <div class="md:w-1/4">
             <span class="footer-title">{itemGroup.title}</span>
             <ul class="list-inside lg:flex lg:gap-2 lg:flex-col">
             {itemGroup.items.map(item => (
@@ -41,10 +41,10 @@ const { footerMenuItems, logo, title, socialLinks } = Astro.props;
           </div>
       ))}
     </div>
-    <div class="items-center footer bg-grey-900 text-neutral-content">
-      <h3 class="text-xl">Where you can find me:</h3>
+    <div class="items-center bg-grey-900 text-neutral-content">
+      <h3 class="mb-4 text-xl">Where you can find me:</h3>
       {socialLinks ? (
-        <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <div class="flex gap-4 md:place-self-center md:justify-self-end">
           {socialLinks.linkedin && (
             <a href={socialLinks.linkedin.link} title={socialLinks.linkedin.title}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
