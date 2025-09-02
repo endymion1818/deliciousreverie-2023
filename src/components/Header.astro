@@ -20,7 +20,7 @@ const currentPath = pathname.slice(1).replaceAll("/","");
 <header class="bg-accent header">
   <div class="mx-auto">
     <div class="p-2 bg-slate">
-      <a href="#main" class="block w-40 p-4 normal-case skip-links btn btn-ghost border-secondary text-secondary">Skip links</a>
+      <a href="#main" class="block w-40 p-2 normal-case skip-links btn btn-ghost border-secondary text-secondary">Skip links</a>
     </div>
   </div>
   <div class="mx-auto max-w-contain">
@@ -44,7 +44,7 @@ const currentPath = pathname.slice(1).replaceAll("/","");
               `btn
               ${
                 // @ts-ignore
-                item.link.replaceAll("/", "") === currentPath ? `` : `btn-ghost`
+                item.link.replaceAll("/", "") === currentPath ? `btn-dash` : `btn-ghost`
               }
               normal-case`}
               href={item.link}

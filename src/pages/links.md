@@ -4,7 +4,7 @@ description: "A links page?! This is a bit old school, isn't it?!"
 layout: ../layouts/PageLayout.astro
 ---
 
-A links page?! This is a bit old school, isn't it? #
+A links page?! This is a bit old school, isn't it?
 
 I don't believe it is. I've seen the world wide web morph from AOL and eWorld to Angelfire and Geocites, to a massive conglomeration of independent city-states, to the control of the Megacorporations of today. I fear the loss of the World Wide Web as Sir Tim saw it:— a vast store of interconnected knowledge.
 

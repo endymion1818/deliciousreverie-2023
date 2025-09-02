@@ -26,10 +26,10 @@ const postsInDateOfPublished = allPosts?.sort((a, b) => {
               {post.data.datePublished && <p class="mb-2 text-lg">{post.data.title}</p>}
               <p class="mb-2 text-sm">{post.data.description}</p>
               {post.data?.tags?.length > 0 && (
-                <div class="items-center justify-end mt-5 card-actions">
+                <div class="flex flex-row items-center justify-end gap-2 mt-5 mb-4 card-actions">
                   <span>This article is about:</span>
                   {post.data.tags?.map(tag => (
-                    <a href={`/tags/${tag}/`} class="badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+                    <a href={`/tags/${tag}/`} class="text-xl badge badge-outline">{tag}</a>
                   ))}
                 </div>
               )}
