@@ -22,9 +22,9 @@ const alphabeticalTags = tags.sort((a, b) => {
     <div class="my-5">
       <h1 class="mb-4 text-4xl">All Topics:</h1>
       <p class="mb-6 text-xl">This is a list of all articles published on this by topic, <a href="/posts" class="underline">Click here to see articles by date published.</a>.</p>
-      <div class="flex flex-row gap-2">
+      <div class="flex flex-row flex-wrap gap-1">
         {alphabeticalTags.map(tag => (
-        <a href={`#${tag.title}`} class="m-2 badge badge-outline">{tag.title}</a>
+        <a href={`#${tag.title}`} class="badge badge-outline">{tag.title}</a>
       ))}
       </div>
       <h2 class="mt-6 text-4xl">All articles:</h2>

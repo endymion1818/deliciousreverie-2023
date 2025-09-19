@@ -54,7 +54,7 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       </p>
   )}
   <hr class="mb-4 bg-transparent border-b border-b-slate-400 border-t-transparent">
-  <article class="[&_*]:mb-2 [&_h2]:mt-4 [&_h3]:mt-4 [&_h4]:mt-4 [&_pre]:rounded-lg [&_pre]:p-4 [&_code]:text-white  [&_ul]:list-disc [&_ul]:list-inside [&_a]:underline [&_a]:text-slate-700">
+  <article class="[&_*]:mb-4 [&_h2]:mt-8 [&_h3]:mt-8 [&_h4]:mt-8 [&_pre]:rounded-lg [&_pre]:p-4 [&_code]:text-white [&_ul]:list-disc [&_ul]:list-inside [&_a]:underline [&_a]:text-slate-700 text-xl [&_code>pre]:p-4 [&_code]:not-[pre]:text-slate-700 [&_ol]:list-decimal [&_ol]:list-inside">
     <slot />
   </article>
   {frontmatter?.tags?.length > 0 && (
