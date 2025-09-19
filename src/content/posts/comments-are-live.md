@@ -20,7 +20,7 @@ And the ever increasing mass of AI generated goop? They can stay outside. We don
 I don't feel bad about this. It's kind of exciting to wake up and find the landscape around you quite changed.
 
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 
 ```plaintext

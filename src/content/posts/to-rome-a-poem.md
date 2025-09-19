@@ -16,7 +16,7 @@ I wrote it after I read [Andrew Motion's biography of John Keats](https://www.a
 
 ### To Rome [#](https://deliciousreverie.co.uk/posts/to-rome-a-poem/#to-rome)
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 ```plaintext
 It's a rose you've given, and a rose I'll take

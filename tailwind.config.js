@@ -1,8 +1,13 @@
-const { join } = require("path")
+import { join } from "path"
+import typography from '@tailwindcss/typography'
+import daisyui from 'daisyui'
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    join(__dirname, 'src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'),
+    join(process.cwd(), './src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'),
+    join(process.cwd(), 'public/styles/global.css'),
+
   ],
   theme: {
     container: {
@@ -13,19 +18,7 @@ module.exports = {
     }
   },
   plugins: [
-    require("daisyui"),
-    require('@tailwindcss/typography'),
+    typography,
+    daisyui
   ],
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#333",
-          secondary: "#f7ebc1",
-          accent: "#331f33",
-        },
-      },
-      "luxury",
-    ],
-  },
 }

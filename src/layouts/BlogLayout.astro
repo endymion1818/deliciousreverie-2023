@@ -35,6 +35,9 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       'template[name="submission-failure"]'
       );
   
+      if(!(submissionFailureTemplate instanceof HTMLTemplateElement)) return;
+      if(!(submissionSuccessTemplate instanceof HTMLTemplateElement)) return;
+
       content?.appendChild(
       isSuccessful
           ? submissionSuccessTemplate?.content
@@ -43,27 +46,27 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
   });
   </script>
 <Layout pageTitle={frontmatter.title} canonical={frontmatter.canonicalLink} pageDescription={frontmatter.description}>
-  <h1 class="mb-4 text-5xl font-black text-zinc-800">{frontmatter.title}</h1>
+  <h1 class="my-4 text-5xl font-black text-zinc-800">{frontmatter.title}</h1>
   {frontmatter.datePublished && <p class="my-2">Published on <FormatDate datetime={frontmatter.datePublished}/></p>}
   {frontmatter?.tags?.length > 0 && (
-      <p class="mb-4">
+      <p class="flex flex-row gap-2 mb-4">
         <span>This article is about:</span>
         {frontmatter.tags?.map(tag => (
-          <a href={`/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+          <a href={`/tags/${tag}/`} class="badge badge-outline">{tag}</a>
         ))}
       </p>
   )}
   <hr class="mb-4 bg-transparent border-b border-b-slate-400 border-t-transparent">
-  <article class="prose prose-xl prose-headings:mb-4 text-slate-900 prose-headings:text-slate-900 prose-a:text-slate-900 prose-li:marker:text-slate-900 prose-strong:text-slate-800 prose-code:text-slate-900 prose-blockquote:text-slate-800">
+  <article class="[&_*]:mb-4 [&_h2]:mt-8 [&_h3]:mt-8 [&_h4]:mt-8 [&_pre]:rounded-lg [&_pre]:p-4 [&_code]:text-white [&_ul]:list-disc [&_ul]:list-inside [&_a]:underline [&_a]:text-slate-700 text-xl [&_code>pre]:p-4 [&_code]:not-[pre]:text-slate-700 [&_ol]:list-decimal [&_ol]:list-inside">
     <slot />
   </article>
   {frontmatter?.tags?.length > 0 && (
-    <p class="mt-6 mb-4">
+    <div class="flex flex-row gap-2 mt-6 mb-4">
     <span>Read more articles about:</span>
     {frontmatter.tags?.map(tag => (
-      <a href={`/tags/${tag}/`} class="inline-block m-1 badge badge-outline hover:badge-primary hover:text-white">{tag}</a>
+      <a href={`/tags/${tag}/`} class="inline-block badge badge-outline">{tag}</a>
     ))}
-    </p>
+    </div>
   )}
   <h2 class="mb-2 text-2xl font-bold">Comments</h2>
   {!comments.length && <p>No comments yet. Be the first to comment!</p>}
@@ -74,6 +77,6 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       <p>{comment.body}</p>
     </div>
   ))}
-  {slug && <SubmitComment slug={slug} domain={Astro.url} />}
+  {slug && <SubmitComment slug={slug} domain={Astro.url} classes="mb-6" />}
 </Layout>
 

@@ -11,7 +11,7 @@ I admit, some poetry is relatively straightforward: it's organised similarly to 
 
 Some poems, and some poets, choose to organise their work in more ... unusual ways. Take Keat's Ode on a Grecian Urn, which has meaningful indentations which I think really helps you to appreciate the lyrical cadence of the poem:  
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 ```plaintext
 Thou still unravish'd bride of quietness,

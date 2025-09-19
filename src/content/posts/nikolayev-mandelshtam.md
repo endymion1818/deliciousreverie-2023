@@ -9,7 +9,7 @@ Since reading Boris Pasternak's Doctor Zhivago, I've been deeply moved by his po
 
 Philip Nikolayev has a wonderful command of the English language, and his translations of Mandelshtam's poems is really delightful, particularly in his use of alliteration. Here's my favourite one:
 
-<div class="[&>pre]:!ml-0 [&>pre]:!mr-0 [&>pre]:!bg-transparent">
+<div class="[&>pre]:ml-0! [&>pre]:mr-0! [&>pre]:bg-transparent!">
 
 ```plaintext
 Insomnia, Homer, taut sails: my lips have lisped

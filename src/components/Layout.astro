@@ -5,13 +5,6 @@ import { SEO } from 'astro-seo'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
 
-interface Props {
-  pageTitle: string
-  pageDescription?: string
-  canonical?: string
-  slug?: string
-}
-
 import {
   title,
   subtitle,
@@ -20,7 +13,7 @@ import {
   socialLinks, 
 siteUrl} from '../../sitedata';
 
-const { pageTitle, pageDescription, canonical } = Astro.props
+const { pageTitle, pageDescription, canonical, classes } = Astro.props
 
 const seoTitle = pageTitle ? `${pageTitle} - ${title}`: title
 
@@ -43,21 +36,18 @@ const seoProps = {
       locale: 'en-GB',
       siteName: title,
     }
-  },
-  twitter: {
-    card: 'summary',
-    site: '@muzzlehatch_',
-    creator: '@muzzlehatch_',
-  },
+  }
 }
+
 const pathname = new URL(Astro.request.url).pathname;
+
+import "./global.css";
 ---
-<html lang="en" data-theme="mytheme">
+<html lang="en" data-theme="coffee">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/styles/global.css">
   <link rel="preload" href="/fonts/Lovechild-Regular.woff2" as="font" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="alternate" type="application/rss+xml" title="RSS feed for deliciousreverie.co.uk" href="/rss.xml" />
@@ -74,7 +64,7 @@ const pathname = new URL(Astro.request.url).pathname;
         <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }}  />
       </div>
     </div>
-    <main class="pt-6 pb-10 mx-auto max-w-contain" id="main">
+    <main class=`pt-6 pb-10 mx-auto max-w-contain` id="main">
       <slot />
     </main>
     <div class="text-white prefooter bg-primary py-11">
