@@ -35,6 +35,9 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       'template[name="submission-failure"]'
       );
   
+      if(!(submissionFailureTemplate instanceof HTMLTemplateElement)) return;
+      if(!(submissionSuccessTemplate instanceof HTMLTemplateElement)) return;
+
       content?.appendChild(
       isSuccessful
           ? submissionSuccessTemplate?.content
