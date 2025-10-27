@@ -11,7 +11,7 @@ Javatari = {
   PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
 
   // Full or relative URL of Media files to load
-  CARTRIDGE_URL:                  "/javatari/adventure.a26",
+  CARTRIDGE_URL:                  "/javatari/adventure.bin",
   AUTODETECT_URL:                 "",
   STATE_URL:                      "",
 
