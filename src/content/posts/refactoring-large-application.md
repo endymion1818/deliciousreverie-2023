@@ -3,7 +3,7 @@ title: "Lessons from refactoring a large dashboard application"
 description: "Over the past few months I've been refactoring a large application. I learned a few things from doing it, and thought they might help someone else."
 tags: 
   - javascript
-datePublished: 2025-12-01
+datePublished: 2025-11-16
 ---
 
 Over the past few months I've been refactoring a large application written in vanilla JavaScript. I learned a few things from doing it, and thought they might help someone else.
