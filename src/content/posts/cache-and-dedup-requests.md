@@ -1,11 +1,12 @@
 ---
-title: "How to Cache and Dedup Fetch Requests"
+title: "How to Cache and De-duplicate Fetch Requests"
 description: "If you have an application which makes many requests to the same API you can use a key to cache and de-duplicate requests. Here's how to do it."
-tags: 
+tags:
   - javascript
 datePublished: 2025-11-18
 ---
-If you have an application which makes many requests to the same API you can use a key to cache and de-duplicate requests. 
+
+If you have an application which makes many requests to the same API you can use a key to cache and de-duplicate requests.
 
 ## Why might this happen?
 
@@ -15,7 +16,7 @@ This is what React does: it hoists the state to a separate layer which can then 
 
 But you know that already.
 
-If you're using vanilla JavaScript you have some other options. You can use [TanStack Store](https://tanstack.com/store/latest/docs/framework/react/examples/simple) or some other third party. 
+If you're using vanilla JavaScript you have some other options. You can use [TanStack Store](https://tanstack.com/store/latest/docs/framework/react/examples/simple) or some other third party.
 
 But where's the fun in that?
 
@@ -24,10 +25,10 @@ But where's the fun in that?
 Imagine we have a component that renders a chart. It should fetch data from our API to populate that data.
 
 ```javascript
-import retrieveData from "@api/retrieve-data"
+import retrieveData from "@api/retrieve-data";
 
 async function myChart() {
-  const totals = await retrieveData("getTotals")
+  const totals = await retrieveData("getTotals");
 }
 ```
 
@@ -44,16 +45,14 @@ What would you do?
 I created a CustomEvent to enable my components to re-render when a filter changed:
 
 ```javascript
-import retrieveData from "@api/retrieve-data"
+import retrieveData from "@api/retrieve-data";
 
 async function myChart() {
-  const totals = await retrieveData("getTotals")
+  const totals = await retrieveData("getTotals");
 }
-window.addEventListener(
-  "refreshState", 
-  () => myChart()
-)
+window.addEventListener("refreshState", () => myChart());
 ```
+
 This allows me to keep my component focused on the UI and abstract state to the `retrieveData` component.
 
 Let's take a look at that now.
@@ -62,7 +61,7 @@ Let's take a look at that now.
 
 This is the basic implementation I ended up with.
 
-I've leant on the URL query params as a central location to store updated state. That way I can de-couple the user input filters from the fetch request and still have them easily accessible:   
+I've leant on the URL query params as a central location to store updated state. That way I can de-couple the user input filters from the fetch request and still have them easily accessible:
 
 ```javascript
 async function retrieveData(requestType, args) {
@@ -92,11 +91,11 @@ async function retrieveData(requestType, args) {
 
 So you can see we're setting a cache and returning that cached data if it still exists, otherwise fetching from the API and storing that data.
 
-This is a good start, but it's going to get more complex. 
+This is a good start, but it's going to get more complex.
 
-Why? 
+Why?
 
-Because it takes time for localStorage to save items. Meaning if we initiate 15 requests concurrently, each one could make an API  request when it doesn't need to.
+Because it takes time for localStorage to save items. Meaning if we initiate 15 requests concurrently, each one could make an API request when it doesn't need to.
 
 Let's dive into how we de-duplicate those requests.
 
@@ -127,22 +126,19 @@ async function retrieveData(requestType, args) {
   if(cachedData) {
     return cachedData;
   }
-  
-  try {
-    // 3. IF not, get fresh data
-    const freshData = await callApi(requestType, { user, from: dateFromFilter to: dateToFilter });
-    
-    // Then set everything else up
-    inFlightRequests.set(cacheKey, retrievedData);
 
-    localStorage.setItem(
-      cacheKey,
-      JSON.stringify(freshData)
-    )
-    return freshData;
-  } finally {
-    inFlightRequests.delete(cacheKey);
-  }
+  // 3. IF not, get fresh data
+  const freshData = await callApi(requestType, { user, from: dateFromFilter to: dateToFilter });
+
+  // Then set everything else up
+  inFlightRequests.set(cacheKey, retrievedData);
+
+  localStorage.setItem(
+    cacheKey,
+    JSON.stringify(freshData)
+  )
+
+  inFlightRequests.delete(cacheKey);
 
   return freshData;
 }
@@ -150,11 +146,11 @@ async function retrieveData(requestType, args) {
 
 The `inFlightRequests` lives in the module scope which means it persists when the function is called.
 
-It's also a `Map`, in which each item is stored by key-value pairs in which keys are unique. You can't have two keys the same in a `Map`. 
+It's also a `Map`, in which each item is stored by key-value pairs in which keys are unique. You can't have two keys the same in a `Map`.
 
 [More details here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
-## Expiring the Cache 
+## Expiring the Cache
 
 Last bit is how to make sure we're not returning stale data. This is based on a few assumptions and might be different in your case. But I've gone for 30 seconds.
 
@@ -169,21 +165,21 @@ function retrieveData() {
   // ...
 
   // Not using Temporal? You should look into that.
-  const now = Temporal.Now.instant()
+  const now = Temporal.Now.instant();
 
   localStorage.setItem(
     cacheKey,
-    JSON.stringify({ 
-      timestamp: now, 
-      data 
-    }),
+    JSON.stringify({
+      timestamp: now,
+      data,
+    })
   );
   if (cachedData) {
     const parsedCachedData = JSON.parse(cachedData);
     const thirtySecondsAgo = now.subtract({ seconds: 30 });
 
     if (cachedTime <= thirtySecondsAgo) {
-      localStorage.removeItem(cacheKey)
+      localStorage.removeItem(cacheKey);
       return;
     }
     return parsedCachedData.data;
@@ -195,3 +191,8 @@ So now we have a timestamp which we can use to decide if the localStorage item i
 
 A word on Temporal. I'm using a polyfill alongside the browser implementation just now. It'll be implemented in everywhere else other than Firefox soon [now it's at Stage 3](https://tc39.es/proposal-temporal/#sec-temporal-objects).
 
+## Conclusion
+
+Being able to cache and de-duplicate requests has reduced API calls on certain pages of my application from 13 to 3.
+
+Like I said at the start, hopefully you won't ever have to implement this yourself. But for those of us who are implementing complex applications in vanilla JS, I hope this helps.
