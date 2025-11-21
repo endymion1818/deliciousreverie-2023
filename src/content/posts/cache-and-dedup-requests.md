@@ -12,7 +12,7 @@ If you have an application which makes many requests to the same API you can use
 
 Ideally you shouldn't encounter this situation. Your data layer or state should be a separate entity which components can subscribe to.
 
-This is what React does: it hoists the state to a separate layer which can then be passed to each component.
+This is what React Context and similar solutions do: they hoist the state to a separate layer which can then be passed to each component.
 
 But you know that already.
 
@@ -42,7 +42,18 @@ Add to that there are several different pages to this dashboard, each of which i
 
 What would you do?
 
-I created a CustomEvent to enable my components to re-render when a filter changed:
+I created a CustomEvent to enable my components to re-render when a filter changed.
+
+Dispatching the event from filter:
+
+```javascript
+filterElement.addEventListener("change", () => {
+  // ... (other event stuff)
+  window.dispatchEvent(new CustomEvent("refreshState"))
+});
+```
+
+Reacting to it in the components:
 
 ```javascript
 import retrieveData from "@api/retrieve-data";
@@ -53,7 +64,7 @@ async function myChart() {
 window.addEventListener("refreshState", () => myChart());
 ```
 
-This allows me to keep my component focused on the UI and abstract state to the `retrieveData` component.
+This calls the chart function again when the filter changes. It allows me to keep my component focused on the UI and abstract state to the `retrieveData` component.
 
 Let's take a look at that now.
 
@@ -189,7 +200,7 @@ function retrieveData() {
 
 So now we have a timestamp which we can use to decide if the localStorage item is stale and discard it.
 
-A word on Temporal. I'm using a polyfill alongside the browser implementation just now. It'll be implemented in everywhere else other than Firefox soon [now it's at Stage 3](https://tc39.es/proposal-temporal/#sec-temporal-objects).
+A word on Temporal. I'm using a polyfill alongside the browser implementation just now. It'll be implemented soon [now it's at Stage 3](https://tc39.es/proposal-temporal/#sec-temporal-objects).
 
 ## Conclusion
 
