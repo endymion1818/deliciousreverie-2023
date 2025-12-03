@@ -81,6 +81,10 @@ thing.style.display = 'block'; // Error: property style is not available on type
 
 The querySelector method annoyingly returns an Element type, not HTMLElement, so every time I need to set styles via JavaScript (although it doesn't happen often), I have to do a ts-ignore-next-line. Again another situation where casting would have come in really handy.
 
+## How?
+
+If you're looking for an explanation of how to implement this in your project, head over to Jared White's That HTML Blog website, [his article called "The Nuances of JavaScript Typing using JSDoc" explains his method for how to use TypeScript with JSDoc](https://thathtml.blog/2025/12/nuances-of-typing-with-jsdoc/).
+
 ## Conclusion
 
 All in all, I'm super happy JSDoc exists. Without it, I would be getting super frustrated because there would be no types - and therefore no documentation - for our codebases. However, I'll be even happier if we can make the switch to TypeScript syntax one day.
