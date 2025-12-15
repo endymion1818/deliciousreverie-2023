@@ -29,7 +29,7 @@ const { footerMenuItems, logo, title, socialLinks } = Astro.props;
           {logo ? <img class="max-w-xs" src={logo}> : <span class="text-3xl tracking-wide font-display text-secondary">{title}</span>}
         </a>
         <p>Delicious Reverie is the blog of Benjamin Read. © Some rights are reserved.</p>
-        <p><a class="hover:underline" href="/guestbook">Have some feedback? Please visit the guestbook</a>.</p>
+        <p><a class="underline hover:text-gray-300" href="/guestbook">Have some feedback? Please visit the guestbook</a>.</p>
       </div>
       {footerMenuItems?.map(itemGroup => (
           <div class="md:w-1/4">
