@@ -40,6 +40,10 @@ export let footerMenuItems = [{
   }, {
     title: 'Guestbook',
     link: '/guestbook/'
+  }, {
+    title: 'Agency',
+    link: 'https://rhedyn.cymru',
+    external: true
   }]
 }, {
   title: 'Menu',

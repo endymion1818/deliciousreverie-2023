@@ -5,7 +5,8 @@ interface Props {
     title: string,
     items: Array<{
       title: string,
-      link: string
+      link: string,
+      external?: boolean
     }>
   }>;
   logo?: string;
@@ -28,14 +29,16 @@ const { footerMenuItems, logo, title, socialLinks } = Astro.props;
           {logo ? <img class="max-w-xs" src={logo}> : <span class="text-3xl tracking-wide font-display text-secondary">{title}</span>}
         </a>
         <p>Delicious Reverie is the blog of Benjamin Read. © Some rights are reserved.</p>
-        <p><a class="hover:underline" href="/guestbook">Have some feedback? Please visit the guestbook</a>.</p>
+        <p><a class="underline hover:text-gray-300" href="/guestbook">Have some feedback? Please visit the guestbook</a>.</p>
       </div>
       {footerMenuItems?.map(itemGroup => (
           <div class="md:w-1/4">
             <span class="footer-title">{itemGroup.title}</span>
             <ul class="list-inside lg:flex lg:gap-2 lg:flex-col">
             {itemGroup.items.map(item => (
-              <li><a href={item.link} class="-ml-4 lg:-ml-2 btn btn-ghost hover:border-white">{item.title}</a></li>
+              <li><a href={item.link} class="-ml-4 lg:-ml-2 btn btn-ghost hover:border-white">{item.title} {item.external ? (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16px"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+              ) : null}</a></li>
             ))}
             </ul>
           </div>
