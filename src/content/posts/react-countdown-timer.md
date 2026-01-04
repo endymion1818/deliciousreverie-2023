@@ -7,7 +7,7 @@ datePublished: 2026-01-04
 ---
 As the [Temporal API is now stable at Stage 3](https://github.com/tc39/proposal-temporal), and a specification compatible polyfill is available, I thought I would use Temporal to build a countdown timer in a React project.
 
-I had previously build this countdown timer without React, but since the API I was using exposed [durations in ISO 8601 compatible strings](https://en.wikipedia.org/wiki/ISO_8601) it meant I was already [pulling in another library](https://www.npmjs.com/package/tinyduration) to handle those. So I thought I might as well utilise the [Temporal polyfill](https://www.npmjs.com/package/@js-temporal/polyfill) instead.
+I had previously build this countdown timer without Temporal, but since the API I was using exposed [durations in ISO 8601 compatible strings](https://en.wikipedia.org/wiki/ISO_8601) it meant I was already [pulling in another library](https://www.npmjs.com/package/tinyduration) to handle those. So I thought I might as well utilise the [Temporal polyfill](https://www.npmjs.com/package/@js-temporal/polyfill) instead.
 
 
 The API is pretty straightforward as you might imagine
@@ -79,7 +79,7 @@ return (
 
 If this seems a little verbose, it is. `tinyduration` only returns units of time if the parsed data has any, meaning you have to calculate around it. Also the library is not typed, meaning I had to implement my own.
 
-If you're reading this you're proably familiar with the library but it doesn't do much at all apart from provide a duration until the end time you provide it.
+If you're reading this you're probably familiar with the `countdown` library. In all honesty it doesn't do much at all apart from provide a duration until the end time you provide it.
 
 This can all be achieved much more succinctly in the Temporal API.
 
@@ -93,7 +93,7 @@ const [remainingTime, setRemainingTime] = useState<Temporal.Duration | null>(
 )
 ```
 
-The `endTime` memoised calculation is fairly similar, only using Temporal is a it more clear about what's happening:
+The `endTime` memoised calculation is fairly similar, only using Temporal is a bit more clear about what's happening:
 
 ```javascript
 const endTime = useMemo(() => {
@@ -107,9 +107,9 @@ const endTime = useMemo(() => {
 ```
 The first change here is to convert the start time to a [Temporal Instant object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant).
 
-Parsing the `duration` can be done simply just bu using a `Temporal.Duration`, which natively supports the ISO 8601 format, therefore calculating the total is a matter of converting the converted `duration` to miliseconds, and then using [`.add()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/add) to add one to the other.
+`Temporal.Duration` natively supports the ISO 8601 format, therefore calculating the total is a matter of converting the `duration` to milliseconds, and then using [`.add()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/add) to calculate the sum.
 
-So although `endTime` is slightly more verbose, we didn't have all the setup and its easier to see what's going on. I much prefer my code that way since it makes it much easier for other developers to pick up later on.
+So although `endTime` itself slightly more verbose, we didn't have all the setup and its easier to see what's going on. I much prefer my code that way since it makes it much easier for other developers to pick up later on.
 
 Now for the `useEffect()` hook:
 
@@ -157,7 +157,7 @@ return (
 )
 ```
 
-Temporal doesn't provide formatting operations suitable so we need `Math.max()` to ensure we don't go into negative values.
+Temporal doesn't provide formatting operations suitable for this situation so we need `padStart()` and then `Math.max()` to ensure we don't go into negative values.
 
 I'm using the raw data to set the `datetime` attribute as ISO8601 formatted string, then formatting it again to render the content of the element.
 
@@ -167,7 +167,7 @@ The function is now much shorter (56 to 83 lines) but that isn't the biggest win
 
 It's also much clearer. We're not using mathematical operations on milliseconds, instead treating times as their own separate entities. And I think the code is much  more readable too.
 
-My only concern with this component is it doesn't announce to screen reader users when the time counts down. And we wouldn't want to annoy the user more by announcing every second.
+My only concern with this component is it doesn't announce to screen reader users when the time counts down. However we wouldn't want to annoy the user more by announcing every second.
 
 An improvement could be that we add logic to announce the time left at meaningful intervals such as "10 minutes left", "1 minute left" etc.
 
