@@ -70,7 +70,6 @@ const countdownSeconds = String(timespan?.seconds ?? 0).padStart(2, '0')
 return (
   <time 
     dateTime={`PT${countdownHours}H${countdownMinutes}M${countdownSeconds}S`} 
-    className="text-lg font-semibold"
   >
     {countdownHours}:{countdownMinutes}:{countdownSeconds}
   </time>
@@ -148,7 +147,6 @@ const countdownSeconds = Math.max(0, remainingTime?.seconds ?? 0)
 return (
   <time
     dateTime={`PT${countdownHours}H${countdownMinutes}M${countdownSeconds}S`}
-    className="text-lg font-semibold"
   >
     {String(countdownHours).padStart(2, '0')}:
     {String(countdownMinutes).padStart(2, '0')}:
