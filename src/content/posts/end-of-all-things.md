@@ -39,4 +39,4 @@ If I end up doing something _I_ can be proud of, I'll blog about it. I've got on
 
 However, in general expect to see more articles about my personal interests.
 
-Other than that, I'm not sure what else to say. Life goes on, I guess.
+I'm feeling positive about the changes to my life. I hope whatever you're doing, or choose to do in the future, you're happy with it too.
