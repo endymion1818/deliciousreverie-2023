@@ -14,13 +14,13 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       );
       // return early
       if (!formHandlerResponse) return;
-  
+
       // was it successful as a boolean instead of a string
       const isSuccessful = formHandlerResponse === "true";
-  
+
       // grab the original form
       const content = document.getElementById("contact-form");
-  
+
       // ahh HTML templates. What joy.
       /**
        * @type {HTMLTemplateElement}
@@ -34,7 +34,7 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       const submissionFailureTemplate = document.querySelector(
       'template[name="submission-failure"]'
       );
-  
+
       if(!(submissionFailureTemplate instanceof HTMLTemplateElement)) return;
       if(!(submissionSuccessTemplate instanceof HTMLTemplateElement)) return;
 
@@ -57,7 +57,7 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
       </p>
   )}
   <hr class="mb-4 bg-transparent border-b border-b-slate-400 border-t-transparent">
-  <article class="[&_*]:mb-4 [&_h2]:mt-8 [&_h3]:mt-8 [&_h4]:mt-8 [&_pre]:rounded-lg [&_pre]:p-4 [&_code]:text-white [&_ul]:list-disc [&_ul]:list-inside [&_a]:underline [&_a]:text-slate-700 text-xl [&_code>pre]:p-4 [&_code]:not-[pre]:text-slate-700 [&_ol]:list-decimal [&_ol]:list-inside">
+  <article class="[&_*]:mb-4 [&_h2]:mt-8 [&_h3]:mt-8 [&_h4]:mt-8 [&_pre]:rounded-lg [&_pre]:p-4 [&_code]:text-white [&_ul]:list-disc [&_ul]:list-inside [&_a]:underline [&_a]:text-slate-700 text-xl [&_code>pre]:p-4 [&_code]:not-[pre]:text-slate-700 [&_ol]:list-decimal [&_ol]:list-inside [&_blockquote]:border-l-4 [&_blockquote]:border-slate-400 [&_blockquote]:pl-4 [&_blockquote]:italic">
     <slot />
   </article>
   {frontmatter?.tags?.length > 0 && (
@@ -79,4 +79,3 @@ const dateFormatOptions = {timeZone: 'UTC',   weekday: 'long', year: 'numeric', 
   ))}
   {slug && <SubmitComment slug={slug} domain={Astro.url} classes="mb-6" />}
 </Layout>
-

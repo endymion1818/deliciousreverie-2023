@@ -16,18 +16,8 @@ const latestPosts = allPosts
       new Date(a.data.datePublished).getTime()
     );
   })
-  .slice(0, 2);
+  .slice(0, 3);
 
-const leadershipPosts = allPosts.filter((post) => {
-  return post.data.tags.some((tag) => tag === "leadership");
-  })
-  ?.sort((a, b) => {
-      return (
-        new Date(b.data.datePublished).getTime() -
-        new Date(a.data.datePublished).getTime()
-      );
-    })
-  .slice(0, 2);
 ---
 
 <script
@@ -60,18 +50,6 @@ const leadershipPosts = allPosts.filter((post) => {
       </li>
     )
   }
-  </ul>
-  <h2 class="text-3xl tracking-wide">Latest articles about Leadership:</h2>
-  <ul class="pl-2 mb-12 md:pl-6">
-    {
-      leadershipPosts?.length > 0 && (
-        <li class="grid grid-cols-1 gap-4">
-          {leadershipPosts.map((post) => (
-            <ArticleCard post={post} showTags={false} />
-          ))}
-        </li>
-      )
-    }
   </ul>
   <p class="mt-6 text-lg">So far, {allPosts.length} total articles published.</p>
   <a class="my-6 normal-case btn btn-primary hover:bg-accent" href="/tags/"
