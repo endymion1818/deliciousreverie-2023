@@ -1,9 +1,9 @@
 ---
-title: "Ends of All Things"
+title: "Ends of Many Things"
 description: "Seismic shifts in my life have meant this blog is becoming more about my personal interests. And I'm happy about that. I hope you will be along for the ride."
 tags: 
   - personal
-datePublished: 2026-06-11
+datePublished: 2026-06-14
 ---
 I'm still reeling from this, so I hope it comes across with a sort of journalistic stoicism.
 
@@ -19,7 +19,7 @@ There's a lot to achieve in this space, especially with small to medium enterpri
 
 And I'm still glad that I can do that and other work that contributes to our household income. But things are still very uncertain, and I've had to diversify my work to keep money coming in.
 
-I know I'm not the only one; the tech industry is contracting massively. In some cases because of the _promise_ of AI, although that's beginning to look more sketchy now.
+I know I'm not the only one; the tech industry is contracting massively. In many cases because of the _promise_ of AI, although that's beginning to look more shaky now.
 
 It's not bad at all. My blood pressure has certainly improved, and my friends say I look a lot happier. Not having impossible deliverables and difficult individuals to work with has certainly helped in that regard. But also recently I stopped by a lovely small town called Llandrillo, which has a pleasant river flowing through it. I ate my lunch in silence, listening to the flow of the river, watching fish jumping and insects skating. I could get used to this, I thought.
 
