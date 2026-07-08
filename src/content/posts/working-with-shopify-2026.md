@@ -5,9 +5,13 @@ tags:
   - development
 datePublished: 2026-07-08
 ---
-I shouldn't be surprised really. I dislike working with hefty platforms that target consumers directly. This is because they often do so at the expense of a customers' more advanced requirements.
+I shouldn't be surprised really. I dislike working with hefty platforms that target consumers directly. This is because they often do so at the expense of  more advanced requirements that someone may need further down the line.
 
-In this case the requirements were to integrate a 3rd party API into a single Shopify online store. And it as been a lot more complicated than I every thought.
+In this case the requirements were to integrate a 3rd party API into a single Shopify online store.
+
+The core premise was to keep the store's 7,000 products in sync with both systems.
+
+And it as been a lot more complicated than I ever thought it could be.
 
 This is aside from the fact that the API I'm integrating with is old ... I'm talking a SOAP API here people - in 2026. In my entire 15 year career, it's the first time I've had to integrate with one.
 
@@ -41,21 +45,23 @@ This made it incredibly difficult to debug my issues especially when combined wi
 
 ### 2. Opaque publish and approval flow
 
-Once my app was ready, I tried to publish it so that my client could install the app on their shop (it was previously running in development mode only on my shop). This failed because I didn't have an install link.
+Once my app was ready, I tried to publish it so that my client could install the app on their shop (it was previously running only in development mode only on my dev shop). I found I could not publish it because I didn't have an install link.
 
-It took me several days and using various forums to discover that I had published my app on my developer account instead of having a separate _partner_ account.
+It took me several days and using various forums to discover that I had published my app on my developer account instead of having a separate _partner_ account. Unless you use your partner account, you cannot publish your app onto another store in a separate account.
 
-Once that hurdle was overcome, I was faced with no clear guidance on how to move my private app onto the partner portal. I spent quite a while researching how this might be achieved, but didn't find any help.
+It makes sense to keep these separate, but not knowing this was a necessary step took me a significant time to rectify.
+
+I found I was faced with no clear guidance on how to move my private app onto the partner portal. I spent quite a while researching how this might be achieved, but didn't find any help.
 
 I eventually achieved it by creating a new app on the Partner portal, then swapping out the publishable tokens for the ones I had on my private app. I don't know if this is a known loophope to the Shopify developers. I guess if they didn't know about it before, they do now.
 
 Once that had been accomplished, I thought I needed to have it published as an unlisted app. I'm told they've discontinued this pattern now but I didn't know that at the time (see #1 above). So I spent a couple of days trying to get together the necessary bits and pieces together to make a public app.
 
-This failed consistently because of some issue relating to webhooks.
+When doing so, I found it failed consistently because of some issue relating to webhooks.
 
 For a public app, you need to provide certain webhooks to respond to requests for customer information (which, by they way, my app did not use, nevertheless I needed to implement it), uninstall requests, and other things.
 
-When using Shopify's hosted app approval tool to check the webhook, I was never sure if it was testing the webhooks of my app, or my shop. And each time despite many changes, and following the docs inscrutably (see #1 again if you need to), approval was denied. 
+When using Shopify's hosted app approval tool to check the webhook, each time despite many changes, and following the docs inscrutably (see #1 again if you need to), approval was denied. 
 
 I ultimately found the workaround above allowed me to install the app on exactly 1 production shop, which is what I needed in the end.
 
