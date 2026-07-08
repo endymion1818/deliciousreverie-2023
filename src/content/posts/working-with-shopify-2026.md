@@ -11,11 +11,11 @@ In this case the requirements were to integrate a 3rd party API into a single Sh
 
 The core premise was to keep the store's 7,000 products in sync with both systems.
 
-And it as been a lot more complicated than I ever thought it could be.
+And it has been a lot more complicated than I ever thought it could be.
 
-This is aside from the fact that the API I'm integrating with is old ... I'm talking a SOAP API here people - in 2026. In my entire 15 year career, it's the first time I've had to integrate with one.
+This is aside from the fact that this is an old API I'm integrating with - I'm talking a SOAP here people, yeah in 2026. In my entire 15 year career, it's the first time I've had to integrate with one.
 
-I'm planning to do a writeup at some point, so if you're interested, look out for that one, or subscribe to my RSS feed to recieve an update when it's out.
+I'm planning to do a writeup about that at some point, so if you're interested, look out for that one, or subscribe to my RSS feed to recieve an update when it's out.
 
 But I digress. Let me start with what Shopify gets right.
 
@@ -41,13 +41,13 @@ Once I overcame the hurdles listed below, the app functioned well. I didn't have
 
 Of all the issues I encountered this was by far the worst. The AI seemed to spit out old documentation that was either superseded or completely irrelevant.
 
-This made it incredibly difficult to debug my issues especially when combined with the other issues, as you'll see.
+This made it incredibly difficult to debug my issues, as you'll see.
 
 ### 2. Opaque publish and approval flow
 
-Once my app was ready, I tried to publish it so that my client could install the app on their shop (it was previously running only in development mode only on my dev shop). I found I could not publish it because I didn't have an install link.
+I developed the app on my dev shop running it locally in dev mode. Once it was ready, I tried to publish it so that my client could install it on their shop. I found I could not publish it because I couldn't find out how to generate an install link.
 
-It took me several days and using various forums to discover that I had published my app on my developer account instead of having a separate _partner_ account. Unless you use your partner account, you cannot publish your app onto another store in a separate account.
+It took me several days and using various forums to discover that I had published my app on my developer account instead of on a separate _partner_ account. Unless you use your partner account, you cannot publish your app onto another store in a separate account.
 
 It makes sense to keep these separate, but not knowing this was a necessary step took me a significant time to rectify.
 
@@ -73,7 +73,7 @@ The Shopify app comes with a package.json which has several scripts, as you woul
 
 But it also has a shopify.toml file in the route. If you run `shopify` in your terminal, the TOML file takes precedent and can override environment variables, production URLS, build commands and other things.
 
-This became a problem for me because I decided I wanted to host my website on Netlify instead of Cloudflare, yet it was not picking up the correct variables. And because (see #1 again) I couldn't rely on the documentation, it took a while to debug what was happening when I ran a command and something unexpected happened.
+This became a problem for me because I decided I wanted to host my website on Netlify instead of Cloudflare, and only ran into this issue because it was not picking up the correct variables. And because (see #1 again) I couldn't rely on the documentation, it took a while to debug what was happening when I ran a command and something unexpected happened.
 
 ## Verdict
 
