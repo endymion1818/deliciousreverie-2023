@@ -1,15 +1,17 @@
 ---
 title: "About Benjamin Read"
-Description: "Hi, I'm Ben, an experienced Senior Software Engineer and DevRel. Here's a little more about me."
+Description: "Hi, I'm Ben, an experienced Senior Software Engineer. Here's a little more about me."
 layout: ../layouts/PageLayout.astro
 ---
 (_This page is mostly going to be work focused. If you're looking for something other than that, take a look at [my personal articles](/tags/personal)_).
 
 Hi, I'm Ben, an experienced Senior Software Engineer, who has spent most of my career focused on frontend technologies like React, Svelte and Vue, and writing isomorphic JavaScript code for both GraphQL and REST APIs.
 
-I enjoy working with diverse teams and collaborating closely with others to achieve common objectives. I also have technical leadership skills.
+I'm a confident public speaker who has given talks at various conferences with audiences numbering in the hundreds. I've had several technical articles published in NET magazine by Future Publishing, and have edited a book on React.
 
 ![Benjamin Read profile picture](../images/benjamin-read.jpg)
+
+I'm not currently looking for a new role, but if you want to know more about the scope of my career, the details are below. 
 
 ## Leadership Successes:
 
@@ -62,10 +64,3 @@ Over a 10 month period, I rebuilt a React application (Gatsby) from the ground u
 ### Using new and advanced JS functionality
 
 I completely re-wrote a video tracker application which allowed my company to track multiple videos on a web page. The service used Service Workers and browser Cache to offload main thread work. This allowed it to respond to events posted by the video players (of which there could be multiple on a page, from Vimeo, YouTube and various others), sending data for the correct video, user and other tracking data to an API. It was built on Vite and hosted as a package on NPM.
-
-
-### Can I help you to deliver?
-
-I love working in engineering teams that have a clear organizational structure and roadmap. I also like working in environments that have a healthy work-life balance and have a standard holiday package. I do not work for companies in gambling, military or adult entertainment sectors or blockchain related markets.
-
-You can contact me via [LinkedIn](https://www.linkedin.com/in/benjaminread1980/). I look forward to discussing your requirements.
